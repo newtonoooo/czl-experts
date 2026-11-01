@@ -1,87 +1,102 @@
 # czl-experts
 
-WorkBuddy 专家包与技能库，作者：虫志龙。以 MIT 许可开源。
+WorkBuddy 专家包与技能库。**61 个专家包**，覆盖 14 个业务领域；**176 个独立技能**，可脱离专家单独使用。以 MIT 开源。
 
-**61 个专家包**（含单角色专家与多角色专家团），覆盖 14 个业务分类；**176 个独立技能**，已从专家包中拆解去重，可单独使用或发布。
-
-- [专家包清单](EXPERTS.md) — 61 个包的花名、职业、类型、版本、技能数
-- [技能清单](SKILLS.md) — 176 个技能的来源与分类
-- [重名技能取舍说明](skills-conflicts.md) — 重名技能的去重依据
-- [合规自查报告](COMPLIANCE.md) — 上架开放平台前的待修项
-- [技能清单 CSV](skills-manifest.csv) — 机器可读版本
+每个专家解决一类具体的活儿——不是"什么都能聊"的通用助手，而是带着固定流程、明确产出和验收标准的角色。
 
 ---
 
-## 下载
+## 从这里开始
 
-`dist/` 下是可直接使用的成品包，完整清单（含体积与 SHA-256）见 [dist/MANIFEST.csv](dist/MANIFEST.csv)。
+| 你想做什么 | 去哪 |
+|---|---|
+| 找一个能用的专家 | [专家目录 CATALOG.md](CATALOG.md) — 按分类浏览，每个都写了它做什么、可以怎么问它 |
+| 只想要某个能力 | [技能清单 SKILLS.md](SKILLS.md) — 176 个技能，按分类分组，带中文名 |
+| 不会装 | [使用指南](docs/01-使用指南.md) — 装专家、装技能、组合使用、排错 |
+| 想改或自己做一个 | [开发说明](docs/02-开发说明.md) — 包结构、命名铁律、技能设计、校验流程 |
+| 想上传开放平台 | [合规报告](docs/03-合规报告.md) — 20 个包的字段待修项 |
 
-| 内容 | 位置 | 数量 |
-|---|---|---|
-| 专家包 zip | `dist/experts/<包标识>.zip` | 61 |
-| 技能包 zip | `dist/skills/<技能标识>.zip` | 176 |
-
-专家包 zip 内为 `<包标识>/...`（含 `.codebuddy-plugin/`），技能包 zip 内为 `<技能标识>/SKILL.md`。
+## 30 秒上手
 
 ```bash
-# 克隆后直接安装某个专家
 git clone https://github.com/newtonoooo/czl-experts.git
-unzip czl-experts/dist/experts/czl-product-decision-audit.zip \
+cd czl-experts
+
+# 装一个专家（以"定盘"产品决策审校为例）
+unzip dist/experts/01-产品设计/czl-product-decision-audit.zip \
       -d "$WORKBUDDY_CONFIG_DIR/plugins/marketplaces/my-experts/plugins/"
+
+# 或者只装一个技能
+cp -r skills/evidence-ledger ~/.workbuddy-ai/skills/
 ```
+
+装完重启 WorkBuddy，在左侧「专家」里就能看到。
+
+## 这个库里有什么
+
+| 分类 | 数量 | 解决什么 |
+|---|---|---|
+| 产品设计 | 4 | 想清楚做什么、值不值得做、怎么讲给不同人听 |
+| 工程开发 | 4 | 把想法变成能上线、能维护的代码与站点 |
+| 数据分析 | 3 | 从一份表里问出可信结论，并把证据留痕 |
+| 市场增长 | 1 | 拉新、起量、做内容 |
+| 内容创作 | 8 | 长文、网文、公众号、论文，从选题到成稿 |
+| 电商销售 | 5 | 选品、Listing、竞品、直播、利润 |
+| 财务投资 | 8 | 看盘、选股、回测、结账、报税 |
+| 职场人事 | 1 | 简历过筛与投递策略 |
+| 法务合规 | 1 | 合同起草、条款审查、风险清单 |
+| 生活咨询 | 2 | 择日、决策类的生活问题 |
+| 商务投标 | 3 | 标书、方案、应答 |
+| 海外市场 | 5 | 中东、东南亚市场的进入策略与本地化 |
+| 学科家教 | 7 | 高中九科的讲解、陪练与学情诊断 |
+| 教师教研 | 7 | 备课、命题、教案、课堂设计 |
+
+完整的名字、职业、能力、技能挂载见 [CATALOG.md](CATALOG.md)。
 
 ## 目录结构
 
 ```
 czl-experts/
-├── dist/                        成品包（下载即用）
-│   ├── experts/<包标识>.zip
-│   ├── skills/<技能标识>.zip
-│   └── MANIFEST.csv             体积与 SHA-256 校验值
-├── experts/<分类>/<包标识>/      源码形态的专家包
-│   ├── .codebuddy-plugin/plugin.json   身份与挂载声明
-│   ├── agents/<包标识>.md              系统提示词
-│   ├── skills/                         该专家挂载的技能
-│   ├── avatars/                        头像 512×512
-│   └── docs/                           开发记录、规格、测试报告、风险清单
-└── skills/<技能标识>/            从专家包中拆解出的独立技能
-    ├── SKILL.md                        技能主体（YAML frontmatter + 指令）
-    ├── references/                     参考资料（按需）
-    └── scripts/                        可执行脚本（按需）
+├── CATALOG.md                 专家目录：按分类，带定位/场景/技能/下载入口
+├── SKILLS.md                  技能清单：176 个，按分类分组
+├── docs/                      使用指南、开发说明、合规报告
+├── dist/                      成品包，下载即用
+│   ├── experts/<分类>/<包标识>.zip
+│   ├── skills/<分类>/<技能标识>.zip
+│   └── MANIFEST.csv           体积与 SHA-256
+├── experts/<分类>/<包标识>/    源码形态，可读可改
+└── skills/<技能标识>/          拆解后的独立技能
 ```
 
-## 安装专家包
+**源码层给人看，成品层给机器装，索引层给人找。** 三层分开是为了让 diff 保持可读、让下载保持简单。
 
-把 `experts/<分类>/<包标识>/` 整个目录复制到 WorkBuddy 的专家目录，或直接解压 `dist/experts/` 下的 zip：
+## 一个专家包长什么样
 
-```bash
-cp -r experts/01-产品设计/czl-product-decision-audit \
-      "$WORKBUDDY_CONFIG_DIR/plugins/marketplaces/my-experts/plugins/"
 ```
-
-复制后需在 WorkBuddy 的专家中心刷新，或重启客户端。
-
-## 单独使用技能
-
-每个 `skills/<技能标识>/` 都是自包含的，把整个目录复制到技能目录即可：
-
-```bash
-cp -r skills/evidence-ledger ~/.workbuddy-ai/skills/
+czl-product-decision-audit/
+├── .codebuddy-plugin/plugin.json   身份与挂载声明
+├── agents/czl-product-decision-audit.md   系统提示词
+├── skills/                         7 个技能，每个一件具体的事
+│   ├── decision-triage/            分诊：这是什么类型的决策
+│   ├── evidence-ledger/            证据台账：逐条标注 A/B/C/D/X
+│   └── ...
+├── avatars/                        头像 512×512
+├── docs/                           规格、使用说明、测试报告、风险清单、开发记录
+├── CHANGELOG.md
+└── LICENSE
 ```
-
-技能的触发条件、输入输出、执行步骤都写在 `SKILL.md` 正文里，frontmatter 的 `description` 决定何时被调用。
 
 ## 许可
 
-本仓库以 **MIT License** 开源，见 [LICENSE](LICENSE)。可自由使用、修改、商用、再分发，保留版权与许可声明即可。
+[MIT](LICENSE)。可自由使用、修改、商用、再分发，保留版权与许可声明即可。
 
-部分包内附带的 `LICENSE` / `NOTICE` 是历史文件，其条款与仓库级 MIT 许可冲突时，以仓库根目录的 MIT 为准。
+部分包内附带的 `LICENSE` / `NOTICE` 是历史文件，与仓库级 MIT 冲突时以根目录的 MIT 为准。
 
 ## 已知说明
 
-- `czl-site-launch-pro/tests/fixtures/leaky-app/` 内含一个**伪造的 Stripe 测试密钥**，用于验证密钥脱敏能力，非真实凭据。
-- 重名技能（同一技能标识出现在多个专家包中）按体积取最完整版本收录一份，取舍明细见 [skills-conflicts.md](skills-conflicts.md)。
-- [COMPLIANCE.md](COMPLIANCE.md) 列出了上架开放平台前建议修正的字段问题，不影响本地安装与使用。
+- `czl-site-launch-pro/tests/fixtures/leaky-app/` 内有一个**伪造的 Stripe 测试密钥**，用于验证密钥脱敏能力，非真实凭据。
+- 重名技能（同一标识出现在多个包中）按体积取最完整版本收录一份，取舍明细见 [skills-conflicts.md](skills-conflicts.md)。
+- 两处展示名重复：`czl-gov-presales-pro` 与 `czl-proposal-strategy-studio` 都叫「标胜」，见 [开发说明](docs/02-开发说明.md) 的技术债一节。
 
 ## 反馈
 
