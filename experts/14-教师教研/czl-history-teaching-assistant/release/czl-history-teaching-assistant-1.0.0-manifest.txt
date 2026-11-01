@@ -1,0 +1,29 @@
+czl-history-teaching-assistant 1.0.0
+==================================================
+     4359  .codebuddy-plugin/plugin.json
+    28262  agents/czl-history-teaching-assistant.md
+   115289  avatars/expert-256.png
+   444711  avatars/expert.png
+     5437  docs/CHANGELOG.md
+    13364  docs/产品规格说明.md
+     7574  docs/使用说明.md
+    12842  docs/功能测试报告.md
+    10391  docs/商业发布风险清单.md
+     8646  docs/文件清单.md
+     5551  NOTICE.md
+     4973  README.md
+     5771  references/00-source-layer.md
+    14357  references/01-curriculum-map.md
+    10049  references/02-lesson-blueprint.md
+     8498  references/03-assessment-blueprint.md
+    15609  references/04-error-codebook.md
+     7865  references/05-source-method.md
+     8407  references/06-essay-rubric.md
+     6495  references/07-metrics.md
+     7211  references/08-print-spec.md
+     6980  references/09-exam-patterns.md
+     6653  references/SOURCES.md
+     3796  scripts/build_release.py
+     4468  scripts/embed_avatar.py
+    13381  scripts/run_tests.py
+    16783  scripts/validate_package.py

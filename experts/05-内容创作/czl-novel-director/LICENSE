@@ -1,0 +1,41 @@
+MIT License
+
+Copyright (c) 2026 虫志龙 (47190078@qq.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+适用范围说明
+
+本许可证覆盖本包内的全部原创内容：专家提示词、七个工作流说明与参考文件、
+四个 Python 脚本、头像图片、文档与示例文本。
+
+不覆盖：
+1. 用户使用本专家创作的小说正文、设定与大纲（著作权归用户）。
+2. 宿主平台（WorkBuddy）自身的软件与商标。
+3. 任何第三方组件 —— 本包未引入第三方代码、语料或图片，故无第三方许可证需要随附。
+
+关于头像的披露
+
+`avatars/expert.png` 为生成式图像工具产出后，经本人裁剪（去除工具角标）、
+缩放（1024 → 512）、降色（每通道 6 位）处理而成。原图留档于本地
+`src-assets/`，不随包分发。该头像不含任何第三方素材、真实人物肖像或他人商标；
+画面人物为虚构角色，不对应任何真实自然人或其形象。
+如平台要求披露生成式工具参与，以本条及 `docs/开发记录.md` 第七节为准。

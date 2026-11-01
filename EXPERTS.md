@@ -1,6 +1,6 @@
 # 专家包清单
 
-共 51 个专家包，分 13 个分类。路径：`experts/<分类>/<包标识>/`
+共 61 个专家包，分 14 个分类。路径：`experts/<分类>/<包标识>/`
 
 ## 产品设计（01）
 
@@ -9,7 +9,7 @@
 | [`czl-diagram-forge`](experts/01-产品设计/czl-diagram-forge/) | 制图宗师 | 全栈图表设计与渲染专家 | 专家 | 1.0.0 | 1 |
 | [`czl-product-decision-audit`](experts/01-产品设计/czl-product-decision-audit/) | 定盘 | 产品决策审校专家 | 专家 | 1.0.0 | 7 |
 | [`czl-product-strategy-solo`](experts/01-产品设计/czl-product-strategy-solo/) | 专业级产品战略参谋 | 产品战略与增长决策（单人参谋） | 专家 | 1.0.0 | 7 |
-| [`czl-product-strategy-warroom`](experts/01-产品设计/czl-product-strategy-warroom/) | 专业级产品战略作战室 | 产品战略与增长决策（五人参谋团） | 专家团 | 1.0.0 | 7 |
+| [`czl-product-strategy-warroom`](experts/01-产品设计/czl-product-strategy-warroom/) | 专业级产品战略作战室 | 专业级产品战略作战室 | 专家团 | 1.0.0 | 7 |
 
 ## 工程开发（02）
 
@@ -26,7 +26,7 @@
 |---|---|---|---|---|---|
 | [`czl-data-evidence`](experts/03-数据分析/czl-data-evidence/) | 数证台 | 数据分析举证专家 | 专家 | 1.0.0 | 1 |
 | [`czl-triprism-analyst`](experts/03-数据分析/czl-triprism-analyst/) | 三棱镜·专业数据分析专家 | 数据分析与举证 | 专家 | 1.0.0 | 1 |
-| [`czl-triprism-data-team`](experts/03-数据分析/czl-triprism-data-team/) | 三棱镜·专业数据分析专家团 | 多视角并行数据分析 | 专家团 | 1.0.2 | 1 |
+| [`czl-triprism-data-team`](experts/03-数据分析/czl-triprism-data-team/) | 三棱镜·专业数据分析专家团 | 三棱镜·专业数据分析专家团 | 专家团 | 1.0.2 | 1 |
 
 ## 市场增长（04）
 
@@ -40,6 +40,7 @@
 |---|---|---|---|---|---|
 | [`czl-civil-servant-desk`](experts/05-内容创作/czl-civil-servant-desk/) | 案头 | 公务员工作助理 | 专家 | 2.0.0 | 1 |
 | [`czl-draft-qc`](experts/05-内容创作/czl-draft-qc/) | 朱笔 | 公众号成稿质检与排版专家 | 专家 | 3.3.0 | 4 |
+| [`czl-novel-director`](experts/05-内容创作/czl-novel-director/) | 全能网文操盘手 | 网文全流程操盘与稿件质检 | 专家 | 1.2.1 | 7 |
 | [`czl-novel-serial`](experts/05-内容创作/czl-novel-serial/) | 连载创作引擎 | 网文连载制作师 | 专家 | 1.0.0 | 0 |
 | [`czl-qimao-novel`](experts/05-内容创作/czl-qimao-novel/) | 七猫爆款小说生成专家 | 七猫爆款小说生成专家 | 专家 | 1.0.0 | 1 |
 | [`czl-thesis-architect`](experts/05-内容创作/czl-thesis-architect/) | 文衡 | 论文写作全流程导师 | 专家 | 2.0.0 | 1 |
@@ -117,3 +118,17 @@
 | [`czl-history-home-tutor`](experts/13-学科家教/czl-history-home-tutor/) | 卓识教育-高中历史学习辅导专家 | 卓识教育-高中历史学习辅导专家 | 专家 | 1.0.2 | 6 |
 | [`czl-math-home-tutor`](experts/13-学科家教/czl-math-home-tutor/) | 陆九章 | 卓识教育-高中数学学习辅导专家 | 专家 | 1.0.2 | 5 |
 | [`czl-physics-home-tutor`](experts/13-学科家教/czl-physics-home-tutor/) | 顾衡 | 卓识教育-高中物理学习辅导专家 | 专家 | 1.0.2 | 1 |
+
+## 教师教研（14）
+
+| 包标识 | 花名 | 职业 | 类型 | 版本 | 技能数 |
+|---|---|---|---|---|---|
+| [`czl-biology-teacher-desk`](experts/14-教师教研/czl-biology-teacher-desk/) | 卓识教育-高中生物老师助手 | 卓识教育-高中生物老师助手 | 专家 | 1.0.0 | 1 |
+| [`czl-chem-teaching-suite`](experts/14-教师教研/czl-chem-teaching-suite/) | 卓识化学 | 卓识教育-高中化学老师助手 | 专家 | 1.0.1 | 0 |
+| [`czl-chinese-teacher-desk`](experts/14-教师教研/czl-chinese-teacher-desk/) | 卓识教育-高中语文老师助手 | 卓识教育-高中语文老师助手 | 专家 | 1.0.0 | 0 |
+| [`czl-english-teacher-desk`](experts/14-教师教研/czl-english-teacher-desk/) | 卓识教育-高中英语老师助手 | 卓识教育-高中英语老师助手 | 专家 | 1.0.0 | 0 |
+| [`czl-geo-teacher-desk`](experts/14-教师教研/czl-geo-teacher-desk/) | 卓识教育-高中地理老师助手 | 卓识教育-高中地理老师助手 | 专家 | 1.0.0 | 0 |
+| [`czl-history-teaching-assistant`](experts/14-教师教研/czl-history-teaching-assistant/) | 卓识史鉴 | 卓识教育-高中历史老师助手 | 专家 | 1.0.0 | 0 |
+| [`czl-math-teacher-desk`](experts/14-教师教研/czl-math-teacher-desk/) | 陈砚耕 | 卓识教育-高中数学老师助手 | 专家 | 1.0.0 | 7 |
+| [`czl-physics-teacher-desk`](experts/14-教师教研/czl-physics-teacher-desk/) | 严知远 | 卓识教育-高中物理老师助手 | 专家 | 1.0.0 | 1 |
+| [`czl-politics-teacher-desk`](experts/14-教师教研/czl-politics-teacher-desk/) | 卓识教育-高中政治老师助手 | 卓识教育-高中政治老师助手 | 专家 | 1.0.0 | 1 |

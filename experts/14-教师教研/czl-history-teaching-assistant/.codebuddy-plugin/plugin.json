@@ -1,0 +1,76 @@
+{
+  "name": "czl-history-teaching-assistant",
+  "version": "1.0.0",
+  "description": "卓识史鉴：面向高中历史教师的教学流水线助手。把「课题」变成可直接上课的教案与学案，把「考试范围」变成带命题蓝图和评分细则的试卷，把「学生作答」变成可跨作业累计的错因编码，把「一张成绩表」变成分层教学处方。知识范围覆盖统编版必修《中外历史纲要（上）（下）》与选择性必修1《国家制度与社会治理》、选择性必修2《经济与社会生活》、选择性必修3《文化交流与传播》五册，共 33 个单元、100 课。六条工作流分别处理备课、命题、批改、学情诊断、史料论证训练与专题复习；所有产出挂在「课标条目—教材子目—史料出处」三级史源上，结论可追溯、可复核。适用于高中历史教师、教研组长与备课组，也适用于师范生备课训练。",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "agents": [
+    "./agents/czl-history-teaching-assistant.md"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-history-teaching-assistant",
+  "displayName": {
+    "en": "Zhuoshi History Studio",
+    "zh": "卓识史鉴"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - High School History Teaching Assistant",
+    "zh": "卓识教育-高中历史老师助手"
+  },
+  "displayDescription": {
+    "en": "A teaching pipeline assistant for high-school history teachers: lesson plans with source-study design, exam papers with blueprints and rubrics, grading that accumulates into a fixed error-code profile, and class diagnostics with tiered prescriptions. Covers the five unified textbooks (33 units, 100 lessons) and traces every output back to curriculum standards, textbook sub-sections and primary sources.",
+    "zh": "高中历史教学流水线助手：教案与学案、命题蓝图与评分细则、可累计的错因编码批改、班级学情诊断与分层处方。覆盖统编版五册 33 单元 100 课，每条结论都挂在课标条目、教材子目与史料出处上。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "Turn 'Politics and Military Affairs in the Song Dynasty' into one 45-minute lesson for Grade 11, including a source-study activity and tiered homework.",
+    "zh": "把《两宋的政治和军事》备成一节 45 分钟的高二新授课，要有一段史料研习活动和分层作业。"
+  },
+  "plugin": "czl-history-teaching-assistant",
+  "license": "Proprietary",
+  "keywords": [
+    "高中历史",
+    "历史教案",
+    "历史命题",
+    "双向细目表",
+    "错因编码",
+    "学情分析",
+    "统编版",
+    "中外历史纲要",
+    "高考历史"
+  ],
+  "knowledge": [
+    "./references/00-source-layer.md",
+    "./references/01-curriculum-map.md",
+    "./references/02-lesson-blueprint.md",
+    "./references/03-assessment-blueprint.md",
+    "./references/04-error-codebook.md",
+    "./references/05-source-method.md",
+    "./references/06-essay-rubric.md",
+    "./references/07-metrics.md",
+    "./references/08-print-spec.md",
+    "./references/09-exam-patterns.md"
+  ],
+  "tags": [
+    { "en": "Lesson Design", "zh": "备课设计" },
+    { "en": "Assessment Design", "zh": "命题组卷" },
+    { "en": "Diagnostics", "zh": "学情诊断" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Turn 'Politics and Military Affairs in the Song Dynasty' into one 45-minute lesson for Grade 11, including a source-study activity and tiered homework.",
+      "zh": "把《两宋的政治和军事》备成一节 45 分钟的高二新授课，要有一段史料研习活动和分层作业。"
+    },
+    {
+      "en": "Build a blueprint for a unit test on the Ming-Qing unit: 16 multiple-choice plus 3 source-based questions, with answer keys.",
+      "zh": "给《明清中国版图的奠定与面临的挑战》出一套单元卷，16 道选择加 3 道材料题，先给我命题蓝图。"
+    },
+    {
+      "en": "Here are 12 students' answers to one source-based question — grade them, tag every error with a code, and tell me what to reteach.",
+      "zh": "这是 12 个学生同一道材料题的作答，帮我批改、给每个错处编码，并告诉我这节课该补什么。"
+    }
+  ]
+}

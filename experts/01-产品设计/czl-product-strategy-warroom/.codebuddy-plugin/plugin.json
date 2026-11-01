@@ -51,11 +51,11 @@
     "en": "War Room Pro"
   },
   "profession": {
-    "zh": "产品战略与增长决策（五人参谋团）",
-    "en": "Product Strategy & Growth Decisions (5-seat team)"
+    "en": "War Room Pro",
+    "zh": "专业级产品战略作战室"
   },
   "displayDescription": {
-    "zh": "五个席位一条链：立案、取据、成文、排产、度量、汇报。结论标证据等级，需求带可测验收，路线图按真实产能装箱并给砍单清单，指标先定口径再谈归因，交付前过一致性闸。给你一套互相对得上的决策包。",
+    "zh": "五席一条链：立案、取据、成文、排产、度量、汇报，结论标证据等级，需求带可测验收，交付一套自洽决策包。",
     "en": "Five seats, one chain: intake, evidence, spec, capacity, metrics, alignment. Graded claims, testable acceptance criteria, capacity-packed roadmap with a cut list, metric definitions pinned before attribution, and a consistency gate before release. You get one decision pack that agrees with itself."
   },
   "avatar": "avatars/team.png",

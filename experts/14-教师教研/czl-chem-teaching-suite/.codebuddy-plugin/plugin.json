@@ -1,0 +1,100 @@
+{
+  "name": "czl-chem-teaching-suite",
+  "version": "1.0.1",
+  "description": "Zhuoshi Chemistry is a full-cycle high-school chemistry teaching workbench for Chinese senior-high teachers. It links eight workflows: lesson design with core-competency objectives; assessment authoring on a four-dimension blueprint (module x cognitive level x literacy x difficulty); error-code grading using an E01-E14 taxonomy; class diagnostics with difficulty and discrimination analysis; concept explainer sheets; gaokao item decoding; a chemistry workshop covering equation balancing, lab-scheme safety review, organic synthesis routes, industrial-flow analysis and stoichiometry; and textbook-to-PPT courseware. Every deliverable is traceable (curriculum standard / textbook chapter / exam year), lab work passes a safety gate, and output ships as print-ready .docx, plus .csv for score and error data.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "agents": [
+    "./agents/czl-chem-teaching-suite.md"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-chem-teaching-suite",
+  "displayName": {
+    "en": "Zhuoshi Chemistry",
+    "zh": "卓识化学"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - High School Chemistry Teaching Assistant",
+    "zh": "卓识教育-高中化学老师助手"
+  },
+  "displayDescription": {
+    "en": "A teaching workbench for senior-high chemistry: prepare a lesson, build a paper from a blueprint, grade with error codes, diagnose a class, explain a hard concept, decode a gaokao item, balance equations and review lab schemes, or turn textbook pages into slides. Print-ready .docx every time.",
+    "zh": "高中化学教学全流程助手：备课、命题、批改、学情诊断、讲解、真题、方程式配平与实验方案、教材转课件八条工作流首尾相接，产物带错因码与校验行，默认出打印版 docx。"
+  },
+  "avatar": "avatars/expert-512.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "zh": "帮我备《氧化还原反应》，人教版必修一，中等班，40 分钟",
+    "en": "Prepare a lesson on 'Oxidation-Reduction Reactions' (PEP Compulsory 1) for a mid-level class"
+  },
+  "plugin": "czl-chem-teaching-suite",
+  "knowledge": [
+    "./knowledge/00-index.md",
+    "./knowledge/01-curriculum-map.md",
+    "./knowledge/02-exam-blueprint.md",
+    "./knowledge/03-error-codes.md",
+    "./knowledge/04-equation-protocol.md",
+    "./knowledge/05-lab-safety.md",
+    "./knowledge/06-organic-map.md",
+    "./knowledge/07-industrial-flow.md",
+    "./knowledge/08-formula-toolbox.md",
+    "./knowledge/09-quality-gates.md",
+    "./knowledge/10-source-index.md"
+  ],
+  "tags": [
+    {
+      "en": "Lesson Design",
+      "zh": "备课与教案"
+    },
+    {
+      "en": "Assessment & Grading",
+      "zh": "命题与批改"
+    },
+    {
+      "en": "Error-Code Diagnosis",
+      "zh": "错因诊断"
+    }
+  ],
+  "triggerPrompts": [
+    {
+      "en": "Write a lesson plan for this textbook section",
+      "zh": "帮我把这一节写成教案"
+    },
+    {
+      "en": "Build a unit test with a blueprint table",
+      "zh": "出一套单元测，先给双向细目表"
+    },
+    {
+      "en": "Grade these answers with error codes",
+      "zh": "按错因码批改这些答卷"
+    },
+    {
+      "en": "Analyze this score sheet and tell me what to reteach",
+      "zh": "分析这份成绩表，告诉我该重讲什么"
+    },
+    {
+      "en": "Balance this equation and show the checks",
+      "zh": "配平这个方程式并给出校验"
+    },
+    {
+      "en": "Turn these textbook pages into slides",
+      "zh": "把这几页教材做成课件"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Prepare a lesson on 'Oxidation-Reduction Reactions' (PEP Compulsory 1) for a mid-level class",
+      "zh": "帮我备《氧化还原反应》，人教版必修一，中等班，40 分钟"
+    },
+    {
+      "en": "Create a 45-minute unit test on reaction principles, blueprint first",
+      "zh": "出一套反应原理单元测，45 分钟，先给双向细目表"
+    },
+    {
+      "en": "Here is my monthly exam score sheet - diagnose the class and name the top three error causes",
+      "zh": "这是我的月考成绩表，做学情分析，找出三个共性错因"
+    }
+  ]
+}

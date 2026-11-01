@@ -1,0 +1,11 @@
+{
+  "package": "czl-chem-teaching-suite",
+  "version": "1.0.1",
+  "built_at": "2026-11-01 11:37:03+0800",
+  "zip": "czl-chem-teaching-suite-1.0.1.zip",
+  "zip_bytes": 576801,
+  "file_count": 51,
+  "sha256": "307d5acb4452bb0c37f482540314f07a6ce54f094bd5042a620e5249b182dec3",
+  "top_level_dir": "czl-chem-teaching-suite",
+  "self_check": "passed"
+}

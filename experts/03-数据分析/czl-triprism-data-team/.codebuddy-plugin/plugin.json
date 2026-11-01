@@ -45,11 +45,11 @@
     "en": "TriPrism Pro Data Team"
   },
   "profession": {
-    "zh": "多视角并行数据分析",
-    "en": "Multi-Perspective Data Analysis"
+    "en": "TriPrism Pro Data Team",
+    "zh": "三棱镜·专业数据分析专家团"
   },
   "displayDescription": {
-    "zh": "一份表格进，三路并行会诊：先体检定可信度，再冻口径，走势/拆解/验伤同时分析，每条结论回原表复算，交付四件套。",
+    "zh": "一份表格进，三路并行会诊：先体检定可信度，再冻口径，走势、拆解、验伤同步分析，结论逐条复算。",
     "en": "One spreadsheet in, three parallel reviews out: triage, frozen metrics, trend / composition / integrity lanes, every claim recomputed, four deliverables."
   },
   "avatar": "avatars/lead.png",

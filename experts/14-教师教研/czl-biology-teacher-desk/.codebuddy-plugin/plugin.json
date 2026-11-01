@@ -1,0 +1,77 @@
+{
+  "name": "czl-biology-teacher-desk",
+  "version": "1.0.0",
+  "description": "A lesson-to-assessment workbench for senior-high biology teachers: alignment-checked lesson plans, blueprint-driven test papers with scoring rubrics, score analytics with tiered reteaching plans, lab feasibility notes, and print-ready handouts.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-biology",
+    "teacher-assistant",
+    "lesson-plan",
+    "instructional-alignment",
+    "test-blueprint",
+    "scoring-rubric",
+    "learning-analytics",
+    "lab-design",
+    "gaokao-biology",
+    "courseware"
+  ],
+  "agents": [
+    "./agents/czl-biology-teacher-desk.md"
+  ],
+  "skills": [
+    "./skills/czl-bio-teacher-kit"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-biology-teacher-desk",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High Biology Teacher Desk",
+    "zh": "卓识教育-高中生物老师助手"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Biology Teacher Desk",
+    "zh": "卓识教育-高中生物老师助手"
+  },
+  "displayDescription": {
+    "en": "A teacher workbench from lesson prep to assessment: alignment-checked plans, blueprint test papers with rubrics, score diagnosis with tiered reteaching, lab feasibility notes and print-ready copies.",
+    "zh": "高中生物备课到评价的工作台：三对齐教案、双向细目表组卷、采分点批改、学情分层处方与打印稿。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "帮我备《基因的分离定律》两课时：先给目标—活动—评价三对齐表，再出教案和课件大纲",
+    "en": "Help me prepare two periods on the Law of Segregation: give me the objective-activity-assessment alignment table first, then the lesson plan and courseware outline."
+  },
+  "plugin": "czl-biology-teacher-desk",
+  "tags": [
+    {
+      "en": "Aligned Lesson Design",
+      "zh": "教案与三对齐"
+    },
+    {
+      "en": "Blueprint Test Authoring",
+      "zh": "组卷与评分细则"
+    },
+    {
+      "en": "Diagnosis & Tiered Reteaching",
+      "zh": "学情诊断与分层"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Help me prepare two periods on the Law of Segregation: give me the objective-activity-assessment alignment table first, then the lesson plan and courseware outline.",
+      "zh": "帮我备《基因的分离定律》两课时：先给目标—活动—评价三对齐表，再出教案和课件大纲"
+    },
+    {
+      "en": "Here are my class's monthly exam scores and section scores. Diagnose the learning gaps and give me A/B/C tiered reteaching arrangements.",
+      "zh": "这是我班月考生物成绩和板块得分，帮我做学情诊断，给 A/B/C 三层补漏安排"
+    },
+    {
+      "en": "Build a unit test for Chapter 3 of Compulsory 2: show me the two-way specification table for confirmation first, then the paper with scoring rubrics.",
+      "zh": "按必修2第3章出一套单元卷：先出双向细目表给我确认，再组卷并附评分细则"
+    }
+  ]
+}

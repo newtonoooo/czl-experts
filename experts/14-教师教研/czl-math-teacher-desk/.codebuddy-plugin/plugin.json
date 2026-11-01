@@ -1,0 +1,83 @@
+{
+  "name": "czl-math-teacher-desk",
+  "version": "1.0.0",
+  "description": "A high-school math teaching desk for Chinese classroom teachers: turns a topic into a lesson that can be taught as written, blueprints original papers against the 8+3+3+5 national structure, computes question-level score rates from a raw score sheet, breaks final problems into scoring steps, and exports print-ready Word files after a re-check pass on every answer.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "high-school-math",
+    "lesson-plan",
+    "test-blueprint",
+    "item-writing",
+    "score-analysis",
+    "grading-feedback",
+    "final-problem-breakdown",
+    "courseware",
+    "docx-export",
+    "teaching-workflow"
+  ],
+  "agents": [
+    "./agents/czl-math-teacher-desk.md"
+  ],
+  "skills": [
+    "./skills/intake-scope",
+    "./skills/lesson-forge",
+    "./skills/paper-forge",
+    "./skills/paper-clinic",
+    "./skills/explain-lab",
+    "./skills/slide-deck",
+    "./skills/math-verify"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-math-teacher-desk",
+  "displayName": {
+    "en": "Chen Yangeng",
+    "zh": "陈砚耕"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Math Teacher Assistant",
+    "zh": "卓识教育-高中数学老师助手"
+  },
+  "displayDescription": {
+    "en": "A math teaching desk for classroom teachers: lesson plans that can be taught as written, original papers with a blueprint first, question-level score rates computed from your own sheet, final problems cut into scoring steps, print-ready Word on delivery.",
+    "zh": "高中数学教研助手：教案能直接上、组卷先给细目表、按分数表算得分率、压轴题拆步骤分，成稿直出Word。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "Turn 'Monotonicity of Functions' into one 45-minute lesson I can teach as written, with board layout and tiered homework.",
+    "zh": "把《函数的单调性》备成一节 45 分钟的课，教案要能照着上，附板书设计和分层作业"
+  },
+  "plugin": "czl-math-teacher-desk",
+  "tags": [
+    {
+      "en": "Lesson & Unit Design",
+      "zh": "教案与课时设计"
+    },
+    {
+      "en": "Test Blueprinting",
+      "zh": "命题与细目表"
+    },
+    {
+      "en": "Grading Analytics",
+      "zh": "批改与学情统计"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Turn 'Monotonicity of Functions' into one 45-minute lesson I can teach as written, with board layout and tiered homework.",
+      "zh": "把《函数的单调性》备成一节 45 分钟的课，教案要能照着上，附板书设计和分层作业"
+    },
+    {
+      "en": "Build a unit test on 'Derivatives and Their Applications' against the 8+3+3+5 structure. Give me the two-way blueprint table first, and do not write the items until I confirm it.",
+      "zh": "按新高考 8+3+3+5 结构出一套「导数及其应用」单元卷，先给双向细目表，我确认后再逐题写"
+    },
+    {
+      "en": "Here is my class's raw score sheet by question. Compute the score rate for each question, rank the loss points, and give me a review order for the next two periods.",
+      "zh": "这是我们班这次月考的分题得分表，算出各题得分率、排出失分点，再给我两节课的讲评顺序"
+    }
+  ]
+}

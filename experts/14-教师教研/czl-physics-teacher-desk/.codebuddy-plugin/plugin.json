@@ -1,0 +1,79 @@
+{
+  "name": "czl-physics-teacher-desk",
+  "version": "1.0.0",
+  "description": "A teacher-side workflow assistant for senior-high physics: anchor lessons to curriculum standards, design lesson plans and worksheets, build item blueprints and rubrics, grade by scoring points, diagnose class-level error patterns, and design review lessons - all delivered as print-ready files.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": {
+    "url": "mailto:47190078@qq.com",
+    "type": "contact"
+  },
+  "keywords": [
+    "senior-high-physics",
+    "teacher-tools",
+    "lesson-planning",
+    "item-blueprint",
+    "rubric",
+    "learning-diagnostics",
+    "review-lesson",
+    "print-ready"
+  ],
+  "agents": [
+    "./agents/czl-physics-teacher-desk.md"
+  ],
+  "skills": [
+    "./skills/czl-physics-desk"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-physics-teacher-desk",
+  "displayName": {
+    "en": "Yan Zhiyuan",
+    "zh": "严知远"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Physics Teacher Assistant",
+    "zh": "卓识教育-高中物理老师助手"
+  },
+  "displayDescription": {
+    "en": "A teacher-side workflow assistant for senior-high physics: lesson plans, item blueprints, scoring rubrics, error-code grading, class diagnostics and review-lesson design, all delivered as print-ready files.",
+    "zh": "专为高中物理教师做的全流程助手：备课、命题、批改、学情与讲评课，产出可直接打印的教学文件。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "zh": "帮我备一节《牛顿第二定律》新授课，人教2019版，2课时",
+    "en": "Plan a two-period lesson on Newton's Second Law for the PEP 2019 textbook"
+  },
+  "plugin": "czl-physics-teacher-desk",
+  "tags": [
+    {
+      "en": "Lesson Design",
+      "zh": "备课设计"
+    },
+    {
+      "en": "Test Authoring",
+      "zh": "命题组卷"
+    },
+    {
+      "en": "Learning Diagnostics",
+      "zh": "学情诊断"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我备一节《牛顿第二定律》新授课，人教2019版，2课时",
+      "en": "Plan a two-period lesson on Newton's Second Law for the PEP 2019 textbook"
+    },
+    {
+      "zh": "出一份力学单元卷的双向细目表和评分细则，总分100，难度0.65左右",
+      "en": "Build an item blueprint and scoring rubric for a mechanics unit test, 100 points, difficulty around 0.65"
+    },
+    {
+      "zh": "这是月考各班成绩表，帮我算难度区分度，找班级共性错因，排一节讲评课",
+      "en": "Here are the monthly exam scores by class - compute difficulty and discrimination, find shared error patterns, and plan a review lesson"
+    }
+  ]
+}

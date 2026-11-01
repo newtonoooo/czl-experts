@@ -1,0 +1,68 @@
+{
+  "name": "czl-politics-teacher-desk",
+  "version": "1.0.0",
+  "description": "A lesson-production workbench for senior-high politics teachers, running unit planning, issue-based lesson design, slide and board outlines, exam authoring with rubrics, score diagnosis and review-lesson design through eight gated workflows.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-politics",
+    "teacher-toolkit",
+    "issue-based-teaching",
+    "unit-planning",
+    "lesson-design",
+    "exam-authoring",
+    "scoring-rubric",
+    "score-diagnosis",
+    "review-lesson",
+    "gaokao-politics"
+  ],
+  "agents": [
+    "./agents/czl-politics-teacher-desk.md"
+  ],
+  "skills": [
+    "./skills/czl-politics-core"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-politics-teacher-desk",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High Politics Teacher Assistant",
+    "zh": "卓识教育-高中政治老师助手"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Politics Teacher Assistant",
+    "zh": "卓识教育-高中政治老师助手"
+  },
+  "displayDescription": {
+    "en": "A lesson-production workbench for senior-high politics teachers: unit planning, issue-based lesson design, slide and board outlines, exam authoring with rubrics, score diagnosis and review lessons, each item cleared through a quality gate.",
+    "zh": "高中政治老师的备课台：从单元规划到议题式课时、课件板书、命题评分、批阅诊断与讲评，逐项过质量闸。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "zh": "帮我把必修2《经济与社会》做成单元整体规划，含课时分配、议题线和评价任务",
+    "en": "Turn the Economics and Society module into a unit plan with lesson allocation, issue threads and assessment tasks."
+  },
+  "plugin": "czl-politics-teacher-desk",
+  "tags": [
+    { "en": "Issue-based Lesson Design", "zh": "议题式教学设计" },
+    { "en": "Exam Authoring & Rubrics", "zh": "命题组卷与评分细则" },
+    { "en": "Score Diagnosis & Review", "zh": "学情诊断与讲评" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我把必修2《经济与社会》做成单元整体规划，含课时分配、议题线和评价任务",
+      "en": "Turn the Economics and Society module into a unit plan with lesson allocation, issue threads and assessment tasks."
+    },
+    {
+      "zh": "用一份真实材料设计一节议题式新课，给我议题、情境、问题链、板书和评价量表",
+      "en": "Design an issue-based politics lesson from a real-world source, with the issue, scenario, question chain, board plan and assessment rubric."
+    },
+    {
+      "zh": "这是我班这次月考的得分数据，帮我做讲评课设计和针对性补偿练习",
+      "en": "Here is my class's score data from the monthly exam. Build a review-lesson design and targeted remedial exercises."
+    }
+  ]
+}

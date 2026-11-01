@@ -1,0 +1,80 @@
+{
+  "name": "czl-novel-director",
+  "version": "1.2.1",
+  "description": "An end-to-end web-fiction operation desk: scores the selling proposition and the title, builds a rule-checkable story bible, writes chapter by chapter from a writing packet, runs a countable human-voice inspection plus a chapter-level pacing and hook audit, gates every chapter behind a fingerprint chain that catches silent edits, calibrates its own thresholds against labelled samples, and turns backend metrics into a 30-day rescue plan.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "web-novel",
+    "serial-fiction",
+    "chapter-writing",
+    "continuity-ledger",
+    "ai-tone-check",
+    "read-through-diagnosis",
+    "chinese-fiction"
+  ],
+  "agents": [
+    "./agents/czl-novel-director.md"
+  ],
+  "skills": [
+    "./skills/czl-market-scout",
+    "./skills/czl-story-architect",
+    "./skills/czl-chapter-forge",
+    "./skills/czl-voice-tune",
+    "./skills/czl-continuity-keeper",
+    "./skills/czl-data-doctor",
+    "./skills/czl-delivery-pack"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-novel-director",
+  "displayName": {
+    "zh": "全能网文操盘手",
+    "en": "NovelDirector"
+  },
+  "profession": {
+    "zh": "网文全流程操盘与稿件质检",
+    "en": "Web Fiction Pipeline Director & Manuscript Inspector"
+  },
+  "displayDescription": {
+    "zh": "从赛道和卖点定起，搭一套能自动核对的设定档案，逐章写、逐章验，交付前跑一遍人味体检并把问题定位到句。长篇写到五十章也不吃书，隔几天回来一句话告诉你欠什么。",
+    "en": "Starts at lane and selling proposition, builds a story bible the scripts can actually check, writes and verifies chapter by chapter, then runs a countable human-voice inspection that points at the exact sentence."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "我想写一本 ___（题材）的书，发在 ___（平台，不确定就说不知道），大概 ___ 万字。先帮我看这条路能不能走、卖点是什么，再给我三个书名。",
+    "en": "I want to write a ___ novel for ___ (platform, or say unsure), around ___ characters. First check whether this lane works and what the selling proposition is, then give me three titles."
+  },
+  "plugin": "czl-novel-director",
+  "tags": [
+    {
+      "zh": "全流程操盘",
+      "en": "Full Pipeline"
+    },
+    {
+      "zh": "人味体检",
+      "en": "Human-Voice Inspection"
+    },
+    {
+      "zh": "连续性台账",
+      "en": "Continuity Ledger"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我想写一本 ___（题材）的书，发在 ___（平台，不确定就说不知道），大概 ___ 万字。先帮我看这条路能不能走、卖点是什么，再给我三个书名。",
+      "en": "I want to write a ___ novel for ___ (platform, or say unsure), around ___ characters. First check whether this lane works and what the selling proposition is, then give me three titles."
+    },
+    {
+      "zh": "这是我写好的第一章，帮我体检一遍：哪些地方读着像机器写的，哪一句该改，改完我再看。",
+      "en": "Here is my finished first chapter. Inspect it: which parts read machine-written, which sentence to fix, and show me the fix."
+    },
+    {
+      "zh": "我这本书写到第 ___ 章了，手上有 ___ 万字旧稿。先给我建个档案，告诉我欠什么、下一章该动哪里。",
+      "en": "I am at chapter ___ with about ___ characters of existing draft. Build the ledger first, then tell me what is outstanding and what the next chapter must move."
+    }
+  ]
+}

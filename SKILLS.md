@@ -1,6 +1,6 @@
 # 技能清单
 
-共 159 个唯一技能，路径：`skills/<技能id>/`。
+共 176 个唯一技能，路径：`skills/<技能id>/`。
 
 同名技能已去重，取舍见 [skills-conflicts.md](skills-conflicts.md)。
 
@@ -40,9 +40,16 @@
 | [`dy-compliance-lint`](skills/dy-compliance-lint/) | `czl-douyin-growth-ops` | 市场增长 |
 | [`dy-hook-script`](skills/dy-hook-script/) | `czl-douyin-growth-ops` | 市场增长 |
 | [`dy-live-runbook`](skills/dy-live-runbook/) | `czl-douyin-growth-ops` | 市场增长 |
+| [`czl-chapter-forge`](skills/czl-chapter-forge/) | `czl-novel-director` | 内容创作 |
+| [`czl-continuity-keeper`](skills/czl-continuity-keeper/) | `czl-novel-director` | 内容创作 |
+| [`czl-data-doctor`](skills/czl-data-doctor/) | `czl-novel-director` | 内容创作 |
+| [`czl-delivery-pack`](skills/czl-delivery-pack/) | `czl-novel-director` | 内容创作 |
+| [`czl-market-scout`](skills/czl-market-scout/) | `czl-novel-director` | 内容创作 |
 | [`czl-note-line`](skills/czl-note-line/) | `czl-xhs-note-workshop` | 内容创作 |
 | [`czl-qimao-ops`](skills/czl-qimao-ops/) | `czl-qimao-novel` | 内容创作 |
+| [`czl-story-architect`](skills/czl-story-architect/) | `czl-novel-director` | 内容创作 |
 | [`czl-tomato-ops`](skills/czl-tomato-ops/) | `czl-tomato-bestseller` | 内容创作 |
+| [`czl-voice-tune`](skills/czl-voice-tune/) | `czl-novel-director` | 内容创作 |
 | [`doc-craft`](skills/doc-craft/) | `czl-civil-servant-desk` | 内容创作 |
 | [`draft-foundry`](skills/draft-foundry/) | `czl-draft-qc` | 内容创作 |
 | [`publish-kit`](skills/publish-kit/) | `czl-draft-qc` | 内容创作 |
@@ -165,3 +172,13 @@
 | [`timeline-framework`](skills/timeline-framework/) | `czl-history-home-tutor` | 学科家教 |
 | [`tutor-session`](skills/tutor-session/) | `czl-chinese-home-tutor` | 学科家教 |
 | [`writing-studio`](skills/writing-studio/) | `czl-english-home-tutor` | 学科家教 |
+| [`czl-bio-teacher-kit`](skills/czl-bio-teacher-kit/) | `czl-biology-teacher-desk` | 教师教研 |
+| [`czl-physics-desk`](skills/czl-physics-desk/) | `czl-physics-teacher-desk` | 教师教研 |
+| [`czl-politics-core`](skills/czl-politics-core/) | `czl-politics-teacher-desk` | 教师教研 |
+| [`explain-lab`](skills/explain-lab/) | `czl-math-teacher-desk` | 教师教研 |
+| [`intake-scope`](skills/intake-scope/) | `czl-math-teacher-desk` | 教师教研 |
+| [`lesson-forge`](skills/lesson-forge/) | `czl-math-teacher-desk` | 教师教研 |
+| [`math-verify`](skills/math-verify/) | `czl-math-teacher-desk` | 教师教研 |
+| [`paper-clinic`](skills/paper-clinic/) | `czl-math-teacher-desk` | 教师教研 |
+| [`paper-forge`](skills/paper-forge/) | `czl-math-teacher-desk` | 教师教研 |
+| [`slide-deck`](skills/slide-deck/) | `czl-math-teacher-desk` | 教师教研 |

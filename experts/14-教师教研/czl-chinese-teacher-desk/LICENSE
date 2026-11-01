@@ -1,0 +1,81 @@
+# 专有许可协议
+
+版权所有 © 2026 虫志龙。保留所有权利。
+Copyright © 2026 Chong Zhilong. All rights reserved.
+
+联系方式：47190078@qq.com
+
+---
+
+## 一、定义
+
+1. **"本作品"** 指本专家包内的全部原创内容，包括但不限于：专家主提示词、八张工序卡、八份参考资料、两份脚本（`bin/check_package.py`、`bin/make_avatar.py`）、全部文档、头像图像及其配置文件。
+2. **"被许可方"** 指通过合法途径获得本作品的自然人或机构。
+3. **"平台"** 指 WorkBuddy 及其关联的专家市场。
+
+## 二、授予的权利
+
+被许可方在遵守本协议的前提下，获得一项**非独占、不可转让、可撤销**的许可：
+
+1. 在平台内安装、使用本专家，用于自己的教学工作。
+2. 在自己的教学机构内部（如备课组、教研组）共享使用，共享范围不超过同一法人单位。
+3. 为适配本校学情，修改提示词、工序卡与参考资料，修改后的版本仅供自己使用。
+4. 将本专家产出的教案、试卷、作业、诊断报告等**教学成果**用于日常教学、校内公开课、教研交流，无需另行授权。
+
+**教学成果的权利归使用者。** 本协议不主张对使用者产出的教案、试题等成果的任何权利。
+
+## 三、限制
+
+未经著作权人事先书面许可，被许可方**不得**：
+
+1. 转售、出租、出借本作品，或将其作为付费商品、付费服务的一部分提供。
+2. 将本作品（含修改后的版本）上传至其他平台、应用商店、资源站、网盘公开分享，或以"免费领取"等方式引流分发。
+3. 移除、遮盖、篡改本作品中的作者署名、版权声明与版本信息。
+4. 以本作品为基础制作衍生专家包对外发布。
+5. 将本作品用于训练机器学习模型，或作为数据集的一部分对外提供。
+6. 以著作权人名义作出任何承诺、担保或官方背书的表示。
+
+## 四、第三方材料
+
+本作品**不包含**下列内容的原文，其著作权归各自权利人，不在本许可范围内：
+
+1. 《普通高中语文课程标准》及其解读材料。
+2. 人民教育出版社统编高中语文教材的课文、注释、课后练习、插图。
+3. 高考真题及其他考试的试题原文。
+4. 任何出版社的教辅材料。
+5. 当代作家作品。
+
+本作品中的 `references/` 目录为著作权人自行编写的**结构化索引与教研摘编**，用于定位与教学参考，不替代上述原始资料。使用者使用上述资料时，应自行取得合法授权或通过正版渠道获取。
+
+## 五、无担保与责任限制
+
+1. 本作品按**现状**提供，不附带任何明示或默示的担保，包括但不限于适销性、特定用途适用性、不侵权的担保。
+2. 本作品提供教学辅助，**不构成教育主管部门的审定、认证或推荐**，也不构成对教学效果、考试成绩的任何承诺。
+3. 使用者应自行复核本作品产出的全部内容（包括译文、答案、评分、史实、篇目归属），并对最终用于教学的内容负责。
+4. 在法律允许的最大范围内，著作权人不对因使用本作品产生的间接损失、附带损失、利润损失承担责任。
+
+## 六、终止
+
+被许可方违反本协议任一条款，本许可自动终止。终止后应立即停止使用并删除全部副本。本协议第四条、第五条在终止后继续有效。
+
+## 七、其他
+
+1. 本协议适用中华人民共和国法律（不含港澳台地区法律）。
+2. 本协议与平台的服务条款冲突时，就平台内使用行为以平台条款为准；就本作品的著作权许可，以本协议为准。
+3. 本协议未尽事宜，双方另行协商。
+
+---
+
+# Proprietary License (English Summary)
+
+Copyright © 2026 Chong Zhilong. All rights reserved.
+
+This is a **summary**; the Chinese text above governs.
+
+**Granted:** install and use this expert on the WorkBuddy platform for your own teaching; share within your own institution; modify for local use; own the teaching materials you produce with it.
+
+**Not granted:** resale, sublicensing, redistribution on any other platform, removal of attribution, creating derivative expert packages for publication, or use as training data.
+
+**Third-party materials** (curriculum standards, textbook texts, exam papers, published teaching aids, contemporary literary works) are **not included** and remain the property of their respective rights holders.
+
+**No warranty.** Provided "as is". Not an official certification. No promise of teaching outcomes or score improvement. Users must verify all generated content before classroom use.

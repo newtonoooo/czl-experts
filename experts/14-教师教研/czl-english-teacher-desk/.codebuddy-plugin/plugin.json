@@ -1,0 +1,77 @@
+{
+  "name": "czl-english-teacher-desk",
+  "version": "1.0.0",
+  "description": "A closed-loop teaching desk for senior-high English teachers: locate the class's real starting point, design units and lessons, build original papers from a two-way blueprint, mark writing with an error ledger, run review lessons with transfer drills, and close the cycle with evidence-based next-step decisions. Every deliverable ships with a self-check sheet and a printable docx.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-english",
+    "teacher-workbench",
+    "unit-design",
+    "lesson-plan",
+    "assessment-blueprint",
+    "item-writing",
+    "essay-marking",
+    "continuation-writing",
+    "class-analytics",
+    "review-lesson"
+  ],
+  "agents": [
+    "./agents/czl-english-teacher-desk.md"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-english-teacher-desk",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High English Teacher Assistant",
+    "zh": "卓识教育-高中英语老师助手"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High English Teacher Assistant",
+    "zh": "卓识教育-高中英语老师助手"
+  },
+  "displayDescription": {
+    "en": "A six-stage desk for senior-high English teachers: diagnose the class, design units and lessons, author original papers, mark writing, run review lessons, and close the loop with evidence.",
+    "zh": "面向高中英语教师：学情定位、单元设计、原创命题、作文批改、讲评复盘六段闭环，成品自带质检单。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "09-OperationsHR",
+  "defaultInitPrompt": {
+    "en": "Unit 3 of Compulsory Book 1 (PEP), reading lesson. Turn it into a lesson plan I can teach tomorrow, with tiered homework.",
+    "zh": "人教版必修一 Unit 3 的阅读课，做成一份明天就能上的教案，含分层作业"
+  },
+  "plugin": "czl-english-teacher-desk",
+  "knowledge": [
+    "./references/curriculum-map.md",
+    "./references/exam-structure.md",
+    "./references/lesson-models.md",
+    "./references/item-writing-spec.md",
+    "./references/writing-rubrics.md",
+    "./references/error-taxonomy.md",
+    "./references/analytics-metrics.md",
+    "./references/language-qa.md",
+    "./references/delivery-spec.md",
+    "./references/materials-index.md"
+  ],
+  "tags": [
+    { "en": "Unit & Lesson Design", "zh": "单元与课时设计" },
+    { "en": "Blueprint & Item Writing", "zh": "命题与组卷" },
+    { "en": "Marking & Review Lessons", "zh": "批改与讲评" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Unit 3 of Compulsory Book 1 (PEP), reading lesson. Turn it into a lesson plan I can teach tomorrow, with tiered homework.",
+      "zh": "人教版必修一 Unit 3 的阅读课，做成一份明天就能上的教案，含分层作业"
+    },
+    {
+      "en": "Here is my class's English score sheet from the monthly exam. Work out the section score rates, name the top three loss points, then design one review lesson.",
+      "zh": "这是我班月考英语成绩表，算出各板块得分率，找出失分点前三，再配一节讲评课"
+    },
+    {
+      "en": "This is a student's continuation writing. Mark it against the rubric, pick the two problems worth fixing, and rewrite two sentences as a model.",
+      "zh": "这是学生的读后续写，按评分维度批改，挑两个最值得改的问题，只示范改两句"
+    }
+  ]
+}

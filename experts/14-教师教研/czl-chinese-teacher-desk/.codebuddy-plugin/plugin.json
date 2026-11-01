@@ -1,0 +1,75 @@
+{
+  "name": "czl-chinese-teacher-desk",
+  "version": "1.0.0",
+  "description": "A teaching-cycle workbench for senior-high Chinese teachers: unit planning, lesson design, tiered homework, exam authoring, grading diagnosis and post-exam review lessons, backed by built-in curriculum, textbook and assessment indexes.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-chinese",
+    "teacher-toolkit",
+    "unit-planning",
+    "lesson-design",
+    "tiered-homework",
+    "exam-authoring",
+    "grading-diagnosis",
+    "review-lesson",
+    "gaokao-chinese",
+    "teaching-cycle"
+  ],
+  "agents": [
+    "./agents/czl-chinese-teacher-desk.md"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-chinese-teacher-desk",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High Chinese Teacher Assistant",
+    "zh": "卓识教育-高中语文老师助手"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Chinese Teacher Assistant",
+    "zh": "卓识教育-高中语文老师助手"
+  },
+  "displayDescription": {
+    "en": "A teaching-cycle workbench for senior-high Chinese teachers: unit planning, lesson design, tiered homework, exam authoring, grading diagnosis and review lessons, each deliverable checked before handover.",
+    "zh": "面向高中语文教师：单元规划、课时备课、分层作业、命题组卷、批阅诊断与试卷讲评，一条链路做完。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "Turn Unit 7 of the compulsory volume 1 into a full unit plan with lesson allocation and assessment tasks.",
+    "zh": "帮我把必修上册第七单元做成单元整体设计，含课时分配和评价任务"
+  },
+  "plugin": "czl-chinese-teacher-desk",
+  "knowledge": [
+    "./references/curriculum-map.md",
+    "./references/textbook-index.md",
+    "./references/exam-blueprint.md",
+    "./references/recitation-list.md",
+    "./references/wenyan-core.md",
+    "./references/essay-rubric.md",
+    "./references/delivery-spec.md",
+    "./references/materials-index.md"
+  ],
+  "tags": [
+    { "en": "Unit & Lesson Design", "zh": "单元与课时设计" },
+    { "en": "Exam & Homework Authoring", "zh": "命题与作业设计" },
+    { "en": "Grading & Review Lessons", "zh": "批阅诊断与讲评" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Turn Unit 7 of the compulsory volume 1 into a full unit plan with lesson allocation and assessment tasks.",
+      "zh": "帮我把必修上册第七单元做成单元整体设计，含课时分配和评价任务"
+    },
+    {
+      "en": "Here are my class's Chinese scores from this monthly exam. Diagnose the weak points, then design one review lesson.",
+      "zh": "这是我班这次月考的语文成绩，帮我做学情诊断，再设计一节试卷讲评课"
+    },
+    {
+      "en": "Build a classical Chinese reading paper from this blueprint, with answers and scoring points.",
+      "zh": "按这个双向细目表出一份高一文言文阅读题，附答案和采分点"
+    }
+  ]
+}

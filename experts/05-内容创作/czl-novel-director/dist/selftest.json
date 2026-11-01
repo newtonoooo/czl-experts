@@ -1,0 +1,146 @@
+{
+  "results": [
+    {
+      "id": "T-01",
+      "name": "清单文件合法性与必填字段",
+      "ok": true,
+      "detail": "17 项必填齐全，名称字符集合法",
+      "blocking": true
+    },
+    {
+      "id": "T-02",
+      "name": "7 个 skill 齐全且含 frontmatter",
+      "ok": true,
+      "detail": "全部通过",
+      "blocking": true
+    },
+    {
+      "id": "T-03",
+      "name": "agent 提示词与清单一致",
+      "ok": true,
+      "detail": "frontmatter 与 skills 列表一致",
+      "blocking": true
+    },
+    {
+      "id": "T-04",
+      "name": "头像格式与尺寸",
+      "ok": true,
+      "detail": "512x512 色彩类型 2，213.0 KB（平台上限 500 KB）",
+      "blocking": true
+    },
+    {
+      "id": "T-05",
+      "name": "清单内路径全部存在且为规范相对路径",
+      "ok": true,
+      "detail": "共 9 条路径",
+      "blocking": true
+    },
+    {
+      "id": "T-06",
+      "name": "全部文本为 UTF-8 且无 BOM（41 个文件）",
+      "ok": true,
+      "detail": "通过",
+      "blocking": true
+    },
+    {
+      "id": "T-07",
+      "name": "发布包内头像条目与清单一致",
+      "ok": true,
+      "detail": "zip 根目录 czl-novel-director，头像条目精确匹配，44 个文件",
+      "blocking": true
+    },
+    {
+      "id": "T-08",
+      "name": "体检脚本区分度与确定性",
+      "ok": true,
+      "detail": "正样本 100 分/PASS，负样本 28 分/FAIL，复跑一致",
+      "blocking": true
+    },
+    {
+      "id": "T-09",
+      "name": "项目脚本全链路（init/commit/thread/status/words/export）",
+      "ok": true,
+      "detail": "六个子命令全部按预期返回",
+      "blocking": true
+    },
+    {
+      "id": "T-10",
+      "name": "结构核查检出缺章/体检缺失/待复核",
+      "ok": true,
+      "detail": "L1 L3 L6 全部命中，退出码 1",
+      "blocking": true
+    },
+    {
+      "id": "T-11",
+      "name": "漏斗计算与掉点定位",
+      "ok": true,
+      "detail": "第 1→2 章追读率 0.7228 与手算一致，掉点命中第 7、1 章",
+      "blocking": true
+    },
+    {
+      "id": "T-12",
+      "name": "脚本零第三方依赖（12 个文件）",
+      "ok": true,
+      "detail": "全部 import 均为标准库",
+      "blocking": true
+    },
+    {
+      "id": "T-13",
+      "name": "无占位符/示例邮箱残留",
+      "ok": true,
+      "detail": "通过（已排除两份引用关键字的报告文件）",
+      "blocking": true
+    },
+    {
+      "id": "T-14",
+      "name": "脚本与配置无本机绝对路径",
+      "ok": true,
+      "detail": "通过",
+      "blocking": true
+    },
+    {
+      "id": "T-15",
+      "name": "头像母图留档（不随包发布）",
+      "ok": true,
+      "detail": "Flat_vector_logo_mark__perfect_2026-10-29T01-24-47.png 1024x1024；半写实_2D_插画角色半身像_正方形构图_人物居中_二十八岁_2026-10-29T01-42-08.png 1024x1024",
+      "blocking": false
+    },
+    {
+      "id": "T-16",
+      "name": "卖点命题与书名体检",
+      "ok": true,
+      "detail": "命题通过 / 无留白书名拒绝 / 有落差书名通过",
+      "blocking": true
+    },
+    {
+      "id": "T-17",
+      "name": "章级节奏与钩子红线",
+      "ok": true,
+      "detail": "曲线输出、H3 命中、零爽点豁免提示、退出码 1",
+      "blocking": true
+    },
+    {
+      "id": "T-18",
+      "name": "指标分级与 30 天救书表",
+      "ok": true,
+      "detail": "识别完读最弱，30 天表含定位/改/观察/复盘",
+      "blocking": true
+    },
+    {
+      "id": "T-19",
+      "name": "档案完整性校验（指纹+依赖链）",
+      "ok": true,
+      "detail": "未改时通过，手改后检出指纹不符",
+      "blocking": true
+    },
+    {
+      "id": "T-20",
+      "name": "平台清单约束（tags=3 / quickPrompts=3 / 默认提示与首条一致）",
+      "ok": true,
+      "detail": "tags 3 个、quickPrompts 3 个、defaultInitPrompt 与首条逐字符一致",
+      "blocking": true
+    }
+  ],
+  "passed": 20,
+  "total": 20
+}

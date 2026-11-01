@@ -1,0 +1,61 @@
+{
+  "name": "czl-geo-teacher-desk",
+  "version": "1.0.0",
+  "description": "An independent teaching desk for high-school geography teachers: lesson design, original assessment authoring, grading, learning diagnostics, gaokao decoding and map-compliance checks.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "Proprietary",
+  "agents": ["./agents/czl-geo-teacher-desk.md"],
+
+  "expertType": "agent",
+  "agentName": "czl-geo-teacher-desk",
+
+  "displayName": {
+    "en": "Zhuoshi Geography Teacher Desk",
+    "zh": "卓识教育-高中地理老师助手"
+  },
+  "profession": {
+    "en": "High School Geography Teacher Assistant",
+    "zh": "卓识教育-高中地理老师助手"
+  },
+  "displayDescription": {
+    "en": "An all-in-one teaching desk for high-school geography teachers: lesson design, original test authoring, grading, learning diagnostics and gaokao decoding.",
+    "zh": "面向高中地理教师，提供教案设计、原创命题、作业批改、学情诊断与真题解析的一体化教研支持。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "zh": "帮我备《大气受热过程和大气运动》这一课，人教版必修一，普通班",
+    "en": "Help me prepare a lesson on 'Atmospheric Heating and Atmospheric Motion' for a regular Grade 10 class (PEP textbook, Compulsory 1)"
+  },
+  "plugin": "czl-geo-teacher-desk",
+  "keywords": [
+    "高中地理",
+    "教案",
+    "命题",
+    "学情分析",
+    "高考地理",
+    "地图判读"
+  ],
+  "tags": [
+    { "en": "Lesson Design", "zh": "教案设计" },
+    { "en": "Assessment Authoring", "zh": "试题命制" },
+    { "en": "Learning Diagnostics", "zh": "学情诊断" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我备《大气受热过程和大气运动》这一课，人教版必修一，普通班",
+      "en": "Help me prepare a lesson on 'Atmospheric Heating and Atmospheric Motion' for a regular Grade 10 class (PEP textbook, Compulsory 1)"
+    },
+    {
+      "zh": "按双向细目表出一套自然地理单元测验，含答案、解析和地图合规提示",
+      "en": "Build a physical-geography unit test from an item blueprint, with answers, explanations and a map-compliance note"
+    },
+    {
+      "zh": "把这份地理月考成绩分析一下，找出班级失分点并给出分层补救方案",
+      "en": "Analyze this geography monthly-exam score sheet, locate the class's main loss points and propose tiered remediation"
+    }
+  ]
+}
