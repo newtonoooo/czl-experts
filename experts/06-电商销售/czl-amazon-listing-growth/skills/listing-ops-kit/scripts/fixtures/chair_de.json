@@ -1,0 +1,31 @@
+{
+  "_note": "测试用样本，产品与品牌均为虚构，用于验证德语站点的绝对化用语与欧盟合规义务判定。",
+  "market": "DE",
+  "category": "juvenile_products",
+  "brand": "",
+  "title": "Beste Qualität Kinderstuhl 100% Sicher CE Geprüft Stuhl für Baby Kinder Infant Kleinkind",
+  "bullets": [
+    "**Beste Qualität**: Dieser Kinderstuhl besteht aus massivem Buchenholz und ist für Kinder von 6 Monaten bis 3 Jahren geeignet.",
+    "**100% Sicher**: Abgerundete Kanten und ein geprüfter Sicherheitsgurt halten Ihr Kind zuverlässig im Sitz.",
+    "**CE Geprüft**: Der Stuhl ist CE gekennzeichnet und erfüllt die europäischen Anforderungen an Kinderprodukte.",
+    "**Einfache Montage**: Die Montage dauert etwa 15 Minuten, das benötigte Werkzeug liegt bei.",
+    "**Pflegeleicht**: Die Oberfläche lässt sich mit einem feuchten Tuch abwischen, abnehmbare Sitzauflage waschbar bei 30 Grad."
+  ],
+  "description": "Der Kinderstuhl aus Buchenholz begleitet Ihr Kind vom ersten Brei bis zum Familientisch.\n\nAufbau: Packen Sie alle Teile aus und legen Sie sie nach der beiliegenden Anleitung bereit. Verschrauben Sie zuerst die Beine, dann die Sitzfläche und zuletzt den Gurt.\n\nGeeignet für Kinder von 6 Monaten bis 3 Jahren, belastbar bis 15 kg. Nicht geeignet für den Außenbereich und nicht für den Gebrauch im Auto.\n\nLieferumfang: 1 x Kinderstuhl, 1 x Sicherheitsgurt, 1 x Montageanleitung, 1 x Werkzeugset.",
+  "search_terms": "kinderstuhl hochstuhl baby stuhl holz buche kinder möbel esszimmer",
+  "attributes": {
+    "material": "Buchenholz",
+    "color": "natur",
+    "size": "Sitzhöhe 55 cm",
+    "weight": "4,5 kg",
+    "quantity": "1 Stuhl",
+    "audience": "Kinder 6 Monate bis 3 Jahre",
+    "style": "klassisch",
+    "care": "feucht abwischbar"
+  },
+  "keywords": {
+    "primary": ["kinderstuhl"],
+    "secondary": ["hochstuhl baby", "stuhl aus holz"],
+    "long_tail": ["kinderstuhl aus buchenholz mit sicherheitsgurt"]
+  }
+}

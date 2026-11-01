@@ -1,0 +1,3 @@
+﻿metric,definition,numerator,denominator,window,system,owner,dedupe,exclusions
+付费转化率,活跃用户里付钱的,付费用户数,活跃用户,,后台,产品,,
+月活,活跃用户,,,一个月,后台,产品,,

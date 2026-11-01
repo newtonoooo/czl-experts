@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "strategy_name": "20 日动量轮动（5 日一次评估）",
+    "universe": [
+      "A",
+      "B"
+    ],
+    "market": "china_a",
+    "start": "2021-06-01",
+    "end": "2024-12-31",
+    "initial_cash": 1000000.0,
+    "final_value": 1012448.0,
+    "cost_model": "佣金 2.50bp（最低 5）｜卖出印花税 5.00bp｜过户费 0.10bp｜滑点 5.00bp",
+    "lot_size": 100,
+    "t_plus_1": true,
+    "engine": "btcore 1.0.0",
+    "note": ""
+  },
+  "metrics": {
+    "total_return_pct": 1.24,
+    "annual_return_pct": 0.35,
+    "max_drawdown_pct": -51.8,
+    "sharpe": 0.16,
+    "sortino": 0.26,
+    "calmar": 0.01,
+    "annual_vol_pct": 28.86,
+    "win_rate_pct": 44.07,
+    "profit_factor": 1.02,
+    "trade_count": 59,
+    "avg_holding_days": 22.2,
+    "best_trade_pct": 35.39,
+    "worst_trade_pct": -22.54,
+    "exposure_pct": 99.89,
+    "max_drawdown_date": "2024-11-27",
+    "buy_count": 59,
+    "avg_trade_pnl": 465.43,
+    "final_value": 1012448.0,
+    "initial_value": 1000000.0,
+    "buy_fills": 59,
+    "sell_fills": 59,
+    "evaluation_bars": 936,
+    "total_fees": 58947.8
+  },
+  "warnings": [],
+  "rejects": [],
+  "language": "zh",
+  "generated_at": "2026-10-28 12:28:36"
+}

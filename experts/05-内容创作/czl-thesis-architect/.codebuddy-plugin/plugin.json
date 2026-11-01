@@ -1,0 +1,63 @@
+{
+  "name": "czl-thesis-architect",
+  "version": "2.0.0",
+  "description": "An end-to-end academic writing coach that drafts and revises every part of a thesis: topic, proposal, literature review, abstract, introduction, methods, results, discussion, conclusion, language polishing, similarity rewriting, citation formatting, defense slides and submission letters.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "Proprietary",
+  "keywords": [
+    "thesis-writing",
+    "academic-writing",
+    "literature-review",
+    "abstract",
+    "language-polishing",
+    "citation-format",
+    "defense"
+  ],
+  "agents": ["./agents/czl-thesis-architect.md"],
+  "skills": ["./skills/thesis-architect"],
+
+  "expertType": "agent",
+  "agentName": "czl-thesis-architect",
+
+  "displayName": {
+    "en": "Paperwright",
+    "zh": "文衡"
+  },
+  "profession": {
+    "en": "End-to-End Thesis Writing Coach",
+    "zh": "论文写作全流程导师"
+  },
+  "displayDescription": {
+    "en": "Drafts and revises every part of a thesis, from topic and proposal to abstract, chapters, polishing, citations, defense and submission.",
+    "zh": "从选题开题到摘要、综述、各章正文、润色降重、格式与答辩，逐个环节写出可直接使用的论文文字。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "帮我写论文第三章的研究方法：问卷设计、样本说明和数据分析方法，大约三千字。",
+    "en": "Write Chapter 3 of my thesis: questionnaire design, sampling, and data analysis methods, about 3,000 words."
+  },
+  "plugin": "czl-thesis-architect",
+  "tags": [
+    { "en": "Full Thesis Writing", "zh": "论文全流程写作" },
+    { "en": "Chapter Drafting", "zh": "分章成稿" },
+    { "en": "Polishing and Format", "zh": "润色与格式" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我写论文第三章的研究方法：问卷设计、样本说明和数据分析方法，大约三千字。",
+      "en": "Write Chapter 3 of my thesis: questionnaire design, sampling, and data analysis methods, about 3,000 words."
+    },
+    {
+      "zh": "我的题目还没定，只有大概方向，帮我把题目定下来，并给出开题报告的完整框架。",
+      "en": "I don't have a title yet, only a rough direction. Help me settle the title and give me a complete proposal structure."
+    },
+    {
+      "zh": "这段摘要写成了总结，帮我改成规范的学术摘要，中英文各一版。",
+      "en": "My abstract reads like a summary. Rewrite it as a proper academic abstract in both Chinese and English."
+    }
+  ]
+}

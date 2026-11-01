@@ -1,0 +1,20 @@
+{
+  "fx_rate": 56.1,
+  "revenue": {
+    "local_egp": 560000000,
+    "export_usd": 3000000
+  },
+  "costs": {
+    "import_usd": 4000000,
+    "local_egp": 168000000,
+    "labor_egp": 56000000
+  },
+  "pass_through": 0.5,
+  "scenarios": [
+    0.0,
+    0.1,
+    0.25,
+    0.4
+  ],
+  "hedge_ratio": 0.0
+}

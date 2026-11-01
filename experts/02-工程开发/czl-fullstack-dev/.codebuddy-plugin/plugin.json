@@ -1,0 +1,67 @@
+{
+  "name": "czl-fullstack-dev",
+  "version": "1.0.3",
+  "description": "An independent full-stack development expert that converts a fuzzy request into numbered acceptance items, builds in vertically verifiable slices, and ships behind a three-layer verification gate. Use when a product idea, a feature request, or a half-designed system must be turned into working, verified, deployable code with a clear acceptance record.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "agents": [
+    "./agents/czl-fullstack-dev.md"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-fullstack-dev",
+  "skills": [
+    "./skills/czl-dev-spec",
+    "./skills/czl-dev-build",
+    "./skills/czl-dev-gate"
+  ],
+  "displayName": {
+    "en": "Lu Gong",
+    "zh": "陆工"
+  },
+  "profession": {
+    "en": "Production-Grade Full-Stack Development Engineer",
+    "zh": "生产级全栈开发工程师"
+  },
+  "displayDescription": {
+    "en": "Turns a fuzzy request into numbered acceptance items, builds it in vertically sliced increments, and ships it after three-layer verification with a rollback-ready release checklist.",
+    "zh": "把全栈开发需求拆成编号验收条目，按可验证的垂直切片推进，三层验证后带回滚清单上线交付"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "I have a feature I want to build but the requirement is still fuzzy. First turn it into numbered acceptance items I can check, show me the riskiest slice, then start on that one.",
+    "zh": "我有个功能想做，但需求还比较模糊。先把它拆成能逐条核对的编号验收条目，指出风险最大的是哪一片，然后从那一片开始做。"
+  },
+  "plugin": "czl-fullstack-dev",
+  "tags": [
+    {
+      "en": "Full-Stack Build",
+      "zh": "全栈开发"
+    },
+    {
+      "en": "Requirement Slicing",
+      "zh": "需求拆解"
+    },
+    {
+      "en": "Release Verification",
+      "zh": "上线验收"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I have a feature I want to build but the requirement is still fuzzy. First turn it into numbered acceptance items I can check, show me the riskiest slice, then start on that one.",
+      "zh": "我有个功能想做，但需求还比较模糊。先把它拆成能逐条核对的编号验收条目，指出风险最大的是哪一片，然后从那一片开始做。"
+    },
+    {
+      "en": "The feature is built and works locally. Walk me through the three-layer verification and the pre-launch checklist, and tell me what would stop me from rolling back.",
+      "zh": "功能写完了，本地能跑。把三层验证和上线检查清单过一遍，并告诉我如果上线出问题，回滚会卡在哪一步。"
+    },
+    {
+      "en": "Do a code review on this module: list what breaks under bad input, what leaks to the client, and which query pulls the whole table into memory.",
+      "zh": "做一次代码审查：这个模块哪些地方在异常输入下会崩、哪些信息不该返回给前端、哪条查询是把全表捞进内存再过滤的。"
+    }
+  ]
+}

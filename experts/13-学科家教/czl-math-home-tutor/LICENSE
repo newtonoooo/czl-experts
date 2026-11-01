@@ -1,0 +1,45 @@
+# 专有软件许可声明
+
+版权所有 (c) 2026 虫志龙。保留所有权利。
+
+产品名称：明算堂—高中数学家庭辅导
+包标识：czl-math-home-tutor
+联系方式：47190078@qq.com
+
+## 一、授权范围
+
+本软件包（含主提示词、技能定义、资料文档、脚本与图像资源）为专有作品。在未取得著作权人书面许可的情况下，仅允许：
+
+1. 个人学习与研究用途的安装与使用；
+2. 在保留本声明完整内容的前提下，原样转发本软件包的完整压缩文件。
+
+## 二、禁止事项
+
+未经著作权人书面许可，不得：
+
+1. 将本软件包或其任何部分用于商业销售、租赁、付费分发、捆绑销售；
+2. 修改、改编、翻译本软件包的任何部分后对外分发；
+3. 去除、遮蔽或篡改本声明、作者信息、版本信息；
+4. 将本软件包的整体或实质性部分，以改名、换皮、拆分重组等方式作为其他产品发布；
+5. 将本软件包的提示词、资料文档用于训练其他模型或构建衍生数据集。
+
+## 三、第三方内容
+
+本软件包不包含第三方代码或第三方受著作权保护的文本。资料文档中引用的课程模块名称、考试卷面结构为公开事实性信息；数学公式属客观事实，不受著作权保护。详见 `materials/README.md` 与 `docs/商业发布风险清单.md`。
+
+## 四、免责声明
+
+本软件为教学辅助工具，不构成对考试成绩、录取结果的任何承诺或保证。使用者应自行判断内容的适用性，并结合所在地区当年的官方考试说明使用。因使用本软件产生的任何直接或间接后果，著作权人不承担责任。
+
+## 五、商标
+
+"明算堂"为本产品使用的品牌名称。未经许可，不得将该名称用于任何衍生产品的命名或宣传。
+
+---
+
+Copyright (c) 2026 Chong Zhilong. All rights reserved.
+
+This package is proprietary software. Personal, non-commercial use and verbatim
+redistribution of the complete, unmodified archive are permitted. Commercial
+distribution, modification, rebranding, or extraction of substantial portions
+requires prior written permission from the copyright holder.

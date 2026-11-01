@@ -1,0 +1,47 @@
+# 软件许可协议（专有许可）
+
+版权所有 © 2026 虫志龙。保留所有权利。
+
+本许可适用于「专业回测台 / Pro Backtest Desk」专家包（以下称"本作品"），
+包括其中的提示词、工作流文档、Python 与 JavaScript 代码、HTML 模板、图像与说明文字。
+
+## 1. 允许
+
+1. 在 WorkBuddy 平台内导入并**个人使用**本作品，用于研究与学习。
+2. 在未修改本作品的前提下，随分析结果一并转发本作品生成的报告（HTML/CSV/JSON）给第三方。
+3. 引用本作品的方法论与结论，但须注明来源为「专业回测台（虫志龙）」。
+
+## 2. 需事先书面许可
+
+1. 将本作品的任何部分（代码、提示词、文档、模板、头像）**再分发、转售、打包进其他产品或服务**。
+2. 修改后以其他名称发布，或作为其他专家/插件/课程的一部分分发。
+3. 用于提供付费的托管服务或 SaaS。
+4. 移除或改写本文件、`NOTICE.md` 及代码中的版权标识。
+
+## 3. 不授予
+
+1. 商标权、商号权、"专业回测台""Pro Backtest Desk"名称的独占使用权。
+2. 任何形式的收益保证、投资建议资格或金融牌照相关资质。
+
+## 4. 免责
+
+本作品按"现状"提供，不附带任何明示或默示担保，包括但不限于适销性、特定用途适用性与不侵权担保。
+作者不对使用本作品产生的任何直接或间接损失承担责任，包括但不限于投资损失、数据损坏、业务中断。
+
+**本作品输出的所有回测结果均为基于历史数据的模型计算，仅供研究与复核参考，不构成任何投资建议或个股推荐。**
+
+## 5. 其他
+
+1. 本许可受中华人民共和国法律管辖。
+2. 本许可条款如与 WorkBuddy 平台规则冲突，以平台规则为准；其余条款继续有效。
+3. 咨询与授权联系：47190078@qq.com
+
+---
+
+Copyright © 2026 Cong Zhilong. All rights reserved.
+
+This is a proprietary license. Personal use inside the WorkBuddy platform is permitted.
+Redistribution, resale, rebranding, bundling into other products, or hosting as a paid service
+requires prior written permission. The software is provided "as is", without warranty of any kind.
+All backtest output is model-based computation for research and verification only and does not
+constitute investment advice.

@@ -1,0 +1,48 @@
+{
+  "assumptions": {
+    "horizon_years": 3,
+    "discount_rate": 0.12,
+    "cost_inflation": 0.03
+  },
+  "routes": [
+    {
+      "name": "代理经销",
+      "setup_cost_sar": 150000,
+      "months_to_operate": 3,
+      "control_score": 2,
+      "risk_score": 4,
+      "fixed_cost_year_sar": 120000,
+      "gross_margin_pct": 0.22,
+      "year1_revenue_sar": 5000000,
+      "revenue_growth_pct": 0.25,
+      "effective_tax_pct": 0.20,
+      "channel_commission_pct": 0.08
+    },
+    {
+      "name": "独资公司",
+      "setup_cost_sar": 1200000,
+      "months_to_operate": 8,
+      "control_score": 5,
+      "risk_score": 2,
+      "fixed_cost_year_sar": 950000,
+      "gross_margin_pct": 0.32,
+      "year1_revenue_sar": 6000000,
+      "revenue_growth_pct": 0.40,
+      "effective_tax_pct": 0.20,
+      "channel_commission_pct": 0.0
+    },
+    {
+      "name": "合资公司",
+      "setup_cost_sar": 800000,
+      "months_to_operate": 6,
+      "control_score": 3,
+      "risk_score": 3,
+      "fixed_cost_year_sar": 600000,
+      "gross_margin_pct": 0.28,
+      "year1_revenue_sar": 7000000,
+      "revenue_growth_pct": 0.30,
+      "effective_tax_pct": 0.20,
+      "channel_commission_pct": 0.02
+    }
+  ]
+}

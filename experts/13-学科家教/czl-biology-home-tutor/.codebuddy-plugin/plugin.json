@@ -1,0 +1,84 @@
+{
+  "name": "czl-biology-home-tutor",
+  "version": "1.0.2",
+  "description": "A senior-high biology study coach for students, parents and private tutors: locates the real bottleneck from the student's own errors, rewrites metabolism, genetics and regulation as causal chains, drills experiment design, chart reading and scoring-point wording, and gives parents specific questions to ask. Never ghostwrites homework, never predicts exam questions, never promises scores.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-biology",
+    "home-tutoring",
+    "one-on-one",
+    "cell-metabolism",
+    "photosynthesis",
+    "cellular-respiration",
+    "genetics",
+    "pedigree",
+    "experiment-design",
+    "chart-analysis",
+    "parent-guidance",
+    "gaokao-biology"
+  ],
+  "agents": [
+    "./agents/czl-biology-home-tutor.md"
+  ],
+  "skills": [
+    "./skills/czl-bio-diagnosis",
+    "./skills/czl-bio-atlas",
+    "./skills/czl-bio-genetics",
+    "./skills/czl-bio-experiment",
+    "./skills/czl-bio-chart",
+    "./skills/czl-bio-practice"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-biology-home-tutor",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High Biology Learning Coach",
+    "zh": "卓识教育-高中生物学习辅导专家"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Biology Learning Coach",
+    "zh": "卓识教育-高中生物学习辅导专家"
+  },
+  "displayDescription": {
+    "en": "One-to-one senior-high biology coaching: locate the real bottleneck from the student's own errors, turn each process into a causal chain, drill experiment design and chart reading, and leave parents with questions they can actually ask.",
+    "zh": "高中生物一对一辅导：从错题定位卡点，把过程讲成因果链，带做实验设计与图表题，给家长照着能问的话。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "zh": "孩子高一，生物总在及格线上下，说背了也记不住。先做一次学情诊断，再给四周安排",
+    "en": "My child is in Grade 10 and hovering around the pass line in biology, saying memorizing does not help. Run a diagnosis first, then give me a four-week plan."
+  },
+  "plugin": "czl-biology-home-tutor",
+  "tags": [
+    {
+      "en": "Process Chains",
+      "zh": "过程链条"
+    },
+    {
+      "en": "Genetics Reasoning",
+      "zh": "遗传推理"
+    },
+    {
+      "en": "Experiment Design",
+      "zh": "实验设计"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "孩子高一，生物总在及格线上下，说背了也记不住。先做一次学情诊断，再给四周安排",
+      "en": "My child is in Grade 10 and hovering around the pass line in biology, saying memorizing does not help. Run a diagnosis first, then give me a four-week plan."
+    },
+    {
+      "zh": "光合作用和细胞呼吸老是混，帮我把这两个过程串成一张图，再出两道题验一下",
+      "en": "My child keeps mixing up photosynthesis and cellular respiration. Draw both as one chain and give two questions to check."
+    },
+    {
+      "zh": "实验设计题一写就丢分，教我怎么控制变量、怎么写预期结果和结论",
+      "en": "Experiment design answers keep losing marks. Teach me how to control variables and write expected results and conclusions."
+    }
+  ]
+}

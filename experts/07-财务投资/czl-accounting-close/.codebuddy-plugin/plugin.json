@@ -1,0 +1,81 @@
+{
+  "name": "czl-accounting-close",
+  "version": "1.0.0",
+  "description": "CAS-first accounting close workbench: intake gating, journal entries, reconciliations, three-statement tie-out, variance drill-down and audit hand-over, backed by a runnable stdlib-only CLI.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "accounting-close",
+    "month-end-close",
+    "journal-entry",
+    "reconciliation",
+    "cas",
+    "financial-statements",
+    "tie-out",
+    "variance-analysis",
+    "audit-workpaper"
+  ],
+  "agents": [
+    "./agents/czl-accounting-close.md"
+  ],
+  "skills": [
+    "./skills/close-intake",
+    "./skills/journal-builder",
+    "./skills/recon-balance",
+    "./skills/statement-tieout",
+    "./skills/variance-drill",
+    "./skills/close-runbook"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-accounting-close",
+  "displayName": {
+    "en": "Zhangheng",
+    "zh": "账衡"
+  },
+  "profession": {
+    "en": "Accounting Close & Reporting Specialist",
+    "zh": "账务结账与报表专家"
+  },
+  "displayDescription": {
+    "en": "Runs the books end to end: journal entries, reconciliations, the three statements and variance drill-downs, with every gap and data source labelled.",
+    "zh": "从接单到归档走完账务闭环：编分录、核对账目、出具三表、拆解差异，缺口与数据来源逐条标清。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "9 月要结账了，我把科目余额表和银行对账单放这儿。帮我排结账顺序，还缺哪些数据直接列给我。",
+    "en": "September close is due. I'll drop the trial balance and bank statement here — sequence the close and list whatever data is still missing."
+  },
+  "plugin": "czl-accounting-close",
+  "tags": [
+    {
+      "en": "Month-End Close",
+      "zh": "月末结账"
+    },
+    {
+      "en": "Journal Entries",
+      "zh": "会计分录"
+    },
+    {
+      "en": "Statement Tie-Out",
+      "zh": "三表勾稽"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "9 月要结账了，我把科目余额表和银行对账单放这儿。帮我排结账顺序，还缺哪些数据直接列给我。",
+      "en": "September close is due. I'll drop the trial balance and bank statement here — sequence the close and list whatever data is still missing."
+    },
+    {
+      "zh": "这笔业务怎么做分录：9 月一次付了 12 个月房租 24 万，收到专票，税率 9%。",
+      "en": "How should I book this: 12 months of rent paid up front in September, ¥240,000, VAT special invoice at 9%."
+    },
+    {
+      "zh": "9 月收入比 8 月多了 15%，帮我拆成价格、数量、结构三块，说清哪块是主因。",
+      "en": "September revenue is up 15% on August. Split it into price, volume and mix, and tell me which one dominates."
+    }
+  ]
+}

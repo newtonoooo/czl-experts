@@ -1,0 +1,83 @@
+{
+  "name": "czl-amazon-listing-growth",
+  "version": "1.0.1",
+  "description": "An Amazon listing workbench that will not hand over copy it has not checked. Runs six gates — intake, keyword budget, copy build, compliance release, AI-recommendation readiness, and appeal — and every gate must return a number, a file or a release condition before the next one opens. Ships a standard-library audit engine with four computed outputs: a per-marketplace copy linter that measures title, bullet and description budgets against configured limits and flags all-caps, emoji, symbol noise, keyword stuffing and duplicate phrases; a compliance gate that turns claims, category prerequisites and market obligations into BLOCK / CONDITION / INFO findings and returns GO, CONDITIONAL or BLOCKED; an AI-readiness scorer across seven weighted dimensions that prints a 0-100 score with every deduction itemised; and a keyword budget allocator that de-duplicates a keyword pool, groups it by token overlap, and assigns each term to title, bullets, description or back-end search terms with character budgets. Built for sellers and agencies writing for Amazon US, UK, DE, FR, IT, ES, JP, CA and AU. Refuses invented fee tables, refuses a compliance verdict without a blocking-item list, refuses copy it has not linted, and refuses to promise a ranking position.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "amazon",
+    "listing",
+    "listing-optimization",
+    "product-listing",
+    "copywriting",
+    "compliance",
+    "ai-readiness",
+    "keyword-research",
+    "search-terms",
+    "a-plus",
+    "amazon-seo",
+    "poa",
+    "appeal",
+    "跨境电商",
+    "亚马逊",
+    "listing优化"
+  ],
+  "agents": [
+    "./agents/czl-amazon-listing-growth.md"
+  ],
+  "skills": [
+    "./skills/listing-ops-kit"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-amazon-listing-growth",
+  "displayName": {
+    "zh": "专业亚马逊Listing专家",
+    "en": "Pro Amazon Listing Specialist"
+  },
+  "profession": {
+    "zh": "亚马逊 Listing 撰写与合规增长顾问",
+    "en": "Amazon Listing Copy & Compliance Consultant"
+  },
+  "displayDescription": {
+    "zh": "六道闸门写 Listing：关键词预算、标题五点、合规放行、AI 推荐就绪度打分、申诉框架，每一步都出数字和放行条件。",
+    "en": "Six gated steps to a publishable listing: keyword budget, copy build, compliance release, AI-readiness score and appeal frame — each one returns numbers, not adjectives."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "我有一款折叠硅胶咖啡杯，要上亚马逊美国站，卖 21.99 美金，主词是 collapsible coffee cup。帮我写标题和五点，然后逐条告诉我哪里会被压、哪里会违规。",
+    "en": "I have a collapsible silicone coffee cup going on Amazon US at 21.99 USD, main keyword \"collapsible coffee cup\". Write the title and five bullets, then tell me line by line what will get suppressed and what breaks a rule."
+  },
+  "plugin": "czl-amazon-listing-growth",
+  "tags": [
+    {
+      "en": "Listing Copy Build",
+      "zh": "Listing 文案撰写"
+    },
+    {
+      "en": "Compliance Release",
+      "zh": "合规放行判定"
+    },
+    {
+      "en": "AI Readiness Score",
+      "zh": "AI 推荐就绪度评分"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我有一款折叠硅胶咖啡杯，要上亚马逊美国站，卖 21.99 美金，主词是 collapsible coffee cup。帮我写标题和五点，然后逐条告诉我哪里会被压、哪里会违规。",
+      "en": "I have a collapsible silicone coffee cup going on Amazon US at 21.99 USD, main keyword \"collapsible coffee cup\". Write the title and five bullets, then tell me line by line what will get suppressed and what breaks a rule."
+    },
+    {
+      "zh": "这段德国站标题和五点你帮我审一遍：『Beste Qualität Kinderstuhl 100% Sicher CE Geprüft Stuhl für Baby Kinder Infant Kleinkind』。哪些词会让它被下架？德国站还缺什么合规材料？",
+      "en": "Audit this German title and bullet set: \"Beste Qualität Kinderstuhl 100% Sicher CE Geprüft Stuhl für Baby Kinder Infant Kleinkind\". Which words put it at risk of removal, and what compliance documents does Germany still require?"
+    },
+    {
+      "zh": "我的蓝牙耳机 Listing 已经写好了，帮我打一个 AI 推荐就绪度分数，告诉我 Rufus 这类问答场景下客户最可能问什么、我现在的文案答不上来的是哪几条。",
+      "en": "My Bluetooth earphone listing is already written. Score its AI-recommendation readiness and tell me which buyer questions in an assistant-style Q&A flow my current copy cannot answer."
+    }
+  ]
+}

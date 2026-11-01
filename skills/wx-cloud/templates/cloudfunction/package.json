@@ -1,0 +1,9 @@
+{
+  "name": "your-function-name",
+  "version": "1.0.0",
+  "description": "云函数骨架：改名为你的函数名后部署",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

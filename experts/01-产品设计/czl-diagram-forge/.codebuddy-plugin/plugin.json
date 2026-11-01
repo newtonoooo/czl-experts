@@ -1,0 +1,73 @@
+{
+  "name": "czl-diagram-forge",
+  "version": "1.0.0",
+  "description": "Offline diagram compiler: turns spoken processes, architectures and data into delivery-ready diagrams across 11 types and 12 themes, with syntax linting, quality scoring and SVG/HTML/Mermaid/ASCII output.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "diagram",
+    "flowchart",
+    "svg",
+    "mermaid",
+    "architecture",
+    "visualization"
+  ],
+  "agents": [
+    "./agents/czl-diagram-forge.md"
+  ],
+  "skills": [
+    "./skills/diagram-forge"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-diagram-forge",
+  "displayName": {
+    "en": "Diagram Master",
+    "zh": "制图宗师"
+  },
+  "profession": {
+    "en": "Full-Stack Diagram Design & Rendering Expert",
+    "zh": "全栈图表设计与渲染专家"
+  },
+  "displayDescription": {
+    "en": "Turns spoken processes and data into delivery-ready diagrams: 11 diagram types, 12 themes, offline SVG/HTML rendering, built-in syntax lint and quality scoring.",
+    "zh": "把口述流程与数据变成可交付图表，11 类图型、12 套主题，离线渲染 SVG，内置体检与质量评分。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "01-ProductDesign",
+  "defaultInitPrompt": {
+    "zh": "画一张用户登录认证流程图，输出 SVG 和 HTML 预览",
+    "en": "Draw a user login authentication flowchart and export SVG plus an HTML preview."
+  },
+  "plugin": "czl-diagram-forge",
+  "tags": [
+    {
+      "en": "Diagram Rendering",
+      "zh": "图表渲染"
+    },
+    {
+      "en": "Architecture Visualization",
+      "zh": "架构可视化"
+    },
+    {
+      "en": "Flow & Process Mapping",
+      "zh": "流程梳理"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Draw a user login authentication flowchart and export SVG plus an HTML preview.",
+      "zh": "画一张用户登录认证流程图，输出 SVG 和 HTML 预览"
+    },
+    {
+      "en": "Turn this order state machine into a state diagram in a dark theme.",
+      "zh": "把订单状态机画成状态图，用深色主题"
+    },
+    {
+      "en": "Score these six requirements on a cost/value quadrant chart.",
+      "zh": "用四象限图评估这 6 个需求的优先级"
+    }
+  ]
+}

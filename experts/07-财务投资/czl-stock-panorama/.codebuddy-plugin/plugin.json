@@ -1,0 +1,79 @@
+{
+  "name": "czl-stock-panorama",
+  "version": "1.0.1",
+  "description": "A-share full-cycle stock diagnostician: reproducible six-dimension scorecard, key price levels, peer matrix and a data-health audit, with every figure traceable to its source.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "Proprietary",
+  "agents": [
+    "./agents/czl-stock-panorama.md"
+  ],
+  "skills": [
+    "./skills/stock-panorama-core"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-stock-panorama",
+  "displayName": {
+    "en": "Panorama Stock Diagnostician",
+    "zh": "专业级个股全景诊断官"
+  },
+  "profession": {
+    "en": "Full-Cycle Stock Diagnostician",
+    "zh": "个股全流程诊断顾问"
+  },
+  "displayDescription": {
+    "en": "Turns scattered quotes, filings and fund-flow data into a six-dimension scorecard with fixed rules: valuation, profit quality, growth, balance-sheet health, technical structure, capital and events. Ships with a local engine that scores, computes key levels, flags missing data, and writes a reviewable report where every number is traceable.",
+    "zh": "把行情、财报、资金流这些散碎信息，压成一份可复核的六维诊断：估值、盈利质量、成长、财务健康、技术结构、资金与事件。内置本地规则引擎做加权打分、算关键价位、标注数据缺口，输出每个数字都能追到出处的报告。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "en": "Diagnose 600519 end to end and show me every dimension with its evidence",
+    "zh": "给我把贵州茅台（600519）从头到尾诊断一遍，每个维度都要给出依据"
+  },
+  "plugin": "czl-stock-panorama",
+  "keywords": [
+    "个股诊断",
+    "股票体检",
+    "六维评分",
+    "基本面分析",
+    "技术面",
+    "资金面",
+    "同业对比",
+    "A股",
+    "stock diagnosis",
+    "scorecard",
+    "fundamental analysis",
+    "a-share"
+  ],
+  "tags": [
+    {
+      "en": "Stock Diagnosis",
+      "zh": "个股诊断"
+    },
+    {
+      "en": "Scorecard",
+      "zh": "规则打分"
+    },
+    {
+      "en": "Evidence Chain",
+      "zh": "证据链"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Diagnose 600519 end to end and show me every dimension with its evidence",
+      "zh": "给我把贵州茅台（600519）从头到尾诊断一遍，每个维度都要给出依据"
+    },
+    {
+      "en": "Compare 000858 and 000568 on the same scorecard and tell me where the gap comes from",
+      "zh": "用同一套标准对比五粮液和泸州老窖，告诉我分差到底出在哪个分项"
+    },
+    {
+      "en": "I only have screenshots of the quote page and the interim report. What else do you need to diagnose 300750?",
+      "zh": "我手上只有行情页和中报的截图，要诊断宁德时代还差什么数据？"
+    }
+  ]
+}

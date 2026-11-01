@@ -1,0 +1,61 @@
+{
+  "name": "czl-contract-counsel",
+  "version": "1.0.0",
+  "description": "A local-first contract counsel: drafts signable contracts, audits clause risk, compares versions, verifies legal basis and tracks performance deadlines.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": [
+    "contract",
+    "legal-review",
+    "clause-risk",
+    "contract-drafting",
+    "obligation-tracking"
+  ],
+  "agents": ["./agents/czl-contract-counsel.md"],
+  "skills": ["./skills/contract-counsel-toolkit"],
+
+  "expertType": "agent",
+  "agentName": "czl-contract-counsel",
+
+  "displayName": {
+    "en": "Contract Sentinel",
+    "zh": "契约守门人"
+  },
+  "profession": {
+    "en": "Chief Senior Clause-Level Contract Review Counsel",
+    "zh": "首席资深条款级合同审查顾问"
+  },
+  "displayDescription": {
+    "en": "Drafts signable contracts, audits clause-by-clause risk, compares versions, verifies legal basis and tracks obligations — all processed locally on your machine.",
+    "zh": "合同起草、风险审查、版本比对、法条核验与履约跟踪，用条款库和规则引擎逐条把关，交付可直接签署的文档。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "11-SecurityCompliance",
+  "defaultInitPrompt": {
+    "zh": "帮我起草一份办公用品采购合同：我方是甲方（采购方），供应商是乙方，含税总价 20 万元，验收后 30 天付款。",
+    "en": "Draft an office-supplies procurement contract: we are Party A (buyer), the supplier is Party B, tax-inclusive total CNY 200,000, payment 30 days after acceptance."
+  },
+  "plugin": "czl-contract-counsel",
+  "tags": [
+    { "en": "Contract Drafting", "zh": "合同起草" },
+    { "en": "Clause Risk Audit", "zh": "条款风险审查" },
+    { "en": "Version Comparison", "zh": "版本比对" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我起草一份办公用品采购合同：我方是甲方（采购方），供应商是乙方，含税总价 20 万元，验收后 30 天付款。",
+      "en": "Draft an office-supplies procurement contract: we are Party A (buyer), the supplier is Party B, tax-inclusive total CNY 200,000, payment 30 days after acceptance."
+    },
+    {
+      "zh": "帮我审一下这份租房合同，我是租客，重点看押金退还和提前解约，有问题的条款直接告诉我怎么改。",
+      "en": "Review this residential lease for me — I am the tenant. Focus on deposit refund and early termination, and tell me how to rewrite the problematic clauses."
+    },
+    {
+      "zh": "对方回传了修改版，帮我比一下和原版差在哪，哪些条款是必须谈的。",
+      "en": "The counterparty sent back a revised version. Compare it with my original and flag the clauses that must be negotiated."
+    }
+  ]
+}

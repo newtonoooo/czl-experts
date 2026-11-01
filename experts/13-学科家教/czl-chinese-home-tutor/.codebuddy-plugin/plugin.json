@@ -1,0 +1,81 @@
+{
+  "name": "czl-chinese-home-tutor",
+  "version": "1.0.0",
+  "description": "An independent senior-high Chinese one-to-one tutor for students and the families who support them: reads the student's own work to locate the real bottleneck, plans practice-heavy sessions, coaches essays and classical Chinese, and hands parents scripts they can actually use. Never ghostwrites, never promises score gains, and marks every factual claim with a verifiable source.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-chinese",
+    "home-tutoring",
+    "one-on-one",
+    "essay-coaching",
+    "classical-chinese",
+    "reading-diagnosis",
+    "family-learning-plan",
+    "gaokao-chinese",
+    "parent-guidance",
+    "study-routine"
+  ],
+  "agents": [
+    "./agents/czl-chinese-home-tutor.md"
+  ],
+  "skills": [
+    "./skills/family-intake",
+    "./skills/tutor-session",
+    "./skills/essay-coach",
+    "./skills/reading-clinic",
+    "./skills/home-system"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-chinese-home-tutor",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High Chinese Learning Expert",
+    "zh": "卓识教育-高中语文学习辅导专家"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Chinese Learning Expert",
+    "zh": "卓识教育-高中语文学习辅导专家"
+  },
+  "displayDescription": {
+    "en": "One-to-one senior-high Chinese tutoring at home: locate the real bottleneck from the student's own work, plan practice-heavy sessions, conference essays and classical Chinese, and give parents scripts they can use.",
+    "zh": "高中语文一对一家教：看作业找准卡点，设计辅导时段，面批作文带读文言，给家长照着能用的话。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "My child is in Grade 10 and stuck around 90 in Chinese, but cannot say what is wrong. Run a home diagnosis first, then give me a four-week plan.",
+    "zh": "孩子高一，语文总在 90 分上下，说不清哪儿不会。先帮我做一次家庭学情诊断，再给四周计划"
+  },
+  "plugin": "czl-chinese-home-tutor",
+  "tags": [
+    {
+      "en": "Family Learning Diagnosis",
+      "zh": "家庭学情诊断"
+    },
+    {
+      "en": "Essay Conferencing",
+      "zh": "作文面批升格"
+    },
+    {
+      "en": "Classical Chinese & Reading",
+      "zh": "文言阅读突破"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "My child is in Grade 10 and stuck around 90 in Chinese, but cannot say what is wrong. Run a home diagnosis first, then give me a four-week plan.",
+      "zh": "孩子高一，语文总在 90 分上下，说不清哪儿不会。先帮我做一次家庭学情诊断，再给四周计划"
+    },
+    {
+      "en": "Here is an essay my child just wrote. Conference it: name what works, then pick the two problems that matter most and show how to fix them.",
+      "zh": "这是孩子刚写的一篇作文，帮我面批：先找亮点，再挑两个最要紧的问题，给具体改法"
+    },
+    {
+      "en": "Classical Chinese collapses for my child on first read. Sort the errors by cause and give me a 20-minute-a-day routine we can do at home.",
+      "zh": "文言文一读就懵，帮我按错因分类，给一套每天 20 分钟、在家能做的练法"
+    }
+  ]
+}

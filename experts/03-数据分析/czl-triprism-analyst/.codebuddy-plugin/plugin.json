@@ -1,0 +1,76 @@
+{
+  "name": "czl-triprism-analyst",
+  "version": "1.0.0",
+  "description": "An evidence-first data analysis expert for spreadsheets. It grades the table before analysing it, freezes a metric contract so every percentage divides by the same denominator, reads the data through three lenses (trend / composition / integrity), recomputes every claim against the source file with a bundled deterministic engine, and delivers an HTML report, a one-pager, a slide deck and an Excel workbook. Fully local, no third-party Python dependencies.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "data-analysis",
+    "spreadsheet",
+    "business-review",
+    "trend-analysis",
+    "composition",
+    "data-quality",
+    "outlier-detection",
+    "evidence-chain",
+    "local-first"
+  ],
+  "agents": [
+    "./agents/czl-triprism-analyst.md"
+  ],
+  "skills": [
+    "./skills/czl-triprism-playbook"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-triprism-analyst",
+  "displayName": {
+    "en": "TriPrism Analyst",
+    "zh": "三棱镜·专业数据分析专家"
+  },
+  "profession": {
+    "en": "Evidence-First Data Analyst",
+    "zh": "数据分析与举证"
+  },
+  "displayDescription": {
+    "zh": "先给表做体检、再冻口径，从走势/结构/异常三个角度看同一份数据，每条结论回原表复算，交付四件套。",
+    "en": "Grade the table, freeze the metrics, read it through three lenses, recompute every claim, then deliver a report, a one-pager, slides and a workbook."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "帮我分析这份销售表，走势、结构、异常都要看，最后给我一份能直接开会的报告：sales_2025.xlsx",
+    "en": "Analyse this sales sheet - trend, composition and anomalies - and give me a report I can take into a meeting: sales_2025.xlsx"
+  },
+  "quickPrompts": [
+    {
+      "zh": "帮我分析这份销售表，走势、结构、异常都要看，最后给我一份能直接开会的报告：sales_2025.xlsx",
+      "en": "Analyse this sales sheet - trend, composition and anomalies - and give me a report I can take into a meeting: sales_2025.xlsx"
+    },
+    {
+      "zh": "先告诉我这张表能不能用，能支撑多强的结论：orders.csv",
+      "en": "First tell me whether orders.csv is usable and how strong a conclusion it can support."
+    },
+    {
+      "zh": "最近三个月成本涨得不对，帮我查是不是数据问题：cost_detail.xlsx",
+      "en": "Cost looks wrong for the last three months - check whether it is a data problem: cost_detail.xlsx"
+    }
+  ],
+  "tags": [
+    {
+      "zh": "数据分析",
+      "en": "Data Analysis"
+    },
+    {
+      "zh": "数据体检",
+      "en": "Data Triage"
+    },
+    {
+      "zh": "结论可复算",
+      "en": "Recomputable Claims"
+    }
+  ],
+  "plugin": "czl-triprism-analyst"
+}

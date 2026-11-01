@@ -1,0 +1,3 @@
+﻿id,claim,evidence_grade,evidence_type,source_ref,counter_searched,sample_size
+E1,销售在周会上提到客户想要批量导出,D,hearsay,weekly_sync_0912,no,
+E2,同事整理的需求池里这一项排在前五,D,hearsay,backlog_digest,no,

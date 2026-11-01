@@ -1,0 +1,16 @@
+{
+  "project": "XX区一网通办能力提升（测试样例）",
+  "page_limit": 60,
+  "total_score": 70,
+  "items": [
+    {"name": "项目理解与需求分析", "points": 6, "type": "商务"},
+    {"name": "总体技术架构", "points": 12, "type": "技术"},
+    {"name": "数据治理与共享交换", "points": 10, "type": "技术"},
+    {"name": "安全与密码应用（等保三级/密评）", "points": 8, "type": "技术"},
+    {"name": "信创适配方案", "points": 6, "type": "技术"},
+    {"name": "实施计划与项目管理", "points": 8, "type": "技术"},
+    {"name": "运维服务与培训", "points": 6, "type": "服务"},
+    {"name": "类似业绩", "points": 12, "type": "商务"},
+    {"name": "其他说明", "points": 2, "type": "商务"}
+  ]
+}

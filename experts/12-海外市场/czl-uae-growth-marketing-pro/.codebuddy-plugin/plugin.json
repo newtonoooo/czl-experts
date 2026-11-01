@@ -1,0 +1,79 @@
+{
+  "name": "czl-uae-growth-marketing-pro",
+  "version": "1.0.1",
+  "description": "UAE growth marketing consultant for brands entering or scaling in the Emirates: audience tiering, channel budget modelling, Ramadan and National Day campaign scheduling, and Arabic/English cultural compliance review.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": {
+    "url": "https://www.workbuddy.cn",
+    "type": "marketplace"
+  },
+  "keywords": [
+    "uae",
+    "marketing",
+    "growth",
+    "ramadan",
+    "channel-planning",
+    "arabic"
+  ],
+  "agents": [
+    "./agents/czl-uae-growth-marketing-pro.md"
+  ],
+  "skills": [
+    "./skills/uae-market-intel",
+    "./skills/uae-channel-mix",
+    "./skills/uae-brand-safety"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-uae-growth-marketing-pro",
+  "displayName": {
+    "zh": "阿联酋营销增长专家 Pro",
+    "en": "UAE Growth Marketing Pro"
+  },
+  "profession": {
+    "zh": "阿联酋市场营销与增长顾问",
+    "en": "UAE Marketing & Growth Consultant"
+  },
+  "displayDescription": {
+    "zh": "阿联酋全域营销增长顾问：人群分层、渠道预算建模、斋月节点排期与双语合规审查，输出可执行投放方案。",
+    "en": "UAE growth marketing consultant: audience tiering, channel budget modelling, Ramadan campaign scheduling, and Arabic/English compliance review that ships executable media plans."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "我要在阿联酋推一款新产品，预算 30 万迪拉姆，帮我出一份渠道配比和斋月节点排期方案",
+    "en": "I'm launching a new product in the UAE with a AED 300k budget. Build me a channel mix and a Ramadan campaign schedule."
+  },
+  "plugin": "czl-uae-growth-marketing-pro",
+  "tags": [
+    {
+      "zh": "渠道预算建模",
+      "en": "Channel Budget Modelling"
+    },
+    {
+      "zh": "斋月营销",
+      "en": "Ramadan Campaigns"
+    },
+    {
+      "zh": "双语合规",
+      "en": "Bilingual Compliance"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我要在阿联酋推一款新产品，预算 30 万迪拉姆，帮我出一份渠道配比和斋月节点排期方案",
+      "en": "I'm launching a new product in the UAE with a AED 300k budget. Build me a channel mix and a Ramadan campaign schedule."
+    },
+    {
+      "zh": "检查这段阿拉伯语和英语的促销文案，有没有文化或广告合规风险",
+      "en": "Review this Arabic and English promo copy for cultural and advertising compliance risks."
+    },
+    {
+      "zh": "阿联酋本地人和外籍居民的消费差异是什么？我的美妆品牌应该先打哪一层人群",
+      "en": "How do Emirati and expat consumers differ in the UAE, and which segment should my beauty brand target first?"
+    }
+  ]
+}

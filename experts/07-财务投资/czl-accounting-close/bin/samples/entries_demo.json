@@ -1,0 +1,51 @@
+{
+  "period": "2026-09",
+  "currency": "CNY",
+  "round_amount_threshold": 100000,
+  "_note": "演示用：故意包含 1 条无单据（R0）、1 条整额估数（R1）、1 条跨期（R0）",
+  "entries": [
+    {
+      "id": "JE-2026-09-001",
+      "date": "2026-09-30",
+      "memo": "计提9月房租（8-9月已使用部分）",
+      "attachment": "INV-20260912-0087",
+      "prepared_by": "王会计",
+      "reversal": true,
+      "lines": [
+        { "account": "660203", "name": "管理费用-租赁费", "debit": "18348.62", "credit": "0" },
+        { "account": "222101", "name": "应交税费-应交增值税(进项税额)", "debit": "1651.38", "credit": "0" },
+        { "account": "224101", "name": "其他应付款-房租", "debit": "0", "credit": "20000.00" }
+      ]
+    },
+    {
+      "id": "JE-2026-09-002",
+      "date": "2026-09-30",
+      "memo": "计提9月折旧",
+      "attachment": "",
+      "lines": [
+        { "account": "660205", "name": "管理费用-折旧费", "debit": "12000.00", "credit": "0" },
+        { "account": "1602", "name": "累计折旧", "debit": "0", "credit": "12000.00" }
+      ]
+    },
+    {
+      "id": "JE-2026-09-003",
+      "date": "2026-09-30",
+      "memo": "暂估市场推广费",
+      "attachment": "MANUAL",
+      "lines": [
+        { "account": "660104", "name": "销售费用-推广费", "debit": "150000.00", "credit": "0" },
+        { "account": "224102", "name": "其他应付款-推广费", "debit": "0", "credit": "150000.00" }
+      ]
+    },
+    {
+      "id": "JE-2026-09-004",
+      "date": "2026-10-08",
+      "memo": "补提9月差旅费",
+      "attachment": "EXP-20261008-003",
+      "lines": [
+        { "account": "660206", "name": "管理费用-差旅费", "debit": "3200.00", "credit": "0" },
+        { "account": "100201", "name": "银行存款-工行", "debit": "0", "credit": "3200.00" }
+      ]
+    }
+  ]
+}

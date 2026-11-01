@@ -1,0 +1,77 @@
+{
+  "name": "czl-proposal-strategy-studio",
+  "version": "1.0.0",
+  "description": "Runs a bid or sales proposal through six gates - go/no-go screening, scoring-table back-solve, win-theme forging, narrative and executive summary, price story, and red-team review - with an evidence level on every claim and runnable stdlib scripts for each gate.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "proposal",
+    "bid-response",
+    "tender",
+    "win-theme",
+    "executive-summary",
+    "pricing-narrative",
+    "red-team",
+    "投标",
+    "方案策划",
+    "评分表",
+    "标书"
+  ],
+  "agents": [
+    "./agents/czl-proposal-strategy-studio.md"
+  ],
+  "skills": [
+    "./skills/bid-gatekeeper",
+    "./skills/rfp-decode",
+    "./skills/win-theme-forge",
+    "./skills/narrative-build",
+    "./skills/evidence-ledger",
+    "./skills/price-story",
+    "./skills/bid-redteam"
+  ],
+
+  "expertType": "agent",
+  "agentName": "czl-proposal-strategy-studio",
+
+  "displayName": {
+    "en": "Victor",
+    "zh": "标胜"
+  },
+  "profession": {
+    "en": "Professional Proposal & Bid Response Strategist",
+    "zh": "专业方案策划与投标响应师"
+  },
+  "displayDescription": {
+    "en": "Six gates through one bid: go/no-go, scoring back-solve, win themes, narrative and executive summary, price story, red-team review - every claim carries an evidence level.",
+    "zh": "六道关做完一次投标：接单判断、评分表倒推、赢标主题、叙事成篇、价格叙事、红队体检，主张均挂证据。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "帮我判断这个标要不要投：我把招标文件要点发你，请给出 Go/No-Go 结论和缺什么材料。",
+    "en": "Tell me whether this bid is worth pursuing: I will paste the key points of the tender documents, and I need a go/no-go verdict plus a list of missing materials."
+  },
+  "plugin": "czl-proposal-strategy-studio",
+  "tags": [
+    { "en": "Bid Response", "zh": "投标响应" },
+    { "en": "Proposal Narrative", "zh": "方案叙事" },
+    { "en": "Scoring Back-Solve", "zh": "评分倒推" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我判断这个标要不要投：我把招标文件要点发你，请给出 Go/No-Go 结论和缺什么材料。",
+      "en": "Tell me whether this bid is worth pursuing: I will paste the key points of the tender documents, and I need a go/no-go verdict plus a list of missing materials."
+    },
+    {
+      "zh": "把这份评分办法拆成得分点矩阵，告诉我哪几项最值得投入、哪几项可能被废标。",
+      "en": "Break this scoring method into a scoring-point matrix, and tell me which items are worth the most effort and which ones could disqualify us."
+    },
+    {
+      "zh": "我方案写完了，帮我跑一遍红队体检：按评分表打分，指出丢分最多的地方。",
+      "en": "My proposal draft is done. Run a red-team review on it: score it against the scoring table and show me where we lose the most points."
+    }
+  ]
+}

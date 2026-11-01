@@ -1,0 +1,82 @@
+{
+  "name": "czl-history-home-tutor",
+  "version": "1.0.2",
+  "description": "A senior-high history tutor for the home: reads the student's own papers to find the real bottleneck, builds a Chinese-and-world timeline frame, trains source-based reasoning and argumentative essays, and gives parents scripts and weekly routines they can actually run. Textbook-scoped, never ghostwrites, and labels every factual claim with its source.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-history",
+    "home-tutoring",
+    "timeline-framework",
+    "source-analysis",
+    "history-essay",
+    "choice-question-diagnosis",
+    "parent-guidance",
+    "gaokao-history",
+    "textbook-map",
+    "one-on-one"
+  ],
+  "agents": [
+    "./agents/czl-history-home-tutor.md"
+  ],
+  "skills": [
+    "./skills/history-intake",
+    "./skills/timeline-framework",
+    "./skills/source-analysis",
+    "./skills/essay-argument",
+    "./skills/choice-clinic",
+    "./skills/home-coaching"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-history-home-tutor",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High History Learning Mentor",
+    "zh": "卓识教育-高中历史学习辅导专家"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High History Learning Mentor",
+    "zh": "卓识教育-高中历史学习辅导专家"
+  },
+  "displayDescription": {
+    "en": "One-to-one senior-high history learning coaching: diagnose the real gap from the student's own papers, build a Chinese-and-world timeline frame, train evidence-based answers, and hand parents a workable weekly routine.",
+    "zh": "高中历史学习辅导：看卷子找准卡点，搭中外通史框架，练史料实证与论述题，给家长能照着做的周计划。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "My child is in Grade 10 and history sits around 60. The timeline is a mess and the material questions get half marks. Diagnose it, then give me a four-week plan we can run at home.",
+    "zh": "孩子高一，历史总在 60 分上下，时间线一团乱，材料题老是答一半。先做一次家庭学情诊断，再给四周计划"
+  },
+  "plugin": "czl-history-home-tutor",
+  "tags": [
+    {
+      "en": "Timeline Framework",
+      "zh": "通史框架"
+    },
+    {
+      "en": "Source-Based Reasoning",
+      "zh": "史料实证"
+    },
+    {
+      "en": "Essay & Error Clinic",
+      "zh": "论述与错因"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "My child is in Grade 10 and history sits around 60. The timeline is a mess and the material questions get half marks. Diagnose it, then give me a four-week plan we can run at home.",
+      "zh": "孩子高一，历史总在 60 分上下，时间线一团乱，材料题老是答一半。先做一次家庭学情诊断，再给四周计划"
+    },
+    {
+      "en": "Here is a material-analysis answer my child wrote. Mark it like an exam: what did the question ask, what did the answer miss, and how should each point be written.",
+      "zh": "这是孩子刚写的材料题答案，按考试标准批：题目在问什么、他漏了哪几步、每一点该怎么改写成得分句"
+    },
+    {
+      "en": "My child can recite facts but freezes on the 12-point open essay. Give me a structure he can fill in and two practice prompts with a marking rubric.",
+      "zh": "孩子背得挺熟，一到 12 分开放论述就写不出。给一套能套的结构，再配两道练习题和评分标准"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+# 专有软件许可协议
+
+**产品名称**：首席标书军师（czl-bid-win-architect）
+**著作权人**：虫志龙
+**联系邮箱**：47190078@qq.com
+**版本**：1.0.0
+**生效日期**：2026-10-28
+
+---
+
+## 一、权利归属
+
+本专家包（包括但不限于提示词文本、工作流定义、脚本源码、模板、参考资料、头像图像、文档与目录结构）由虫志龙独立开发完成，著作权归虫志龙所有。
+
+本产品未使用任何第三方开源代码库，所用 Python 脚本仅依赖 Python 标准库（`argparse`、`json`、`re`、`zlib`、`struct`、`pathlib` 等），不涉及第三方组件的分发与许可问题。
+
+## 二、授权范围
+
+在遵守本协议的前提下，授权被许可人：
+
+1. **使用**：在 WorkBuddy 平台内安装、运行本专家包，用于自身的投标与方案工作。
+2. **修改自用**：为适配自身业务修改提示词或脚本，修改后的版本仅限自用。
+
+## 三、限制
+
+未经著作权人书面许可，不得：
+
+1. 将本专家包（含修改版）再分发、转售、出租、赠与第三方；
+2. 将本专家包或其派生物作为商品、赠品、引流工具在任何平台发布；
+3. 移除或修改本协议、版权声明、开发者署名；
+4. 以本产品名义对外作出承诺、担保或声称与本产品存在代理、合作、认证关系；
+5. 将本产品用于违反《中华人民共和国招标投标法》《政府采购法》及相关法规的活动，包括但不限于串通投标、提供虚假材料、以他人名义投标。
+
+## 四、免责声明
+
+1. 本产品是**辅助分析工具**，不构成法律意见、投资建议或中标承诺。使用者应自行对交付成果负责。
+2. 本产品提供的评分推算、报价测算均为基于用户输入的算术与逻辑推演，**不保证与实际评审结果一致**。
+3. 在适用法律允许的最大范围内，著作权人不对因使用本产品产生的直接或间接损失承担责任，包括但不限于投标失败、商业损失、数据错误。
+4. 使用者应自行确认其提交的投标材料真实、合法、有效。
+
+## 五、许可终止
+
+违反本协议任一条款，授权自动终止。终止后应立即停止使用并删除全部副本。
+
+## 六、适用法律
+
+本协议适用中华人民共和国法律（不含冲突法规则）。争议由著作权人所在地有管辖权的人民法院管辖。
+
+---
+
+## English Summary
+
+**Proprietary software. Copyright (c) 2026 虫志龙. All rights reserved.**
+
+This expert package — including prompts, workflow definitions, scripts, templates, reference documents, avatar artwork and documentation — is an original work by 虫志龙. No third-party open-source code is bundled; the Python scripts depend only on the Python standard library.
+
+Permitted: install and use within WorkBuddy, modify for internal use.
+Not permitted without written permission: redistribute, resell, publish on any platform, remove attribution, or claim agency/partnership/endorsement.
+
+This is an analysis aid, not legal advice and not a guarantee of winning any bid. The author accepts no liability for bidding outcomes or business losses. Governed by the laws of the People's Republic of China.

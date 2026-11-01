@@ -1,0 +1,12 @@
+{
+  "project": "某某市第一人民医院 机房与容灾改造",
+  "years": 3,
+  "annual_loss": 1200000,
+  "investment": 800000,
+  "annual_cost": 150000,
+  "price_tiers": [
+    {"name": "保底", "price": 700000, "scope": "满足全部硬性要求，单活存储"},
+    {"name": "推荐", "price": 860000, "scope": "保底 + 双活 + 三次切换演练"},
+    {"name": "进取", "price": 1050000, "scope": "推荐 + 驻场半年 + 两期培训"}
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "czl-crossborder-landing-pro",
+  "version": "1.0.0",
+  "description": "A launch engineer for cross-border e-commerce that refuses to answer with adjectives. Runs six gated stages — intake, market screen, landed-cost and breakeven pricing, compliance release, listing build, cold-start and replenishment — and every stage must produce a number, a file or a release condition before the next one opens. Ships four standard-library calculators: a landed-cost waterfall that models per-kept-order economics with return dilution and gives breakeven price, breakeven ACOS and breakeven daily volume; a compliance gate that turns category x market into blocking, conditional and informational requirements and returns GO / CONDITIONAL / BLOCKED; a listing linter with per-marketplace title limits, banned-claim lists, keyword-stuffing and all-caps checks; and a replenishment planner with reorder point, stockout date, first-shipment split by sea and air, and cash locked in stock. Built for Chinese factories and trading companies entering Amazon, TikTok Shop, Shopee, Temu and DTC sites. Refuses invented fee rates, refuses a compliance answer without a blocking-item list, refuses listing copy it has not linted, and refuses to plan a launch with no stop-loss line.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "cross-border",
+    "amazon",
+    "tiktok-shop",
+    "shopee",
+    "temu",
+    "dtc",
+    "landed-cost",
+    "breakeven-acos",
+    "compliance",
+    "ce-marking",
+    "vat",
+    "epr",
+    "listing-lint",
+    "replenishment",
+    "跨境电商",
+    "出海"
+  ],
+  "agents": [
+    "./agents/czl-crossborder-landing-pro.md"
+  ],
+  "skills": [
+    "./skills/landing-kit"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-crossborder-landing-pro",
+  "displayName": {
+    "en": "Landfall",
+    "zh": "专业出海落地官"
+  },
+  "profession": {
+    "en": "Cross-Border Launch Engineer",
+    "zh": "跨境电商全流程落地专家"
+  },
+  "displayDescription": {
+    "en": "Six gated stages from selection to cold start: landed cost, breakeven lines, compliance release, linted listings and replenishment, all computed.",
+    "zh": "选品、到岸成本、合规放行、页面体检、补货冷启动六道闸门，每一步都算出数字、给出放行条件。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "一个硅胶折叠水杯，出厂 12 块，想上亚马逊美国站卖 19.99 美金，头程走海运，退货率大概 8%。帮我算清到岸成本、保本价和保本 ACOS，再看这价到底能不能做。",
+    "en": "A collapsible silicone cup, 12 CNY ex-factory. I want it on Amazon US at 19.99 USD, ocean freight, return rate around 8%. Work out the landed cost, the breakeven price and the breakeven ACOS, then tell me whether this price is viable at all."
+  },
+  "plugin": "czl-crossborder-landing-pro",
+  "tags": [
+    { "en": "Landed Cost Math", "zh": "到岸成本测算" },
+    { "en": "Compliance Release", "zh": "合规放行判定" },
+    { "en": "Replenishment Plan", "zh": "补货与冷启动" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "一个硅胶折叠水杯，出厂 12 块，想上亚马逊美国站卖 19.99 美金，头程走海运，退货率大概 8%。帮我算清到岸成本、保本价和保本 ACOS，再看这价到底能不能做。",
+      "en": "A collapsible silicone cup, 12 CNY ex-factory. I want it on Amazon US at 19.99 USD, ocean freight, return rate around 8%. Work out the landed cost, the breakeven price and the breakeven ACOS, then tell me whether this price is viable at all."
+    },
+    {
+      "zh": "这款儿童餐椅要进德国和法国，我有 CE 报告，但没有欧盟责任人，包装也没在 LUCID 注册。帮我列清必须补的合规项，哪些是阻断项，补齐前能不能先发一批货。",
+      "en": "This kids dining chair is going into Germany and France. I have a CE report but no EU responsible person, and the packaging is not registered with LUCID. List every missing requirement, tell me which ones block the shipment, and whether I can send a first batch before they are done."
+    },
+    {
+      "zh": "标题我写的是「Best Quality Baby Chair 100% Safe Food Grade BPA Free Chair for Baby Kids Infant」，要上亚马逊，帮我按字数、禁词、关键词堆砌逐条挑错，再给一版替换写法。",
+      "en": "My title reads \"Best Quality Baby Chair 100% Safe Food Grade BPA Free Chair for Baby Kids Infant\" and it is going on Amazon. Check it against title limits, banned claims and keyword stuffing, and give me a rewritten version."
+    }
+  ]
+}

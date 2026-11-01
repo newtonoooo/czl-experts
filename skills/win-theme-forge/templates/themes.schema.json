@@ -1,0 +1,14 @@
+{
+  "$comment": "theme_stress.py 的输入格式。client_tokens 是换名测试的基准，必须填客户方独有的词。",
+  "client_tokens": ["客户简称", "项目名片段", "下属机构名"],
+  "themes": [
+    {
+      "id": "T1",
+      "statement": "25-35 字：客户处境 + 我们的做法 + 结果",
+      "rubric_item": "从分数地图里抄一个主观评分项",
+      "rubric_score": 20,
+      "evidence": "项目名 + 一个可核的数字（可用率/工期/差错率）",
+      "chapters": ["3.2 迁移方案", "3.4 验收口径"]
+    }
+  ]
+}

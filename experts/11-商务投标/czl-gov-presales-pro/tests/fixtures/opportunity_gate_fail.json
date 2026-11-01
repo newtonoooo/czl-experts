@@ -1,0 +1,16 @@
+{
+  "project": "XX县数据治理平台（测试样例）",
+  "client": "XX县大数据中心",
+  "budget_wan": 420,
+  "bid_date": "2026-11-20",
+  "qualification_ok": false,
+  "scores": {
+    "funding": 2,
+    "competition": 2,
+    "relationship": 2,
+    "case_match": 1,
+    "policy_fit": 3,
+    "differentiation": 2,
+    "delivery": 2
+  }
+}

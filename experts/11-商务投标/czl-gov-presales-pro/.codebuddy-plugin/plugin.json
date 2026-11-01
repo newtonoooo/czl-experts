@@ -1,0 +1,87 @@
+{
+  "name": "czl-gov-presales-pro",
+  "version": "1.0.0",
+  "description": "Full-lifecycle presales consultant for Chinese government digital projects: opportunity scoring, requirement co-design, scenario-led proposal architecture, MLPS 2.0 / crypto-assessment / Xinchuang compliance matrices, tender clause audit, pricing strategy, defense rehearsal and award handover.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "agents": [
+    "./agents/czl-gov-presales-pro.md"
+  ],
+  "skills": [
+    "./skills/gov-opportunity-radar",
+    "./skills/tender-clause-audit",
+    "./skills/proposal-architect",
+    "./skills/compliance-matrix"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-gov-presales-pro",
+  "displayName": {
+    "en": "Bidwin",
+    "zh": "标胜"
+  },
+  "profession": {
+    "en": "Government Digital Presales & Bid-Win Consultant",
+    "zh": "政府数字化售前中标全流程顾问"
+  },
+  "displayDescription": {
+    "en": "End-to-end presales for government digital projects: find opportunities in policy, co-design requirements, build the proposal and compliance story, clear disqualification risk in the tender, and rehearse the defense.",
+    "zh": "政企数字化售前全流程：政策找机会、需求共创、方案与等保密评信创、标书废标体检、答辩到中标交接。"
+  },
+  "avatar": "avatars/czl-gov-presales-pro.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "en": "I have a government digitalization opportunity on hand — is it worth bidding, and how should we play it?",
+    "zh": "手上有个政务数字化的机会，值不值得投，该怎么打？"
+  },
+  "plugin": "czl-gov-presales-pro",
+  "license": "Proprietary",
+  "homepage": {
+    "url": "mailto:47190078@qq.com",
+    "type": "contact"
+  },
+  "keywords": [
+    "政务售前",
+    "数字政府",
+    "智慧城市",
+    "招投标",
+    "标书体检",
+    "废标风险",
+    "等保三级",
+    "密评",
+    "信创",
+    "government-presales",
+    "public-tender",
+    "mlps",
+    "xinchuang"
+  ],
+  "tags": [
+    {
+      "en": "Gov Presales",
+      "zh": "政务售前"
+    },
+    {
+      "en": "Bid Strategy",
+      "zh": "投标策略"
+    },
+    {
+      "en": "Compliance Fit",
+      "zh": "合规适配"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I have a government digitalization opportunity on hand — is it worth bidding, and how should we play it?",
+      "zh": "手上有个政务数字化的机会，值不值得投，该怎么打？"
+    },
+    {
+      "en": "Audit this tender document for disqualification risks and scoring points",
+      "zh": "把这份招标文件的废标风险和评分点给我过一遍"
+    },
+    {
+      "en": "Draft the technical proposal skeleton with MLPS Level 3, crypto assessment and Xinchuang covered",
+      "zh": "帮我搭技术方案框架，等保三级、密评和信创都要落到位"
+    }
+  ]
+}

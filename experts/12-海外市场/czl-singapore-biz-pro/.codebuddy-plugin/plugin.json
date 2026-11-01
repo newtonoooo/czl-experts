@@ -1,0 +1,73 @@
+{
+  "name": "czl-singapore-biz-pro",
+  "version": "1.0.0",
+  "description": "Six-stage Singapore business development advisor for Chinese exporters: demand scoping, candidate pool building, dual-layer scoring, buying-entity mapping, access path design and 90-day action planning.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": [
+    "singapore",
+    "business development",
+    "market entry",
+    "channel partner",
+    "lead qualification",
+    "buying entity"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-singapore-biz-pro",
+  "agents": [
+    "./agents/czl-singapore-biz-pro.md"
+  ],
+  "skills": [
+    "./skills/czl-sg-bd-core"
+  ],
+  "displayName": {
+    "en": "Singapore BD Expert · Flagship",
+    "zh": "新加坡商务拓展专家·旗舰版"
+  },
+  "profession": {
+    "en": "Singapore Market Entry & Channel Advisor",
+    "zh": "新加坡市场进入与渠道开发顾问"
+  },
+  "displayDescription": {
+    "en": "Six-stage Singapore BD advisor: demand scoping, candidate pool, dual-layer scoring, buying-entity mapping, access path and a 90-day action plan.",
+    "zh": "六段式新加坡商务拓展顾问：需求定标、候选建池、双层评分、采购主体判定、接触路径与90天行动方案"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "帮我在新加坡筛选 3 家最值得优先开发的工业自动化客户，并给出切入路径",
+    "en": "Screen the 3 most worth-developing industrial automation accounts in Singapore and design the entry path for each"
+  },
+  "tags": [
+    {
+      "en": "Account Qualification",
+      "zh": "客户筛选"
+    },
+    {
+      "en": "Channel & Distributor",
+      "zh": "渠道代理"
+    },
+    {
+      "en": "Market Entry",
+      "zh": "市场进入"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Screen the 3 most worth-developing industrial automation accounts in Singapore and design the entry path for each",
+      "zh": "帮我在新加坡筛选 3 家最值得优先开发的工业自动化客户，并给出切入路径"
+    },
+    {
+      "en": "I want to sell into Singapore. Compare agent, subsidiary and project-based partnership for me",
+      "zh": "我要把产品卖进新加坡，帮我比较代理、子公司和项目合作三条路径"
+    },
+    {
+      "en": "Give me a 90-day BD action plan for Singapore's XX industry, including contacts to approach and validation steps",
+      "zh": "给我一份新加坡 XX 行业的 90 天 BD 行动计划，含接触对象和验证动作"
+    }
+  ],
+  "plugin": "czl-singapore-biz-pro"
+}

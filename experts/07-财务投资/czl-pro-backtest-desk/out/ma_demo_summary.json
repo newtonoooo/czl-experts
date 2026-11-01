@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "strategy_name": "MA5/MA21 交叉",
+    "universe": [
+      "DEMO"
+    ],
+    "market": "china_a",
+    "start": "2021-06-01",
+    "end": "2024-12-31",
+    "initial_cash": 1000000.0,
+    "final_value": 918779.22,
+    "cost_model": "佣金 2.50bp（最低 5）｜卖出印花税 5.00bp｜过户费 0.10bp｜滑点 5.00bp",
+    "lot_size": 100,
+    "t_plus_1": true,
+    "engine": "btcore 1.0.0",
+    "note": ""
+  },
+  "metrics": {
+    "total_return_pct": -8.12,
+    "annual_return_pct": -2.34,
+    "max_drawdown_pct": -34.3,
+    "sharpe": -0.03,
+    "sortino": -0.03,
+    "calmar": -0.07,
+    "annual_vol_pct": 18.74,
+    "win_rate_pct": 34.38,
+    "profit_factor": 0.9,
+    "trade_count": 32,
+    "avg_holding_days": 18.6,
+    "best_trade_pct": 39.65,
+    "worst_trade_pct": -9.31,
+    "exposure_pct": 45.62,
+    "max_drawdown_date": "2023-03-02",
+    "buy_count": 32,
+    "avg_trade_pnl": -2293.33,
+    "final_value": 918779.22,
+    "initial_value": 1000000.0,
+    "buy_fills": 32,
+    "sell_fills": 32,
+    "evaluation_bars": 936,
+    "total_fees": 30695.59
+  },
+  "warnings": [],
+  "rejects": [],
+  "language": "zh",
+  "generated_at": "2026-10-28 12:29:17"
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "timeline",
+  "title": "产品关键里程碑",
+  "subtitle": "2026 年四个季度的交付节点",
+  "events": [
+    { "date": "2026 Q1", "label": "内测版发布", "detail": "50 家种子客户" },
+    { "date": "2026 Q2", "label": "商业化上线", "detail": "开放订阅与发票" },
+    { "date": "2026 Q3", "label": "开放平台", "detail": "第三方应用接入" },
+    { "date": "2026 Q4", "label": "规模化", "detail": "多租户与私有化部署" }
+  ]
+}

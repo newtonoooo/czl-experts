@@ -1,0 +1,23 @@
+{
+  "period": "2026-09",
+  "balance_sheet": {
+    "total_assets": 86421000.00,
+    "total_liabilities": 38214000.00,
+    "total_equity": 48207000.00,
+    "cash": 1180000.00,
+    "retained_earnings_begin": 12400000.00,
+    "retained_earnings_end": 13860000.00,
+    "dividends": 0
+  },
+  "income_statement": {
+    "net_income": 1460000.00
+  },
+  "cash_flow": {
+    "begin_cash": 960000.00,
+    "net_operating": 486000.00,
+    "net_investing": -320000.00,
+    "net_financing": 54000.00,
+    "ending_cash": 1180000.00,
+    "net_income_in_cf": 1460000.00
+  }
+}

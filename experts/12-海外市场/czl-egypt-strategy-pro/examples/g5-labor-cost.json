@@ -1,0 +1,37 @@
+{
+  "positions": [
+    {
+      "role": "普工",
+      "headcount": 80,
+      "monthly_wage_egp": 9000,
+      "allowances_pct": 0.12,
+      "overtime_pct": 0.08
+    },
+    {
+      "role": "技术员",
+      "headcount": 12,
+      "monthly_wage_egp": 18000,
+      "allowances_pct": 0.15,
+      "overtime_pct": 0.05
+    },
+    {
+      "role": "工程师",
+      "headcount": 4,
+      "monthly_wage_egp": 35000,
+      "allowances_pct": 0.18,
+      "overtime_pct": 0.0
+    },
+    {
+      "role": "管理与财务",
+      "headcount": 5,
+      "monthly_wage_egp": 45000,
+      "allowances_pct": 0.2,
+      "overtime_pct": 0.0
+    }
+  ],
+  "employer_si_rate": 0.1875,
+  "annual_increment_pct": 0.08,
+  "recruiting_pct": 0.02,
+  "turnover_provision_pct": 0.03,
+  "annual_output_units": 200000
+}

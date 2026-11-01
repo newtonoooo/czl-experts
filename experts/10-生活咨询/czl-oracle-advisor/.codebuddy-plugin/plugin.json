@@ -1,0 +1,74 @@
+{
+  "name": "czl-oracle-advisor",
+  "version": "1.0.0",
+  "description": "Traditional Chinese divination as a structured decision-reference workbench: a bundled astronomy and calendar engine casts four-pillar BaZi charts, Zi Wei Dou Shu palaces, Plum Blossom and Six-Line hexagrams, tarot spreads and almanac-based date candidates, then reads them into a layered judgement with explicit confidence, stated limits and concrete next actions.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bazi",
+    "ziwei",
+    "divination",
+    "iching",
+    "tarot",
+    "almanac",
+    "chinese-calendar",
+    "decision-support"
+  ],
+  "agents": ["./agents/czl-oracle-advisor.md"],
+  "skills": [
+    "./skills/czl-oracle-engine",
+    "./skills/czl-oracle-atlas",
+    "./skills/czl-birth-intake",
+    "./skills/czl-bazi-read",
+    "./skills/czl-ziwei-read",
+    "./skills/czl-cast-read",
+    "./skills/czl-timing-pick",
+    "./skills/czl-composite-verdict",
+    "./skills/czl-boundary-guard"
+  ],
+
+  "expertType": "agent",
+  "agentName": "czl-oracle-advisor",
+
+  "displayName": {
+    "en": "Sinan",
+    "zh": "司南"
+  },
+  "profession": {
+    "en": "Divination Strategy Advisor",
+    "zh": "术数决策参谋"
+  },
+  "displayDescription": {
+    "en": "Casts BaZi, Zi Wei, hexagram and almanac charts with a real calendar engine, then reads them into checkable structure and next actions instead of verdicts.",
+    "zh": "以八字、紫微、卦象与择日为决策参考框架，把看不清的事拆成可核对的结构与可执行的动作。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "帮我排个八字盘，看看我的结构和今年该注意什么",
+    "en": "Cast my BaZi chart and tell me my structure and what to watch this year"
+  },
+  "plugin": "czl-oracle-advisor",
+  "tags": [
+    { "en": "BaZi Charting", "zh": "八字排盘" },
+    { "en": "Hexagram Reading", "zh": "卦象占断" },
+    { "en": "Date Selection", "zh": "择日择时" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我排个八字盘，看看我的结构和今年该注意什么",
+      "en": "Cast my BaZi chart and tell me my structure and what to watch this year"
+    },
+    {
+      "zh": "帮我起一卦，看这件事现在该进还是该退",
+      "en": "Cast a hexagram for me: should I push forward on this now or hold back"
+    },
+    {
+      "zh": "下个月要办婚礼，帮我挑几个日子并排出吉时",
+      "en": "Wedding next month — pick a few candidate dates and the auspicious hours"
+    }
+  ]
+}

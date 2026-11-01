@@ -1,0 +1,65 @@
+{
+  "name": "czl-qimao-novel",
+  "expertType": "agent",
+  "version": "1.0.0",
+  "description": "An independent production line for Qimao (七猫中文网) serial fiction, built around seven stations: genre fit against Qimao's own charts, title/synopsis packaging, a submission outline an editor will not reject for structure, a 20,000-character sample whose first 200 characters are pressure-tested, the 30,000-character launch node, retention-tier placement against Qimao's published full-attendance table, and an attendance cash-flow model that accounts for the 4,000/6,000 daily-word thresholds, the 200,000-character monthly cap and the single allowed leave day. Every station returns a filled work order with a decision (go / rework / stop), the evidence behind it, and the next station's entry condition. Ships six dependency-free Python checkers, eight reference cards and seven work-order templates. Owned and developed by 虫志龙.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "agents": [
+    "./agents/czl-qimao-novel.md"
+  ],
+  "agentName": "czl-qimao-novel",
+  "skills": [
+    "./skills/czl-qimao-ops"
+  ],
+  "displayName": {
+    "en": "Qimao Bestseller Studio",
+    "zh": "七猫爆款小说生成专家"
+  },
+  "profession": {
+    "en": "Qimao Bestseller Studio",
+    "zh": "七猫爆款小说生成专家"
+  },
+  "displayDescription": {
+    "en": "Writes to Qimao's submission standard: genre fit, a submission pack editors accept, a pressure-tested opening, then retention tier and attendance cash flow in one ledger.",
+    "zh": "按七猫签约口径做书：选题踩主收盘，投稿包过编辑，样章过测试，留存分档与全勤现金流一起算清。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "en": "I have a Qimao idea. Run station one on it: does this genre hold up on Qimao's charts, which book should I benchmark against, and do I keep the concept or only the shell?",
+    "zh": "我手上有个七猫的选题，先过选品站：这个题材在七猫站不站得住，对标哪本书，我该保留内核还是只换壳？"
+  },
+  "plugin": "czl-qimao-novel",
+  "tags": [
+    {
+      "en": "Submission Pack",
+      "zh": "投稿过稿"
+    },
+    {
+      "en": "Retention Tier",
+      "zh": "留存分档"
+    },
+    {
+      "en": "Attendance Yield",
+      "zh": "全勤产能"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I have a Qimao idea. Run station one on it: does this genre hold up on Qimao's charts, which book should I benchmark against, and do I keep the concept or only the shell?",
+      "zh": "我手上有个七猫的选题，先过选品站：这个题材在七猫站不站得住，对标哪本书，我该保留内核还是只换壳？"
+    },
+    {
+      "en": "Build me a submission pack I can send to a Qimao editor: title, synopsis, a complete outline, plus the first three chapters of a 20,000-character sample.",
+      "zh": "帮我做一份能投给七猫编辑的投稿包：书名、简介、一份写完结局的大纲，再加两万字样章里的前三章。"
+    },
+    {
+      "en": "My read-through at 100,000 characters is only 9%. Tell me which attendance tier that puts me in, how far the next tier is, and which chapters to fix this week.",
+      "zh": "我十万字均留只有 9%，帮我算现在卡在哪一档、离下一档差多少、这周该改哪几章。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "period": "2026-09",
+  "rule": "cas",
+  "_note": "演示「当月增加下月计提」：FA-001 于 7 月投用，9 月是第 2 个折旧月；FA-002 于 9 月投用，本期不计提",
+  "assets": [
+    {
+      "id": "FA-001",
+      "name": "服务器集群",
+      "cost": 120000,
+      "salvage_rate": 0.05,
+      "life_months": 36,
+      "method": "straight_line",
+      "in_service": "2026-07-15"
+    },
+    {
+      "id": "FA-002",
+      "name": "办公家具",
+      "cost": 60000,
+      "salvage": 0,
+      "life_months": 60,
+      "method": "straight_line",
+      "in_service": "2026-09-20"
+    },
+    {
+      "id": "FA-003",
+      "name": "检测设备",
+      "cost": 300000,
+      "salvage_rate": 0.04,
+      "life_months": 60,
+      "method": "double_declining",
+      "in_service": "2025-04-01"
+    }
+  ]
+}

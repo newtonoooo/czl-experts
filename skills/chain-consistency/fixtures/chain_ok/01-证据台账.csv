@@ -1,0 +1,4 @@
+﻿id,claim,source_type,source_ref,observed_at,scope,sample,verified,grade,note
+EVD-01,近90天导出工单137条,primary,工单系统 标签=导出,2026-09-30,付费企业用户,n=137,yes,A,
+EVD-02,5万行以上导出平均耗时4分12秒,primary,埋点表 export_task,2026-09-30,付费企业用户,n=2184,yes,A,
+EVD-03,重试成功率约62%,primary,埋点表 export_retry,2026-09-28,付费企业用户,n=411,no,B,单月样本

@@ -1,0 +1,33 @@
+czl-resume-gate 功能测试 · 实际执行日志
+执行时间: 2026-10-26 17:41:22    
+解释器: Python 3.13.14 / C:\Users\丛自龙\.workbuddy\binaries\python\versions\3.13.12\python.exe
+工作目录: /c/Users/丛自龙/.workbuddy/plugins/marketplaces/my-experts/plugins/czl-resume-gate
+------------------------------------------------------------
+PASS T01 体检-弱样例  rc=0  | # 简历机械体检报告  > 本报告只覆盖**可计算**的指标。成果是否打动招聘方、职业故事是否自洽，需要人工判断，不在脚本结论内。  ## 总览  | 项目 | 结果 | |---|---| | 总分（机械代理） | 44 / 100 | | 等级 | D | | 结论 | 骨架需要重建 | | 闸门A 机器解析 | 
+PASS T02 体检-强样例  rc=0  | # 简历机械体检报告  > 本报告只覆盖**可计算**的指标。成果是否打动招聘方、职业故事是否自洽，需要人工判断，不在脚本结论内。  ## 总览  | 项目 | 结果 | |---|---| | 总分（机械代理） | 100 / 100 | | 等级 | A | | 结论 | 可以直接投 | | 闸门A 机器解析 | 
+PASS T03 体检-带JD  rc=0  | # 简历机械体检报告  > 本报告只覆盖**可计算**的指标。成果是否打动招聘方、职业故事是否自洽，需要人工判断，不在脚本结论内。  ## 总览  | 项目 | 结果 | |---|---| | 总分（机械代理） | 100 / 100 | | 等级 | A | | 结论 | 可以直接投 | | 闸门A 机器解析 | 
+PASS T04 体检-JSON输出  rc=0  | {   "scores": {     "A_machine": 30,     "B_scan": 40,     "C_defense": 30,     "total": 100   },   "grade": "A",   "verdict": "可以直接投",   "metrics": {     "char
+PASS T04b JSON 结构可解析  rc=0  | {'A_machine': 30, 'B_scan': 40, 'C_defense': 30, 'total': 100}
+PASS T05 JD匹配-强简历  rc=0  | # 岗位匹配报告  > 词表匹配基于内置技能词典与 JD 中的英文术语，只能发现「写了没写」，判断不了「写得够不够深」。缺失项要先确认是真缺，还是只是没写。  ## 总览  | 项目 | 结果 | |---|---| | 综合匹配度 | 68% | | 必备项覆盖率 | 69%（8 项） | | 加分项覆盖率 | 67
+PASS T05b 输出含覆盖率表  rc=0
+PASS T06 JD匹配-弱简历  rc=0  | # 岗位匹配报告  > 词表匹配基于内置技能词典与 JD 中的英文术语，只能发现「写了没写」，判断不了「写得够不够深」。缺失项要先确认是真缺，还是只是没写。  ## 总览  | 项目 | 结果 | |---|---| | 综合匹配度 | 60% | | 必备项覆盖率 | 69%（8 项） | | 加分项覆盖率 | 33
+PASS T06b 弱简历匹配度低于强简历  rc=0  | 综合匹配度 | 60%
+PASS T07 导出HTML-navy  rc=0  | written: C:\Users\丛自龙\AppData\Local\Temp\rsout\t07.html print to PDF: open the file in a browser, Ctrl+P, paper A4, margins Default, scale 100% 
+PASS T08 导出HTML-ink  rc=0  | written: C:\Users\丛自龙\AppData\Local\Temp\rsout\t08.html print to PDF: open the file in a browser, Ctrl+P, paper A4, margins Default, scale 100% 
+PASS T09 导出DOCX-强  rc=0  | written: C:\Users\丛自龙\AppData\Local\Temp\rsout\t09.docx (4.1 KB) 
+PASS T10 导出DOCX-弱  rc=0  | written: C:\Users\丛自龙\AppData\Local\Temp\rsout\t10.docx (3.8 KB) 
+PASS T11 导出TXT  rc=0  | written: C:\Users\丛自龙\AppData\Local\Temp\rsout\t11.txt (863 chars) 
+PASS T12 模板-中文骨架导出DOCX  rc=0  | written: C:\Users\丛自龙\AppData\Local\Temp\rsout\t12.docx (3.5 KB) 
+PASS T13 模板-英文骨架导出HTML  rc=0  | written: C:\Users\丛自龙\AppData\Local\Temp\rsout\t13.html print to PDF: open the file in a browser, Ctrl+P, paper A4, margins Default, scale 100% 
+PASS T14 不存在文件返回非零  rc=2
+PASS T15 非法主题被拒绝  rc=2
+PASS T16 JD脚本缺参数被拒绝  rc=2
+PASS T17 GB18030 编码简历可读  rc=0  | # 简历机械体检报告  > 本报告只覆盖**可计算**的指标。成果是否打动招聘方、职业故事是否自洽，需要人工判断，不在脚本结论内。  ## 总览  | 项目 | 结果 | |---|---| | 总分（机械代理） | 100 / 100 | | 等级 | A | | 结论 | 可以直接投 | | 闸门A 机器解析 | 
+PASS T18 DOCX包结构完整(t09)  rc=0  | 7 parts, 5284 chars in document.xml
+PASS T19 DOCX包结构完整(t10)  rc=0  | 7 parts, 4955 chars in document.xml
+PASS T20 HTML 含A4页面设置与中文字体栈  rc=0  | 3349 bytes
+PASS T21 HTML 无未转义标记残留(**)  rc=0
+PASS T22 纯文本保留•项目符号且无md标记  rc=0  | 863 chars
+PASS T23 评分区分度(强-弱>=20)  rc=0  | strong=100 weak=44
+
+TOTAL 26, FAILED 0

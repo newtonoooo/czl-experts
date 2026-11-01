@@ -1,0 +1,53 @@
+{
+  "kind": "class",
+  "title": "订单服务核心类",
+  "subtitle": "面向接口分层：Controller → Service → Repository",
+  "direction": "LR",
+  "classes": [
+    {
+      "id": "orderController", "name": "OrderController", "stereotype": "controller", "role": "primary",
+      "members": [
+        { "text": "- service: OrderService", "kind": "field" },
+        { "text": "+ create(cmd: CreateOrderCmd): OrderVO", "kind": "method" },
+        { "text": "+ cancel(id: Long): void", "kind": "method" }
+      ]
+    },
+    {
+      "id": "orderService", "name": "OrderService", "stereotype": "interface", "role": "data",
+      "members": [
+        { "text": "+ create(cmd: CreateOrderCmd): Order", "kind": "method" },
+        { "text": "+ cancel(id: Long): void", "kind": "method" }
+      ]
+    },
+    {
+      "id": "orderServiceImpl", "name": "OrderServiceImpl", "role": "success",
+      "members": [
+        { "text": "- repo: OrderRepository", "kind": "field" },
+        { "text": "- stockClient: StockClient", "kind": "field" },
+        { "text": "+ create(cmd): Order", "kind": "method" }
+      ]
+    },
+    {
+      "id": "orderRepository", "name": "OrderRepository", "stereotype": "interface", "role": "external",
+      "members": [
+        { "text": "+ save(o: Order): Order", "kind": "method" },
+        { "text": "+ findById(id: Long): Order", "kind": "method" }
+      ]
+    },
+    {
+      "id": "order", "name": "Order", "role": "neutral",
+      "members": [
+        { "text": "- id: Long", "kind": "field" },
+        { "text": "- userId: Long", "kind": "field" },
+        { "text": "- status: OrderStatus", "kind": "field" },
+        { "text": "+ totalAmount(): Money", "kind": "method" }
+      ]
+    }
+  ],
+  "relations": [
+    { "from": "orderServiceImpl", "to": "orderService", "kind": "inherit" },
+    { "from": "orderController", "to": "orderService", "kind": "assoc", "label": "调用" },
+    { "from": "orderServiceImpl", "to": "orderRepository", "kind": "depend", "label": "依赖" },
+    { "from": "orderServiceImpl", "to": "order", "kind": "compose", "label": "创建" }
+  ]
+}

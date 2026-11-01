@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="__LANG__">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --ink:#191c22; --ink2:#5b6472; --ink3:#8b94a3;
+    --line:#e6e9ef; --up:#c8342b; --down:#1c8a5a; --accent:#2a4fd0; --accent2:#7a8aa8;
+    --warnbg:#fff8e6; --warnline:#f0d9a0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 20px 56px}
+  header.top{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between;margin-bottom:18px}
+  h1{margin:0;font-size:22px;letter-spacing:.3px;font-weight:650}
+  .sub{color:var(--ink2);font-size:12.5px;margin-top:6px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .chip{background:#eef1f6;border:1px solid var(--line);color:var(--ink2);
+    border-radius:999px;padding:3px 10px;font-size:12px;white-space:nowrap}
+  .chip b{color:var(--ink);font-weight:600}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px;
+    box-shadow:0 1px 2px rgba(16,24,40,.03);margin-bottom:16px}
+  .card h2{margin:0 0 2px;font-size:15px;font-weight:650}
+  .card .hint{color:var(--ink3);font-size:12px;margin:0 0 12px}
+  .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:16px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px 12px}
+  .kpi .k{color:var(--ink3);font-size:12px;letter-spacing:.2px}
+  .kpi .v{font-size:22px;font-weight:660;margin-top:5px;letter-spacing:.2px;
+    font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+  .kpi .s{color:var(--ink3);font-size:11.5px;margin-top:2px}
+  .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink2)}
+  svg{display:block;width:100%;height:auto}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;color:var(--ink2);font-size:12px;margin-top:8px}
+  .legend i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right;
+    font-variant-numeric:tabular-nums;white-space:nowrap}
+  th{position:sticky;top:0;background:#fafbfc;color:var(--ink2);font-weight:600;z-index:2}
+  th:first-child,td:first-child{text-align:left}
+  .scroll{max-height:380px;overflow:auto;border:1px solid var(--line);border-radius:10px}
+  .pill{display:inline-block;padding:1px 7px;border-radius:99px;font-size:11px;border:1px solid var(--line);color:var(--ink2)}
+  .heat td{text-align:center;padding:5px 6px;font-size:11.5px}
+  .notes{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .notes ul{margin:6px 0 0 18px;padding:0}
+  .notes li{margin:3px 0;color:var(--ink2)}
+  .warn{background:var(--warnbg);border:1px solid var(--warnline);border-radius:10px;padding:10px 12px;
+    color:#7a5a12;font-size:12.5px;margin-bottom:12px}
+  .warn b{color:#5f4408}
+  footer{color:var(--ink3);font-size:12px;border-top:1px solid var(--line);padding-top:14px;margin-top:8px}
+  .grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:16px}
+  .empty{color:var(--ink3);font-size:12.5px;padding:18px;text-align:center}
+  @media (max-width:900px){
+    .kpis{grid-template-columns:repeat(2,1fr)}
+    .grid2,.notes{grid-template-columns:1fr}
+  }
+  @media print{body{background:#fff}.card{box-shadow:none;break-inside:avoid}.scroll{max-height:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1 id="title"></h1>
+      <div class="sub" id="subtitle"></div>
+      <div class="chips" id="chips"></div>
+    </div>
+  </header>
+  <div id="warnbox"></div>
+  <div class="kpis" id="kpis"></div>
+  <div class="card">
+    <h2 id="eqTitle"></h2>
+    <p class="hint" id="eqHint"></p>
+    <div id="eqChart"></div>
+    <div class="legend" id="eqLegend"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <h2 id="ddTitle"></h2>
+      <p class="hint" id="ddHint"></p>
+      <div id="ddChart"></div>
+    </div>
+    <div class="card">
+      <h2 id="pnlTitle"></h2>
+      <p class="hint" id="pnlHint"></p>
+      <div id="pnlChart"></div>
+    </div>
+  </div>
+  <div class="card" id="monCard">
+    <h2 id="monTitle"></h2>
+    <p class="hint" id="monHint"></p>
+    <div id="monChart"></div>
+  </div>
+  <div class="card">
+    <h2 id="trTitle"></h2>
+    <p class="hint" id="trHint"></p>
+    <div class="scroll"><table id="trTable"></table></div>
+  </div>
+  <div class="card">
+    <h2 id="noteTitle"></h2>
+    <div class="notes" id="notes"></div>
+  </div>
+  <footer id="footer"></footer>
+</div>
+<script>
+const P = /*__PAYLOAD__*/;
+const T = {
+  zh:{ret:"累计收益",ann:"年化收益",dd:"最大回撤",sh:"夏普比率",win:"胜率",tr:"交易笔数",
+      eq:"净值曲线",eqh:"按评估区间首个交易日归一；标记为实际成交点",
+      ddT:"回撤",ddh:"从历史高点的回撤幅度",pnlT:"单笔盈亏分布",pnlH:"每笔已平仓交易的收益率",
+      monT:"月度收益",monH:"单位：%，红涨绿跌",trT:"成交明细",trH:"仅列出已平仓记录，末笔为样本末强平",
+      noteT:"口径与说明",none:"（无）",buy:"买",sell:"卖",hold:"持有",exited:"平仓",
+      fee:"费用合计",exp:"在场时间占比",bench:"买入持有",strategy:"策略",date:"日期",value:"净值",
+      sym:"标的",in:"买入日",out:"卖出日",px1:"买入价",px2:"卖出价",sh2:"数量",pnlp:"收益率",day:"持有(天)",why:"原因",
+      mon:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+      span:"区间累计",year:"年份",risk:"风险",emptyD:"无数据"},
+  en:{ret:"Total return",ann:"Annualized",dd:"Max drawdown",sh:"Sharpe",win:"Win rate",tr:"Closed trades",
+      eq:"Equity curve",eqh:"Normalized to first bar of the evaluation window; markers are actual fills",
+      ddT:"Drawdown",ddh:"Decline from prior peak",pnlT:"Per-trade P&L",pnlH:"Return of each closed trade",
+      monT:"Monthly returns",monH:"Percent",trT:"Trade log",trH:"Closed records only; last row is end-of-sample liquidation",
+      noteT:"Assumptions",none:"(none)",buy:"Buy",sell:"Sell",hold:"Held",exited:"Exit",
+      fee:"Total fees",exp:"Time in market",bench:"Buy & hold",strategy:"Strategy",date:"Date",value:"Equity",
+      sym:"Symbol",in:"Entry",out:"Exit",px1:"Entry px",px2:"Exit px",sh2:"Shares",pnlp:"Return",day:"Days",why:"Reason",
+      mon:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+      span:"Span",year:"Year",risk:"Risk",emptyD:"No data"}
+}[P.lang||"zh"];
+
+const $=id=>document.getElementById(id);
+const nf=(v,d=2)=>(v===null||v===undefined||Number.isNaN(v))?"—":Number(v).toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});
+const cls=v=>(v>0?"up":(v<0?"down":"flat"));
+const el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!==undefined)e.innerHTML=h;return e;};
+
+$("title").textContent = P.title||"";
+$("subtitle").textContent = P.subtitle||"";
+(P.chips||[]).forEach(c=>{$("chips").appendChild(el("span","chip",`${c.k?`<b>${c.k}</b> `:""}${c.v}`))});
+
+if((P.warnings||[]).length){
+  const w=el("div","warn","<b>"+(P.lang==="en"?"Data notes":"数据提示")+"</b><br>"+
+    P.warnings.map(x=>"· "+x).join("<br>"));
+  $("warnbox").appendChild(w);
+}
+
+// KPI
+(P.kpis||[]).forEach(k=>{
+  const c=el("div","kpi");
+  c.appendChild(el("div","k",k.label));
+  const v=el("div","v "+(k.tone||""),k.value);
+  c.appendChild(v);
+  if(k.sub)c.appendChild(el("div","s",k.sub));
+  $("kpis").appendChild(c);
+});
+
+// ---------- helpers ----------
+function extent(arr,key){let a=Infinity,b=-Infinity;arr.forEach(r=>{const v=key?r[key]:r;if(v>a)a=v;if(v>b)b=v;});return[a,b];}
+function path(points,w,h,pad,lo,hi,color,fill){
+  if(!points.length)return "";
+  const n=points.length, innerW=w-pad.l-pad.r, innerH=h-pad.t-pad.b;
+  const X=i=>pad.l+(n===1?innerW/2:innerW*i/(n-1));
+  const Y=v=>pad.t+innerH-(hi===lo?innerH/2:innerH*(v-lo)/(hi-lo));
+  let d=points.map((v,i)=>`${i?"L":"M"}${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(" ");
+  if(fill)d+=` L${X(n-1).toFixed(1)},${(h-pad.b).toFixed(1)} L${X(0).toFixed(1)},${(h-pad.b).toFixed(1)} Z`;
+  return `<path d="${d}" fill="${fill||"none"}" stroke="${color}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>`;
+}
+function axes(w,h,pad,lo,hi,labels){
+  const innerH=h-pad.t-pad.b;
+  let s="";
+  for(let i=0;i<=4;i++){
+    const y=pad.t+innerH*i/4;
+    const v=hi-(hi-lo)*i/4;
+    s+=`<line x1="${pad.l}" y1="${y}" x2="${w-pad.r}" y2="${y}" stroke="#eef0f4" stroke-width="1"/>`;
+    s+=`<text x="${pad.l-8}" y="${y+3.5}" text-anchor="end" font-size="10" fill="#8b94a3">${labels?labels(v):v.toFixed(2)}</text>`;
+  }
+  return s;
+}
+
+// ---------- equity ----------
+(function(){
+  $("eqTitle").textContent=T.eq; $("eqHint").textContent=T.eqh;
+  const eq=P.equity||[];
+  if(eq.length<2){$("eqChart").appendChild(el("div","empty",T.emptyD));return;}
+  const w=1100,h=340,pad={l:58,r:16,t:14,b:26};
+  const base=eq[0].value;
+  const vals=eq.map(r=>r.value/base*100);
+  const bm=(P.benchmark||[]).map(r=>r.value/base*100);
+  let lo=Math.min(...vals,...(bm.length?bm:[Infinity])),hi=Math.max(...vals,...(bm.length?bm:[-Infinity]));
+  const padV=(hi-lo)*0.08||1; lo-=padV; hi+=padV;
+  let s=`<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img">`;
+  s+=axes(w,h,pad,lo,hi,v=>v.toFixed(0)+"");
+  if(bm.length>1)s+=path(bm,w,h,pad,lo,hi,"#b3bccb","rgba(179,188,203,.13)");
+  s+=path(vals,w,h,pad,lo,hi,"#2a4fd0",null);
+  // markers
+  const idx=new Map(eq.map((r,i)=>[r.date,i]));
+  const innerW=w-pad.l-pad.r,innerH=h-pad.t-pad.b;
+  (P.markers||[]).forEach(m=>{
+    const i=idx.get(m.date); if(i===undefined)return;
+    const x=pad.l+(eq.length===1?innerW/2:innerW*i/(eq.length-1));
+    const y=pad.t+innerH-innerH*(vals[i]-lo)/(hi-lo);
+    const isBuy=m.action==="buy";
+    const col=isBuy?"#c8342b":"#1c8a5a";
+    s+= isBuy
+      ? `<path d="M${x},${y+9} l-4.5,7.5 h9 z" fill="${col}" opacity=".9"/>`
+      : `<path d="M${x},${y-9} l-4.5,-7.5 h9 z" fill="${col}" opacity=".9"/>`;
+  });
+  // x labels
+  [0,Math.floor(eq.length/2),eq.length-1].forEach(i=>{
+    const x=pad.l+innerW*(eq.length===1?0.5:i/(eq.length-1));
+    s+=`<text x="${x}" y="${h-8}" text-anchor="middle" font-size="10" fill="#8b94a3">${eq[i].date}</text>`;
+  });
+  s+=`</svg>`;
+  $("eqChart").innerHTML=s;
+  $("eqLegend").innerHTML=
+    `<span><i style="background:#2a4fd0"></i>${T.strategy}（${T.value} 100=${nf(base,0)}）</span>`+
+    (bm.length?`<span><i style="background:#b3bccb"></i>${T.bench}</span>`:"")+
+    `<span><i style="background:#c8342b"></i>${T.buy}</span><span><i style="background:#1c8a5a"></i>${T.sell}</span>`;
+})();
+
+// ---------- drawdown ----------
+(function(){
+  $("ddTitle").textContent=T.ddT; $("ddHint").textContent=T.ddh;
+  const eq=P.equity||[];
+  if(eq.length<2){$("ddChart").appendChild(el("div","empty",T.emptyD));return;}
+  let peak=eq[0].value, dd=[];
+  eq.forEach(r=>{peak=Math.max(peak,r.value);dd.push((r.value/peak-1)*100);});
+  const w=680,h=220,pad={l:48,r:12,t:12,b:22};
+  let lo=Math.min(...dd,0),hi=0; if(lo===0)lo=-1;
+  let s=`<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">`;
+  s+=axes(w,h,pad,lo,hi,v=>v.toFixed(0)+"%");
+  const n=dd.length,innerW=w-pad.l-pad.r,innerH=h-pad.t-pad.b;
+  const pts=dd.map((v,i)=>`${i?"L":"M"}${(pad.l+innerW*i/(n-1)).toFixed(1)},${(pad.t+innerH*(hi-v)/(hi-lo)).toFixed(1)}`).join(" ");
+  s+=`<path d="${pts} L${w-pad.r},${pad.t+innerH} L${pad.l},${pad.t+innerH} Z" fill="rgba(200,52,43,.10)" stroke="none"/>`;
+  s+=`<path d="${pts}" fill="none" stroke="#c8342b" stroke-width="1.4"/>`;
+  s+=`</svg>`;
+  $("ddChart").innerHTML=s;
+})();
+
+// ---------- per-trade pnl ----------
+(function(){
+  $("pnlTitle").textContent=T.pnlT; $("pnlHint").textContent=T.pnlH;
+  const tr=P.trades||[];
+  if(!tr.length){$("pnlChart").appendChild(el("div","empty",T.emptyD));return;}
+  const w=680,h=220,pad={l:48,r:12,t:12,b:22};
+  const vals=tr.map(t=>t.pnl_pct);
+  let lo=Math.min(...vals,0),hi=Math.max(...vals,0);
+  const padV=(hi-lo)*0.1||1; lo-=padV; hi+=padV;
+  const innerW=w-pad.l-pad.r,innerH=h-pad.t-pad.b;
+  const bw=Math.max(1.2,innerW/vals.length*0.62);
+  let s=`<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">`;
+  s+=axes(w,h,pad,lo,hi,v=>v.toFixed(1)+"%");
+  const zero=pad.t+innerH*(hi-0)/(hi-lo);
+  vals.forEach((v,i)=>{
+    const x=pad.l+innerW*(i+0.5)/vals.length;
+    const y=pad.t+innerH*(hi-v)/(hi-lo);
+    s+=`<rect x="${(x-bw/2).toFixed(1)}" y="${Math.min(y,zero).toFixed(1)}" width="${bw.toFixed(1)}" height="${Math.max(0.8,Math.abs(y-zero)).toFixed(1)}" fill="${v>=0?"#c8342b":"#1c8a5a"}" opacity=".8"/>`;
+  });
+  s+=`<line x1="${pad.l}" y1="${zero}" x2="${w-pad.r}" y2="${zero}" stroke="#cfd5df" stroke-width="1"/>`;
+  s+=`</svg>`;
+  $("pnlChart").innerHTML=s;
+})();
+
+// ---------- monthly heat ----------
+(function(){
+  $("monTitle").textContent=T.monT; $("monHint").textContent=T.monH;
+  const rows=P.monthly||[];
+  if(!rows.length){const c=$("monCard");if(c)c.style.display="none";return;}
+  let html=`<table class="heat"><thead><tr><th>${T.year}</th>`+
+    T.mon.map(m=>`<th style="text-align:center">${m}</th>`).join("")+
+    `<th style="text-align:center">${T.span}</th></tr></thead><tbody>`;
+  rows.forEach(r=>{
+    html+=`<tr><td><b>${r.year}</b></td>`;
+    r.months.forEach(v=>{
+      if(v===null||v===undefined){html+=`<td style="color:#c4cad4">·</td>`;return;}
+      const bg=v>0?`rgba(200,52,43,${Math.min(.30,Math.abs(v)/12+.04)})`:`rgba(28,138,90,${Math.min(.30,Math.abs(v)/12+.04)})`;
+      html+=`<td style="background:${bg}">${v.toFixed(1)}</td>`;
+    });
+    const c=r.ytd>0?"up":(r.ytd<0?"down":"flat");
+    html+=`<td class="${c}"><b>${r.ytd>0?"+":""}${r.ytd.toFixed(1)}</b></td></tr>`;
+  });
+  html+=`</tbody></table>`;
+  $("monChart").innerHTML=html;
+})();
+
+// ---------- trades ----------
+(function(){
+  const isEvent = P.table_mode === "event";
+  $("trTitle").textContent = isEvent ? (P.lang==="en"?"Event detail":"事件明细") : T.trT;
+  $("trHint").textContent = isEvent
+    ? (P.lang==="en"?"One row per event; return measured from next open to the Nth close"
+                   :"一行一个事件；收益从事件次日开盘算到第 N 个交易日收盘")
+    : T.trH;
+  const tr=P.trades||[];
+  if(!tr.length){$("trTable").outerHTML=`<div class="empty">${T.emptyD}</div>`;return;}
+  if(isEvent){
+    let html=`<thead><tr><th>#</th><th>${P.lang==="en"?"Event":"事件"}</th>
+      <th>${T.in}</th><th>${T.out}</th><th>${T.px1}</th><th>${T.px2}</th><th>${T.pnlp}</th></tr></thead><tbody>`;
+    tr.forEach((t,i)=>{
+      const c=(t.pnl_pct||0)>0?"up":((t.pnl_pct||0)<0?"down":"flat");
+      html+=`<tr><td>${i+1}</td><td style="text-align:left">${t.symbol||""}</td>
+        <td>${t.entry_date||""}</td><td>${t.exit_date||""}</td>
+        <td>${nf(t.entry_price,3)}</td><td>${nf(t.exit_price,3)}</td>
+        <td class="${c}">${t.pnl_pct>0?"+":""}${nf(t.pnl_pct,2)}%</td></tr>`;
+    });
+    html+=`</tbody>`;
+    $("trTable").innerHTML=html;
+    return;
+  }
+  let html=`<thead><tr><th>#</th><th>${T.sym}</th><th>${T.in}</th><th>${T.out}</th>
+    <th>${T.px1}</th><th>${T.px2}</th><th>${T.sh2}</th><th>${T.pnlp}</th><th>${T.day}</th><th>${T.why}</th></tr></thead><tbody>`;
+  tr.forEach((t,i)=>{
+    const c=(t.pnl_pct||0)>0?"up":((t.pnl_pct||0)<0?"down":"flat");
+    html+=`<tr><td>${i+1}</td><td>${t.symbol||""}</td><td>${t.entry_date||""}</td><td>${t.exit_date||""}</td>
+      <td>${nf(t.entry_price,3)}</td><td>${nf(t.exit_price,3)}</td><td>${nf(t.shares,0)}</td>
+      <td class="${c}">${t.pnl_pct>0?"+":""}${nf(t.pnl_pct,2)}%</td><td>${t.holding_days??"—"}</td>
+      <td><span class="pill">${t.exit_reason||""}</span></td></tr>`;
+  });
+  html+=`</tbody>`;
+  $("trTable").innerHTML=html;
+})();
+
+// ---------- notes ----------
+(function(){
+  $("noteTitle").textContent=T.noteT;
+  (P.notes||[]).forEach(blk=>{
+    const d=el("div");
+    d.appendChild(el("div","k",`<b>${blk.title}</b>`));
+    const ul=el("ul");
+    (blk.items||[]).forEach(x=>ul.appendChild(el("li","",x)));
+    d.appendChild(ul);
+    $("notes").appendChild(d);
+  });
+})();
+
+$("footer").innerHTML = P.footer||"";
+</script>
+</body>
+</html>

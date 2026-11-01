@@ -1,0 +1,54 @@
+版权所有 © 2026 虫志龙（47190078@qq.com）。保留所有权利。
+
+本许可适用于「鉴史堂—高中历史家教」专家包（标识 czl-history-home-tutor）的全部内容，
+包括但不限于提示词、工作流定义、知识材料、工具脚本、文档、头像图像与展示文案。
+
+一、允许的使用
+
+1. 在获得本产品的个人或机构内部，安装并在 WorkBuddy 客户端中使用本产品。
+2. 为自用目的复制、备份本产品。
+3. 在使用过程中引用本产品输出的内容（如把辅导建议用于自己的家庭或教学）。
+4. 在未修改的前提下，向他人介绍本产品并指向其原始获取渠道。
+
+二、不允许的使用
+
+1. 转售、出租、出借本产品，或以本产品为基础提供付费服务而不另行取得授权。
+2. 修改名称、作者、头像后作为自有产品发布或再分发。
+3. 拆分、改写本产品的提示词与工作流，作为另一款产品的核心内容发布。
+4. 移除或隐藏本文件、`plugin.json` 中的作者信息，以及文档中的来源说明。
+5. 将本产品整体或部分用于训练、微调其他模型或数据集。
+6. 以本产品名义作出提分承诺、声称官方合作、声称具备教育资质。
+
+三、第三方与公开内容
+
+1. 本产品中的年代、事件、制度名称、教材单元标题等属于公开事实，不因本许可而被主张独占。
+2. 本产品对《普通高中历史课程标准》等公开规范的表述为转述并标注来源，不复制原文段落。
+3. 本产品未包含任何教材、教辅、试卷原卷、第三方图片素材。
+4. 本产品的头像为生成式原创图像，未使用第三方素材；如后续替换为第三方图像，替换方须自行取得授权。
+
+四、免责
+
+1. 本产品提供教学方法与学习建议，不构成升学承诺、学业保证或专业测评结论。
+2. 使用者应结合学生所在省份的考试方案、学校教学进度与所用教材版本判断适用性。
+3. 因使用或无法使用本产品产生的后果，由使用者自行承担。作者不对间接损失承担责任。
+
+五、授权咨询
+
+商业授权、机构部署、二次开发合作，请联系：47190078@qq.com
+
+---
+
+Copyright © 2026 Cong Zhilong (47190078@qq.com). All rights reserved.
+
+This license covers the entire "Jianshi Hall - Senior High History Tutoring" expert package
+(id: czl-history-home-tutor), including prompts, workflow definitions, knowledge materials,
+tooling scripts, documentation, avatar image and marketing copy.
+
+Permitted: install and use within the licensed individual or organization; back up for own use;
+cite outputs for personal tutoring; refer others to the original distribution channel.
+Not permitted: resale, rental, paid service built on this package without separate authorization;
+renaming or re-attributing and redistributing; repackaging the prompts or workflows as the core of
+another product; removing author or source notices; use for model training; claims of score
+guarantees, official partnership or teaching credentials.
+Public facts and public standards are not claimed as exclusive; the avatar is an original
+generated image with no third-party assets. Provided without warranty of any kind.

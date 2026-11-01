@@ -1,0 +1,124 @@
+name: thesis-architect
+version: 2.0.0
+summary: 论文写作全流程手册：12 个写作模块 + 中英句子库 + 13 份写作模板 + 6 个写作工具
+
+# 必读：写作底线（每轮适用）
+always_load:
+  - references/00-writing-principles.md
+
+# 模块路由：按用户要写什么，只加载对应手册
+modules:
+  W1:
+    name: 选题与开题
+    ref: references/01-topic-and-proposal.md
+    triggers: [选题, 题目, 定题, 开题, 开题报告, 研究方向]
+    template: templates/proposal.md
+  W2:
+    name: 文献与综述
+    ref: references/02-literature-review.md
+    triggers: [文献, 综述, 检索, 文献综述, 研究现状, 引用哪些]
+    template: templates/lit-matrix.md
+  W3:
+    name: 结构与提纲
+    ref: references/03-structure-and-outline.md
+    triggers: [提纲, 目录, 章节, 结构, 框架, 字数分配]
+  W4:
+    name: 摘要与关键词
+    ref: references/04-abstract-and-keywords.md
+    triggers: [摘要, 关键词, abstract, 英文摘要]
+    template: templates/abstract.md
+  W5:
+    name: 引言
+    ref: references/05-introduction.md
+    triggers: [引言, 绪论, 第一章, 研究背景, 研究意义]
+  W6:
+    name: 方法章
+    ref: references/06-methods.md
+    triggers: [研究方法, 方法章, 问卷, 访谈, 实验设计, 样本, 抽样, 数据分析方法]
+  W7:
+    name: 结果与图表
+    ref: references/07-results-and-figures.md
+    triggers: [结果, 数据分析, 统计, 图表, 三线表, 描述性统计]
+  W8:
+    name: 讨论与结论
+    ref: references/08-discussion-conclusion.md
+    triggers: [讨论, 结论, 建议, 对策, 局限, 研究不足]
+  W9:
+    name: 语言润色
+    ref: references/09-language-zh.md
+    alt_ref: references/10-language-en.md
+    triggers: [润色, 修改, 语病, 通顺, 学术化, 英文润色, polish]
+    template: templates/polish-pairs.md
+  W10:
+    name: 降重与查重
+    ref: references/11-dedup-and-similarity.md
+    triggers: [查重, 重复率, 降重, 相似度, 抄袭, 改写]
+    template: templates/dedup-plan.md
+  W11:
+    name: 引用与格式
+    ref: references/12-citation-and-format.md
+    triggers: [参考文献, 格式, GB/T 7714, APA, 引用, 学校模板, 页眉页脚]
+    template: templates/format-checklist.md
+  W12:
+    name: 答辩与投稿
+    ref: references/13-defense-and-submission.md
+    triggers: [答辩, PPT, 讲稿, 投稿, 期刊, cover letter, 审稿意见, 回复信, 致谢]
+    template: templates/defense-script.md
+
+# 文体差异：写方法章、结果章之前读
+genre:
+  ref: references/14-genre-methods.md
+  values:
+    humanity: 人文论证（文本细读、思想史对话）
+    qualitative: 质性（访谈、编码、主题）
+    quantitative: 量化（量表、模型、效应量）
+    experiment: 实验（对照、随机、盲法）
+    engineering: 工程设计（需求、方案比选、测试）
+    algorithm: 算法（基线、消融、开销）
+    review: 综述（框架、分类、缺口）
+
+# 句子库：起稿时取材
+sentence_banks:
+  zh: templates/sentence-bank-zh.md
+  en: templates/sentence-bank-en.md
+
+tools:
+  - name: wordstat
+    path: scripts/wordstat.py
+    module: [W3, W5, W6, W7, W8]
+    purpose: 按章统计中英文字数与段落图表数、对比目标字数、标失衡章节
+  - name: cite_format
+    path: scripts/cite_format.py
+    module: [W2, W11]
+    purpose: 参考文献 GB/T 7714 / APA / MLA / IEEE 互转、缺项检查、重复识别
+  - name: abstract_check
+    path: scripts/abstract_check.py
+    module: [W4]
+    purpose: 摘要字数、五要素、关键词质量、中英文数字一致性
+  - name: style_lint
+    path: scripts/style_lint.py
+    module: [W9]
+    purpose: 套话密度、长句、连续短句、被动比例、重复词、连接词滥用
+  - name: dup_scan
+    path: scripts/dup_scan.py
+    module: [W10]
+    purpose: 与源文本 n-gram 重合比对，定位疑似未标注重复
+  - name: figtable
+    path: scripts/figtable.py
+    module: [W7, W11]
+    purpose: 图表编号连续性、正文引用悬挂、编号风格混用
+
+templates:
+  title_candidates: templates/title-candidates.md
+  proposal: templates/proposal.md
+  lit_matrix: templates/lit-matrix.md
+  abstract: templates/abstract.md
+  chapter_cards: templates/chapter-cards.md
+  sentence_zh: templates/sentence-bank-zh.md
+  sentence_en: templates/sentence-bank-en.md
+  polish_pairs: templates/polish-pairs.md
+  dedup_plan: templates/dedup-plan.md
+  format_checklist: templates/format-checklist.md
+  defense_script: templates/defense-script.md
+  cover_letter: templates/cover-letter.md
+  response_letter: templates/response-letter.md

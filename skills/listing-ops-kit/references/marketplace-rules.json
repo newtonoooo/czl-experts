@@ -1,0 +1,106 @@
+{
+  "schema": "czl-listing-rules/1",
+  "updated": "2026-10-28",
+  "disclaimer": "以下字符上限与格式规则是配置基线，用于写作与自查，不构成对平台规则的官方解释。亚马逊会按类目模板与后台实际字段调整限制，冲突时以后台显示为准。",
+  "copy_checks": {
+    "banned_symbols": ["™", "®", "©", "★", "☆", "✔", "✅", "🔥", "➤", "→", "※", "【", "】", "！", "!!"],
+    "all_caps_word_min_len": 4,
+    "all_caps_ratio_max": 0.34,
+    "stuffing_repeat_max": 3,
+    "duplicate_phrase_min_tokens": 3,
+    "min_digits_in_title": 1,
+    "bullet_anchor_max_words": 4
+  },
+  "marketplaces": {
+    "US": {
+      "label": "Amazon.com（美国）",
+      "lang": "en",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "Title Case" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 120 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": [
+        "标题超过 200 字符会被系统截断或压制，80 字符是移动端完整显示的经验阈值。",
+        "部分类目（如服装、母婴）有独立的标题模板，字段顺序由后台固定。"
+      ]
+    },
+    "CA": {
+      "label": "Amazon.ca（加拿大）",
+      "lang": "en",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "Title Case" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 120 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": ["法语区买家占比高，魁北克市场建议同时准备法语版本。"]
+    },
+    "UK": {
+      "label": "Amazon.co.uk（英国）",
+      "lang": "en",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "Title Case" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 120 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": ["英国站沿用英式拼写（colour / aluminium），与德国站共用英式表达习惯。"]
+    },
+    "DE": {
+      "label": "Amazon.de（德国）",
+      "lang": "de",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "Sentence case" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 120 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": [
+        "德语复合词长，标题更容易顶到上限，预算要按实际字符算而不是按词数算。",
+        "德语名词首字母大写，不要套用英语的 Title Case 规则。"
+      ]
+    },
+    "FR": {
+      "label": "Amazon.fr（法国）",
+      "lang": "fr",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "Sentence case" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 120 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": ["法语标点前后空格规则（如 «  » 与冒号）会影响字符计数。"]
+    },
+    "IT": {
+      "label": "Amazon.it（意大利）",
+      "lang": "it",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "Sentence case" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 120 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": []
+    },
+    "ES": {
+      "label": "Amazon.es（西班牙）",
+      "lang": "es",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "Sentence case" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 120 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": []
+    },
+    "JP": {
+      "label": "Amazon.co.jp（日本）",
+      "lang": "ja",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "指定なし" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 100 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": [
+        "日语一个汉字算 1 字符，但买家阅读密度更高，实际可读信息量约为英语的 1.5 倍。",
+        "后台搜索词支持全角与半角，混用会浪费字节预算。"
+      ]
+    },
+    "AU": {
+      "label": "Amazon.com.au（澳大利亚）",
+      "lang": "en",
+      "title": { "hard_max": 200, "soft_max": 80, "case": "Title Case" },
+      "bullets": { "count": 5, "max_chars": 500, "min_chars": 120 },
+      "description": { "max_chars": 2000 },
+      "search_terms": { "max_bytes": 250 },
+      "notes": ["澳英拼写与计量单位（公制为主）需与本地习惯一致。"]
+    }
+  }
+}

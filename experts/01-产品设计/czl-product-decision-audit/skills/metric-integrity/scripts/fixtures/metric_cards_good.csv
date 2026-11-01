@@ -1,0 +1,3 @@
+﻿metric,definition,numerator,denominator,window,system,owner,dedupe,exclusions
+付费转化率,首次成功支付的去重用户在注册后 30 天窗口内的占比,首次成功支付的用户数,同期完成注册的用户数,注册后 30 天,dw.fact_order + dw.dim_user,增长组,按 user_id 去重,排除内部账号与测试账号；退款订单不计入
+月活,自然月内有过至少一次有效行为的去重用户数,当月有有效行为的用户数,不适用（绝对值指标）,自然月,dw.fact_event,增长组,按 user_id 去重,排除内部账号、爬虫 UA、后台运营账号

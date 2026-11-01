@@ -1,0 +1,28 @@
+{
+  "kind": "state",
+  "title": "订单状态机",
+  "subtitle": "从待支付到完成/关闭的全部合法迁移",
+  "direction": "LR",
+  "nodes": [
+    { "id": "start", "label": "开始", "shape": "circle", "role": "neutral" },
+    { "id": "created", "label": "待支付", "shape": "round", "role": "primary" },
+    { "id": "paid", "label": "已支付", "shape": "round", "role": "data" },
+    { "id": "shipped", "label": "已发货", "shape": "round", "role": "data" },
+    { "id": "done", "label": "已完成", "shape": "round", "role": "success" },
+    { "id": "closed", "label": "已关闭", "shape": "round", "role": "danger" },
+    { "id": "refund", "label": "退款中", "shape": "round", "role": "danger" },
+    { "id": "end", "label": "结束", "shape": "circle", "role": "neutral" }
+  ],
+  "edges": [
+    { "from": "start", "to": "created" },
+    { "from": "created", "to": "paid", "label": "支付成功" },
+    { "from": "created", "to": "closed", "label": "超时未付", "style": "dashed" },
+    { "from": "paid", "to": "shipped", "label": "仓库出库" },
+    { "from": "shipped", "to": "done", "label": "确认收货" },
+    { "from": "paid", "to": "refund", "label": "申请退款", "style": "dashed" },
+    { "from": "refund", "to": "closed", "label": "退款完成" },
+    { "from": "done", "to": "end" },
+    { "from": "closed", "to": "end" }
+  ],
+  "footnote": "虚线为异常/逆向路径；每个状态变更需写入状态流水表。"
+}

@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "title": "抖音内容合规词表（项目自建）",
+  "disclaimer": "本词表由本专家项目自行整理，用于发布前自查，不构成法律意见。判定依据为《中华人民共和国广告法》等公开法规的一般要求；具体合规结论以平台规则与监管口径为准，强监管类目请交专业法务复核。",
+  "level_order": ["高", "中", "低"],
+  "category_trigger": {
+    "医疗健康": ["医疗", "医院", "治疗", "康复", "药品", "处方", "诊所", "牙科", "中医"],
+    "保健食品": ["保健", "膳食补充", "营养素", "益生菌", "胶原蛋白", "代餐"],
+    "美妆个护": ["化妆品", "面膜", "精华", "祛斑", "美白", "防晒", "护肤"],
+    "金融理财": ["理财", "基金", "股票", "贷款", "保险", "收益率", "年化", "投资", "荐股"],
+    "教育培训": ["培训", "课程", "考证", "升学", "提分", "保过", "名师"],
+    "未成年人": ["儿童", "宝宝", "学生", "青少年", "未成年", "小学生", "中学生"]
+  },
+  "categories": [
+    {
+      "id": "absolute",
+      "name": "绝对化用语",
+      "level": "高",
+      "basis": "《广告法》第九条：不得使用「国家级」「最高级」「最佳」等用语",
+      "except": [],
+      "items": [
+        { "term": "最好", "replacement": "比较好" },
+        { "term": "最佳", "replacement": "合适的" },
+        { "term": "最强", "replacement": "比较强的" },
+        { "term": "最优", "replacement": "更合适的" },
+        { "term": "最低价", "replacement": "这个价位里比较低的" },
+        { "term": "全网最低价", "replacement": "活动期内价格较低" },
+        { "term": "最高级", "replacement": "配置较高的" },
+        { "term": "最便宜", "replacement": "价格偏低的" },
+        { "term": "第一品牌", "replacement": "做了比较久的品牌" },
+        { "term": "全国第一", "replacement": "销量靠前的" },
+        { "term": "销量第一", "replacement": "销量靠前的" },
+        { "term": "顶级", "replacement": "高配置的" },
+        { "term": "顶尖", "replacement": "比较专业的" },
+        { "term": "极致", "replacement": "做得比较细的" },
+        { "term": "国家级", "replacement": "符合国家标准的" },
+        { "term": "世界级", "replacement": "国际水准的" },
+        { "term": "独家", "replacement": "我们自己做的" },
+        { "term": "唯一", "replacement": "少见的" },
+        { "term": "首个", "replacement": "较早做的" },
+        { "term": "首创", "replacement": "我们自己设计的" },
+        { "term": "领导品牌", "replacement": "常见品牌" },
+        { "term": "绝无仅有", "replacement": "比较少见" },
+        { "term": "独一无二", "replacement": "有自己特点的" },
+        { "term": "无与伦比", "replacement": "表现不错的" },
+        { "term": "史无前例", "replacement": "此前少见的" },
+        { "term": "万能", "replacement": "适用场景比较多的" },
+        { "term": "100%", "replacement": "绝大部分情况下" },
+        { "term": "百分百", "replacement": "大部分情况下" }
+      ]
+    },
+    {
+      "id": "efficacy",
+      "name": "功效与疗效承诺",
+      "level": "高",
+      "basis": "普通食品、化妆品不得宣称疾病治疗功能；保健食品不得涉及疾病预防治疗",
+      "except": [],
+      "items": [
+        { "term": "治疗", "replacement": "辅助改善（需资质）" },
+        { "term": "治好", "replacement": "有所改善" },
+        { "term": "根治", "replacement": "长期改善" },
+        { "term": "痊愈", "replacement": "恢复得不错" },
+        { "term": "疗效", "replacement": "使用感受" },
+        { "term": "药效", "replacement": "成分作用" },
+        { "term": "抗癌", "replacement": "（删除）" },
+        { "term": "降血压", "replacement": "（删除）" },
+        { "term": "降血糖", "replacement": "（删除）" },
+        { "term": "排毒", "replacement": "帮助代谢" },
+        { "term": "消炎", "replacement": "（删除）" },
+        { "term": "祖传秘方", "replacement": "（删除）" },
+        { "term": "医用级", "replacement": "（删除或提供资质）" },
+        { "term": "减肥不反弹", "replacement": "配合饮食控制" },
+        { "term": "永久", "replacement": "较长时间" },
+        { "term": "彻底", "replacement": "明显" },
+        { "term": "包治", "replacement": "（删除）" },
+        { "term": "养胃", "replacement": "（删除，食品不得宣称保健功能）" },
+        { "term": "调理", "replacement": "（删除，食品不得宣称保健功能）" },
+        { "term": "增强免疫力", "replacement": "（删除或提供保健食品资质）" },
+        { "term": "改善睡眠", "replacement": "（删除或提供保健食品资质）" },
+        { "term": "无副作用", "replacement": "（删除）" },
+        { "term": "无效退款", "replacement": "按平台售后规则处理" }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "金融收益承诺",
+      "level": "高",
+      "basis": "不得对未来收益作保证性承诺，不得承诺保本保收益",
+      "except": [],
+      "items": [
+        { "term": "稳赚", "replacement": "（删除）" },
+        { "term": "包赚", "replacement": "（删除）" },
+        { "term": "必赚", "replacement": "（删除）" },
+        { "term": "零风险", "replacement": "风险相对可控（需提示风险）" },
+        { "term": "保本保收益", "replacement": "（删除）" },
+        { "term": "躺着赚", "replacement": "（删除）" },
+        { "term": "内幕消息", "replacement": "（删除）" },
+        { "term": "年化收益", "replacement": "历史表现为（需标注区间与时间）" },
+        { "term": "涨不停", "replacement": "（删除）" },
+        { "term": "翻倍", "replacement": "（删除）" }
+      ]
+    },
+    {
+      "id": "minor",
+      "name": "未成年人保护",
+      "level": "高",
+      "basis": "不得利用未成年人作证明，不得诱导未成年人消费或模仿危险行为",
+      "except": [],
+      "items": [
+        { "term": "长高", "replacement": "（删除或提供资质依据）" },
+        { "term": "增高", "replacement": "（删除或提供资质依据）" },
+        { "term": "童星", "replacement": "（删除）" },
+        { "term": "小孩子都在用", "replacement": "（删除）" },
+        { "term": "学生党必备", "replacement": "适合学生场景的" }
+      ]
+    },
+    {
+      "id": "induce",
+      "name": "诱导互动与虚假稀缺",
+      "level": "中",
+      "basis": "不得以利益诱导用户互动，不得虚构库存与限时信息",
+      "except": [],
+      "items": [
+        { "term": "点赞过万", "replacement": "（删除条件式承诺）" },
+        { "term": "不转不是", "replacement": "（删除）" },
+        { "term": "关注就送", "replacement": "（改为平台合规活动形式）" },
+        { "term": "最后3件", "replacement": "库存以页面为准" },
+        { "term": "仅剩", "replacement": "库存以页面为准" },
+        { "term": "全网最低", "replacement": "（删除）" },
+        { "term": "清仓价", "replacement": "活动价" },
+        { "term": "限时秒杀", "replacement": "活动期内优惠" }
+      ]
+    },
+    {
+      "id": "offsite",
+      "name": "站外导流",
+      "level": "高",
+      "basis": "平台规则限制在内容中引导至站外交易或联系方式，易触发限流与处罚",
+      "except": ["微信支付", "微信小程序下单"],
+      "items": [
+        { "term": "加微信", "replacement": "（删除，改为主页/私信承接）" },
+        { "term": "微信", "replacement": "（删除站外联系方式）" },
+        { "term": "加V", "replacement": "（删除）" },
+        { "term": "VX", "replacement": "（删除）" },
+        { "term": "vx", "replacement": "（删除）" },
+        { "term": "公众号", "replacement": "（删除）" },
+        { "term": "淘宝搜", "replacement": "（删除，改用抖音小店）" },
+        { "term": "拼多多", "replacement": "（删除）" },
+        { "term": "电话咨询", "replacement": "（删除）" },
+        { "term": "QQ群", "replacement": "（删除）" }
+      ]
+    },
+    {
+      "id": "superstition",
+      "name": "封建迷信类表述",
+      "level": "中",
+      "basis": "不得宣扬封建迷信，不得以运势、改运作为卖点",
+      "except": [],
+      "items": [
+        { "term": "转运", "replacement": "（删除）" },
+        { "term": "开光", "replacement": "（删除）" },
+        { "term": "化太岁", "replacement": "（删除）" },
+        { "term": "招财", "replacement": "（删除）" },
+        { "term": "改命", "replacement": "（删除）" }
+      ]
+    }
+  ]
+}

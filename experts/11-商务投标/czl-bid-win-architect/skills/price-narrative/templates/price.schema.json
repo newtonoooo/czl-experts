@@ -1,0 +1,24 @@
+{
+  "$comment": "roi_model.py 的输入格式。所有金额与口径必须由人填；basis 为空会被列进缺口清单，不会被补成漂亮数字。",
+  "client": "客户全称",
+  "price": 480000,
+  "period_months": 6,
+  "annual_benefit": [
+    {
+      "item": "收益项（用客户能听懂的说法）",
+      "basis": "口径：多少次 × 多少元 × 降多少",
+      "amount": 393120
+    }
+  ],
+  "cost_of_inaction": {
+    "item": "维持现状的年损失",
+    "basis": "口径来源（去年数据/第三方报告/客户自述）",
+    "amount": 656000
+  },
+  "options": [
+    { "name": "够用版", "price": 360000, "scope_out": ["少掉的功能一", "少掉的功能二"] },
+    { "name": "推荐版", "price": 480000, "scope_out": [] },
+    { "name": "加厚版", "price": 620000, "scope_out": [], "note": "含二期范围" }
+  ],
+  "max_discount": 0.12
+}

@@ -1,0 +1,3 @@
+﻿claim_id,claim,grade,source_name,published_or_accessed,url,status,note
+E1,示例：该公司官网设施页列明新加坡大士生产设施,A,企业官网-设施页,2026-03-12,https://example.com/facilities,已确认,示例行请替换
+E2,示例：该集团 2025 年营收数据,B,示例媒体,2025-11-02,https://example.com/article,部分确认,集团口径非本地实体

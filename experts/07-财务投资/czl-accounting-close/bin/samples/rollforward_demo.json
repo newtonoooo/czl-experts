@@ -1,0 +1,14 @@
+{
+  "subject": "应收账款",
+  "period": "2026-09",
+  "opening": 4820000.00,
+  "additions": [
+    { "label": "本期确认收入形成应收", "amount": 3260000.00 },
+    { "label": "代垫运费转入", "amount": 18000.00 }
+  ],
+  "reductions": [
+    { "label": "本期收回货款", "amount": 2980000.00 },
+    { "label": "核销坏账", "amount": 42000.00 }
+  ],
+  "closing": 5076000.00
+}

@@ -1,0 +1,23 @@
+{
+  "$comment": "score_sim.py 的输入格式。rate 必填且必须由人判断；pess/opt 省略时按 rate±0.12 处理并在报告中标注为假设值。",
+  "project": "项目名",
+  "bid_total": 100,
+  "reference_score": 82,
+  "items": [
+    {
+      "item": "评分项名称（抄原文）",
+      "max_score": 20,
+      "rate": 0.65,
+      "pess": 0.5,
+      "opt": 0.88,
+      "effort_hours": 12
+    },
+    {
+      "item": "投标报价",
+      "max_score": 30,
+      "rate": 0.6,
+      "effort_hours": 6,
+      "note": "报价类不参与追分排序，只参与总分区间的计算"
+    }
+  ]
+}

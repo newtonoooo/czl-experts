@@ -1,0 +1,16 @@
+{
+  "quantity": 10000,
+  "fob_unit_usd": 100.0,
+  "freight_unit_usd": 8.0,
+  "insurance_pct": 0.005,
+  "duty_rate": 0.15,
+  "vat_rate": 0.14,
+  "vat_recoverable": true,
+  "clearance_fixed_usd": 3000,
+  "inland_fixed_usd": 2000,
+  "port_delay_days": 5,
+  "demurrage_per_day_usd": 300,
+  "transit_days": 45,
+  "carry_rate_annual": 0.18,
+  "local_assembly_cost_per_unit": 12.0
+}

@@ -1,0 +1,7 @@
+{
+  "subject": "预付一年期财产保险费",
+  "start_period": "2026-09",
+  "total": 240000.00,
+  "months": 12,
+  "method": "straight_line"
+}

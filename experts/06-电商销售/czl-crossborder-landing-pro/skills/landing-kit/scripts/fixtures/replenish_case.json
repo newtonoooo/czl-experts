@@ -1,0 +1,16 @@
+{
+  "_case": "硅胶水杯 · 美国站 · 日均 18 件 · 海运 42 天 · MOQ 500",
+  "currency": "USD",
+  "daily": 18,
+  "sea_days": 42,
+  "air_days": 12,
+  "safety_days": 21,
+  "moq": 500,
+  "stock": 600,
+  "in_transit": 500,
+  "unit_cost": 8.46,
+  "cash_budget": 20000,
+  "target_cover_days": 75,
+  "unit_margin": 5.6,
+  "as_of": "2026-10-27"
+}

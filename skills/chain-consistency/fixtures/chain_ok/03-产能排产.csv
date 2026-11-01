@@ -1,0 +1,4 @@
+﻿id,req_id,title,pw,priority,depends_on,status,stop_loss
+RM-01,REQ-01,导出进度,6.0,P0,,committed,第4周无法稳定取进度则改轮询
+RM-02,REQ-02,断点续传,8.0,P0,RM-01,committed,第7周成功率低于70%则只重跑失败分片
+RM-03,REQ-03,行数校验,3.5,P1,RM-01,committed,第9周仍有差异则改为提示用户核对

@@ -1,0 +1,76 @@
+{
+  "name": "czl-site-launch-pro",
+  "version": "1.0.0",
+  "description": "An independent website build-and-launch expert: locks a one-page brief, routes the stack, builds semantic pages, audits accessibility, SEO and performance with bundled scripts, then ships behind a deploy preflight with a rollback-tested plan. Use when a site, landing page or portfolio must be built from scratch, an existing site must be fixed, audited or made findable, or a finished project must go live on a host with a domain and HTTPS.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "keywords": [
+    "website",
+    "landing-page",
+    "accessibility",
+    "seo",
+    "performance-budget",
+    "deployment",
+    "rollback"
+  ],
+  "agents": [
+    "./agents/czl-site-launch-pro.md"
+  ],
+  "skills": [
+    "./skills/czl-site-brief",
+    "./skills/czl-site-build",
+    "./skills/czl-site-ship"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-site-launch-pro",
+  "displayName": {
+    "en": "Pro Site Launch Expert",
+    "zh": "专业建站上线专家"
+  },
+  "profession": {
+    "en": "Website Build & Launch Delivery Expert",
+    "zh": "网站构建与上线交付专家"
+  },
+  "displayDescription": {
+    "en": "Builds a site as a deliverable, not a page: locks the brief, routes the stack, then audits accessibility, SEO and weight with five runnable scripts before a key-leak and rollback preflight.",
+    "zh": "把网站当交付物做：锁立项、选型、页面、索引、无障碍、体积、上线预检逐道过关，五支脚本真跑"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "I want to build a company site but only have a one-sentence idea. Lock the brief with me first, then give me the stack decision and a first page that actually runs.",
+    "zh": "我想做个公司官网，现在只有一句话的想法。先把立项单跟我定清楚，再给选型结论和一版能跑起来的第一页。"
+  },
+  "plugin": "czl-site-launch-pro",
+  "tags": [
+    {
+      "en": "Site Delivery",
+      "zh": "建站交付"
+    },
+    {
+      "en": "Accessibility & SEO Audit",
+      "zh": "无障碍与SEO体检"
+    },
+    {
+      "en": "Deploy & Rollback",
+      "zh": "部署与回滚"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I want to build a company site but only have a one-sentence idea. Lock the brief with me first, then give me the stack decision and a first page that actually runs.",
+      "zh": "我想做个公司官网，现在只有一句话的想法。先把立项单跟我定清楚，再给选型结论和一版能跑起来的第一页。"
+    },
+    {
+      "en": "This site goes live next week. Run the preflight: leaked keys, leftover localhost URLs, missing 404, robots and sitemap, and tell me exactly how to roll back if it breaks.",
+      "zh": "这站下周要上线。把预检跑一遍：密钥泄露、本地地址残留、404 缺不缺、robots 和 sitemap，再告诉我上线出问题到底怎么退回去。"
+    },
+    {
+      "en": "Audit this site from the code: accessibility, meta/SEO and asset weight. List problems by severity with the rule id and file, then fix the blocking ones directly.",
+      "zh": "从代码层面体检这个站：无障碍、元信息 SEO、资源体积。按严重程度列出问题和规则编号、所在文件，然后把阻塞项直接改掉。"
+    }
+  ]
+}

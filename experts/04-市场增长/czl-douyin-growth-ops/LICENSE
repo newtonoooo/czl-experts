@@ -1,0 +1,41 @@
+# 著作权与使用许可
+
+版权所有 © 2026 虫志龙（47190078@qq.com）。保留所有权利。
+
+本专家包（以下称"本作品"）包括但不限于：`agents/` 下的提示词与工作流定义、`skills/` 下的技能说明与脚本、`references/` 下的词表与判定规则、`templates/` 下的模板、`docs/` 下的文档、`avatars/` 下的头像图片，以及 `README.md`、`CHANGELOG.md` 等说明文件。
+
+## 一、允许的使用
+
+1. 在 WorkBuddy 平台内安装、运行本作品，用于自身的抖音内容与直播运营。
+2. 依据本作品给出的建议开展商业活动，成果归使用者所有。
+3. 在未修改内容的前提下，为备份目的复制本作品。
+
+## 二、未经书面许可禁止的行为
+
+1. 转售、出租、以付费形式二次分发本作品或其修改版。
+2. 将本作品（含其修改版）以自己名义发布、上架或申请任何形式的权属登记。
+3. 删除、篡改本文件及文件中的作者署名信息。
+4. 将脚本与词表拆分后作为独立产品或服务对外提供。
+5. 使用本作品的名称、花名、头像用于容易引起混淆的其他产品。
+
+## 三、第三方内容说明
+
+本作品不包含任何第三方代码、提示词、模板或图像素材。所有脚本、规则、文案与头像均为本项目独立开发或独立生成，开发过程记录见 `docs/开发记录与文件清单.md`。
+
+若后续版本引入第三方组件，将在本文件中逐项列明其名称、来源、许可证及是否允许商业再分发。
+
+## 四、免责声明
+
+本作品提供的为运营方法与自查工具，不构成法律意见、投资建议或效果承诺。使用者应自行核实平台最新规则与法规要求，并自行承担经营决策的后果。作者不对因使用本作品产生的直接或间接损失承担责任。
+
+合规词表仅作发布前自查参考，不能替代具备资质主体或法务的审核。
+
+## 五、其他
+
+本文件为权利人声明。如通过平台分发，平台协议中与本文件冲突的条款，以平台协议为准；本文件未尽事宜，可通过上述邮箱联系作者。
+
+---
+
+Copyright © 2026 Chong Zhilong. All rights reserved.
+
+This expert package is an original work. No third-party code, prompts, templates or images are included. Redistribution, resale, or republishing under another name requires prior written permission. Provided "as is", without warranty of any kind. The compliance word list is a self-check aid, not legal advice.

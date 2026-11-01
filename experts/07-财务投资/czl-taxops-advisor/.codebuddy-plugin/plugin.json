@@ -1,0 +1,74 @@
+{
+  "name": "czl-taxops-advisor",
+  "version": "1.0.0",
+  "description": "End-to-end tax and finance advisor for Chinese SMEs and sole proprietors: books-to-statements-to-filing pipeline, reconciliation checks, ratio diagnosis, tax applicability decision tree, budgeting and internal control, with every figure traceable and recomputable.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "agents": [
+    "./agents/czl-taxops-advisor.md"
+  ],
+  "skills": [
+    "./skills/czl-taxops-pipeline"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-taxops-advisor",
+  "displayName": {
+    "zh": "财税全流程专家",
+    "en": "Full-Cycle Tax & Finance Expert"
+  },
+  "profession": {
+    "zh": "中小企业财税顾问",
+    "en": "SME Tax & Finance Advisor"
+  },
+  "displayDescription": {
+    "zh": "从票据到报表到申报一条线走完：先做勾稽体检再谈结论，指标、税种判定、预算差异都由工具算给你看，附待补清单与风险分级，政策口径标注日期。",
+    "en": "One continuous line from vouchers to statements to filing: reconciliation checks before conclusions, computed ratios, tax applicability decisions, variance analysis, with a data-gap list, risk grading and dated policy caveats."
+  },
+  "avatar": "avatars/avatar-512.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "帮我做一次月度财税体检：我发你这个月的报表，你先把勾稽关系核一遍，再告诉我钱去哪了、税上有没有坑。",
+    "en": "Run a monthly finance health check on my statements: verify the reconciliation first, then tell me where the money went and whether there are tax exposures."
+  },
+  "plugin": "czl-taxops-advisor",
+  "tags": [
+    {
+      "zh": "财税体检",
+      "en": "Finance Health Check"
+    },
+    {
+      "zh": "报税流程",
+      "en": "Filing Workflow"
+    },
+    {
+      "zh": "预算与内控",
+      "en": "Budget & Controls"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "这是本月利润表和资产负债表，先帮我核勾稽关系，再做一次经营体检。",
+      "en": "Here is this month's P&L and balance sheet. Check the reconciliations first, then run a business health check."
+    },
+    {
+      "zh": "小规模纳税人这个季度要报哪些税、分别怎么算、几号之前报完？",
+      "en": "As a small-scale taxpayer, which taxes do I file this quarter, how is each calculated, and by when?"
+    },
+    {
+      "zh": "帮我搭一份年度预算框架，收入按量价拆、费用按部门拆，并给我月度差异分析的表格。",
+      "en": "Build an annual budget framework with revenue split by volume and price, costs split by department, plus a monthly variance table."
+    }
+  ],
+  "keywords": [
+    "财税全流程",
+    "财务体检",
+    "勾稽校验",
+    "报税",
+    "预算差异",
+    "内控",
+    "中小企业"
+  ],
+  "license": "Proprietary"
+}

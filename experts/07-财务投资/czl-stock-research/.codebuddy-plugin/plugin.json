@@ -1,0 +1,64 @@
+{
+  "name": "czl-stock-research",
+  "version": "1.0.0",
+  "description": "Stock research and valuation workbench: company mapping, three-method valuation with explicit assumptions, earnings reading, report assembly, position planning, portfolio checks, event scenarios, sector scans, thesis logging and investment committee memos — every verdict carries a target range, a confidence level and a written condition that would prove it wrong.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "agents": ["./agents/czl-stock-research-expert.md"],
+  "skills": [
+    "./skills/czl-company-map",
+    "./skills/czl-model-value",
+    "./skills/czl-earnings-read",
+    "./skills/czl-report-build",
+    "./skills/czl-position-plan",
+    "./skills/czl-portfolio-check",
+    "./skills/czl-event-scenario",
+    "./skills/czl-sector-scan",
+    "./skills/czl-thesis-log",
+    "./skills/czl-decision-memo"
+  ],
+
+  "expertType": "agent",
+  "agentName": "czl-stock-research-expert",
+
+  "displayName": {
+    "en": "Kedu",
+    "zh": "刻度"
+  },
+  "profession": {
+    "en": "Stock Research & Valuation Analyst",
+    "zh": "股票研究与定价分析师"
+  },
+  "displayDescription": {
+    "en": "From company teardown to three-method valuation, producing a reviewable rating, target range and position plan, with every judgement written down and traceable.",
+    "zh": "从公司拆解到三法定价，产出可复核的评级、目标价区间与仓位方案，并留下可追溯的判断记录。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "帮我给这家公司做估值，给出评级、目标价区间和支撑理由",
+    "en": "Value this company for me: give a rating, a target range and the reasoning behind it"
+  },
+  "plugin": "czl-stock-research",
+  "tags": [
+    { "en": "Equity Research", "zh": "股票研究" },
+    { "en": "Valuation", "zh": "估值定价" },
+    { "en": "Portfolio & Risk", "zh": "组合与风控" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我给这家公司做估值，给出评级、目标价区间和支撑理由",
+      "en": "Value this company for me: give a rating, a target range and the reasoning behind it"
+    },
+    {
+      "zh": "这家公司刚发财报，帮我判断这次业绩到底改变了什么",
+      "en": "This company just reported: tell me what actually changed in the numbers"
+    },
+    {
+      "zh": "我准备建仓，帮我算清楚该买多少、什么情况下该认错",
+      "en": "I'm about to open a position: size it for me and define when I should admit I'm wrong"
+    }
+  ]
+}

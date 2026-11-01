@@ -1,0 +1,49 @@
+{
+  "candidates": [
+    {
+      "name": "候选甲·利雅得工业代理",
+      "scores": {
+        "category_fit": 5,
+        "customer_coverage": 4,
+        "technical_capability": 4,
+        "financial_strength": 3,
+        "compliance_record": 4,
+        "channel_depth": 4,
+        "commitment": 4,
+        "governance": 3
+      },
+      "red_flags": [],
+      "notes": "主营工业自动化，有本地调试团队，覆盖利雅得与东部省"
+    },
+    {
+      "name": "候选乙·吉达综合贸易",
+      "scores": {
+        "category_fit": 2,
+        "customer_coverage": 3,
+        "technical_capability": 2,
+        "financial_strength": 4,
+        "compliance_record": 4,
+        "channel_depth": 3,
+        "commitment": 2,
+        "governance": 3
+      },
+      "red_flags": [],
+      "notes": "什么品类都做，无技术团队，售后需外包"
+    },
+    {
+      "name": "候选丙·达曼家族企业",
+      "scores": {
+        "category_fit": 4,
+        "customer_coverage": 5,
+        "technical_capability": 3,
+        "financial_strength": 3,
+        "compliance_record": 3,
+        "channel_depth": 3,
+        "commitment": 4,
+        "governance": 2
+      },
+      "red_flags": ["exclusive_no_commitment"],
+      "notes": "客户覆盖强，但要求无边界独家且拒绝业绩承诺"
+    }
+  ]
+}

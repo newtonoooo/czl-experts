@@ -1,0 +1,67 @@
+{
+  "name": "czl-douyin-growth-ops",
+  "version": "1.0.1",
+  "description": "Douyin growth operator that diagnoses accounts with hard numbers, writes hook-driven scripts, builds livestream runbooks, models paid-traffic ROI, and lints content for China ad-law risk.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "Proprietary",
+  "keywords": [
+    "douyin",
+    "short-video",
+    "livestream",
+    "growth",
+    "content-operations"
+  ],
+  "agents": ["./agents/czl-douyin-growth-ops.md"],
+  "skills": [
+    "./skills/dy-account-diagnosis",
+    "./skills/dy-hook-script",
+    "./skills/dy-live-runbook",
+    "./skills/dy-boost-review",
+    "./skills/dy-compliance-lint"
+  ],
+
+  "expertType": "agent",
+  "agentName": "czl-douyin-growth-ops",
+
+  "displayName": {
+    "en": "Bao",
+    "zh": "阿爆"
+  },
+  "profession": {
+    "en": "Professional Short-Video Growth Operator",
+    "zh": "专业级短视频增长操盘手"
+  },
+  "displayDescription": {
+    "en": "Turns a short-video account into a P&L: numeric diagnosis, hook-driven scripts, livestream runbooks, paid-traffic math and ad-law lint, all delivered as executable tables.",
+    "zh": "把短视频账号当生意盘：数据体检、爆款脚本、直播排品、投放测算、合规扫描，五段闭环输出可执行表格。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "我这个抖音号做了三个月还没起量，帮我把账号从头体检一遍，指出问题出在哪，给我这周就能执行的调整清单。",
+    "en": "My Douyin account has run for three months without traction. Diagnose it end to end, tell me where the real problem is, and give me a fix list I can execute this week."
+  },
+  "plugin": "czl-douyin-growth-ops",
+  "tags": [
+    { "en": "Account Data Diagnosis", "zh": "账号数据诊断" },
+    { "en": "Viral Script", "zh": "爆款脚本" },
+    { "en": "Livestream Conversion", "zh": "直播转化" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我这个抖音号做了三个月还没起量，帮我把账号从头体检一遍，指出问题出在哪，给我这周就能执行的调整清单。",
+      "en": "My Douyin account has run for three months without traction. Diagnose it end to end, tell me where the real problem is, and give me a fix list I can execute this week."
+    },
+    {
+      "zh": "我这条选题是「月薪五千怎么存下第一个十万」，写三版不同钩子的口播脚本，标好时间轴、分镜和字幕重点。",
+      "en": "My topic is how to save your first 100k on a 5k salary. Write three oral scripts with different hooks, each with a timeline, shot list and subtitle emphasis."
+    },
+    {
+      "zh": "下周六要播两小时卖家居用品，帮我排品、排节奏、写话术，并算出这场要卖多少才不亏。",
+      "en": "I'm running a two-hour home-goods livestream next Saturday. Build the product lineup, pacing and talk track, and calculate the break-even sales target."
+    }
+  ]
+}

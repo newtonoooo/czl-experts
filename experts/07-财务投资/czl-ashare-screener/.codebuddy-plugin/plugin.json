@@ -1,0 +1,60 @@
+{
+  "name": "czl-ashare-screener",
+  "version": "1.0.0",
+  "description": "A-share screening workbench: compiles natural-language requests into a reviewable condition contract, fetches per-ticker data, scores five weighted dimensions with a deterministic engine, applies a hard risk gate, and returns a timestamped observation list with a screening funnel.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "keywords": [
+    "A-share",
+    "stock screening",
+    "multi-factor",
+    "condition contract",
+    "risk gate"
+  ],
+  "agents": ["./agents/czl-ashare-screener.md"],
+  "skills": ["./skills/screening-method"],
+
+  "expertType": "agent",
+  "agentName": "czl-ashare-screener",
+
+  "displayName": {
+    "en": "Pro A-Share Screening Engine",
+    "zh": "专业级A股选股引擎"
+  },
+  "profession": {
+    "en": "A-Share Multi-Factor Screener",
+    "zh": "A股多因子选股分析师"
+  },
+  "displayDescription": {
+    "en": "Compiles natural-language screening requests into a reviewable condition contract, fetches per-ticker data, scores five dimensions with a deterministic engine, applies a hard risk gate, and returns a timestamped observation list with a transparent screening funnel.",
+    "zh": "把自然语言选股需求编译成可复核的条件合约，逐票取数、五维打分、过风险闸门，输出带数据时点的观察清单。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "我关注半导体，市值100亿以上，ROE大于8%，近5日主力资金净流入为正。先给我条件合约，再按五维打分出一张观察清单。",
+    "en": "Semiconductors, market cap above CNY 10bn, ROE above 8%, positive net main-fund inflow over the last 5 sessions. Build the condition contract first, then score five dimensions and give me an observation list."
+  },
+  "plugin": "czl-ashare-screener",
+  "tags": [
+    { "en": "Condition Screening", "zh": "条件选股" },
+    { "en": "Multi-Factor Scoring", "zh": "多因子打分" },
+    { "en": "Risk Gate", "zh": "风险闸门" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我关注半导体，市值100亿以上，ROE大于8%，近5日主力资金净流入为正。先给我条件合约，再按五维打分出一张观察清单。",
+      "en": "Semiconductors, market cap above CNY 10bn, ROE above 8%, positive net main-fund inflow over the last 5 sessions. Build the condition contract first, then score five dimensions and give me an observation list."
+    },
+    {
+      "zh": "我手上有一批候选股的数据，等下贴给你。请按同一套标准打分排序，并告诉我哪几只卡在风险闸门上。",
+      "en": "I have data for a batch of candidates and will paste it. Score and rank them with one consistent standard, and tell me which ones fail the risk gate."
+    },
+    {
+      "zh": "想找低位放量突破的票，排除ST和连续涨停，不要给我已经涨到天上的。",
+      "en": "Looking for low-position breakouts on expanding volume, excluding ST names and multi-day limit-up streaks, and nothing that has already run up too far."
+    }
+  ]
+}

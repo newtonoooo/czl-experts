@@ -1,0 +1,77 @@
+{
+  "name": "czl-draft-qc",
+  "version": "3.3.0",
+  "description": "One chain for WeChat Official Account content: a keyword in, a publishable article out. Searches the live web for recent developments, produces five angle-distinct topic candidates, builds a validated skeleton, writes the draft, runs an eight-dimension quality check down to the exact sentence, rewrites with before-and-after diffs, then renders paste-safe HTML with one of five low-saturation colour schemes (random by default, pinnable per article), downloads images to disk instead of hot-linking, runs automated compliance linting, and emits an image-upload checklist.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "wechat",
+    "official-account",
+    "draft-review",
+    "ai-trace",
+    "quality-gate",
+    "chinese-copywriting",
+    "topic-research"
+  ],
+  "agents": [
+    "./agents/czl-draft-qc.md"
+  ],
+  "skills": [
+    "./skills/topic-radar",
+    "./skills/draft-foundry",
+    "./skills/quality-gate",
+    "./skills/publish-kit"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-draft-qc",
+  "displayName": {
+    "en": "Zhubi",
+    "zh": "朱笔"
+  },
+  "profession": {
+    "en": "WeChat Official Account Drafting, QC & Typography Expert",
+    "zh": "公众号成稿质检与排版专家"
+  },
+  "displayDescription": {
+    "en": "Works on your account's own beat: researches live topics, writes the draft, rewrites it until it is publishable, then renders paste-safe WeChat HTML in one of five colour schemes. Never assumes an account name, niche or audience.",
+    "zh": "按你账号的方向选题、写成稿、去掉AI味，再按规范排版，交付能直接粘贴的公众号版式。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "我的号写的是 ___（说个方向，比如美食/职场/育儿）。关键词是「___」，帮我搜搜最近有什么热点，出 5 个选题让我选。",
+    "en": "My account covers ___ (say a niche). My keyword is '___.' Search for recent developments and give me five topic options."
+  },
+  "plugin": "czl-draft-qc",
+  "tags": [
+    {
+      "en": "Topic Planning",
+      "zh": "选题策划"
+    },
+    {
+      "en": "AI-Trace QC",
+      "zh": "去AI味质检"
+    },
+    {
+      "en": "OA Typography",
+      "zh": "公众号排版"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我的号写的是 ___（说个方向，比如美食/职场/育儿）。关键词是「___」，帮我搜搜最近有什么热点，出 5 个选题让我选。",
+      "en": "My account covers ___ (say a niche). My keyword is '___.' Search for recent developments and give me five topic options."
+    },
+    {
+      "zh": "我手上有篇公众号稿子，帮我按标准体检一遍，哪里读着像 AI 写的，直接给我改法。",
+      "en": "I have a finished draft. Run a standards-based check, show me where it reads like AI wrote it, and give me the fixes."
+    },
+    {
+      "zh": "我想写「___」，先给我看看骨架，确认了再写，写完排成能粘的版式。",
+      "en": "I want to write about ___. Show me the outline first, then write it and render paste-ready HTML."
+    }
+  ]
+}

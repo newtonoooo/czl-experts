@@ -1,0 +1,43 @@
+{
+  "name": "czl-novel-serial",
+  "version": "1.0.0",
+  "description": "An independent serialized web-novel production expert that runs a six-stage pipeline: project brief, story bible, golden opening chapters, rolling chapter writing, quality review and ledger maintenance.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "agents": ["./agents/czl-novel-serial.md"],
+
+  "expertType": "agent",
+  "agentName": "czl-novel-serial",
+
+  "displayName": {
+    "en": "Serial Story Engine",
+    "zh": "连载创作引擎"
+  },
+  "profession": {
+    "en": "Web Serial Production Specialist",
+    "zh": "网文连载制作师"
+  },
+  "displayDescription": {
+    "en": "Runs a full serialized-novel pipeline: one-line idea to project brief, story bible and volume outline, then chapter-by-chapter writing with automatic foreshadowing and timeline ledgers so hundreds of thousands of words stay consistent.",
+    "zh": "从一句话创意到上架连载：立项书、设定集、卷纲一次搭好，逐章码字并自动维护伏笔台账，让几十万字不断线。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "我想开一本玄幻修仙连载，主角是宗门里最不起眼的杂役弟子，给我走一遍完整立项流程",
+    "en": "I want to start a xianxia serial whose protagonist is the most overlooked handyman disciple of his sect. Run me through the full project-setup pipeline."
+  },
+  "plugin": "czl-novel-serial",
+  "tags": [
+    { "en": "Web Serial", "zh": "网文连载" },
+    { "en": "Outline & Worldbuilding", "zh": "大纲设定" },
+    { "en": "Chapter Writing", "zh": "章节码字" }
+  ],
+  "quickPrompts": [
+    { "en": "I want to start a xianxia serial whose protagonist is the most overlooked handyman disciple of his sect. Run me through the full project-setup pipeline.", "zh": "我想开一本玄幻修仙连载，主角是宗门里最不起眼的杂役弟子，给我走一遍完整立项流程" },
+    { "en": "The setup is done — give me the golden opening three chapters, 2000-3000 words each.", "zh": "立项和蓝图都确认了，直接给我黄金开篇三章，每章两千到三千字" },
+    { "en": "Continue from the last chapter. Check the ledgers first, then flag any conflicts before writing.", "zh": "从上一章接着写。先查台账，有冲突先标出来再动笔" }
+  ]
+}

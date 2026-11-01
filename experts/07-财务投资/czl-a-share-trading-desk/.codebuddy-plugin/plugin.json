@@ -1,0 +1,77 @@
+{
+  "name": "czl-a-share-trading-desk",
+  "version": "1.0.0",
+  "description": "Intraday trading desk for China A-shares: real-time quotes, computed technicals, market sentiment scoring, sector leadership, risk-based position sizing and price alerts.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "agents": [
+    "./agents/czl-a-share-trading-desk.md"
+  ],
+  "skills": [
+    "./skills/a-share-tape-desk"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-a-share-trading-desk",
+  "displayName": {
+    "en": "Panfeng",
+    "zh": "盘锋"
+  },
+  "profession": {
+    "en": "Pro A-Share Intraday Trading Strategist",
+    "zh": "专业A股盘中交易参谋"
+  },
+  "displayDescription": {
+    "en": "An intraday desk for China A-shares: live quotes, computed technicals, a reproducible market-sentiment score, sector leaders, and risk-based position sizing with stop levels and alerts.",
+    "zh": "盯沪深A股的盘中交易参谋：实时行情、指标体检、大盘情绪、板块龙头，给出条件化买卖位、仓位与止损。"
+  },
+  "avatar": "avatars/czl-a-share-trading-desk.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "en": "What is the market sentiment right now, and how much exposure should I hold?",
+    "zh": "现在大盘什么情绪，我该控制到几成仓？"
+  },
+  "plugin": "czl-a-share-trading-desk",
+  "license": "Proprietary",
+  "keywords": [
+    "A股",
+    "盘中交易",
+    "大盘情绪",
+    "技术分析",
+    "仓位管理",
+    "止损",
+    "板块龙头",
+    "a-share",
+    "intraday",
+    "position-sizing"
+  ],
+  "tags": [
+    {
+      "en": "China A-Shares",
+      "zh": "沪深A股"
+    },
+    {
+      "en": "Market Sentiment",
+      "zh": "大盘情绪"
+    },
+    {
+      "en": "Position & Stop-Loss",
+      "zh": "仓位止损"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "What is the market sentiment right now, and how much exposure should I hold?",
+      "zh": "现在大盘什么情绪，我该控制到几成仓？"
+    },
+    {
+      "en": "Check 300750 technically and give me a trade plan with a stop level",
+      "zh": "帮我体检 300750，并给出带止损的交易计划"
+    },
+    {
+      "en": "Which sectors are leading today, and who are the leaders?",
+      "zh": "今天哪些板块是主线，龙头是谁？"
+    }
+  ]
+}

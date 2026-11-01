@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-A-工业自动化设备",
+  "activity": "工业自动化设备销售、集成与售后",
+  "activity_code": "manufacturing-equipment",
+  "foreign_ownership_pct": 100,
+  "has_local_partner": false,
+  "required_licenses": ["MISA", "CR", "ZATCA", "GOSI", "SASO"],
+  "held_licenses": ["MISA"],
+  "sells_to_government": true,
+  "imports_goods": true,
+  "product_regulated": true,
+  "certificates_held": [],
+  "employs_staff": true,
+  "local_after_sales": false,
+  "zone": "none"
+}

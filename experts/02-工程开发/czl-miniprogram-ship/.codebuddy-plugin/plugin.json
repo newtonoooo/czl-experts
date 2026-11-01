@@ -1,0 +1,75 @@
+{
+  "name": "czl-miniprogram-ship",
+  "version": "1.0.0",
+  "description": "A WeChat Mini Program delivery expert that turns a fuzzy request into numbered acceptance items, budgets main-package and subpackage size before coding, ships page and capability code against a written contract, and gates release behind a preflight tool that reads the real project instead of guessing.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "Proprietary",
+  "keywords": [
+    "miniprogram",
+    "wechat",
+    "wxml",
+    "wxss",
+    "subpackage",
+    "cloudbase",
+    "review-preflight",
+    "delivery"
+  ],
+  "homepage": {
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/framework/",
+    "type": "documentation"
+  },
+  "agents": ["./agents/czl-miniprogram-ship.md"],
+  "skills": [
+    "./skills/wx-scope",
+    "./skills/wx-skeleton",
+    "./skills/wx-page",
+    "./skills/wx-capability",
+    "./skills/wx-cloud",
+    "./skills/wx-doctor"
+  ],
+
+  "expertType": "agent",
+  "agentName": "czl-miniprogram-ship",
+
+  "displayName": {
+    "en": "Golive",
+    "zh": "码上线"
+  },
+  "profession": {
+    "en": "Professional WeChat Mini Program Delivery Expert",
+    "zh": "专业级微信小程序交付专家"
+  },
+  "displayDescription": {
+    "en": "Treats a mini program as a deliverable: numbered acceptance items, subpackage size budgets, page and capability code, executable preflight, and a release record you can audit.",
+    "zh": "把小程序当交付物做：需求条目化、分包体积预算、页面与能力接入、脚本体检、提审预检逐道过，交付可验收。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "我这有个做社区团购的小程序要开发，主包已经快 2MB 了还没加详情页。先帮我把需求拆成能验收的条目，再算一遍分包和体积预算，别做完了才发现传不上去。",
+    "en": "I'm building a community group-buying mini program and the main package is already close to 2MB before the detail page exists. Break the scope into verifiable items, then work out the subpackage and size budget before anything gets built."
+  },
+  "plugin": "czl-miniprogram-ship",
+  "tags": [
+    { "en": "Mini Program Delivery", "zh": "小程序交付" },
+    { "en": "Subpackage Budget", "zh": "分包与体积" },
+    { "en": "Review Preflight", "zh": "提审预检" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我这有个做社区团购的小程序要开发，主包已经快 2MB 了还没加详情页。先帮我把需求拆成能验收的条目，再算一遍分包和体积预算，别做完了才发现传不上去。",
+      "en": "I'm building a community group-buying mini program and the main package is already close to 2MB before the detail page exists. Break the scope into verifiable items, then work out the subpackage and size budget before anything gets built."
+    },
+    {
+      "zh": "我的小程序上次提审被拒了，理由是「收集用户信息未说明用途」。帮我把隐私相关的调用全找出来，该声明的声明、该弹窗的弹窗，再给我一份能直接对照改的清单。",
+      "en": "My mini program was rejected for collecting user information without stating the purpose. Find every privacy-related call in the code, fix the declarations and consent flow, and give me a list I can work through item by item."
+    },
+    {
+      "zh": "小程序要接微信支付和手机号登录。把下单到支付回调的完整链路写出来，签名放服务端，顺便告诉我哪些地方会让审核卡住。",
+      "en": "I need WeChat Pay plus phone-number login. Write the full chain from order creation to payment callback with server-side signing, and flag the places that typically block review."
+    }
+  ]
+}

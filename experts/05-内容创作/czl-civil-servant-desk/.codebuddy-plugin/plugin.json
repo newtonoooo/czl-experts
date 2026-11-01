@@ -1,0 +1,76 @@
+{
+  "name": "czl-civil-servant-desk",
+  "version": "2.0.0",
+  "description": "Drafts, reviews and formats Chinese official documents for civil servants. The first reply is the finished document — no questions, no preamble — with placeholders only where facts are missing. Covers 15 statutory and 7 internal genres, turns upstream documents into implementing drafts, and exports GB/T 9704-2012 Word when Python is available. Never fabricates data, citations or document numbers.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "official-document",
+    "chinese-government",
+    "civil-servant",
+    "draft-review",
+    "gbt9704",
+    "docx-export",
+    "work-assistant",
+    "notice-drafting",
+    "proofreading"
+  ],
+  "agents": [
+    "./agents/czl-civil-servant-desk.md"
+  ],
+  "skills": [
+    "./skills/doc-craft"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-civil-servant-desk",
+  "displayName": {
+    "en": "Antou",
+    "zh": "案头"
+  },
+  "profession": {
+    "en": "Civil Servant Work Assistant",
+    "zh": "公务员工作助理"
+  },
+  "displayDescription": {
+    "en": "Builds your post profile first, drafts from upstream documents or your own templates, puts every draft through five review passes, then exports a GB/T 9704-2012 Word file with a separate reader's brief.",
+    "zh": "先建岗位档案，再按上级文件或模板起草，过五轮审校后出国标版式Word，另附一册阅读资料。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "帮我写一份关于开展2026年秋季安全生产大检查的通知：发文单位是成都市青羊区应急管理局，发给各街道办事处，11月1日开始检查，11月22日前报送检查台账。",
+    "en": "Draft a notice on the autumn 2026 workplace-safety inspection: issuing office is the Qingyang District Emergency Management Bureau, addressed to all sub-district offices, inspection starts 1 November, ledgers due 22 November."
+  },
+  "plugin": "czl-civil-servant-desk",
+  "tags": [
+    {
+      "en": "Official Document Drafting",
+      "zh": "公文起草"
+    },
+    {
+      "en": "Five-Pass Review",
+      "zh": "五轮审校"
+    },
+    {
+      "en": "GB/T 9704 Layout",
+      "zh": "国标排版"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我写一份关于开展2026年秋季安全生产大检查的通知：发文单位是成都市青羊区应急管理局，发给各街道办事处，11月1日开始检查，11月22日前报送检查台账。",
+      "en": "Draft a notice on the autumn 2026 workplace-safety inspection: issuing office is the Qingyang District Emergency Management Bureau, addressed to all sub-district offices, inspection starts 1 November, ledgers due 22 November."
+    },
+    {
+      "zh": "上级要求11月10日前完成校外培训机构全覆盖摸排、12月15日前报送处理结果，帮我写一份本区抓落实的通知。",
+      "en": "The higher-level authority requires full coverage screening of after-school training providers by 10 November and a results report by 15 December. Draft our district's implementing notice."
+    },
+    {
+      "zh": "这段帮我按公文改，并指出问题：「今年以来，我们搞了几轮检查，效果挺好，值得注意的是，还有不少机构不合规，下一步要进一步加强。」",
+      "en": "Rewrite this in official style and tell me what is wrong with it: 'Since the start of the year we ran a few checks, the results were pretty good, it is worth noting that many providers are still non-compliant, and we need to strengthen this further next step.'"
+    }
+  ]
+}

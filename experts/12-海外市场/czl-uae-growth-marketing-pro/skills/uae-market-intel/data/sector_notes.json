@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10",
+  "note": "Sector notes describe channel bias and compliance red lines at a planning level. They are not legal advice. Licensing, permits and content approval always sit with the competent UAE authority.",
+  "sectors": [
+    {
+      "id": "beauty",
+      "name_zh": "美妆与个护",
+      "name_en": "Beauty and personal care",
+      "channel_bias": ["instagram_reels", "tiktok", "snapchat", "kol_koc", "meta_conversion"],
+      "avoid": ["ooh"],
+      "compliance_flags": ["body_image", "absolute_claims", "gender_roles", "efficacy_claims"],
+      "notes": "视觉驱动，素材消耗极快。功效宣称需可举证；避免以单一身材标准作为卖点。斋月期间转向夜间场景与礼赠。"
+    },
+    {
+      "id": "fmcg",
+      "name_zh": "快消品",
+      "name_en": "FMCG",
+      "channel_bias": ["retail_media", "meta_conversion", "tiktok", "ooh", "whatsapp_business"],
+      "avoid": [],
+      "compliance_flags": ["price_discount", "absolute_claims", "comparative"],
+      "notes": "价格与可得性是核心。大促节点（DSF、斋月）决定全年节奏，需提前 6~8 周锁库存与素材。"
+    },
+    {
+      "id": "ecommerce",
+      "name_zh": "电商与 DTC",
+      "name_en": "E-commerce and DTC",
+      "channel_bias": ["meta_conversion", "google_search_performance", "retail_media", "tiktok", "whatsapp_business"],
+      "avoid": ["ooh"],
+      "compliance_flags": ["price_discount", "delivery_claims", "refund_terms"],
+      "notes": "COD（货到付款）占比仍高，退货与拒收成本必须计入 CAC。配送时效承诺需与履约能力对齐。"
+    },
+    {
+      "id": "real_estate",
+      "name_zh": "房地产",
+      "name_en": "Real estate",
+      "channel_bias": ["google_search_brand", "google_search_performance", "linkedin", "ooh", "local_media_pr", "youtube"],
+      "avoid": ["tiktok"],
+      "compliance_flags": ["investment_returns", "price_discount", "absolute_claims", "map_sovereignty"],
+      "notes": "投资回报表述极敏感，任何收益率承诺都需法务前置。项目宣传须与实际批文一致。地图与地名表述必须符合官方口径。"
+    },
+    {
+      "id": "fintech",
+      "name_zh": "金融科技与支付",
+      "name_en": "Fintech and payments",
+      "channel_bias": ["google_search_brand", "linkedin", "youtube", "local_media_pr", "meta_conversion"],
+      "avoid": ["snapchat"],
+      "compliance_flags": ["investment_returns", "guarantee", "licensing", "comparative"],
+      "notes": "受监管品类。牌照信息、风险揭示、费率表述必须准确。不得暗示保本或保证收益。"
+    },
+    {
+      "id": "education",
+      "name_zh": "教育与培训",
+      "name_en": "Education and training",
+      "channel_bias": ["meta_conversion", "google_search_performance", "youtube", "whatsapp_business", "linkedin"],
+      "avoid": ["ooh"],
+      "compliance_flags": ["outcome_guarantee", "accreditation", "absolute_claims"],
+      "notes": "不得承诺就业或录取结果。认证与资质表述需与授予机构一致。招生季与开学季强绑定。"
+    },
+    {
+      "id": "healthcare",
+      "name_zh": "医疗与健康",
+      "name_en": "Healthcare",
+      "channel_bias": ["google_search_performance", "meta_conversion", "youtube", "local_media_pr", "whatsapp_business"],
+      "avoid": ["tiktok"],
+      "compliance_flags": ["medical_claims", "before_after", "patient_privacy", "licensing"],
+      "notes": "疗效宣称与术前术后对比高度受限。患者影像与案例需书面授权。医疗广告通常需主管机构审批。"
+    },
+    {
+      "id": "travel",
+      "name_zh": "旅游与酒店",
+      "name_en": "Travel and hospitality",
+      "channel_bias": ["instagram_reels", "tiktok", "snapchat", "kol_koc", "google_search_brand"],
+      "avoid": ["linkedin"],
+      "compliance_flags": ["price_discount", "alcohol", "cultural_imagery"],
+      "notes": "场景与视觉决定转化。斋月期间日间餐饮类投放需调整。涉及酒精的场景需严格限定受众与渠道。"
+    },
+    {
+      "id": "automotive",
+      "name_zh": "汽车",
+      "name_en": "Automotive",
+      "channel_bias": ["youtube", "instagram_reels", "google_search_performance", "ooh", "kol_koc"],
+      "avoid": ["tiktok"],
+      "compliance_flags": ["safety_claims", "speed_depiction", "comparative"],
+      "notes": "性能与安全表述需与官方参数一致。避免危险驾驶画面。SUV 与家庭场景是主流叙事。"
+    },
+    {
+      "id": "b2b_services",
+      "name_zh": "B2B 服务",
+      "name_en": "B2B services",
+      "channel_bias": ["linkedin", "google_search_brand", "local_media_pr", "youtube"],
+      "avoid": ["tiktok", "snapchat", "ooh"],
+      "compliance_flags": ["absolute_claims", "comparative", "confidentiality"],
+      "notes": "线索质量优先于数量。案例引用需客户授权，不得披露可识别信息。决策链长，需内容培育。"
+    },
+    {
+      "id": "fnb",
+      "name_zh": "餐饮",
+      "name_en": "Food and beverage",
+      "channel_bias": ["instagram_reels", "tiktok", "kol_koc", "whatsapp_business", "snapchat"],
+      "avoid": ["linkedin"],
+      "compliance_flags": ["alcohol", "halal", "food_imagery", "price_discount"],
+      "notes": "清真表述必须准确。含酒精品类受渠道与受众双重限制。斋月期间日间投放需整体调整。"
+    },
+    {
+      "id": "luxury",
+      "name_zh": "奢侈品",
+      "name_en": "Luxury",
+      "channel_bias": ["instagram_reels", "ooh", "kol_koc", "local_media_pr", "youtube"],
+      "avoid": ["tiktok", "retail_media"],
+      "compliance_flags": ["absolute_claims", "cultural_imagery", "modesty"],
+      "notes": "稀缺感与调性优先，价格促销会稀释品牌。视觉需符合本地审美与modesty预期。"
+    }
+  ]
+}

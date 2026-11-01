@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10",
+  "disclaimer": "关键词扫描只能发现显性表达，无法判断语境。所有 High 结论必须由人复核。本文件不构成法律意见。",
+  "severity_legend": {
+    "high": "高：可能触发监管审查或引发舆情，交付前必须处理",
+    "medium": "中：存在争议空间，需改写或加限定条件",
+    "low": "低：风格或表述习惯问题，建议优化"
+  },
+  "rules": [
+    {
+      "id": "REL-01",
+      "category": "宗教敏感",
+      "severity": "high",
+      "applies_sectors": ["all"],
+      "patterns": ["古兰经", "可兰经", "quran", "koran", "القرآن", "先知", "prophet muhammad", "النبي"],
+      "message": "直接引用宗教经典或先知形象，营销语境下风险极高。",
+      "guidance": "宗教文本与人物不得用于商业推广、玩笑或视觉装饰。",
+      "alternative": "改为描述价值观（如「分享」「克制」「家庭」），不引用经典原文。"
+    },
+    {
+      "id": "REL-02",
+      "category": "宗教敏感",
+      "severity": "medium",
+      "applies_sectors": ["all"],
+      "patterns": ["清真寺", "mosque", "مسجد", "礼拜", "prayer", "ramadan kareem", "eid mubarak"],
+      "message": "涉及宗教场所或祝福语，需确认语境是否恰当、拼写是否准确。",
+      "guidance": "节日祝福可以用于品牌问候，但不可与折扣捆绑成「宗教+促销」的组合。",
+      "alternative": "祝福语单独成句，促销信息另起一段，避免语义绑定。"
+    },
+    {
+      "id": "REL-03",
+      "category": "宗教敏感",
+      "severity": "high",
+      "applies_sectors": ["fnb", "fmcg", "ecommerce", "travel", "beauty"],
+      "patterns": ["halal certified", "清真认证", "حلال معتمد"],
+      "message": "宣称清真认证必须持有有效证书，否则属虚假宣传。",
+      "guidance": "只有取得认可机构认证并持有证书编号时才可使用该表述。",
+      "alternative": "无证书时改用「不含酒精成分」「成分表见包装」等可举证表述。"
+    },
+    {
+      "id": "POL-01",
+      "category": "政治与王室",
+      "severity": "high",
+      "applies_sectors": ["all"],
+      "patterns": ["王室", "royal family", "الشيخ", "sheikh", "殿下", "his highness"],
+      "message": "提及王室成员或使用王室称谓需授权，商业语境下默认不可用。",
+      "guidance": "未经书面许可，不得使用王室成员姓名、肖像、称谓或暗示背书。",
+      "alternative": "改为「符合本地法规要求」「获相关主管部门批准」等中性表述。"
+    },
+    {
+      "id": "POL-02",
+      "category": "政治与王室",
+      "severity": "high",
+      "applies_sectors": ["all"],
+      "patterns": ["国家", "国旗", "national day", "العلم", "地图", "map of"],
+      "message": "国庆、国旗、地图类视觉需严格符合官方口径，地图错误属高敏问题。",
+      "guidance": "地图必须使用官方版本，不得出现边界或名称偏差；国旗使用需遵守规范。",
+      "alternative": "改用抽象色块或城市天际线替代地图与旗帜元素。"
+    },
+    {
+      "id": "GEN-01",
+      "category": "性别与身体",
+      "severity": "medium",
+      "applies_sectors": ["beauty", "luxury", "fnb", "travel", "automotive"],
+      "patterns": ["性感", "sexy", "比基尼", "bikini", "身材", "body goals", "完美身材"],
+      "message": "身体展示与性别化表达在本地投放中易触发投诉，且限制渠道。",
+      "guidance": "避免以暴露度或单一身材标准作为卖点；家庭与专业场景更安全。",
+      "alternative": "改为产品质感、使用场景、功效演示为主视觉。"
+    },
+    {
+      "id": "GEN-02",
+      "category": "性别与身体",
+      "severity": "low",
+      "applies_sectors": ["all"],
+      "patterns": ["男主外女主内", "女人的职责", "男人的选择"],
+      "message": "性别角色刻板表述可能引发负面舆情。",
+      "guidance": "避免把家庭或职业角色与性别绑定。",
+      "alternative": "改为中性主语，如「家庭」「专业人士」。"
+    },
+    {
+      "id": "SUB-01",
+      "category": "酒精与赌博",
+      "severity": "high",
+      "applies_sectors": ["all"],
+      "patterns": ["赌博", "博彩", "casino", "gambling", "مراهنات", "betting", "彩票", "lottery"],
+      "message": "赌博与博彩类推广在阿联酋属严格受限内容。",
+      "guidance": "不得面向本地公众推广赌博、博彩、彩票类产品。",
+      "alternative": "如为持牌娱乐场相关业务，仅可在获批渠道与限定受众下沟通，需法务前置。"
+    },
+    {
+      "id": "SUB-02",
+      "category": "酒精与赌博",
+      "severity": "high",
+      "applies_sectors": ["all"],
+      "patterns": ["畅饮", "happy hour", "买醉", "烈酒促销", "alcohol promo", "كحول"],
+      "message": "酒精促销表述需严格限定受众年龄与渠道，公开投放风险高。",
+      "guidance": "酒精内容须做年龄门槛与受众限制，不得面向全体公众或使用鼓励过量饮用的表达。",
+      "alternative": "改为餐饮场景与佐餐搭配表达，并明确 21+ 限制。"
+    },
+    {
+      "id": "SUB-03",
+      "category": "酒精与赌博",
+      "severity": "medium",
+      "applies_sectors": ["all"],
+      "patterns": ["电子烟", "vape", "烟草", "tobacco", "شيشة"],
+      "message": "烟草与电子烟推广受严格限制。",
+      "guidance": "多数平台禁止烟草类广告，需先确认渠道政策。",
+      "alternative": "改为品牌形象内容，不做产品功效或诱导性表达。"
+    },
+    {
+      "id": "CLM-01",
+      "category": "绝对化用语",
+      "severity": "high",
+      "applies_sectors": ["all"],
+      "patterns": ["第一品牌", "全国第一", "全球第一", "最好", "最佳", "唯一", "no.1", "number one", "the best", "الأفضل"],
+      "message": "绝对化用语需可举证，否则构成误导。",
+      "guidance": "任何「第一/最好/唯一」必须能提供第三方可核验依据，并注明范围与时间。",
+      "alternative": "改为可量化表述：「2025 年该品类销量领先（来源：X）」或删除比较级。"
+    },
+    {
+      "id": "CLM-02",
+      "category": "绝对化用语",
+      "severity": "high",
+      "applies_sectors": ["all"],
+      "patterns": ["100%", "百分百", "绝对", "永久", "彻底", "保证有效", "guaranteed", "مضمون"],
+      "message": "绝对效果承诺难以举证，属高风险表达。",
+      "guidance": "不得承诺确定结果，尤其是效果、时效、收益类。",
+      "alternative": "改为条件化表述：「在 X 条件下，多数用户反馈 Y」。"
+    },
+    {
+      "id": "CLM-03",
+      "category": "比较广告",
+      "severity": "medium",
+      "applies_sectors": ["all"],
+      "patterns": ["比某品牌", "优于竞品", "better than", "碾压", "吊打"],
+      "message": "比较广告需可举证且不得贬低竞品。",
+      "guidance": "指名比较风险最高；建议做品类对比而非品牌对比。",
+      "alternative": "改为「相比传统方案」的品类级对比，并注明测试条件。"
+    },
+    {
+      "id": "PRC-01",
+      "category": "价格与折扣",
+      "severity": "medium",
+      "applies_sectors": ["all"],
+      "patterns": ["原价", "划线价", "低至", "史上最低", "限时秒杀", "lowest price ever"],
+      "message": "折扣基准必须真实可查，虚构原价属价格欺诈。",
+      "guidance": "划线价须为该商品近期真实售价，且保留可核验记录。",
+      "alternative": "改为「活动价 X AED」，不做原价对比。"
+    },
+    {
+      "id": "FIN-01",
+      "category": "金融与收益",
+      "severity": "high",
+      "applies_sectors": ["fintech", "real_estate", "all"],
+      "patterns": ["保本", "稳赚", "零风险", "保证收益", "年化收益", "guaranteed return", "risk free", "عائد مضمون"],
+      "message": "收益承诺与保本表述在受监管品类中属严重违规。",
+      "guidance": "不得承诺或暗示本金安全与确定收益；须披露风险。",
+      "alternative": "改为「历史表现不代表未来收益」+ 风险揭示段落，并标注牌照信息。"
+    },
+    {
+      "id": "FIN-02",
+      "category": "金融与收益",
+      "severity": "medium",
+      "applies_sectors": ["fintech", "real_estate"],
+      "patterns": ["投资回报率", "roi", "租金回报", "yield"],
+      "message": "回报率数字需注明测算前提，否则易构成误导。",
+      "guidance": "必须注明测算口径、时间范围与不构成投资建议的声明。",
+      "alternative": "改为区间 + 前提条件 + 「仅供参考，不构成投资建议」。"
+    },
+    {
+      "id": "MED-01",
+      "category": "医疗与健康",
+      "severity": "high",
+      "applies_sectors": ["healthcare", "beauty", "fmcg"],
+      "patterns": ["治愈", "根治", "疗效保证", "cure", "heal", "علاج نهائي", "无副作用"],
+      "message": "医疗疗效宣称受严格监管，通常需审批。",
+      "guidance": "不得宣称治愈或不实疗效；医疗广告多需主管机构批准。",
+      "alternative": "改为成分说明与使用方式，删除疗效结论。"
+    },
+    {
+      "id": "MED-02",
+      "category": "医疗与健康",
+      "severity": "medium",
+      "applies_sectors": ["healthcare", "beauty"],
+      "patterns": ["术前术后", "before after", "对比图", "案例对比"],
+      "message": "术前术后对比在多地受限，且涉及患者隐私。",
+      "guidance": "使用患者影像须书面授权，且部分品类禁止此类对比。",
+      "alternative": "改用示意图或非患者素材。"
+    },
+    {
+      "id": "EDU-01",
+      "category": "教育承诺",
+      "severity": "high",
+      "applies_sectors": ["education"],
+      "patterns": ["包就业", "保录取", "包过", "guaranteed job", "100% 就业"],
+      "message": "教育成果承诺属高风险，易构成虚假宣传。",
+      "guidance": "不得承诺就业、录取、考试结果。",
+      "alternative": "改为往届去向统计（注明样本与年份）。"
+    },
+    {
+      "id": "CUL-01",
+      "category": "文化适配",
+      "severity": "low",
+      "applies_sectors": ["all"],
+      "patterns": ["猪", "pork", "خنزير"],
+      "message": "猪肉相关表述在面向本地公众的语境中需谨慎。",
+      "guidance": "非清真品类应明确标注，避免出现在面向本地家庭的通用素材中。",
+      "alternative": "如需提及，单独分区并明确标注非清真。"
+    },
+    {
+      "id": "CUL-02",
+      "category": "文化适配",
+      "severity": "low",
+      "applies_sectors": ["all"],
+      "patterns": ["左手", "指指点点", "脚底", "鞋底"],
+      "message": "涉及手势、肢体与鞋底的画面在本地文化中可能被视为不敬。",
+      "guidance": "避免用左手递物、脚部特写、鞋底朝向镜头等构图。",
+      "alternative": "改用右手递物、正面构图。"
+    }
+  ]
+}

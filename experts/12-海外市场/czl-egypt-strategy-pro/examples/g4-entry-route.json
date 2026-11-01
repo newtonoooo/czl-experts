@@ -1,0 +1,87 @@
+{
+  "weights": {
+    "control": 0.35,
+    "speed": 0.25,
+    "capital_efficiency": 0.2,
+    "risk_control": 0.2
+  },
+  "constraints": {
+    "max_capex_usd": 20000000,
+    "max_months": 24,
+    "allow_tech_leak": false
+  },
+  "routes": [
+    {
+      "key": "greenfield",
+      "label": "绿地全资建厂",
+      "control": 5,
+      "speed": 1,
+      "capital_efficiency": 1,
+      "risk_control": 3,
+      "capex_usd": 20000000,
+      "months": 30,
+      "exit_cost_pct": 0.6,
+      "tech_leak": false
+    },
+    {
+      "key": "jv",
+      "label": "控股合资",
+      "control": 4,
+      "speed": 3,
+      "capital_efficiency": 3,
+      "risk_control": 2,
+      "capex_usd": 12000000,
+      "months": 18,
+      "exit_cost_pct": 0.35,
+      "tech_leak": true
+    },
+    {
+      "key": "ma",
+      "label": "并购本地企业",
+      "control": 4,
+      "speed": 4,
+      "capital_efficiency": 3,
+      "risk_control": 2,
+      "capex_usd": 15000000,
+      "months": 10,
+      "exit_cost_pct": 0.2,
+      "tech_leak": false
+    },
+    {
+      "key": "toll",
+      "label": "合同制造/代工",
+      "control": 2,
+      "speed": 5,
+      "capital_efficiency": 5,
+      "risk_control": 4,
+      "capex_usd": 500000,
+      "months": 5,
+      "exit_cost_pct": 0.05,
+      "tech_leak": true
+    },
+    {
+      "key": "agent",
+      "label": "代理分销",
+      "control": 1,
+      "speed": 5,
+      "capital_efficiency": 5,
+      "risk_control": 4,
+      "capex_usd": 200000,
+      "months": 3,
+      "exit_cost_pct": 0.1,
+      "tech_leak": true
+    },
+    {
+      "key": "fz",
+      "label": "自由区贸易公司",
+      "control": 3,
+      "speed": 4,
+      "capital_efficiency": 4,
+      "risk_control": 3,
+      "capex_usd": 800000,
+      "months": 6,
+      "exit_cost_pct": 0.1,
+      "tech_leak": false
+    }
+  ]
+}

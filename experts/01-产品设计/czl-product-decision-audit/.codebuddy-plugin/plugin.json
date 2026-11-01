@@ -1,0 +1,73 @@
+{
+  "name": "czl-product-decision-audit",
+  "version": "1.0.0",
+  "description": "A product decision review expert. Every requirement, roadmap ask, metric review and stakeholder update is pushed through five gates in order: triage (is this worth deciding at all), evidence (what grade of proof backs each claim), metric definition (does the number mean one thing), adversarial review (what would have to be true for this to be wrong, and when do we stop), and delivery handoff (definition of ready, acceptance-to-test mapping, change cost ledger). It refuses to let a conclusion stand above the evidence behind it, refuses to invent interviews or competitor facts, and always writes the stop-loss condition before the plan. Ships seven workflows, seven reference cards, and three pure-stdlib Python tools for evidence ledger checking, metric guarding (baseline stability, sample sufficiency, Simpson check, two-proportion test, definition drift) and capacity-calibrated portfolio ranking. Output is a decision pack that survives the meeting: decision brief, spec with DoR/DoD, prioritised cut list, metric health sheet, audience-specific rendering.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "product-management",
+    "decision-review",
+    "prd",
+    "roadmap",
+    "prioritization",
+    "product-metrics",
+    "evidence",
+    "stakeholder-communication",
+    "requirements"
+  ],
+  "agents": [
+    "./agents/czl-product-decision-audit.md"
+  ],
+  "skills": [
+    "./skills/decision-triage",
+    "./skills/evidence-ledger",
+    "./skills/metric-integrity",
+    "./skills/adversarial-review",
+    "./skills/spec-handoff",
+    "./skills/portfolio-fit",
+    "./skills/audience-rendering"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-product-decision-audit",
+  "displayName": {
+    "en": "Setpoint",
+    "zh": "定盘"
+  },
+  "profession": {
+    "en": "Product Decision Review Expert",
+    "zh": "产品决策审校专家"
+  },
+  "displayDescription": {
+    "en": "Puts requirements, roadmaps, metrics and updates through five gates - evidence, definition, objection, acceptance, stop-loss - and returns a decision pack you can take into the room.",
+    "zh": "把需求、优先级、指标和汇报过五道闸：证据、口径、反方、验收、止损。输出能直接开会的决策包。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "01-ProductDesign",
+  "defaultInitPrompt": {
+    "zh": "这个需求销售催了三次，老板问我要不要排进下个版本。我手上有 6 条客户反馈和一张竞品截图，帮我判断该不该做、做了怎么算成功。",
+    "en": "Sales has chased this request three times and my boss wants to know if it goes into the next release. I have six pieces of customer feedback and one competitor screenshot - tell me whether to build it and what success would even mean."
+  },
+  "plugin": "czl-product-decision-audit",
+  "tags": [
+    { "en": "Decision Review", "zh": "决策审校" },
+    { "en": "Roadmap Tradeoffs", "zh": "路线图取舍" },
+    { "en": "Metric Integrity", "zh": "指标口径" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "这个需求销售催了三次，老板问我要不要排进下个版本。我手上有 6 条客户反馈和一张竞品截图，帮我判断该不该做、做了怎么算成功。",
+      "en": "Sales has chased this request three times and my boss wants to know if it goes into the next release. I have six pieces of customer feedback and one competitor screenshot - tell me whether to build it and what success would even mean."
+    },
+    {
+      "zh": "季度复盘会明天开，MAU 涨了 8% 但付费转化掉了 12%，会上肯定有人问为什么。帮我把口径和归因先捋清楚，别让我在会上被问倒。",
+      "en": "The quarterly review is tomorrow. MAU is up 8% but paid conversion dropped 12%, and someone will ask why. Sort out the definitions and the attribution before I get caught out in the room."
+    },
+    {
+      "zh": "我手上有 11 个候选需求要排下季度，团队就 5 个人。别再给我 RICE 分数了，帮我算清楚按现在的吞吐到底能做几个、剩下的怎么跟老板交代。",
+      "en": "I have eleven candidate requests for next quarter and five people. Don't hand me RICE scores again - work out how many we can actually finish at current throughput and how I explain the rest to my boss."
+    }
+  ]
+}

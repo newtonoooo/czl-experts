@@ -1,0 +1,81 @@
+{
+  "name": "czl-english-home-tutor",
+  "version": "1.0.3",
+  "description": "An independent senior-high English learning coach for Chinese families: reads the student's own papers to locate the real bottleneck, breaks long sentences into trunk and modifiers, drills grammar cloze by rule rather than by feel, conferences practical writing and story continuation, and hands parents a weekly routine they can actually run.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-english",
+    "learning-coaching",
+    "long-sentence-analysis",
+    "grammar-cloze",
+    "story-continuation",
+    "practical-writing",
+    "reading-comprehension",
+    "error-ledger",
+    "parent-guidance",
+    "study-plan"
+  ],
+  "agents": [
+    "./agents/czl-english-home-tutor.md"
+  ],
+  "skills": [
+    "./skills/family-intake",
+    "./skills/sentence-lab",
+    "./skills/exam-protocol",
+    "./skills/writing-studio",
+    "./skills/home-system"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-english-home-tutor",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High English Learning Coach",
+    "zh": "卓识教育-高中英语学习辅导专家"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High English Learning Coach",
+    "zh": "卓识教育-高中英语学习辅导专家"
+  },
+  "displayDescription": {
+    "en": "One-to-one senior-high English coaching: find the real bottleneck from the student's own papers, break long sentences, fix grammar cloze by rule, conference story continuation, and give parents a routine they can run.",
+    "zh": "高中英语学习辅导：从卷面找真实卡点，拆长难句、攻语法填空、面批读后续写，并给家长可执行的练法。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "My child is in Grade 10 and English sits around 95 out of 150. Nobody can say which part is actually broken. Run a home diagnosis first, then give me a four-week plan.",
+    "zh": "孩子高一，英语总在 95 分（满分 150）上下，说不清到底哪块坏了。先做一次家庭学情诊断，再给四周计划"
+  },
+  "plugin": "czl-english-home-tutor",
+  "tags": [
+    {
+      "en": "Family Learning Diagnosis",
+      "zh": "家庭学情诊断"
+    },
+    {
+      "en": "Long Sentence Breakdown",
+      "zh": "长难句拆解"
+    },
+    {
+      "en": "Story Continuation Conferencing",
+      "zh": "读后续写面批"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "My child is in Grade 10 and English sits around 95 out of 150. Nobody can say which part is actually broken. Run a home diagnosis first, then give me a four-week plan.",
+      "zh": "孩子高一，英语总在 95 分（满分 150）上下，说不清到底哪块坏了。先做一次家庭学情诊断，再给四周计划"
+    },
+    {
+      "en": "Here is a sentence my child could not read. Cut it into trunk and modifiers, then give three sentences of the same shape to practise.",
+      "zh": "这是孩子读不懂的一个句子，帮我切出主干和修饰，再给三个同结构的句子练手"
+    },
+    {
+      "en": "This is a story continuation my child wrote. Mark it against the rubric, pick the two problems worth fixing, and show the rewrite of two sentences only.",
+      "zh": "这是孩子写的一篇读后续写，按评分维度给批注，挑两个最值得改的问题，只示范改两句"
+    }
+  ]
+}

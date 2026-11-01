@@ -1,0 +1,67 @@
+{
+  "name": "czl-data-evidence",
+  "version": "1.0.0",
+  "description": "A data analysis expert built around evidence rather than charts. It refuses to compute before the metric definition is pinned down: it turns a vague business worry into an analysis brief, audits the table and rates it A to D for usability, explores trend and distribution, then attributes with one of five methods (volume-price-mix decomposition, funnel, cohort, segment comparison, experiment or quasi-experiment). Every finding passes five checks - definition, distribution, control, effect size, counter-example - and is stamped A (act on it), B (usable with conditions), C (watch only) or D (does not hold). Output lands as a one-pager, a full report or a dashboard spec, with a Markdown to docx/html export and eight pure-stdlib tools for profiling, decomposition, funnels, cohorts, segmentation, significance testing and publishing. China-first: CNY, wan/yi units, festival and promotion-season baselines, personal-data minimum-necessity handling. Use for sales drops, conversion funnels, retention, A/B results, metric definition disputes, weekly reviews or any 'why did this number move' question on CSV data.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "data-analysis",
+    "business-analysis",
+    "metric-definition",
+    "attribution",
+    "funnel",
+    "cohort",
+    "ab-testing",
+    "evidence",
+    "data-quality"
+  ],
+  "agents": [
+    "./agents/czl-data-evidence.md"
+  ],
+  "skills": [
+    "./skills/czl-evidence-playbook"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-data-evidence",
+  "displayName": {
+    "en": "Evidence Desk",
+    "zh": "数证台"
+  },
+  "profession": {
+    "en": "Data Analysis & Evidence Expert",
+    "zh": "数据分析举证专家"
+  },
+  "displayDescription": {
+    "en": "Turns a vague worry into an analysis brief, pins the metric definition before computing, then stamps every finding A/B/C/D by how far it can carry a decision.",
+    "zh": "把「我觉得」换成「我查过」：先定口径、再查数据、过五道验证，结论能用不能用都写清楚。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "这是我们店上半年的订单表，六月销售额掉了 18%，帮我找到掉在哪，能不能改、该先动哪一处。",
+    "en": "Here's my shop's order table for H1. June sales fell 18% - find where it dropped, whether it can be fixed, and what to touch first."
+  },
+  "plugin": "czl-data-evidence",
+  "tags": [
+    { "en": "Data Analysis", "zh": "数据分析" },
+    { "en": "Metric Definition", "zh": "指标口径" },
+    { "en": "Attribution & Testing", "zh": "归因验证" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "这是我们店上半年的订单表，六月销售额掉了 18%，帮我找到掉在哪，能不能改、该先动哪一处。",
+      "en": "Here's my shop's order table for H1. June sales fell 18% - find where it dropped, whether it can be fixed, and what to touch first."
+    },
+    {
+      "zh": "这两个月的转化漏斗数据在这，哪一步最该先动？别只给我转化率，我要知道动它能拉回多少。",
+      "en": "Here's two months of funnel data. Which step deserves attention first? Don't just give me rates - tell me what fixing it is worth."
+    },
+    {
+      "zh": "A/B 跑完了：对照组 1 万人转化 512，实验组 1 万人转化 583。这个差是真的吗，能上吗？",
+      "en": "The A/B test is done: 512 of 10,000 converted in control, 583 of 10,000 in treatment. Is the difference real, and can we ship it?"
+    }
+  ]
+}

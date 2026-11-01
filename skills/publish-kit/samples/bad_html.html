@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><style>.card{padding:10px}</style></head>
+<body class="card">
+<!-- 故意写成公众号会过滤的样子，用于验证 check_wx_html.py 能否抓出来 -->
+<div style="display:grid;grid-template-columns:1fr 1fr;">
+  <div style="position:absolute;top:0;left:-7px;">left</div>
+  <div style="display:flex;">right</div>
+</div>
+<h2 style="font-family:'Noto Serif SC';">标题没有 fallback</h2>
+<table><tr><th>科目</th><th>分值</th></tr><tr><td>语文</td><td>150</td></tr></table>
+<span style="border-radius:50%;background:#1F5A50;"></span>
+<div style="box-shadow:0 1px 2px #000;background:linear-gradient(#fff,#eee);">阴影与渐变</div>
+<img src="https://example.com/a.png">
+<script>console.log(1)</script>
+</body></html>

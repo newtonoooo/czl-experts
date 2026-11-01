@@ -1,0 +1,65 @@
+{
+  "name": "czl-tomato-bestseller",
+  "expertType": "agent",
+  "version": "1.0.0",
+  "description": "An independent decision-support operator for serializing web fiction on Fanqie (番茄小说), built around a six-gate lifecycle model: topic gate, opening gate, retention gate, surge gate, endurance gate and monetization gate. Each gate returns a verdict (pass / rescue / exit) rather than generic advice. It scores a topic across five dimensions before a single word is drafted, pressure-tests the first 200 characters and the first chapter's goal visibility, audits chapter-end hooks and information gain per chapter, localizes dropping retention to a specific chapter and section, checks main-thread tension balance and subplot payoff rate for long serials, and maps revenue structure plus adaptation readiness. Every judgement comes with the evidence it rests on, the rescue action, and the condition under which the book should be abandoned or finished. All deliverables are written as Markdown and can be exported to docx, html or txt. Owned and developed by 虫志龙.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "agents": [
+    "./agents/czl-tomato-bestseller.md"
+  ],
+  "agentName": "czl-tomato-bestseller",
+  "skills": [
+    "./skills/czl-tomato-ops"
+  ],
+  "displayName": {
+    "en": "Tomato Bestseller Operator",
+    "zh": "番茄爆款小说操盘手"
+  },
+  "profession": {
+    "en": "Tomato Bestseller Operator",
+    "zh": "番茄爆款小说操盘手"
+  },
+  "displayDescription": {
+    "en": "Six gates for one serial: score the topic, pressure-test the opening, autopsy the drop-off, then decide whether to rescue, cut or finish the book.",
+    "zh": "用六道闸门管一本书的生死：先算选题，再测开局压强，掉量做解剖，最后判定切书或完结。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "en": "I am about to start a serial on Fanqie. Run the topic gate on it first: score the five dimensions, tell me which one is weak, and give me a pass / rescue / drop verdict before I write a single chapter.",
+    "zh": "我准备开一本番茄连载，先过选题闸：按五个维度打分，告诉我哪一维最弱，在我动笔之前给我一个「过 / 抢救 / 弃题」的结论。"
+  },
+  "plugin": "czl-tomato-bestseller",
+  "tags": [
+    {
+      "en": "Topic Decision",
+      "zh": "选题决策"
+    },
+    {
+      "en": "Retention Diagnosis",
+      "zh": "追读诊断"
+    },
+    {
+      "en": "Serial Endurance",
+      "zh": "长线续航"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I am about to start a serial on Fanqie. Run the topic gate on it first: score the five dimensions, tell me which one is weak, and give me a pass / rescue / drop verdict before I write a single chapter.",
+      "zh": "我准备开一本番茄连载，先过选题闸：按五个维度打分，告诉我哪一维最弱，在我动笔之前给我一个「过 / 抢救 / 弃题」的结论。"
+    },
+    {
+      "en": "My read-through is falling and I do not know which chapter broke it. Autopsy the numbers: localize the drop to specific chapters and sections, then hand me a rescue plan with priorities.",
+      "zh": "我的完读率在掉，但不知道是从哪一章开始崩的。帮我做一次掉量解剖：定位到具体章和段落，再给一份带优先级的抢救清单。"
+    },
+    {
+      "en": "I am around chapter 80 and the main thread feels thin. Check my tension balance and subplot payoff rate, then tell me honestly whether to push on, cut short, or finish it now.",
+      "zh": "我写到 80 章左右，感觉主线越写越空。帮我盘一下张力余额和支线回收率，然后老实告诉我：继续写、压缩收尾，还是现在就完结。"
+    }
+  ]
+}

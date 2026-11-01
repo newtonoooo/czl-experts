@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "as_of": "2026-10",
+    "disclaimer": "字数上限与禁词为常见口径的默认值，各平台会按类目与站点调整。正式上架前以后台当期限制为准；本文件可直接改，改完重跑脚本即可。"
+  },
+  "profiles": {
+    "amazon_us": {
+      "label": "亚马逊 · 美国站",
+      "locale": "en-US",
+      "title_max": 200,
+      "bullet_count": 5,
+      "bullet_max": 250,
+      "desc_max": 2000,
+      "brand_first_words": 5,
+      "unit_system": "imperial",
+      "banned": ["best seller", "best", "no.1", "#1", "number one", "guaranteed", "fda approved", "cure", "treat", "heal", "100%", "safest", "medical grade", "non-toxic", "eco-friendly", "free shipping", "hot sale", "new arrival"],
+      "notes": ["标题超 200 字符部分在部分类目会被截断", "医疗、抗菌类宣称按器械管，禁用疗效词"]
+    },
+    "amazon_de": {
+      "label": "亚马逊 · 德国站",
+      "locale": "de-DE",
+      "title_max": 200,
+      "bullet_count": 5,
+      "bullet_max": 250,
+      "desc_max": 2000,
+      "brand_first_words": 5,
+      "unit_system": "metric",
+      "banned": ["beste", "bester", "nr. 1", "nummer 1", "garantiert", "100 %", "100%", "heilt", "gegen krankheit", "arznei", "umweltfreundlich", "kostenloser versand"],
+      "notes": ["德国对绝对化与环保宣称执法严格", "Umlaut 与 ß 不得写成 ae/oe/ss 混排"]
+    },
+    "amazon_uk": {
+      "label": "亚马逊 · 英国站",
+      "locale": "en-GB",
+      "title_max": 200,
+      "bullet_count": 5,
+      "bullet_max": 250,
+      "desc_max": 2000,
+      "brand_first_words": 5,
+      "unit_system": "metric",
+      "banned": ["best", "no.1", "#1", "guaranteed", "cure", "treat", "heal", "100%", "medical grade", "eco-friendly", "free shipping"],
+      "notes": ["英式拼写与美式混用会显得不专业"]
+    },
+    "amazon_jp": {
+      "label": "亚马逊 · 日本站",
+      "locale": "ja-JP",
+      "title_max": 100,
+      "bullet_count": 5,
+      "bullet_max": 500,
+      "desc_max": 2000,
+      "brand_first_words": 5,
+      "unit_system": "metric",
+      "banned": ["最高", "no.1", "ナンバーワン", "絶対", "治る", "治療", "完治", "100%", "日本一", "医薬品"],
+      "notes": ["部分类目标题上限为 200，创建时以后台提示为准", "药机法用语（治る・効く）会被判定为医药部外品宣称"]
+    },
+    "tiktok_shop_us": {
+      "label": "TikTok Shop · 美国",
+      "locale": "en-US",
+      "title_max": 255,
+      "bullet_count": 0,
+      "bullet_max": 0,
+      "desc_max": 4000,
+      "brand_first_words": 5,
+      "unit_system": "imperial",
+      "banned": ["best", "no.1", "#1", "guaranteed", "cure", "treat", "heal", "100%", "medical grade", "free shipping", "cheapest"],
+      "notes": ["短视频成交更依赖前 40 字符的信息密度", "标题里塞满关键词会被判低质商品"]
+    },
+    "shopee_sea": {
+      "label": "Shopee · 东南亚",
+      "locale": "en-SG",
+      "title_max": 120,
+      "bullet_count": 0,
+      "bullet_max": 0,
+      "desc_max": 3000,
+      "brand_first_words": 5,
+      "unit_system": "metric",
+      "banned": ["best", "no.1", "#1", "guaranteed", "100%", "free shipping", "cheapest", "赚", "招代理"],
+      "notes": ["标题超 120 字符在移动端被截断", "「招代理」「加微信」类内容会被判站外引流"]
+    },
+    "lazada_sea": {
+      "label": "Lazada · 东南亚",
+      "locale": "en-SG",
+      "title_max": 255,
+      "bullet_count": 0,
+      "bullet_max": 0,
+      "desc_max": 3000,
+      "brand_first_words": 5,
+      "unit_system": "metric",
+      "banned": ["best", "no.1", "guaranteed", "100%", "free shipping", "cheapest"],
+      "notes": ["过长标题影响移动端可读性，建议控制在 120 字符内"]
+    },
+    "temu_us": {
+      "label": "Temu · 美国",
+      "locale": "en-US",
+      "title_max": 120,
+      "bullet_count": 0,
+      "bullet_max": 0,
+      "desc_max": 2000,
+      "brand_first_words": 3,
+      "unit_system": "imperial",
+      "banned": ["best", "no.1", "#1", "guaranteed", "cure", "treat", "100%", "medical grade", "free shipping"],
+      "notes": ["平台核价严格，标题关键词冗余会被压价", "首图与标题一致性要求高"]
+    },
+    "dtc": {
+      "label": "独立站（DTC / Shopify）",
+      "locale": "en-US",
+      "title_max": 70,
+      "bullet_count": 0,
+      "bullet_max": 0,
+      "desc_max": 5000,
+      "brand_first_words": 5,
+      "unit_system": "imperial",
+      "banned": ["cure", "treat", "heal", "fda approved", "100%", "medical grade", "guaranteed"],
+      "notes": ["70 字符是搜索结果的展示上限，超出会被截断", "独立站可写长文案，但首屏必须能独立说清卖点"]
+    }
+  },
+  "advice": {
+    "TITLE_LEN": "压缩到上限以内：删形容词，保留 品牌 + 核心词 + 关键属性 + 规格。",
+    "TITLE_EMOJI": "平台标题不支持表情符号，全部删除，情绪放到主图与视频里。",
+    "TITLE_CAPS": "改为首字母大写或全小写，避免整词大写（平台会判标题质量低）。",
+    "TITLE_REPEAT": "同一词根只保留一次，重复位换成属性、场景或人群词。",
+    "CLAIM_BANNED": "换成可验证的具体表述，例如把「100% 安全」改成「通过 EN 71-3 迁移测试」，把「最好」删掉。",
+    "CONTACT": "标题/五点里不得出现邮箱、电话、网址、社交账号，属站外引流违规。",
+    "BULLET_COUNT": "按平台建议条数补齐，每条只讲一件事。",
+    "BULLET_LEN": "单条超长会被折叠：先给结论，再给依据，控制在限值内。",
+    "DESC_LEN": "超出部分会被截断，把关键信息放前 300 字符。",
+    "UNIT_MISSING": "目标市场计量单位要匹配：美国用 inch/lb，欧洲日本用 cm/kg。",
+    "PRICE_IN_TITLE": "标题不放价格，促销价变动后标题会立即失效。",
+    "KEYWORD_MISS": "标题未覆盖的核心词，优先放进五点或后台 Search Terms。",
+    "BRAND_POS": "品牌词放在标题最前几个词内，既便于识别，也是品牌备案的常规要求。",
+    "STUFFING_DESC": "描述里同一词根超过 6 次算堆砌，删到自然可读。"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "er",
+  "title": "电商订单域实体关系",
+  "subtitle": "6 张核心表，覆盖下单、支付、履约三条链路",
+  "direction": "LR",
+  "entities": [
+    {
+      "id": "user", "name": "会员 user", "role": "primary",
+      "attributes": [
+        { "name": "id", "type": "bigint", "key": "pk" },
+        { "name": "phone", "type": "varchar(20)" },
+        { "name": "level", "type": "tinyint" },
+        { "name": "created_at", "type": "datetime" }
+      ]
+    },
+    {
+      "id": "order", "name": "订单 order", "role": "data",
+      "attributes": [
+        { "name": "id", "type": "bigint", "key": "pk" },
+        { "name": "user_id", "type": "bigint", "key": "fk" },
+        { "name": "status", "type": "tinyint" },
+        { "name": "amount", "type": "decimal(12,2)" }
+      ]
+    },
+    {
+      "id": "item", "name": "订单明细 order_item", "role": "data",
+      "attributes": [
+        { "name": "id", "type": "bigint", "key": "pk" },
+        { "name": "order_id", "type": "bigint", "key": "fk" },
+        { "name": "sku_id", "type": "bigint", "key": "fk" },
+        { "name": "qty", "type": "int" }
+      ]
+    },
+    {
+      "id": "sku", "name": "商品 SKU", "role": "external",
+      "attributes": [
+        { "name": "id", "type": "bigint", "key": "pk" },
+        { "name": "title", "type": "varchar(120)" },
+        { "name": "price", "type": "decimal(12,2)" }
+      ]
+    },
+    {
+      "id": "payment", "name": "支付流水 payment", "role": "success",
+      "attributes": [
+        { "name": "id", "type": "bigint", "key": "pk" },
+        { "name": "order_id", "type": "bigint", "key": "fk" },
+        { "name": "channel", "type": "varchar(20)" },
+        { "name": "paid_at", "type": "datetime" }
+      ]
+    },
+    {
+      "id": "shipment", "name": "发货单 shipment", "role": "neutral",
+      "attributes": [
+        { "name": "id", "type": "bigint", "key": "pk" },
+        { "name": "order_id", "type": "bigint", "key": "fk" },
+        { "name": "express_no", "type": "varchar(40)" }
+      ]
+    }
+  ],
+  "relations": [
+    { "from": "user", "to": "order", "card": "1-n", "label": "下单" },
+    { "from": "order", "to": "item", "card": "1-n", "label": "包含" },
+    { "from": "sku", "to": "item", "card": "1-n", "label": "被引用" },
+    { "from": "order", "to": "payment", "card": "1-n", "label": "支付" },
+    { "from": "order", "to": "shipment", "card": "1-1", "label": "履约" }
+  ],
+  "footnote": "PK=主键，FK=外键；金额统一使用 decimal，禁止 float。"
+}

@@ -1,0 +1,281 @@
+{
+  "schema": "czl-compliance/1",
+  "updated": "2026-10-28",
+  "disclaimer": "本矩阵用于写作期自查与放行判定，不是法律意见，也不是对亚马逊政策的官方解释。条目会随法规与平台规则变化，交付前必须与后台类目要求及当地法规核对。",
+  "severity": {
+    "BLOCK": "阻断项：存在即不应提交，须先解决或改写",
+    "CONDITION": "条件项：可提交但需补齐材料或改表述，未补齐前只给 CONDITIONAL",
+    "INFO": "提示项：不影响放行，但会影响转化或后续审核"
+  },
+  "claims": [
+    {
+      "id": "CLM-ABSOLUTE",
+      "label": "绝对化 / 排名类用语",
+      "severity": "BLOCK",
+      "patterns": [
+        "\\b(best|greatest|number\\s*one|no\\.?\\s*1|#1|top\\s*rated|the\\s*most|world'?s\\s*best|ultimate)\\b",
+        "\\b(beste|bester|bestes|garantiert|nummer\\s*eins|weltbest)\\b",
+        "\\b(meilleur|meilleure|n°\\s*1|numero\\s*un)\\b",
+        "\\b(migliore|il\\s*numero\\s*uno)\\b",
+        "\\b(mejor|el\\s*número\\s*uno)\\b",
+        "最高|最强|第一|顶级|最好的"
+      ],
+      "why": "平台对无法验证的排名与最优宣称按误导性表述处理，且这类词在多数类目属于明确禁止项。",
+      "fix": "改成可验证的具体事实：把「best quality」换成具体材质或结构，把「#1」删掉。"
+    },
+    {
+      "id": "CLM-GUARANTEE",
+      "label": "保证性 / 零风险承诺",
+      "severity": "BLOCK",
+      "patterns": [
+        "\\b(guarantee(d|s)?|100\\s*%|risk[\\s-]*free|lifetime\\s*warranty\\s*of\\s*satisfaction|money\\s*back\\s*guarantee)\\b",
+        "\\b(risikofrei|100\\s*%\\s*sicher|garantie)\\b",
+        "\\b(sans\\s*risque|garanti)\\b"
+      ],
+      "why": "绝对百分比与零风险承诺无法举证，且与售后政策冲突时构成虚假陈述。",
+      "fix": "删除百分比与零风险表述；售后政策写进描述的具体条款，不写进标题。"
+    },
+    {
+      "id": "CLM-MEDICAL",
+      "label": "医疗 / 功效宣称",
+      "severity": "BLOCK",
+      "patterns": [
+        "\\b(cure|cures|curing|treat|treats|heal|heals|therapeutic|antibacterial|anti-?bacterial|sterili[sz]e[sd]?|prevents?\\s+(disease|illness|infection)|medical\\s*grade)\\b",
+        "\\b(heilt|therapiert|desinfiziert|keimfrei|medizinisch)\\b",
+        "\\b(guérit|soigne|désinfecte|antimicrobien)\\b",
+        "治疗|治愈|杀菌|抗菌|医用级|消毒"
+      ],
+      "why": "非医疗器械做医疗或抗菌功效宣称，在美国属 FDA 监管范畴，在欧盟属医疗器械或生物杀灭剂法规范畴。",
+      "fix": "只描述物理功能（可水洗、可拆洗、密封），不做健康结果承诺；确有检测报告的抗菌处理也要按类目要求申请。"
+    },
+    {
+      "id": "CLM-CERT",
+      "label": "认证 / 检测标识提及",
+      "severity": "CONDITION",
+      "patterns": [
+        "\\b(CE|UKCA|FCC|FDA|RoHS|REACH|LFGB|CPSIA|ASTM|PSE|RCM|BPA[\\s-]*free|food[\\s-]*grade)\\b",
+        "\\b(geprüft|zertifiziert|schadstoffgeprüft)\\b",
+        "食品级|认证|检测报告"
+      ],
+      "why": "文案提及认证即等于向买家与平台作出举证承诺，后台抽查时需能出示对应报告与证书编号。",
+      "fix": "确认报告在手、型号与批次对应后再保留该表述；报告不在手就删掉，改成具体材质说明。"
+    },
+    {
+      "id": "CLM-COMPAT",
+      "label": "兼容性 / 替代品表述",
+      "severity": "CONDITION",
+      "patterns": [
+        "\\b(compatible\\s+with|for\\s+use\\s+with|replacement\\s+for|fits\\s+all|universal\\s+fit)\\b",
+        "\\b(passend\\s+für|ersetzt|kompatibel\\s+mit)\\b",
+        "兼容|适用于|替代"
+      ],
+      "why": "兼容性表述若指向他人品牌型号，容易被判为商标使用不当或误导适配范围。",
+      "fix": "保留兼容性时用「适用于」+ 明确型号清单，不出现他人商标图形，不写「原厂」「官方」。"
+    },
+    {
+      "id": "CLM-PRICE",
+      "label": "价格 / 促销类表述",
+      "severity": "BLOCK",
+      "patterns": [
+        "\\b(sale|on\\s*sale|free\\s*shipping|best\\s*price|cheapest|lowest\\s*price|limited\\s*time|discount|clearance|coupon)\\b",
+        "\\b(rabatt|sale|gratis\\s*versand|sonderpreis)\\b",
+        "促销|包邮|限时|特价|折扣"
+      ],
+      "why": "价格与促销信息由平台价格体系承载，写进 Listing 文案会与后台价格不一致，属于典型违规。",
+      "fix": "全部删除；促销走后台促销工具，不写进标题、五点、描述或后台搜索词。"
+    },
+    {
+      "id": "CLM-COMPETITOR",
+      "label": "指名比较 / 贬低竞品",
+      "severity": "BLOCK",
+      "patterns": [
+        "\\b(better\\s+than|unlike\\s+[A-Z][a-z]+|vs\\.?\\s*[A-Z]|outperforms?)\\b",
+        "\\b(besser\\s+als)\\b"
+      ],
+      "why": "指名比较涉及他人商标使用与商业贬损，且无法在 Listing 中举证。",
+      "fix": "改为不指名的场景化对比（「比传统折叠杯更省空间」），不出现任何他人品牌名。"
+    },
+    {
+      "id": "CLM-ENV",
+      "label": "环保 / 可持续宣称",
+      "severity": "CONDITION",
+      "patterns": [
+        "\\b(eco[\\s-]*friendly|environmentally\\s*friendly|100\\s*%\\s*recyclable|carbon\\s*neutral|biodegradable|compostable|zero\\s*waste|plastic[\\s-]*free)\\b",
+        "\\b(umweltfreundlich|klimaneutral|biologisch\\s*abbaubar)\\b",
+        "环保|可降解|碳中和|零浪费"
+      ],
+      "why": "欧盟对环保宣称要求全生命周期举证（Green Claims 方向），宽泛的「环保」已属高风险表述。",
+      "fix": "改成可核查的具体事实：具体材料占比、可回收部件、包装材质；不做整体环保结论。"
+    },
+    {
+      "id": "CLM-ORIGIN",
+      "label": "产地 / 原装表述",
+      "severity": "CONDITION",
+      "patterns": [
+        "\\b(made\\s+in\\s+[A-Z][a-z]+|genuine|authentic|original\\s+oem)\\b",
+        "\\b(original|echt|hergestellt\\s+in)\\b",
+        "原装|正品|原厂"
+      ],
+      "why": "产地与原装表述需与报关、标签一致，写错属于虚假陈述；「原厂」在非授权场景还涉及商标问题。",
+      "fix": "与包装标签核对后再写；无授权不使用「原装」「原厂」「正品」。"
+    },
+    {
+      "id": "CLM-SAFETY-ABS",
+      "label": "绝对安全表述",
+      "severity": "BLOCK",
+      "patterns": [
+        "\\b(perfectly\\s+safe|completely\\s+safe|no\\s*risk|childproof|baby[\\s-]*safe)\\b",
+        "\\b(kindersicher|absolut\\s*sicher)\\b",
+        "绝对安全|百分百安全|零风险"
+      ],
+      "why": "安全结论需由标准测试支撑，文案层面的绝对安全承诺在事故场景下构成重大责任风险。",
+      "fix": "改为具体结构与测试事实（圆角处理、通过某标准的某项测试），不做整体安全结论。"
+    }
+  ],
+  "categories": {
+    "electronics": {
+      "label": "电子 / 带电产品",
+      "requires": {
+        "US": [
+          { "item": "FCC 合规（含射频设备需 FCC ID）", "severity": "CONDITION", "why": "无线电与数字设备进入美国市场需符合 FCC 规则。", "fix": "确认 FCC 报告与 ID，必要时在后台合规文档中上传。" }
+        ],
+        "DE": [
+          { "item": "WEEE 电子废弃物注册号（WEEE-Reg.-Nr. DE）", "severity": "BLOCK", "why": "德国要求电子设备生产者完成 WEEE 注册并在 Listing 展示注册号。", "fix": "取得 WEEE 注册号后填入后台制造商信息栏。" }
+        ],
+        "JP": [
+          { "item": "PSE 认证（电气用品安全法）", "severity": "BLOCK", "why": "日本对指定电气用品实行 PSE 制度，未取得不得销售。", "fix": "按菱形/圆形 PSE 类别取得认证并在产品标示。" }
+        ],
+        "AU": [
+          { "item": "RCM 标志与供应商符合性声明", "severity": "CONDITION", "why": "澳大利亚对电气产品要求 RCM 合规。", "fix": "完成 RCM 注册并保留符合性声明。" }
+        ]
+      }
+    },
+    "juvenile_products": {
+      "label": "婴幼儿 / 儿童用品",
+      "requires": {
+        "US": [
+          { "item": "CPC 儿童产品证书 + 第三方检测", "severity": "BLOCK", "why": "美国对 12 岁以下儿童产品强制要求 CPC 与 CPSC 认可实验室检测。", "fix": "取得 CPC 与检测报告，并在后台提交。" },
+          { "item": "追踪标签（Tracking Label）", "severity": "BLOCK", "why": "儿童产品须在产品和包装上标注永久追踪信息。", "fix": "按 CPSC 要求在实物与包装加贴追踪标签。" }
+        ],
+        "DE": [
+          { "item": "GPSR 欧盟责任人 + 德语安全警示", "dedupe": "gpsr", "severity": "BLOCK", "why": "通用产品安全法规要求欧盟境内责任人与可追溯信息。", "fix": "指定欧盟责任人并把名称地址写入 Listing 与包装。" }
+        ]
+      }
+    },
+    "food_contact": {
+      "label": "食品接触材料",
+      "requires": {
+        "US": [
+          { "item": "FDA 食品接触符合性（21 CFR）", "severity": "CONDITION", "why": "与食品直接接触的材料需符合 FDA 相应条款。", "fix": "保留材料符合性声明（DoC）与迁移测试报告。" }
+        ],
+        "DE": [
+          { "item": "LFGB / EU 10/2011 食品接触检测", "severity": "CONDITION", "why": "欧盟对食品接触塑料与硅胶有迁移限值要求。", "fix": "取得对应迁移测试报告后再使用「食品级」表述。" }
+        ],
+        "JP": [
+          { "item": "食品卫生法符合性", "severity": "CONDITION", "why": "日本对食品接触器具容器有正面清单要求。", "fix": "确认材料在正面清单内并保留检测资料。" }
+        ]
+      }
+    },
+    "textiles": {
+      "label": "纺织 / 服装",
+      "requires": {
+        "US": [
+          { "item": "纤维成分与产地标签（FTC）", "severity": "CONDITION", "why": "美国要求纺织品标注纤维成分、产地与护理说明。", "fix": "按 FTC 规则制作永久性标签。" }
+        ],
+        "DE": [
+          { "item": "纺织品成分标示（EU 1007/2011）", "severity": "CONDITION", "why": "欧盟要求纺织纤维成分以规定语言标注。", "fix": "按法规用语标注成分，德语站点用德语标签。" }
+        ],
+        "FR": [
+          { "item": "EPR 纺织品类别注册（Refashion）", "severity": "CONDITION", "why": "法国对纺织品实行生产者责任延伸制度。", "fix": "完成 Refashion 注册并取得 UIN。" }
+        ]
+      }
+    },
+    "toys": {
+      "label": "玩具",
+      "requires": {
+        "US": [
+          { "item": "ASTM F963 + CPC", "severity": "BLOCK", "why": "美国玩具需符合 ASTM F963 并出具 CPC。", "fix": "完成第三方检测并出具 CPC。" }
+        ],
+        "DE": [
+          { "item": "CE + EN 71 系列检测", "severity": "BLOCK", "why": "欧盟玩具安全指令要求 CE 标志与 EN 71 检测。", "fix": "取得 EN 71 报告并制作技术文件。" }
+        ]
+      }
+    },
+    "battery_products": {
+      "label": "含电池产品",
+      "requires": {
+        "US": [
+          { "item": "UN38.3 运输测试 + MSDS", "severity": "CONDITION", "why": "锂电池运输需 UN38.3 报告，入仓审核会查。", "fix": "取得 UN38.3 与 MSDS 并随货提供。" }
+        ],
+        "DE": [
+          { "item": "BattG 电池注册（Batteriegesetz）", "severity": "BLOCK", "why": "德国要求电池生产者完成 BattG 注册。", "fix": "取得 Batterie-Reg.-Nr. 并展示。" }
+        ]
+      }
+    },
+    "general": {
+      "label": "通用 / 未归类",
+      "requires": {}
+    }
+  },
+  "markets": {
+    "US": {
+      "label": "美国",
+      "obligations": [
+        { "item": "加州 65 号提案警示（仅销往加州且含清单物质时）", "severity": "INFO", "why": "含清单物质且达到暴露阈值时需提供警示。", "fix": "做成分筛查，必要时加警示标签。" }
+      ]
+    },
+    "CA": {
+      "label": "加拿大",
+      "obligations": [
+        { "item": "英法双语标签", "severity": "CONDITION", "why": "加拿大消费品标签需英法双语。", "fix": "准备双语包装与说明。" }
+      ]
+    },
+    "UK": {
+      "label": "英国",
+      "obligations": [
+        { "item": "UK Responsible Person", "severity": "CONDITION", "why": "英国要求境外制造商指定英国境内责任人。", "fix": "指定 UKRP 并在标签体现。" },
+        { "item": "UKCA / CE 过渡期适用性核实", "severity": "CONDITION", "why": "不同产品类目的标志接受规则不同，需按类目核实。", "fix": "按类目查最新过渡安排后再决定标志。" }
+      ]
+    },
+    "DE": {
+      "label": "德国",
+      "obligations": [
+        { "item": "GPSR 欧盟责任人（名称 + 地址）", "dedupe": "gpsr", "severity": "BLOCK", "why": "通用产品安全法规要求在 Listing 与产品上提供欧盟责任人信息。", "fix": "指定欧盟责任人并写入后台制造商/责任人字段。" },
+        { "item": "LUCID / VerpackG 包装注册", "severity": "BLOCK", "why": "德国要求包装生产者完成 LUCID 注册并系统参与。", "fix": "取得 LUCID 注册号并加入系统参与。" },
+        { "item": "德语说明书与安全警示", "severity": "CONDITION", "why": "面向德国消费者的说明与警示须为德语。", "fix": "提供德语版说明书与包装警示。" }
+      ]
+    },
+    "FR": {
+      "label": "法国",
+      "obligations": [
+        { "item": "EPR 注册（按品类：包装 / 电子 / 纺织 / 家具）", "severity": "BLOCK", "why": "法国对多数消费品实行生产者责任延伸，需 UIN。", "fix": "按品类完成 EPR 注册并取得 UIN。" },
+        { "item": "Triman 标识与分拣说明", "severity": "CONDITION", "why": "法国要求可回收产品标注 Triman 与分拣信息。", "fix": "按品类加印 Triman 标识。" }
+      ]
+    },
+    "IT": {
+      "label": "意大利",
+      "obligations": [
+        { "item": "包装 EPR 注册（CONAI）", "severity": "CONDITION", "why": "意大利对包装实行环境标签与 EPR 要求。", "fix": "完成 CONAI 相关注册并加环境标签。" }
+      ]
+    },
+    "ES": {
+      "label": "西班牙",
+      "obligations": [
+        { "item": "包装 EPR 注册", "severity": "CONDITION", "why": "西班牙对包装实行生产者责任延伸。", "fix": "完成对应 EPR 注册。" }
+      ]
+    },
+    "JP": {
+      "label": "日本",
+      "obligations": [
+        { "item": "日语标示（商品信息与警示）", "severity": "CONDITION", "why": "面向日本消费者的必要标示须为日语。", "fix": "提供日语标签与说明。" },
+        { "item": "包装与容器回收标示", "severity": "INFO", "why": "日本有容器包装回收标识惯例。", "fix": "按材质加印回收标识。" }
+      ]
+    },
+    "AU": {
+      "label": "澳大利亚",
+      "obligations": [
+        { "item": "澳大利亚消费者法下的明示保证说明", "severity": "INFO", "why": "澳洲对消费者保证有强制表述边界，避免与平台政策冲突。", "fix": "售后表述与 ACL 保持一致，不做排除性声明。" }
+      ]
+    }
+  }
+}

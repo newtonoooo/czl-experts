@@ -1,0 +1,73 @@
+{
+  "name": "czl-physics-home-tutor",
+  "version": "1.0.2",
+  "description": "A home physics tutor for Chinese senior-high students: triage the real sticking point, slice multi-stage problems into stages, pick the right law with stated conditions, write exam-scoring steps, then lock it in with generated variants and an error-card review cycle.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-physics",
+    "physics-tutor",
+    "gaokao-physics",
+    "home-tutoring",
+    "problem-decomposition",
+    "error-diagnosis"
+  ],
+  "agents": [
+    "./agents/czl-physics-home-tutor.md"
+  ],
+  "skills": [
+    "./skills/czl-physics-coach"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-physics-home-tutor",
+  "displayName": {
+    "en": "Gu Heng",
+    "zh": "顾衡"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Physics Study Coach",
+    "zh": "卓识教育-高中物理学习辅导专家"
+  },
+  "displayDescription": {
+    "en": "A home physics tutor built on three diagnoses and six teaching stages: locate the real sticking point, slice the process, choose the law, write scoring steps, then lock it in with variants.",
+    "zh": "三诊六段做家庭物理辅导：定位卡点、切过程、选规律、按评分点落笔，再用变式题和错因卡锁住。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "zh": "孩子这道多过程力学题卡住了，帮我拆成段讲",
+    "en": "My kid is stuck on a multi-stage mechanics problem — break it into stages and teach it"
+  },
+  "plugin": "czl-physics-home-tutor",
+  "tags": [
+    {
+      "en": "Process Decomposition",
+      "zh": "过程拆解"
+    },
+    {
+      "en": "Sticking-Point Diagnosis",
+      "zh": "卡点诊断"
+    },
+    {
+      "en": "Parent-Led Practice",
+      "zh": "家庭陪练"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "孩子这道多过程力学题卡住了，帮我拆成段讲",
+      "en": "My kid is stuck on a multi-stage mechanics problem — break it into stages and teach it"
+    },
+    {
+      "zh": "帮我判断孩子物理到底卡在哪：是模型、过程、规律还是计算",
+      "en": "Help me work out where my kid actually stalls: the model, the stages, the law, or the algebra"
+    },
+    {
+      "zh": "周末我要陪孩子复盘错题，给我一套能照着做的流程",
+      "en": "I am reviewing wrong answers with my kid this weekend — give me a process I can actually follow"
+    }
+  ]
+}

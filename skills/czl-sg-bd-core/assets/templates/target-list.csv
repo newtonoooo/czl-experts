@@ -1,0 +1,4 @@
+﻿rank,account,entity_type,uen_or_hint,local_business,top_signal,fit_band,priority_band,evidence_ids,counter_summary,verdict,next_action
+1,示例公司 Singapore Pte Ltd,本地法人,待核实,区域配送运营,2,高,高,E1;E4,"反证:现有供应商覆盖分拣但未覆盖搬运;已回应",A,"30 天内确认其供应商注册入口"
+,,,,,,,,,,,
+,,,,,,,,,,,

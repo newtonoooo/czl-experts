@@ -1,0 +1,77 @@
+{
+  "name": "czl-resume-gate",
+  "version": "1.0.0",
+  "description": "Resume screening simulator: scores a resume against three real gates (machine parsing, six-second human scan, interview follow-up), rewrites bullets on an action-object-result-evidence frame without inventing numbers, tailors to a specific job description with a gap matrix, and exports print-ready HTML, Word or plain text.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "resume",
+    "cv",
+    "screening",
+    "ats",
+    "job-description",
+    "interview-defense",
+    "career"
+  ],
+  "agents": [
+    "./agents/czl-resume-gate.md"
+  ],
+  "skills": [
+    "./skills/resume-audit",
+    "./skills/resume-rewrite",
+    "./skills/jd-tailor",
+    "./skills/resume-export"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-resume-gate",
+  "displayName": {
+    "en": "Jianfeng",
+    "zh": "简锋"
+  },
+  "profession": {
+    "en": "Resume Screening & Application Strategy Expert",
+    "zh": "简历过筛与投递策略专家"
+  },
+  "displayDescription": {
+    "en": "Treats a resume as a chain of evidence: pass machine parsing first, then the six-second human scan, then the interview follow-up. Gaps get marked, never invented.",
+    "zh": "把简历当证据链来修：先过机器解析，再过六秒初筛，最后扛住面试追问，缺口标注不编造。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "09-OperationsHR",
+  "defaultInitPrompt": {
+    "zh": "帮我看看这份简历能不能过初筛（简历贴在下面，有目标岗位 JD 的话一起给我）。",
+    "en": "Check whether this resume survives the first screen. My resume is below; the job description is attached if I have one."
+  },
+  "plugin": "czl-resume-gate",
+  "tags": [
+    {
+      "en": "Resume Audit",
+      "zh": "简历诊断"
+    },
+    {
+      "en": "JD Tailoring",
+      "zh": "岗位定制"
+    },
+    {
+      "en": "Application Strategy",
+      "zh": "投递策略"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我看看这份简历能不能过初筛（简历贴在下面，有目标岗位 JD 的话一起给我）。",
+      "en": "Check whether this resume survives the first screen. My resume is below; the job description is attached if I have one."
+    },
+    {
+      "zh": "这是我要投的岗位 JD，按它把我的简历改一版，缺什么直接告诉我。",
+      "en": "Here is the job description I am applying to. Rewrite my resume against it and tell me what is missing."
+    },
+    {
+      "zh": "把简历导出成能直接打印的 A4 版本，Word 和 PDF 都要。",
+      "en": "Export my resume as a print-ready A4 file, both Word and PDF."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "name": "czl-ecom-profit-ops",
+  "version": "1.0.0",
+  "description": "An e-commerce profit operations expert for Taobao/Tmall, JD, Pinduoduo and Douyin Shop. Starts from a per-listing cost waterfall instead of a growth plan: landed cost, commission, payment fee, outbound and return freight, refund loss, ad spend and tax become contribution margin, breakeven ROI, breakeven price and breakeven volume. Then builds the assortment role mix, the ad bid ceiling, the campaign T-60 runbook with stock and cash-occupancy math, the GMV decomposition review, and a listing compliance lint for absolute claims, fake price comparisons and out-of-scope efficacy wording. Refuses to invent platform fee rates, refuses to plan a campaign without a stop-loss line, and refuses work that depends on fake orders or review manipulation.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "e-commerce",
+    "taobao",
+    "tmall",
+    "pinduoduo",
+    "jd",
+    "douyin-shop",
+    "unit-economics",
+    "campaign-planning",
+    "listing-compliance",
+    "advertising-roi",
+    "pricing"
+  ],
+  "agents": [
+    "./agents/czl-ecom-profit-ops.md"
+  ],
+  "skills": [
+    "./skills/sku-margin",
+    "./skills/promo-math",
+    "./skills/assortment-roles",
+    "./skills/traffic-budget",
+    "./skills/campaign-runbook",
+    "./skills/funnel-review",
+    "./skills/copy-compliance"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-ecom-profit-ops",
+  "displayName": {
+    "en": "Margin Pilot",
+    "zh": "净利操盘手"
+  },
+  "profession": {
+    "en": "E-commerce Profit Operations Expert",
+    "zh": "电商净利运营操盘专家"
+  },
+  "displayDescription": {
+    "en": "Turns every listing into a cost waterfall first: breakeven ROI, breakeven price and volume, then assortment, bids, campaign runbook and compliance.",
+    "zh": "把单链接账本、货盘结构、投流预算、大促倒排和文案合规串成一条线，先算清赚不赚钱，再谈怎么起量。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "这个链接卖 129，拿货 38，快递 6，退货率 18%，上个月投流花 8000 卖了 4 万。帮我算清楚它到底赚不赚钱，保本 ROI 是多少。",
+    "en": "This listing sells at 129, landed cost 38, shipping 6, return rate 18%, and last month I spent 8,000 on ads to generate 40,000 in sales. Work out whether it actually makes money and what my breakeven ROI is."
+  },
+  "plugin": "czl-ecom-profit-ops",
+  "tags": [
+    { "en": "SKU Profit Math", "zh": "单品盈亏测算" },
+    { "en": "Campaign & Stock Plan", "zh": "大促倒排备货" },
+    { "en": "Listing Compliance", "zh": "文案合规体检" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "这个链接卖 129，拿货 38，快递 6，退货率 18%，上个月投流花 8000 卖了 4 万。帮我算清楚它到底赚不赚钱，保本 ROI 是多少。",
+      "en": "This listing sells at 129, landed cost 38, shipping 6, return rate 18%, and last month I spent 8,000 on ads to generate 40,000 in sales. Work out whether it actually makes money and what my breakeven ROI is."
+    },
+    {
+      "zh": "双 11 我要报跨店满减再叠店铺券，女包客单 199，拿货 62。帮我算活动价会不会亏，要备多少货、压多少钱、什么情况下必须停。",
+      "en": "For Double 11 I plan to join the platform's cross-store spend-and-save plus a store coupon. Handbags, AOV 199, landed cost 62. Tell me whether the promo price loses money, how much stock to buy, how much cash that locks up, and when I must stop."
+    },
+    {
+      "zh": "儿童保温杯的标题和详情我写了「食品级 最安全 宝宝专用」，帮我挑出会被罚的说法、给出替换写法，再按平台字数重排标题。",
+      "en": "My kids thermos listing says \"food grade, safest, baby exclusive\". Flag the wording that gets me fined, give me replacements, and rebuild the title within the platform character limit."
+    }
+  ]
+}

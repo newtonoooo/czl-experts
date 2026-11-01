@@ -1,0 +1,21 @@
+{
+  "_note": "测试用样本，用于验证信息量不足时的低分判定。",
+  "market": "US",
+  "category": "textiles",
+  "brand": "",
+  "title": "Silk Blouse",
+  "bullets": [
+    "This silk blouse is soft and comfortable for daily wear.",
+    "The silk blouse is easy to match with jeans or skirts."
+  ],
+  "description": "A silk blouse for women.",
+  "search_terms": "silk blouse women",
+  "attributes": {
+    "color": "ivory"
+  },
+  "keywords": {
+    "primary": ["silk blouse"],
+    "secondary": [],
+    "long_tail": []
+  }
+}

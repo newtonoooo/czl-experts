@@ -1,0 +1,5 @@
+﻿id,claim,evidence_grade,evidence_type,source_ref,counter_searched,sample_size
+E1,有 3 条工单原文提到导出需要手工整理格式,B,quote,tickets_20260901_0915.md,yes,
+E2,近 30 天导出功能的日均调用次数为 412 次,A,data,dw_export_daily_202609,yes,
+E3,竞品更新日志显示其于 2026-09-18 上线批量导出,C,public,changelog_2026-09-18,yes,
+E4,有客户在访谈中提到愿意为批量导出额外付费,B,quote,interview_p03_20260920,yes,

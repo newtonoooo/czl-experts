@@ -1,0 +1,64 @@
+{
+  "name": "czl-pro-backtest-desk",
+  "version": "1.0.0",
+  "description": "Professional daily-bar backtest desk: turns a plain-language trading idea into a scoped, reproducible, adversarially audited backtest with a self-contained HTML report — covering rule-based strategies, event studies, portfolio rotation, parameter robustness and cost stress, plus auditing third-party backtests.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "homepage": {
+    "url": "https://www.workbuddy.cn",
+    "type": "product"
+  },
+  "keywords": ["backtest", "quant", "event study", "robustness", "audit", "回测", "量化"],
+  "agents": ["./agents/czl-pro-backtest-desk.md"],
+  "skills": [
+    "./skills/bt-scope",
+    "./skills/bt-datafeeds",
+    "./skills/bt-engine",
+    "./skills/bt-audit",
+    "./skills/bt-delivery"
+  ],
+
+  "expertType": "agent",
+  "agentName": "czl-pro-backtest-desk",
+
+  "displayName": {
+    "en": "Pro Backtest Desk",
+    "zh": "专业回测台"
+  },
+  "profession": {
+    "en": "Quant Strategy Backtest & Verification Specialist",
+    "zh": "量化策略回测与复核专家"
+  },
+  "displayDescription": {
+    "en": "Turns a one-line trading idea into a scoped, reproducible daily-bar backtest: locks the assumptions, checks the data, generates runnable code, audits it adversarially, then delivers an HTML report with robustness and cost-stress results.",
+    "zh": "把一句话的交易想法变成可复算的日线回测：锁定口径、体检数据、生成脚本、对抗自检，再出报告与结论。"
+  },
+  "avatar": "avatars/avatar.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "帮我回测一个策略：沪深300ETF，收盘价 MA20 上穿 MA60 买入、下穿卖出，2020 年至今，扣掉手续费和印花税后到底赚不赚",
+    "en": "Backtest this for me: CSI 300 ETF, buy when the close crosses above MA20 over MA60, sell when it crosses below, from 2020 to today — does it actually make money after fees and stamp duty?"
+  },
+  "plugin": "czl-pro-backtest-desk",
+  "tags": [
+    { "en": "Strategy Backtest", "zh": "策略回测" },
+    { "en": "Backtest Audit", "zh": "回测审计" },
+    { "en": "Robustness Check", "zh": "稳健性检验" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我回测一个策略：沪深300ETF，收盘价 MA20 上穿 MA60 买入、下穿卖出，2020 年至今，扣掉手续费和印花税后到底赚不赚",
+      "en": "Backtest this for me: CSI 300 ETF, buy when the close crosses above MA20 over MA60, sell when it crosses below, from 2020 to today — does it actually make money after fees and stamp duty?"
+    },
+    {
+      "zh": "过去五年央行每次降息后，买入沪深300ETF 持有 20 个交易日，平均收益、中位数和胜率分别是多少",
+      "en": "After each PBOC rate cut in the past five years, buy the CSI 300 ETF and hold 20 trading days: what are the average return, median and win rate?"
+    },
+    {
+      "zh": "我这套策略回测年化 80%、夏普 5，帮我审一下哪里最可能是未来函数或漏掉的成本",
+      "en": "My backtest shows 80% annualized with a Sharpe of 5 — audit it and tell me where the look-ahead bias or missing costs most likely are."
+    }
+  ]
+}

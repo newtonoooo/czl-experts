@@ -1,0 +1,58 @@
+# 专有软件许可协议（Proprietary License）
+
+版权所有 (c) 2026 虫志龙。保留所有权利。
+
+本许可适用于「专业级个股全景诊断官」专家包（以下称"本软件"），
+包括其中的提示词、技能定义、Python 代码、文档、模板与图像资源。
+
+## 一、授权范围
+
+在遵守本协议的前提下，您获得一项**非独占、不可转让**的使用权：
+
+1. 在您自己使用的 WorkBuddy 环境中安装、运行本软件；
+2. 为自用目的复制本软件，但须完整保留本协议与版权声明；
+3. 在未修改署名与版权信息的前提下，将本软件**原样**分享给他人（不含商业销售）。
+
+## 二、限制
+
+未经版权人事先书面许可，您不得：
+
+1. 销售、出租、许可、分销本软件或其衍生版本以获取对价；
+2. 修改、改写、翻译本软件的任何部分后以自己名义发布；
+3. 移除、遮蔽或篡改本软件中的作者署名、版权声明、免责声明；
+4. 将本软件的整体或实质部分用于训练、微调任何机器学习模型；
+5. 将本软件的名称、头像、文案用于暗示与版权人存在合作、代理或背书关系；
+6. 以本软件为基础提供托管服务（SaaS）向第三方收费。
+
+## 三、商业授权
+
+如需商业分发、二次开发、白标集成或平台分成合作，须另行取得书面商业授权。
+联系方式：47190078@qq.com。
+
+## 四、免责
+
+本软件是信息整理工具，输出内容由规则引擎与语言模型共同生成，
+**不构成投资建议、不构成任何形式的收益承诺**。证券市场存在本金损失风险。
+
+本软件按"现状"提供，不附带任何明示或默示的担保，包括但不限于适销性、
+特定用途适用性与不侵权担保。因使用或无法使用本软件造成的任何直接或间接损失，
+版权人不承担责任。
+
+## 五、第三方组件
+
+本软件运行时**不依赖任何第三方 Python 包**。仅在生成头像资源时使用了 Pillow，
+该组件不随本软件分发。详见 `NOTICE.md`。
+
+## 六、协议终止
+
+违反上述任一条款，本授权自动终止，您须立即停止使用并删除全部副本。
+
+---
+
+Copyright (c) 2026 Chong Zhilong. All rights reserved.
+
+This is a proprietary license. Runtime use is granted for personal and internal
+business purposes as described above. Redistribution for consideration, modification
+for republication, removal of attribution, and use for model training are prohibited
+without prior written permission. The software is an information-organizing tool and
+does not constitute investment advice.

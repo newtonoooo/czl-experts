@@ -1,0 +1,83 @@
+{
+  "name": "czl-product-strategy-solo",
+  "version": "1.0.0",
+  "description": "A single-expert product strategy workbench that runs the whole chain alone by rotating five hats: intake, evidence, spec, capacity, metrics, alignment. Every claim carries an evidence grade (A/B/C/D/X) and a written counter-argument; every requirement carries a testable acceptance criterion; the roadmap is packed against real person-week capacity with a cut list; metric definitions are pinned before attribution; and a consistency gate cross-checks IDs and figures across all deliverables before release. Built for people who want the same decision pack without waiting for a five-agent team.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "product-strategy",
+    "prd",
+    "competitive-analysis",
+    "roadmap",
+    "prioritization",
+    "capacity-planning",
+    "product-metrics",
+    "stakeholder-communication",
+    "evidence-grading",
+    "solo-expert"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-product-strategy-solo",
+  "agents": [
+    "./agents/czl-product-strategy-solo.md"
+  ],
+  "skills": [
+    "./skills/strategy-intake",
+    "./skills/evidence-ledger",
+    "./skills/spec-architect",
+    "./skills/capacity-packing",
+    "./skills/metric-guard",
+    "./skills/chain-consistency",
+    "./skills/stakeholder-render"
+  ],
+  "displayName": {
+    "zh": "专业级产品战略参谋",
+    "en": "War Room Solo"
+  },
+  "profession": {
+    "zh": "产品战略与增长决策（单人参谋）",
+    "en": "Product Strategy & Growth Decisions (solo)"
+  },
+  "displayDescription": {
+    "zh": "一个专家，五顶帽子：立案、取据、成文、排产、度量、汇报。结论标证据等级并附反证，需求带可测验收，路线图按真实产能装箱给砍单清单，指标先定口径，交付前过一致性闸。同样的决策包，不用等一支团队。",
+    "en": "One expert, five hats: intake, evidence, spec, capacity, metrics, alignment. Graded claims with counter-arguments, testable acceptance criteria, a capacity-packed roadmap with a cut list, definitions pinned before attribution, and a consistency gate before release. The same decision pack, without waiting for a team."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "01-ProductDesign",
+  "defaultInitPrompt": {
+    "zh": "下季度要做的事太多，团队就 6 个人。帮我从一堆需求里定出真能做完的那些，并写清楚砍掉什么、砍了怎么跟老板交代。",
+    "en": "Too many things for next quarter and only six people. Work out what we can actually finish, what gets cut, and how I explain the cuts upward."
+  },
+  "tags": [
+    {
+      "zh": "产品战略",
+      "en": "Product Strategy"
+    },
+    {
+      "zh": "需求规格",
+      "en": "PRD & Specs"
+    },
+    {
+      "zh": "产能排产",
+      "en": "Capacity Planning"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "下季度要做的事太多，团队就 6 个人。帮我从一堆需求里定出真能做完的那些，并写清楚砍掉什么、砍了怎么跟老板交代。",
+      "en": "Too many things for next quarter and only six people. Work out what we can actually finish, what gets cut, and how I explain the cuts upward."
+    },
+    {
+      "zh": "老板说要做 AI 助手，但没说给谁用、解决什么。我手上只有 8 条客户抱怨和一份竞品截图，帮我把它变成一个能立项的方案，别给我空话。",
+      "en": "My boss wants an AI assistant but never said for whom or for what. I have eight customer complaints and one competitor screenshot - turn that into something I can actually pitch, not platitudes."
+    },
+    {
+      "zh": "上个季度 MAU 涨了 9%，付费转化掉了 12%，复盘会上一定有人问为什么。先把口径和分母查清楚，再告诉我该怎么回答。",
+      "en": "Last quarter MAU rose 9% while paid conversion fell 12%. Someone will ask why. Check the definitions and denominators first, then tell me how to answer."
+    }
+  ],
+  "plugin": "czl-product-strategy-solo"
+}

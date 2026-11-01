@@ -1,0 +1,14 @@
+{
+  "account": "100201 银行存款-工商银行基本户",
+  "period": "2026-09",
+  "book_balance": 1174000.00,
+  "bank_balance": 1200000.00,
+  "book_received_bank_not": [],
+  "book_paid_bank_not": [
+    { "label": "9/28 付供应商B货款（支票未兑付）", "amount": 23000.00, "aging_days": 3 }
+  ],
+  "bank_received_book_not": [
+    { "label": "9/30 银行结息，企业未入账", "amount": 3000.00, "aging_days": 1 }
+  ],
+  "bank_paid_book_not": []
+}

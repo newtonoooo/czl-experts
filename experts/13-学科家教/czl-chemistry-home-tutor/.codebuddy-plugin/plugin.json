@@ -1,0 +1,83 @@
+{
+  "name": "czl-chemistry-home-tutor",
+  "version": "1.0.2",
+  "description": "An independent senior-high chemistry home-tutoring expert for students and parents: diagnoses the real bottleneck from the student's own papers, teaches with a macro-micro-symbol-quantity chain, drills equation writing, equilibrium and titration calculation, inorganic/organic deduction and industrial-process reading, and hands parents a weekly routine they can actually run. Never ghostwrites homework, never promises score gains, and flags every experimental safety risk.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "senior-high-chemistry",
+    "home-tutoring",
+    "chemical-equations",
+    "chemical-equilibrium",
+    "titration-calculation",
+    "industrial-process",
+    "organic-deduction",
+    "gaokao-chemistry",
+    "parent-guidance",
+    "error-diagnosis"
+  ],
+  "agents": [
+    "./agents/czl-chemistry-home-tutor.md"
+  ],
+  "skills": [
+    "./skills/czl-chem-intake",
+    "./skills/czl-chem-concept",
+    "./skills/czl-chem-equation",
+    "./skills/czl-chem-calc",
+    "./skills/czl-chem-deduction",
+    "./skills/czl-chem-process",
+    "./skills/czl-chem-review"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-chemistry-home-tutor",
+  "displayName": {
+    "en": "Zhuoshi Education - Senior High Chemistry Learning Tutoring Expert",
+    "zh": "卓识教育-高中化学学习辅导专家"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Chemistry Learning Tutoring Expert",
+    "zh": "卓识教育-高中化学学习辅导专家"
+  },
+  "displayDescription": {
+    "en": "One-to-one senior-high chemistry tutoring at home: read the student's own papers to locate the bottleneck, teach principles with a macro-micro-symbol chain, drill equations, equilibrium calculation, deduction and process flows, and give parents a weekly routine.",
+    "zh": "高中化学一对一家教：看卷子找准卡点，讲透原理与方程式，专练平衡计算、推断和流程题，给家长周计划。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "My child is in Grade 11 and hovers around the pass line in chemistry but cannot say what is wrong. Run a learning diagnosis first, then give me a six-week plan.",
+    "zh": "孩子高二，化学总在及格线上下，说不清哪儿不会。先做一次学情诊断，再给六周计划"
+  },
+  "plugin": "czl-chemistry-home-tutor",
+  "tags": [
+    {
+      "en": "Equation Writing",
+      "zh": "化学用语规范"
+    },
+    {
+      "en": "Reaction Principles & Equilibrium",
+      "zh": "反应原理与平衡"
+    },
+    {
+      "en": "Deduction & Process Flow",
+      "zh": "推断与工艺流程"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "My child is in Grade 11 and hovers around the pass line in chemistry but cannot say what is wrong. Run a learning diagnosis first, then give me a six-week plan.",
+      "zh": "孩子高二，化学总在及格线上下，说不清哪儿不会。先做一次学情诊断，再给六周计划"
+    },
+    {
+      "en": "He has calculated this chemical equilibrium problem three times and still gets it wrong. Show me which step breaks, then give him two similar problems.",
+      "zh": "这道化学平衡计算题他算了三遍都不对，帮我看看错在哪一步，再出两道同类题"
+    },
+    {
+      "en": "He freezes whenever an industrial-process problem appears. Break this one down step by step and teach him how to find the purpose of each step.",
+      "zh": "工艺流程题一看就懵，帮我把这道题按步骤拆开，教他怎么找每一步的目的"
+    }
+  ]
+}

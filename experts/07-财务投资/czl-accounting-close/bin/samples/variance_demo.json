@@ -1,0 +1,12 @@
+{
+  "area": "主营业务收入",
+  "period_current": "2026-09",
+  "period_prior": "2026-08",
+  "materiality_pct": 5,
+  "_note": "演示三因分解：价格、数量（纯）、结构",
+  "items": [
+    { "name": "A产品", "price_current": 105, "qty_current": 9000, "price_prior": 100, "qty_prior": 10000 },
+    { "name": "B产品", "price_current": 60, "qty_current": 12000, "price_prior": 60, "qty_prior": 8000 },
+    { "name": "C产品", "price_current": 210, "qty_current": 2600, "price_prior": 200, "qty_prior": 3000 }
+  ]
+}

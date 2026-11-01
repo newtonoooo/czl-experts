@@ -1,0 +1,47 @@
+# 软件许可协议（专有）
+
+版权 © 2026 虫志龙（47190078@qq.com）。保留所有权利。
+
+本专家包（`czl-livestream-ops-coach`，含提示词、工作流文档、模板、脚本、头像与全部随附文档，以下称"本软件"）为虫志龙独立开发的作品。
+
+## 一、授予的权利
+
+在遵守本协议的前提下，购买或经授权取得本软件副本的自然人或法人，获得一项**非独占、不可转让**的许可，可以：
+
+1. 在自己或自己所属企业内部使用本软件；
+2. 为自用目的修改本软件的内容，修改版本的使用同样受本协议约束。
+
+## 二、限制
+
+未经版权人事先书面同意，不得：
+
+1. 复制、发布、出租、出售、转授权或以其他方式向第三方分发本软件或其修改版本；
+2. 将本软件的全部或实质部分用于制作与本软件竞争的商业产品；
+3. 移除或更改本软件中的版权声明、作者信息与本许可文本；
+4. 将本软件以任何形式上传至公开代码托管平台或公开资源站。
+
+## 三、第三方内容
+
+本软件不包含任何第三方代码、提示词、文档或图像素材。第三方组件与参考资料的说明见 `THIRD-PARTY-NOTICES.md`。
+
+## 四、免责声明
+
+本软件按"现状"提供，不附带任何明示或默示的保证，包括但不限于适销性、特定用途适用性与不侵权的保证。
+
+本软件输出的是运营建议与经验参考值，**不构成法律意见、财务意见或对经营结果的承诺**。使用者应自行判断并承担使用后果。直播经营涉及平台规则、广告合规、税务等监管要求，请以官方最新文本与专业顾问意见为准。
+
+在任何情况下，版权人均不对因使用或无法使用本软件而产生的任何直接、间接、偶然或后果性损失承担责任。
+
+## 五、协议终止
+
+违反本协议任一条款，本许可自动终止，使用者应立即停止使用并删除全部副本。
+
+---
+
+Copyright © 2026 虫志龙 (47190078@qq.com). All rights reserved.
+
+This is proprietary software. No permission is granted to copy, distribute, sublicense
+or sell copies of this software or its substantial portions without prior written
+consent of the copyright holder. The software is provided "AS IS", without warranty
+of any kind. Outputs are operational suggestions and reference ranges, not legal or
+financial advice, and carry no guarantee of business results.

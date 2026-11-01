@@ -1,0 +1,6 @@
+{
+  "benchmark": "revenue",
+  "amount": 500000000.00,
+  "performance_rate": 0.6,
+  "clearly_trivial_rate": 0.05
+}

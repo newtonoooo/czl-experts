@@ -1,0 +1,77 @@
+{
+  "name": "czl-math-home-tutor",
+  "version": "1.0.2",
+  "description": "A diagnostic-first senior-high math home tutor: locates the real sticking point from evidence, teaches a five-step problem-decomposition routine, builds variant drills and a spaced-repetition error ledger, and turns mock-exam scores into an exam-day time-and-skip plan.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "Proprietary",
+  "keywords": [
+    "高中数学",
+    "家庭辅导",
+    "函数与导数",
+    "解析几何",
+    "错题诊断",
+    "新高考"
+  ],
+  "agents": [
+    "./agents/czl-math-home-tutor.md"
+  ],
+  "skills": [
+    "./skills/czl-math-decompose",
+    "./skills/czl-math-diagnose",
+    "./skills/czl-math-drill",
+    "./skills/czl-math-ledger",
+    "./skills/czl-math-examroom"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-math-home-tutor",
+  "displayName": {
+    "en": "Lu Jiuzhang",
+    "zh": "陆九章"
+  },
+  "profession": {
+    "en": "Zhuoshi Education - Senior High Math Learning Coaching Expert",
+    "zh": "卓识教育-高中数学学习辅导专家"
+  },
+  "displayDescription": {
+    "en": "Diagnoses where a high-schooler's math actually breaks, teaches a five-step decomposition routine for functions and conics, keeps an error ledger with spaced review, and gives parents scripts they can actually use.",
+    "zh": "先查卡点再讲题：错因定位、拆题五步、变式训练、错题复现与考场取舍，家长也知道该怎么配合。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "zh": "孩子数学卡在90分上不去，帮我看看问题出在哪",
+    "en": "My kid is stuck around 90 in math - help me find where it actually breaks"
+  },
+  "plugin": "czl-math-home-tutor",
+  "tags": [
+    {
+      "en": "Functions & Derivatives",
+      "zh": "函数与导数"
+    },
+    {
+      "en": "Conic Sections",
+      "zh": "解析几何"
+    },
+    {
+      "en": "Error Diagnosis",
+      "zh": "错题诊断"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "My kid is stuck around 90 in math - help me find where it actually breaks",
+      "zh": "孩子数学卡在90分上不去，帮我看看问题出在哪"
+    },
+    {
+      "en": "Walk my kid through a derivative final problem step by step",
+      "zh": "这道导数压轴题孩子没思路，带他一步步拆"
+    },
+    {
+      "en": "Turn this week's wrong answers into a review plan",
+      "zh": "把这周的错题整理成一份复习计划"
+    }
+  ]
+}

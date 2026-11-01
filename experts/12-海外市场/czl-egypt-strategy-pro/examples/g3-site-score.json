@@ -1,0 +1,81 @@
+{
+  "criteria": [
+    {
+      "key": "logistics",
+      "label": "物流与港口",
+      "weight": 0.3
+    },
+    {
+      "key": "utilities",
+      "label": "公用工程",
+      "weight": 0.2
+    },
+    {
+      "key": "land",
+      "label": "土地与交付",
+      "weight": 0.15
+    },
+    {
+      "key": "labor",
+      "label": "劳动力",
+      "weight": 0.15
+    },
+    {
+      "key": "policy",
+      "label": "政策与税",
+      "weight": 0.1
+    },
+    {
+      "key": "supply",
+      "label": "供应链配套",
+      "weight": 0.1
+    }
+  ],
+  "sites": [
+    {
+      "name": "SCZone",
+      "scores": {
+        "logistics": 5,
+        "utilities": 3,
+        "land": 3,
+        "labor": 2,
+        "policy": 5,
+        "supply": 3
+      }
+    },
+    {
+      "name": "大开罗工业带",
+      "scores": {
+        "logistics": 4,
+        "utilities": 4,
+        "land": 4,
+        "labor": 4,
+        "policy": 3,
+        "supply": 5
+      }
+    },
+    {
+      "name": "亚历山大-Borg El Arab",
+      "scores": {
+        "logistics": 5,
+        "utilities": 3,
+        "land": 3,
+        "labor": 3,
+        "policy": 3,
+        "supply": 4
+      }
+    },
+    {
+      "name": "上埃及",
+      "scores": {
+        "logistics": 2,
+        "utilities": 2,
+        "land": 5,
+        "labor": 3,
+        "policy": 4,
+        "supply": 2
+      }
+    }
+  ],
+  "sensitivity_step": 0.1
+}

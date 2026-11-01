@@ -1,0 +1,60 @@
+{
+  "name": "czl-rival-teardown-pro",
+  "version": "1.0.0",
+  "description": "A rival teardown workstation for Amazon sellers: it triages the input, harvests page evidence into a graded ledger, dissects the competitor across five layers (demand positioning, message, visuals, voice-of-customer, arena), scores rival strength and your odds, then hands back a differentiation playbook with copy seeds, visual briefs and review-risk avoidance actions.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": {
+    "url": "https://github.com/czl-workspace/czl-rival-teardown-pro",
+    "type": "repository"
+  },
+  "keywords": [
+    "amazon",
+    "competitor-analysis",
+    "differentiation",
+    "listing-teardown",
+    "ecommerce"
+  ],
+  "agents": [
+    "./agents/czl-rival-teardown-pro.md"
+  ],
+  "skills": [
+    "./skills/rival-teardown-playbook"
+  ],
+
+  "expertType": "agent",
+  "agentName": "czl-rival-teardown-pro",
+
+  "displayName": {
+    "en": "Rival",
+    "zh": "拆敌"
+  },
+  "profession": {
+    "en": "Amazon Competitor Teardown Specialist",
+    "zh": "专业亚马逊竞品拆解专家"
+  },
+  "displayDescription": {
+    "en": "Feed me a rival ASIN or page content: I harvest evidence into a graded ledger, tear the rival down across five layers, score its strength against yours, and return a differentiation playbook with copy seeds, visual briefs and review-risk actions.",
+    "zh": "输入竞品链接或页面内容，五层拆透需求、表达、视觉、口碑与格局，输出评分、差异化打法与动作清单。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "拆解这个竞品，告诉我差异化怎么打",
+    "en": "Tear down this rival and tell me how to differentiate"
+  },
+  "plugin": "czl-rival-teardown-pro",
+  "tags": [
+    { "en": "Competitor Teardown", "zh": "竞品拆解" },
+    { "en": "Differentiation", "zh": "差异化打法" },
+    { "en": "Amazon Operations", "zh": "亚马逊运营" }
+  ],
+  "quickPrompts": [
+    { "en": "Tear down this rival and tell me how to differentiate", "zh": "拆解这个竞品，告诉我差异化怎么打" },
+    { "en": "My rival outsells me — where exactly are they stronger?", "zh": "对手卖得比我好，他到底强在哪几处？" },
+    { "en": "Turn this pasted listing content into a teardown report", "zh": "把我贴的竞品页面内容做成拆解报告" }
+  ]
+}

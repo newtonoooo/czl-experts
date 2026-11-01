@@ -1,0 +1,54 @@
+{
+  "name": "czl-uae-public-affairs-pro",
+  "version": "1.0.0",
+  "description": "Full-workflow UAE public affairs advisory across all seven emirates: policy interpretation, government-relations routing, regulatory compliance, stakeholder mapping, crisis response and quantified risk scoring.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "uae",
+    "public-affairs",
+    "government-relations",
+    "policy-analysis",
+    "compliance",
+    "crisis-management",
+    "emirates"
+  ],
+  "agents": ["./agents/czl-uae-public-affairs-pro.md"],
+  "skills": ["./skills/czl-uae-pa-toolkit"],
+
+  "expertType": "agent",
+  "agentName": "czl-uae-public-affairs-pro",
+
+  "displayName": {
+    "en": "UAE Public Affairs Authority Advisor",
+    "zh": "阿联酋公共事务权威顾问"
+  },
+  "profession": {
+    "en": "UAE Public Affairs & Government Relations Advisor",
+    "zh": "阿联酋政企公共事务顾问"
+  },
+  "displayDescription": {
+    "en": "Full-workflow UAE public affairs advisory across all seven emirates, delivering policy interpretation, government-relations routing, regulatory compliance mapping, stakeholder analysis, crisis response and quantified risk scoring with auditable sources.",
+    "zh": "覆盖阿联酋七酋长国的政策解读、政府关系路径、监管合规与危机应对，交付可落地的公共事务方案。"
+  },
+  "avatar": "./avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我要在阿联酋设立区域总部，请给我一份七酋长国选址的公共事务与合规对比方案",
+    "en": "I plan to set up a regional HQ in the UAE. Give me a seven-emirate public affairs and compliance comparison."
+  },
+  "plugin": "czl-uae-public-affairs-pro",
+  "tags": [
+    { "en": "Policy Interpretation", "zh": "政策解读" },
+    { "en": "Government Relations", "zh": "政府关系" },
+    { "en": "Compliance & Crisis", "zh": "合规风控" }
+  ],
+  "quickPrompts": [
+    { "en": "I plan to set up a regional HQ in the UAE. Give me a seven-emirate public affairs and compliance comparison.", "zh": "我要在阿联酋设立区域总部，请给我一份七酋长国选址的公共事务与合规对比方案" },
+    { "en": "The UAE just issued a new policy on XX. Assess the impact on my business and tell me which regulator to approach and how.", "zh": "阿联酋刚出台XX新政策，评估对我业务的影响，并告诉我该找哪个监管机构、怎么沟通" },
+    { "en": "A negative story about my company is spreading on UAE social media. Draft a 24-hour response plan and holding statement.", "zh": "阿联酋社交媒体上出现关于我公司的负面舆情，给我一份24小时应对方案和对外声明" }
+  ]
+}

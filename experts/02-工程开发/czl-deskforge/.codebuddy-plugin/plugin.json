@@ -1,0 +1,77 @@
+{
+  "name": "czl-deskforge",
+  "expertType": "agent",
+  "version": "1.0.0",
+  "description": "Turns one colloquial sentence of need into a working single-file HTML workbench that opens offline in any browser. A request is first compressed into a scope card (at most four blocks, each with a stated input, a stated display and a stated judgement), then modelled as a data ledger (named fields, namespaced storage keys, seed rows, export/import path), then assembled from five card primitives — list, matrix, form, metric and time — so any scene is composed from parameters instead of a fixed module catalogue. Layout keeps a 'due today' strip on top, seeds three to five sample rows including one overdue, and stays readable on a 375-pixel-wide phone with 44-pixel hit targets and 16-pixel inputs. Everything is inlined: no CDN, no font hosting, no chart library, no icon font, charts and icons hand-written as SVG. Ships three standard-library checkers — a compliance lint for external references, emoji-as-icon, input sizing, storage prefixes and file weight; a DOM prober for missing element ids, undefined handlers and cyclic render calls; and a scope-card generator that refuses more than four blocks — and nothing is released until both checkers report zero errors. Use for building a personal dashboard, habit tracker, study log, ledger, project board or family check-in page that must keep working with the network off.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "agents": [
+    "./agents/czl-deskforge.md"
+  ],
+  "agentName": "czl-deskforge",
+  "skills": [
+    "./skills/deskforge-build-kit"
+  ],
+  "displayName": {
+    "en": "Deskwright",
+    "zh": "桌匠"
+  },
+  "profession": {
+    "en": "Personal Workbench Architect",
+    "zh": "个人工作台架构师"
+  },
+  "displayDescription": {
+    "en": "One sentence in, one offline-capable single-file workbench out: four blocks, a due-today strip, exportable data, zero external links, with a factory check before delivery.",
+    "zh": "把一句话需求装配成能直接用的单文件工作台：四块模块、今日置顶、数据可导出，零外链，附出厂体检。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "Build me a study log workbench: record daily questions done and wrong ones, count down to the exam, and show a fortnight trend. Put the due-today block on top.",
+    "zh": "给我搭一个备考打卡台：每天记刷题量和错题，倒计时到考前，再看最近两周的趋势。今天要做的放最上面。"
+  },
+  "plugin": "czl-deskforge",
+  "tags": [
+    {
+      "en": "Single-File App",
+      "zh": "单文件应用"
+    },
+    {
+      "en": "Card Composition",
+      "zh": "卡片化装配"
+    },
+    {
+      "en": "Factory QC",
+      "zh": "出厂体检"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Build me a study log workbench: record daily questions done and wrong ones, count down to the exam, and show a fortnight trend. Put the due-today block on top.",
+      "zh": "给我搭一个备考打卡台：每天记刷题量和错题，倒计时到考前，再看最近两周的趋势。今天要做的放最上面。"
+    },
+    {
+      "en": "I want a household ledger I actually keep using: quick expense entry, monthly budget ring, category breakdown, and a one-tap export so I never lose the data.",
+      "zh": "想要一个我能坚持用的记账台：快速记一笔支出、月度预算进度环、分类占比，再给我一键导出，别让我把账弄丢。"
+    },
+    {
+      "en": "Here is a workbench you built earlier — run the factory check on it and tell me what a phone would break on.",
+      "zh": "这是上次搭的工作台，跑一遍出厂体检，告诉我手机上哪里会出问题。"
+    }
+  ],
+  "keywords": [
+    "工作台",
+    "单文件",
+    "离线可用",
+    "个人看板",
+    "打卡",
+    "记账",
+    "响应式",
+    "localStorage",
+    "single-file html",
+    "personal dashboard"
+  ]
+}

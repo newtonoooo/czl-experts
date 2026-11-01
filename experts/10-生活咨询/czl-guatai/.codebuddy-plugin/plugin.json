@@ -1,0 +1,86 @@
+{
+  "name": "czl-guatai",
+  "version": "1.1.1",
+  "description": "Fortune telling and hexagram casting as a real workbench: a bundled astronomy and calendar engine computes four-pillar BaZi charts, Zi Wei Dou Shu palaces, Plum Blossom and Six-Line hexagrams, tarot spreads and almanac date candidates, then reads each chart into checkable structure, stated limits and concrete next actions.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "fortune-telling",
+    "suanming",
+    "bazi",
+    "ziwei",
+    "suan gua",
+    "iching",
+    "liuyao",
+    "tarot",
+    "almanac",
+    "chinese-calendar"
+  ],
+  "agents": [
+    "./agents/czl-guatai.md"
+  ],
+  "skills": [
+    "./skills/czl-oracle-engine",
+    "./skills/czl-oracle-atlas",
+    "./skills/czl-birth-intake",
+    "./skills/czl-bazi-read",
+    "./skills/czl-ziwei-read",
+    "./skills/czl-cast-read",
+    "./skills/czl-timing-pick",
+    "./skills/czl-composite-verdict",
+    "./skills/czl-boundary-guard",
+    "./skills/czl-plain-talk"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-guatai",
+  "displayName": {
+    "en": "Guatai",
+    "zh": "算卦台"
+  },
+  "profession": {
+    "en": "Fortune-Telling & Divination Advisor",
+    "zh": "算命与占卜参谋"
+  },
+  "displayDescription": {
+    "en": "Real fortune telling and hexagram casting: BaZi, Zi Wei, Six-Line, Plum Blossom, tarot and date selection, every chart engine-computed and read into evidence plus next steps.",
+    "zh": "会算命也会算卦：八字、紫微、六爻、梅花、塔罗、择日，盘面由引擎真算，解读给依据和动作。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "帮我算个命，排八字盘看看我的结构和今年该注意什么",
+    "en": "Read my fortune — cast my BaZi chart and tell me my structure and what to watch this year"
+  },
+  "plugin": "czl-guatai",
+  "tags": [
+    {
+      "en": "Fortune Telling (BaZi)",
+      "zh": "八字算命"
+    },
+    {
+      "en": "Hexagram Casting",
+      "zh": "算卦占断"
+    },
+    {
+      "en": "Date Selection",
+      "zh": "择日择时"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我算个命，排八字盘看看我的结构和今年该注意什么",
+      "en": "Read my fortune — cast my BaZi chart and tell me my structure and what to watch this year"
+    },
+    {
+      "zh": "帮我算一卦，看这件事现在该进还是该退",
+      "en": "Cast a hexagram for me: should I push forward on this now or hold back"
+    },
+    {
+      "zh": "下个月要办婚礼，帮我挑几个日子并排出吉时",
+      "en": "Wedding next month — pick a few candidate dates and the auspicious hours"
+    }
+  ]
+}

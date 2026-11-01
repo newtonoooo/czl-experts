@@ -1,0 +1,3 @@
+﻿metric,definition,numerator,denominator,population,window,source,exclusions,guardrail,threshold,owner,cadence
+导出完成率,提升导出体验,,,付费企业用户,自然周,export_task 表,,, ,数据组-李,
+导出平均耗时,5万行以上导出任务的平均秒数,,,付费企业用户,自然周,export_task 表,内部账号,,,数据组-李,每周一

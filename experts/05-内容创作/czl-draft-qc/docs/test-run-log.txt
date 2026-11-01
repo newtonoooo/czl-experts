@@ -1,0 +1,112 @@
+== T1 专家包结构校验 ==
+PASS  validate_expert.py (exit=0)
+      
+      ✅ Expert package is valid!
+== T2 质检：AI 腔样本应判需修 ==
+PASS  bad_sample 判不通过(exit=1) (exit=1)
+        总分         44 / 100
+      结论：需修（有硬伤）
+== T3 质检：真人写法应通过 ==
+PASS  good_sample 判通过(exit=0) (exit=0)
+        总分       98.9 / 100
+      结论：可发
+== T4 JSON 输出字段完整性 ==
+      缺失字段: 无
+PASS  JSON 字段完整 (exit=0)
+== T5 标题机械校核 ==
+PASS  title_score 运行 (exit=0)
+1   100    —         具体锚点      同一块 479 的牌子 / 一个班 42 个 985 / 一个班 4 个
+2   91     反差张力      具体锚点      成都 6 个学区，划片没动，其中一个六成老师换了校区
+3   83     反差张力      留白        深圳的校服几十块，学校连价都不定
+--------------------------------------------------------------------------
+== T6 空输入应拒绝 ==
+PASS  空输入拒绝(exit=2) (exit=2)
+== T7 超短文本：应出结果并提示样本偏小 ==
+PASS  超短文本有提示 (exit=0)
+== T8 脚本 --help 可用 ==
+PASS  quality_gate.py --help (exit=0)
+PASS  title_score.py --help (exit=0)
+PASS  render_wechat.py --help (exit=0)
+PASS  check_wx_html.py --help (exit=0)
+PASS  topic_score.py --help (exit=0)
+PASS  outline_check.py --help (exit=0)
+== T9 无第三方依赖 ==
+PASS  仅标准库
+== T10 品牌一致性：身份文件不应残留旧名 ==
+PASS  身份文件无残留
+== T11 技能清单与目录一致 ==
+      plugin.json: ['draft-foundry', 'publish-kit', 'quality-gate', 'topic-radar']  实际目录: ['draft-foundry', 'publish-kit', 'quality-gate', 'topic-radar']
+PASS  技能清单一致 (exit=0)
+== T12 排版渲染 ==
+PASS  render_wechat 运行 (exit=0)
+PASS  容器 680px
+== T13 渲染稿通过合规自检 ==
+PASS  check_wx_html 通过(exit=0) (exit=0)
+== T14 自检能抓出违规写法 ==
+PASS  bad_html 判失败(exit=1) (exit=1)
+      FAIL 命中数: 8
+== T15 空正文渲染应拒绝 ==
+PASS  空正文拒绝(exit=2) (exit=2)
+== T16 选题查重：有重复应拦下 ==
+PASS  topics_demo 判重复(exit=1) (exit=1)
+      重复对数: 1
+== T17 选题查重：无重复应通过 ==
+PASS  topics_clean 通过(exit=0) (exit=0)
+--------------------------------------------------------
+1  76     常销    具体性     定向生名额怎么算，一张表看清
+2  73     常销    角度张力    同一所初中，两种班的出口差在哪
+== T18 骨架检查：合格模板通过 ==
+PASS  outline_ok 通过(exit=0) (exit=0)
+== T19 骨架检查：缺承重节点应拦下 ==
+PASS  outline_bad 拦下(exit=1) (exit=1)
+== T20 带图片渲染 ==
+PASS  render 带图运行 (exit=0)
+      img 标签数: 3
+== T21 图片上传清单生成 ==
+PASS  清单报出缺失文件
+PASS  清单含版权提醒
+== T22 base64 内嵌模式 ==
+PASS  已内嵌 base64
+== T23 图片下载脚本可用 ==
+PASS  fetch_images --help (exit=0)
+== T24 五套配色逐一渲染并通过自检 ==
+PASS  五套配色渲染+自检全通过
+== T25 随机配色：seed 相同则产物相同 ==
+PASS  seed=42 两次产物完全一致（配色：a-ink）
+== T26 随机配色：多次调用应覆盖多套 ==
+PASS  25 次抽到 4 套： b-navy a-ink c-dai d-chestnut
+== T27 frontmatter theme 可锁定配色 ==
+PASS  frontmatter theme 渲染成功 (exit=0)
+PASS  日志确认采用 d-chestnut
+PASS  HTML 内含栗棕主色 #7A5230
+== T28 --theme 覆盖 frontmatter ==
+PASS  命令行优先于 frontmatter
+== T29 未知配色应被拒绝(exit=2) ==
+PASS  未知配色拒绝 (exit=2)
+      未知配色「zzz」。可选：a-ink, b-navy, c-dai, d-chestnut, e-graphite
+== T30 --list-themes 列出五套 ==
+PASS  list-themes 可用 (exit=0)
+PASS  列出 5 套配色
+== T31 渲染产物无写死的旧色值 ==
+写死色值: 无
+PASS  无硬编码旧色 (exit=0)
+== T32 旧账号名清零（全包，含样本与脚本注释）==
+PASS  包内 0 处旧账号名
+== T33 用户可见文件无领域预设 ==
+PASS  可见文件里 0 处领域预设
+== T34 落款模板是占位而不是真号名 ==
+PASS  demo 用占位号名
+PASS  规范 6.9 用占位号名
+== T35 账号关卡写进了主 Agent 与三个技能 ==
+PASS  Agent 有账号关卡
+PASS  Agent 写明无默认值
+PASS  draft-foundry 有账号步
+PASS  publish-kit 有落款规则
+PASS  语法文档标了 footer_name 来源
+== T36 职业名与介绍含成稿/排版 ==
+PASS  职业与介绍含成稿+排版 (exit=0)
+      职业: 公众号成稿质检与排版专家
+      介绍(41字): 按你账号的方向选题、写成稿、去掉AI味，再按规范排版，交付能直接粘贴的公众号版式。
+
+==== 结果：PASS=51 FAIL=0 ====
+临时目录: C:\Users\丛自龙\AppData\Local\Temp/tmp.iVonTeRBzx

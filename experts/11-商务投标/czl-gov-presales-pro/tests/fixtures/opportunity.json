@@ -1,0 +1,17 @@
+{
+  "project": "XX区一网通办能力提升（测试样例）",
+  "client": "XX区行政审批局",
+  "budget_wan": 860,
+  "bid_date": "2026-12-10",
+  "qualification_ok": true,
+  "scores": {
+    "funding": 4,
+    "competition": 3,
+    "relationship": 4,
+    "case_match": 3,
+    "policy_fit": 5,
+    "differentiation": 4,
+    "delivery": 3
+  },
+  "notes": "对手为本地集成商，无同类案例"
+}

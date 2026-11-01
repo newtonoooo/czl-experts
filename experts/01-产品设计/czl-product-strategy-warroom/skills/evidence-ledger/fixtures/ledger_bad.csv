@@ -1,0 +1,6 @@
+﻿id,claim,source_type,source_ref,observed_at,scope,sample,verified,grade,note
+EVD-01,用户普遍认为导出很慢,anecdote,,2026-09-30,,,no,A,
+EVD-02,导出失败率高达100%,secondary,某媒体报道,2026-09-30,全部用户,,no,A,
+EVD-02,竞品B已经支持断点续传,secondary,朋友圈截图,2026-09-30,未知,,no,C,
+EVD-04,数据显示导出是最大痛点,none,,2026-12-31,,,no,B,
+EVD-05,导出成功率约70%,primary,埋点表,2026-09-01,付费用户,,yes,A,

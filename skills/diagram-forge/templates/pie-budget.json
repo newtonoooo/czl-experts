@@ -1,0 +1,12 @@
+{
+  "kind": "pie",
+  "title": "研发工时分布",
+  "subtitle": "以两周迭代实际投入统计",
+  "slices": [
+    { "label": "新功能开发", "value": 46 },
+    { "label": "缺陷修复", "value": 21 },
+    { "label": "技术债治理", "value": 14 },
+    { "label": "需求沟通", "value": 11 },
+    { "label": "其他", "value": 8 }
+  ]
+}

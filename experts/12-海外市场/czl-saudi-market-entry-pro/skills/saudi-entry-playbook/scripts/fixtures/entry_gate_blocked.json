@@ -1,0 +1,14 @@
+{
+  "case_id": "CASE-B-股权结构不成立",
+  "activity": "本地工程分包",
+  "activity_code": "engineering-contracting",
+  "foreign_ownership_pct": 60,
+  "has_local_partner": false,
+  "required_licenses": ["MISA", "CR", "SCA"],
+  "held_licenses": ["MISA"],
+  "sells_to_government": false,
+  "imports_goods": false,
+  "product_regulated": false,
+  "employs_staff": true,
+  "zone": "none"
+}

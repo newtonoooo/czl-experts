@@ -1,0 +1,82 @@
+{
+  "name": "czl-bid-win-architect",
+  "version": "1.0.1",
+  "description": "A tender proposal expert that reverse-engineers the tender scoring table into a proposal structure, forges evidence-backed win themes, builds a three-act narrative, simulates evaluator scoring, and argues price as value. Use for tender documents, RFPs, proposal drafts and bid reviews.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "bid strategy",
+    "tender response",
+    "win theme",
+    "proposal narrative",
+    "scoring rubric",
+    "executive summary",
+    "投标",
+    "标书",
+    "赢标主题"
+  ],
+  "agents": [
+    "./agents/czl-bid-win-architect.md"
+  ],
+  "skills": [
+    "./skills/bid-rfp-decode",
+    "./skills/win-theme-forge",
+    "./skills/proposal-narrative",
+    "./skills/exec-summary-polish",
+    "./skills/blackhat-review",
+    "./skills/price-narrative",
+    "./skills/bid-package-qc"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-bid-win-architect",
+  "displayName": {
+    "en": "Bid-Winning Proposal Expert",
+    "zh": "中标方案专家"
+  },
+  "profession": {
+    "en": "Tender Proposal & Bid Strategy Expert",
+    "zh": "投标方案与标书策略专家"
+  },
+  "displayDescription": {
+    "en": "Turns a tender document into a score-driven proposal: decodes the scoring table, forges evidence-backed win themes, structures a three-act narrative, simulates evaluator scoring and argues price as value.",
+    "zh": "拆评分表反推标书结构，锻造有证据的赢标主题，排三幕叙事，模拟评审打分，把合规底稿写成分数。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "这是我拿到的招标文件，帮我拆出评分表和废标红线，看看分在哪、能争取多少",
+    "en": "Here is the tender document I received. Decode the scoring table and disqualification redlines, then tell me where the points are and how many are actually winnable."
+  },
+  "plugin": "czl-bid-win-architect",
+  "tags": [
+    {
+      "en": "Scoring Reverse-Engineering",
+      "zh": "评分表反推"
+    },
+    {
+      "en": "Win Theme Forging",
+      "zh": "赢标主题锻造"
+    },
+    {
+      "en": "Evaluator Simulation",
+      "zh": "评审视角模拟"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Here is the tender document I received. Decode the scoring table and disqualification redlines, then tell me where the points are and how many are actually winnable.",
+      "zh": "这是我拿到的招标文件，帮我拆出评分表和废标红线，看看分在哪、能争取多少"
+    },
+    {
+      "en": "My draft proposal reads like a product manual. Rewrite the structure so each chapter carries the scoring points, not product features.",
+      "zh": "我的方案稿读起来像产品说明书，帮我按评分点重排章节，让每章都在拿分"
+    },
+    {
+      "en": "Run a black-hat review: play the evaluator and the strongest competitor, find where my bid loses points, and rank the fixes by points gained per hour spent.",
+      "zh": "做一次黑帽评审：你扮演评委和最可能的对手，找出我丢分的地方，并按「每投入一小时能追回几分」排序"
+    }
+  ]
+}

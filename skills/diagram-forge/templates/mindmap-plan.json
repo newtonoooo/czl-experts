@@ -1,0 +1,41 @@
+{
+  "kind": "mindmap",
+  "title": "数据平台建设思路",
+  "root": {
+    "label": "数据平台",
+    "children": [
+      {
+        "label": "数据接入",
+        "children": [
+          { "label": "业务库 CDC" },
+          { "label": "埋点实时流" },
+          { "label": "第三方 API", "note": "限流" }
+        ]
+      },
+      {
+        "label": "数据建模",
+        "children": [
+          { "label": "ODS 贴源层" },
+          { "label": "DWD 明细层" },
+          { "label": "ADS 应用层" }
+        ]
+      },
+      {
+        "label": "数据服务",
+        "children": [
+          { "label": "指标 API" },
+          { "label": "自助取数" },
+          { "label": "报表看板" }
+        ]
+      },
+      {
+        "label": "治理",
+        "children": [
+          { "label": "血缘追踪" },
+          { "label": "质量监控" },
+          { "label": "权限分级" }
+        ]
+      }
+    ]
+  }
+}

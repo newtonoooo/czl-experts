@@ -1,0 +1,68 @@
+{
+  "name": "czl-xhs-note-workshop",
+  "version": "1.0.0",
+  "description": "A Xiaohongshu note production line, not an account consultant. It takes whatever raw material the user has - product info, a personal experience, store photos, a course outline, a competitor screenshot - and runs it through seven stations: intake, positioning, topic matrix, drafting, a two-gate quality check, scheduling, and post-publish diagnosis. Every note leaves as a note card carrying five title candidates, a three-line cover spec, a copyable body, a first-comment hook and a 3+3+2 tag set. Two hard gates sit before anything ships: a compliance gate (absolute claims, medical efficacy, off-platform diversion, fabricated first-hand experience, AI-content labeling) and a human-voice gate (twelve Chinese AI-writing tells). Works fully offline through three pure-stdlib scripts - note_lint.py scores a note against 40+ machine-checkable rules, build_calendar.py turns approved notes into a 7/14/30-day schedule, selftest.py reproduces the whole chain end to end. No MCP, no login, no browser automation required. Use for 小红书起号, 笔记代写, 选题库, 标题封面优化, 日更排期, 笔记数据复盘.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "xiaohongshu",
+    "redbook",
+    "note-writing",
+    "content-production",
+    "headline",
+    "cover-copy",
+    "topic-planning",
+    "content-calendar",
+    "compliance-check",
+    "human-voice"
+  ],
+  "agents": [
+    "./agents/czl-xhs-note-workshop.md"
+  ],
+  "skills": [
+    "./skills/czl-note-line"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-xhs-note-workshop",
+  "displayName": {
+    "en": "Viral Note Workshop",
+    "zh": "爆款笔记车间"
+  },
+  "profession": {
+    "en": "Xiaohongshu Note Production Expert",
+    "zh": "小红书内容制作专家"
+  },
+  "displayDescription": {
+    "en": "Turns scattered material into angles, ships publish-ready Xiaohongshu notes through a compliance gate and a human-voice gate, plus a posting calendar and a diagnosis sheet.",
+    "zh": "把零散素材切成角度，产出可直接发布的小红书笔记，过合规与人味两道闸，附发布日历与复盘诊断。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "我手上有一款护手霜和二十几条用户反馈，想在小红书起号。帮我把这些素材切成选题，先写 5 篇能直接发的笔记。",
+    "en": "I have a hand cream and twenty-odd pieces of user feedback, and I want to start a Xiaohongshu account. Turn this material into topics and draft 5 notes I can publish as-is."
+  },
+  "plugin": "czl-xhs-note-workshop",
+  "tags": [
+    { "en": "XHS Notes", "zh": "小红书笔记" },
+    { "en": "Titles & Covers", "zh": "标题封面" },
+    { "en": "Batch Production", "zh": "内容量产" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我手上有一款护手霜和二十几条用户反馈，想在小红书起号。帮我把这些素材切成选题，先写 5 篇能直接发的笔记。",
+      "en": "I have a hand cream and twenty-odd pieces of user feedback, and I want to start a Xiaohongshu account. Turn this material into topics and draft 5 notes I can publish as-is."
+    },
+    {
+      "zh": "上一篇笔记曝光 3000、点击 120、点赞 9。封面和标题都在这里，帮我判断问题出在哪一级，下次改什么。",
+      "en": "My last note got 3,000 impressions, 120 clicks and 9 likes. Here's the cover and title - tell me which stage broke and what to change next time."
+    },
+    {
+      "zh": "我一个人做账号，每周只能出 3 篇。帮我排一个 30 天的小红书发布日历，素材要能反复用。",
+      "en": "I run the account alone and can only ship 3 notes a week. Build me a 30-day Xiaohongshu calendar that reuses material."
+    }
+  ]
+}

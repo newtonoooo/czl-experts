@@ -1,0 +1,113 @@
+{
+  "run_at": "2026-10-29 11:14:45",
+  "pass": 21,
+  "fail": 0,
+  "skip": 0,
+  "results": [
+    {
+      "name": "arrules 规则校验",
+      "status": "PASS",
+      "detail": "exit=0"
+    },
+    {
+      "name": "arfetch 解析器",
+      "status": "PASS",
+      "detail": "结果：12/12 通过"
+    },
+    {
+      "name": "arindicators 指标",
+      "status": "PASS",
+      "detail": "结果：10/10 通过"
+    },
+    {
+      "name": "arvalue 估值",
+      "status": "PASS",
+      "detail": "结果：10/10 通过"
+    },
+    {
+      "name": "arreport 渲染",
+      "status": "PASS",
+      "detail": "结果：13/13 通过"
+    },
+    {
+      "name": "archeck 闸门",
+      "status": "PASS",
+      "detail": "结果：11/11 通过"
+    },
+    {
+      "name": "arposition 持仓",
+      "status": "PASS",
+      "detail": "结果：9/9 通过"
+    },
+    {
+      "name": "渲染 HTML+MD",
+      "status": "PASS",
+      "detail": "html=6766 字节, md=True"
+    },
+    {
+      "name": "HTML 自包含无外链",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "含打印样式",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "含内联 SVG",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "含免责声明",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "含来源表",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "闸门放行正例",
+      "status": "PASS",
+      "detail": "阻塞项 0；A4 匹配率 1.0"
+    },
+    {
+      "name": "闸门拦截反例",
+      "status": "PASS",
+      "detail": "未通过项：A1,A2,A3,A7"
+    },
+    {
+      "name": "闸门退出码正确",
+      "status": "PASS",
+      "detail": "exit=1"
+    },
+    {
+      "name": "联网取行情",
+      "status": "PASS",
+      "detail": "贵州茅台 1344.75（+1.05%），2026-10-29"
+    },
+    {
+      "name": "联网取K线",
+      "status": "PASS",
+      "detail": "260 根，2025-09-26 至 2026-10-29"
+    },
+    {
+      "name": "指标计算",
+      "status": "PASS",
+      "detail": "多头排列，MA20=1299.31，RSI=61.3"
+    },
+    {
+      "name": "真实链路出稿",
+      "status": "PASS",
+      "detail": "7770 字节"
+    },
+    {
+      "name": "真实链路过闸",
+      "status": "PASS",
+      "detail": "阻塞 0；A4=0.929"
+    }
+  ]
+}

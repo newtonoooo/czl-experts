@@ -1,0 +1,5 @@
+﻿id,claim,evidence_grade,evidence_type,source_ref,counter_searched,sample_size
+E1,多数客户抱怨导出太麻烦,D,hearsay,销售周会转述,no,
+E2,客户在工单中要求批量导出,B,quote,ticket_20260912.txt,yes,
+E3,导出慢导致 43% 的用户流失,X,guess,,no,11
+E4,竞品上周上线了批量导出,C,public,competitor_changelog.md,yes,

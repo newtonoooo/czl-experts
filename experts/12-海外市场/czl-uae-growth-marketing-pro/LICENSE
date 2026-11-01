@@ -1,0 +1,84 @@
+阿联酋营销增长专家 Pro (czl-uae-growth-marketing-pro)
+版权所有 (c) 2026 虫志龙。保留所有权利。
+Copyright (c) 2026 Chong Zhilong. All rights reserved.
+
+联系方式 / Contact: 47190078@qq.com
+
+────────────────────────────────────────────────────────────
+一、授权范围
+────────────────────────────────────────────────────────────
+
+1. 本软件包（含提示词、工作流定义、知识库数据、脚本、文档与视觉资源）
+   由开发者虫志龙独立创作完成，著作权归开发者所有。
+
+2. 允许的使用方式：
+   a) 通过 WorkBuddy 平台正常安装并在授权范围内使用本专家；
+   b) 在未修改的前提下，为备份目的复制本软件包；
+   c) 经开发者书面许可后，进行商业分发、二次开发或集成。
+
+3. 未经开发者书面许可，禁止：
+   a) 移除、修改或隐藏本版权声明与许可条款；
+   b) 将本软件包或其衍生作品以任何形式再分发、转售、出租；
+   c) 将本软件包的核心提示词、工作流、知识库数据用于训练或构建
+      与本产品形成直接竞争的产品；
+   d) 以开发者名义作出任何未经授权的承诺或背书。
+
+────────────────────────────────────────────────────────────
+二、第三方组件
+────────────────────────────────────────────────────────────
+
+本软件包不包含任何第三方运行时依赖。所有脚本仅使用 Python 3 标准库
+（argparse / json / re / struct / zlib / datetime / pathlib / unittest /
+py_compile）。因此不存在需要随包分发的第三方许可证。
+
+若使用者自行引入第三方库，相关许可证义务由使用者自行承担。
+
+────────────────────────────────────────────────────────────
+三、数据与事实性内容
+────────────────────────────────────────────────────────────
+
+1. 知识库中的市场数据为**建模用区间估计**，每个数值均标注口径类型
+   （official-stat / industry-report / platform-stated / planning-range）。
+2. 标为 planning-range 的数值不构成事实陈述，不得作为对外发布依据。
+3. 斋月、开斋节、宰牲节等伊斯兰历日期为估算值，以官方观月公告为准。
+4. 本软件包提供的合规扫描与建议**不构成法律意见**。涉及牌照、审批、
+   内容审查的最终结论，应由使用者向主管机构及本地法律顾问确认。
+
+────────────────────────────────────────────────────────────
+四、免责声明
+────────────────────────────────────────────────────────────
+
+本软件按"现状"提供，不附带任何明示或暗示的担保，包括但不限于对
+适销性、特定用途适用性及不侵权的担保。在任何情况下，开发者均不对
+因使用本软件而产生的任何直接、间接、偶然、特殊或后果性损害承担
+责任，包括但不限于利润损失、商誉损失或数据丢失。
+
+使用者应自行评估本软件输出结果的适用性，并对最终投放决策负责。
+
+────────────────────────────────────────────────────────────
+五、许可终止
+────────────────────────────────────────────────────────────
+
+违反上述任一条款，本许可自动终止，使用者须立即停止使用并删除
+本软件包的全部副本。
+
+────────────────────────────────────────────────────────────
+English Summary
+────────────────────────────────────────────────────────────
+
+This package is proprietary software independently created by Chong Zhilong.
+All rights reserved. You may install and use it within WorkBuddy and keep
+backup copies. Redistribution, resale, sublicensing, or use of its prompts,
+workflows and knowledge data to build a competing product requires prior
+written permission.
+
+No third-party runtime dependencies are bundled; all scripts use only the
+Python 3 standard library.
+
+Market figures are modelling ranges, not verified facts. Hijri dates are
+estimates subject to official announcement. Compliance output is not legal
+advice.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. IN NO EVENT
+SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM THE USE OF THE SOFTWARE.

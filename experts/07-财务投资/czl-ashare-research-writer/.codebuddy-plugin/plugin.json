@@ -1,0 +1,79 @@
+{
+  "name": "czl-ashare-research-writer",
+  "version": "1.0.2",
+  "description": "A股投研内容生产线：把一只股票、一个板块或一份持仓，变成可交付、可复核、可发布的研究内容。内置零依赖取数、A股规则校验、六维诊断、双法定价、七段成稿与十项交付闸门。",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "agents": [
+    "./agents/czl-ashare-research-writer.md"
+  ],
+  "skills": [
+    "./skills/ar-intake",
+    "./skills/ar-evidence",
+    "./skills/ar-autopsy",
+    "./skills/ar-value",
+    "./skills/ar-tape",
+    "./skills/ar-thesis",
+    "./skills/ar-quality",
+    "./skills/ar-position"
+  ],
+  "expertType": "agent",
+  "agentName": "czl-ashare-research-writer",
+  "displayName": {
+    "zh": "专业A股投研主笔",
+    "en": "Pro A-Share Research Writer"
+  },
+  "profession": {
+    "zh": "A股投研内容生产专家",
+    "en": "A-Share Research Content Producer"
+  },
+  "displayDescription": {
+    "zh": "面向沪深京A股，把公开信息做成能交出去的研究内容：六维诊断、双法定价、大盘复盘、持仓体检，产出可打印的HTML与Markdown，数据标来源、结论附证伪条件。不做买卖指令。",
+    "en": "Turns public A-share information into deliverable research: six-dimension diagnosis, two-method valuation with implied-expectation reverse engineering, market and sector reviews, portfolio exposure audits, and a thesis ledger — delivered as printable HTML plus matching Markdown, gated by ten pre-delivery checks."
+  },
+  "avatar": "avatars/avatar.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "帮我诊断一下贵州茅台（600519），我要知道它现在值不值得继续看下去",
+    "en": "Diagnose Kweichow Moutai (600519) — is it worth my time right now?"
+  },
+  "plugin": "czl-ashare-research-writer",
+  "tags": [
+    {
+      "zh": "A股投研",
+      "en": "A-Share Research"
+    },
+    {
+      "zh": "研报成稿",
+      "en": "Report Writing"
+    },
+    {
+      "zh": "个股诊断",
+      "en": "Stock Diagnosis"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我诊断一下贵州茅台（600519），我要知道它现在值不值得继续看下去",
+      "en": "Diagnose Kweichow Moutai (600519) — is it worth my time right now?"
+    },
+    {
+      "zh": "这只票现在贵不贵？给我一个区间，并告诉我当前价格隐含了什么增长假设",
+      "en": "Is this stock expensive? Give me a range and what growth the current price already implies"
+    },
+    {
+      "zh": "把刚才的分析整理成一篇能发出去的稿子，HTML 和 Markdown 都要",
+      "en": "Turn that analysis into a publishable article — both HTML and Markdown"
+    },
+    {
+      "zh": "帮我做今天的大盘复盘，给出情绪温度和明日三个可验证的观察点",
+      "en": "Review today's market with a sentiment reading and three verifiable watch items"
+    },
+    {
+      "zh": "我手里的这几只票，风险是不是堆在一处了？帮我做敞口体检",
+      "en": "Are my holdings' risks concentrated? Run an exposure audit"
+    }
+  ]
+}

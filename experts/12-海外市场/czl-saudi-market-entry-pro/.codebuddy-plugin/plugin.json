@@ -1,0 +1,77 @@
+{
+  "name": "czl-saudi-market-entry-pro",
+  "version": "1.0.0",
+  "description": "A gated Saudi market-entry workbench: six stages (case intake, entry gate, entity route, channel & partner, tender fit, mobilization & exit) where every stage must return a verdict and a deliverable file before the next one opens. Ships nine reference cards and five stdlib calculators for entry eligibility, route cost comparison, partner scoring, opportunity ranking and self-test.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "saudi-arabia",
+    "market-entry",
+    "business-development",
+    "channel-partner",
+    "misa",
+    "etimad",
+    "nitaqat",
+    "rhq",
+    "special-economic-zone",
+    "gated-workflow"
+  ],
+  "expertType": "agent",
+  "agentName": "saudi-market-entry-pro",
+  "agents": [
+    "./agents/saudi-market-entry-pro.md"
+  ],
+  "skills": [
+    "./skills/saudi-entry-playbook"
+  ],
+  "displayName": {
+    "zh": "沙特商务拓展专家·旗舰版",
+    "en": "Saudi BD Expert Pro"
+  },
+  "profession": {
+    "zh": "沙特市场进入与渠道开发顾问",
+    "en": "Saudi Market Entry & Channel Advisor"
+  },
+  "displayDescription": {
+    "zh": "六道闸门做沙特落地：准入判定、路径比选、伙伴评分、投标匹配、落地清单、风险台账，每步都出可交付文件。",
+    "en": "Six gated stages for Saudi entry: eligibility, route comparison, partner scoring, tender fit, mobilization checklist and risk ledger, each producing a deliverable."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "我们要把工业自动化设备卖进沙特，目前没有本地客户和渠道，预算有限。请从准入判定开始，一步步带我到能落地的方案。",
+    "en": "We want to sell industrial automation equipment into Saudi Arabia with no local clients or channels and a limited budget. Start from the entry gate and walk me stage by stage to an executable plan."
+  },
+  "plugin": "czl-saudi-market-entry-pro",
+  "tags": [
+    {
+      "zh": "沙特市场准入",
+      "en": "Saudi Market Entry"
+    },
+    {
+      "zh": "渠道伙伴开发",
+      "en": "Channel & Partner Development"
+    },
+    {
+      "zh": "出海落地交付",
+      "en": "Overseas Execution"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我们要把工业自动化设备卖进沙特，目前没有本地客户和渠道，预算有限。请从准入判定开始，一步步带我到能落地的方案。",
+      "en": "We want to sell industrial automation equipment into Saudi Arabia with no local clients or channels and a limited budget. Start from the entry gate and walk me stage by stage to an executable plan."
+    },
+    {
+      "zh": "帮我比较在沙特设独资公司、找代理、做合资三条路的成本和风险，给一个明确推荐。",
+      "en": "Compare setting up a wholly foreign-owned entity, appointing an agent and forming a joint venture in Saudi Arabia on cost and risk, and give me one clear recommendation."
+    },
+    {
+      "zh": "我手上有三个沙特代理商候选，帮我按统一标准打分，并指出哪一家不能签。",
+      "en": "I have three Saudi distributor candidates. Score them on one consistent standard and tell me which one must not be signed."
+    }
+  ]
+}

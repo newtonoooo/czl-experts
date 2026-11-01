@@ -1,0 +1,3 @@
+﻿segment,exposed_n,exposed_k,control_n,control_k
+高频导出用户,1000,800,100,90
+低频导出用户,100,10,1000,200

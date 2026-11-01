@@ -1,0 +1,30 @@
+{
+  "unit": "元",
+  "period": "2026-09",
+  "items": [
+    {
+      "name": "A产品",
+      "budget_qty": 1000,
+      "budget_price": 56,
+      "actual_qty": 1120,
+      "actual_price": 50
+    },
+    {
+      "name": "B产品",
+      "budget_qty": 400,
+      "budget_price": 320,
+      "actual_qty": 360,
+      "actual_price": 330
+    },
+    {
+      "name": "房租",
+      "budget": 45000,
+      "actual": 45000
+    },
+    {
+      "name": "推广费",
+      "budget": 20000,
+      "actual": 31500
+    }
+  ]
+}

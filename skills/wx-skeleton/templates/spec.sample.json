@@ -1,0 +1,23 @@
+{
+  "_comment": "wx_doctor.py scaffold 的规格文件示例。字段全部可选，只写你需要的。",
+  "name": "community-buy",
+  "title": "社区团购",
+  "appid": "touristappid",
+  "pages": [
+    { "path": "pages/index/index", "title": "首页", "tab": true },
+    { "path": "pages/cart/cart", "title": "购物车", "tab": true },
+    { "path": "pages/mine/mine", "title": "我的", "tab": true }
+  ],
+  "subpackages": [
+    {
+      "name": "goods",
+      "root": "packages/goods",
+      "pages": ["detail/detail", "search/search"]
+    },
+    {
+      "name": "orders",
+      "root": "packages/orders",
+      "pages": ["list/list", "after-sale/after-sale"]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "opportunities": [
+    {
+      "name": "OPP-01 某部委产线自动化改造",
+      "value_sar": 18000000,
+      "gross_margin_pct": 0.26,
+      "win_probability": 0.25,
+      "months_to_award": 9,
+      "accessibility": 3,
+      "fit": 5,
+      "competition": 4
+    },
+    {
+      "name": "OPP-02 私营工厂备件年框",
+      "value_sar": 4000000,
+      "gross_margin_pct": 0.35,
+      "win_probability": 0.55,
+      "months_to_award": 2,
+      "accessibility": 4,
+      "fit": 4,
+      "competition": 2
+    },
+    {
+      "name": "OPP-03 总包分包控制系统",
+      "value_sar": 9000000,
+      "gross_margin_pct": 0.18,
+      "win_probability": 0.30,
+      "months_to_award": 6,
+      "accessibility": 2,
+      "fit": 3,
+      "competition": 4
+    }
+  ]
+}

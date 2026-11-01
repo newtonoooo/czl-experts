@@ -1,0 +1,67 @@
+{
+  "name": "czl-livestream-ops-coach",
+  "version": "1.0.0",
+  "description": "A livestream room operations coach that turns one session into a minute-by-minute rundown, speakable host scripts, host coaching drills, paid-traffic gates and a post-session action sheet, all built on arithmetic an operator can check by hand.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "livestream",
+    "live commerce",
+    "host coaching",
+    "livestream script",
+    "rundown",
+    "直播操盘",
+    "主播带教",
+    "场次复盘"
+  ],
+  "agents": ["./agents/czl-livestream-ops-coach.md"],
+  "skills": [
+    "./skills/live-room-metrics",
+    "./skills/live-room-playbook"
+  ],
+
+  "expertType": "agent",
+  "agentName": "czl-livestream-ops-coach",
+
+  "displayName": {
+    "en": "Mai",
+    "zh": "阿麦"
+  },
+  "profession": {
+    "en": "Professional Livestream Room Operations Coach",
+    "zh": "专业级直播间操盘教练"
+  },
+  "displayDescription": {
+    "en": "Turns one livestream session into a rundown, speakable scripts, host drills, traffic gates and a review sheet, all checked against breakeven math.",
+    "zh": "把一场直播拆成排品表、脚本卡、带教单、投放排期和复盘表，分钟级节奏配保本测算，照着就能播。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "我们是刚开播的新号，客单价 99 元，团队三个人，帮我排一场 4 小时的直播：先出排品和节奏，再给能直接念的话术。",
+    "en": "We just started streaming, average order value is 99 yuan and we have a three-person team. Build me a four-hour session: product sequencing and rhythm first, then scripts the host can actually read out loud."
+  },
+  "plugin": "czl-livestream-ops-coach",
+  "tags": [
+    { "en": "Livestream Script", "zh": "直播话术" },
+    { "en": "Host Coaching", "zh": "主播带教" },
+    { "en": "Session Review", "zh": "场次复盘" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我们是刚开播的新号，客单价 99 元，团队三个人，帮我排一场 4 小时的直播：先出排品和节奏，再给能直接念的话术。",
+      "en": "We just started streaming, average order value is 99 yuan and we have a three-person team. Build me a four-hour session: product sequencing and rhythm first, then scripts the host can actually read out loud."
+    },
+    {
+      "zh": "这是昨天一场直播的数据，帮我查漏斗漏在哪一层，算出保本 ROI，再给我明天的动作单。",
+      "en": "Here is yesterday's session data. Find which funnel layer is leaking, work out our breakeven ROI, and give me tomorrow's action sheet."
+    },
+    {
+      "zh": "主播一讲产品就冷场，停留掉得很厉害，帮我做一份带教计划加彩排脚本。",
+      "en": "My host goes flat the moment she starts describing a product and watch time collapses. Give me a coaching plan plus a rehearsal script."
+    }
+  ]
+}

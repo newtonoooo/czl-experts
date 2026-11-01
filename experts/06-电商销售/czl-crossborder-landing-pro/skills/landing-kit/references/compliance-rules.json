@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "reviewed": "2026-10",
+    "disclaimer": "通用参考清单，非法律意见。规则与税率以目标国官方机构及持牌服务商当期口径为准；平台侧要求以卖家后台为准。",
+    "levels": {
+      "blocking": "阻断级：未办完不得销售/上架，缺一项即不建议发货",
+      "conditional": "条件级：可先销售，但须在期限内补齐，否则会被下架或罚款",
+      "info": "提示级：建议办理，影响合规完整度或清关顺畅度"
+    }
+  },
+  "families": {
+    "US": "北美（美国）",
+    "CA": "北美（加拿大）",
+    "UK": "英国",
+    "EU": "欧盟",
+    "JP": "日本",
+    "KR": "韩国",
+    "AU": "澳新",
+    "SEA": "东南亚",
+    "LATAM": "拉美",
+    "ME": "中东"
+  },
+  "market_family": {
+    "US": "US",
+    "CA": "CA",
+    "UK": "UK",
+    "EU": "EU",
+    "DE": "EU",
+    "FR": "EU",
+    "IT": "EU",
+    "ES": "EU",
+    "NL": "EU",
+    "PL": "EU",
+    "SE": "EU",
+    "JP": "JP",
+    "KR": "KR",
+    "AU": "AU",
+    "NZ": "AU",
+    "SG": "SEA",
+    "MY": "SEA",
+    "TH": "SEA",
+    "VN": "SEA",
+    "PH": "SEA",
+    "ID": "SEA",
+    "BR": "LATAM",
+    "MX": "LATAM",
+    "AE": "ME",
+    "SA": "ME"
+  },
+  "family_base": {
+    "US": [
+      {"id": "US-TAX", "level": "blocking", "title": "州销售税登记与代扣代缴（Economic Nexus）", "evidence": "州税号 / 平台代扣代缴截图", "owner": "美国税务代理（CPA）", "lead": "2-6 周", "note": "各州门槛不同，按销售额或订单量触发"},
+      {"id": "US-IOR", "level": "blocking", "title": "进口商与清关主体（IOR / 报关行）", "evidence": "进口商编号、报关委托", "owner": "报关行 / 货代", "lead": "1-2 周", "note": "Bond 与 HTS 编码需与产品一致"},
+      {"id": "US-LABEL", "level": "conditional", "title": "原产地标识与英文标签（品名、成分、警示、责任方）", "evidence": "标签打样稿", "owner": "自行设计 + 法务审", "lead": "1-2 周", "note": "纺织品、儿童品、食品接触类另有强制项"},
+      {"id": "US-TM", "level": "info", "title": "美国商标（品牌备案前置）", "evidence": "受理号 / 注册号", "owner": "商标代理", "lead": "受理 1-2 周，注册 8-14 月", "note": "无商标无法做品牌备案与 A+ 保护"}
+    ],
+    "CA": [
+      {"id": "CA-TAX", "level": "blocking", "title": "GST/HST 登记", "evidence": "BN 号", "owner": "加拿大税务代理", "lead": "2-4 周", "note": ""},
+      {"id": "CA-LABEL", "level": "blocking", "title": "英法双语标签（品名、净含量、责任方）", "evidence": "双语标签打样", "owner": "自行设计", "lead": "1-2 周", "note": "仅英文标签在魁北克销售有风险"},
+      {"id": "CA-IOR", "level": "conditional", "title": "进口商与关税（CBSA）", "evidence": "进口记录、HS 编码", "owner": "报关行", "lead": "1-2 周", "note": ""}
+    ],
+    "UK": [
+      {"id": "UK-VAT", "level": "blocking", "title": "英国 VAT 注册（海外卖家强制）", "evidence": "VAT 号 + HMRC 证明", "owner": "英国税务代理", "lead": "2-6 周", "note": "平台会核验，无号直接停售"},
+      {"id": "UK-RP", "level": "blocking", "title": "英国责任人（UK Responsible Person）", "evidence": "授权书 + 责任人地址", "owner": "英代服务商", "lead": "1-2 周", "note": "受产品安全法规约束的品类必需"},
+      {"id": "UK-MARK", "level": "conditional", "title": "UKCA / CE 标识适用性确认", "evidence": "符合性声明 DoC", "owner": "检测机构", "lead": "视品类", "note": "过渡安排以 gov.uk 当期公告为准，不自行假设"},
+      {"id": "UK-EPR", "level": "conditional", "title": "包装 EPR 数据申报（pEPR）", "evidence": "平台/服务商申报记录", "owner": "EPR 服务商", "lead": "2-4 周", "note": ""}
+    ],
+    "EU": [
+      {"id": "EU-VAT", "level": "blocking", "title": "VAT 处理路径（IOSS 或目的国注册 + OSS）", "evidence": "IOSS 号 / VAT 号", "owner": "欧洲税务代理", "lead": "2-6 周", "note": "150 EUR 以下 B2C 可用 IOSS，超过须目的国进口"},
+      {"id": "EU-RP", "level": "blocking", "title": "欧盟责任人（GPSR Responsible Person）", "evidence": "授权书 + 欧盟地址", "owner": "欧代服务商", "lead": "1-3 周", "note": "GPSR 自 2024-12-13 适用，产品与包装须标责任人信息"},
+      {"id": "EU-EPR-PKG", "level": "conditional", "title": "包装 EPR 注册（按国别）", "evidence": "注册号（如 DE LUCID、FR UIN）", "owner": "EPR 服务商", "lead": "2-8 周", "note": "德国、法国、意大利、西班牙等国各管各的"},
+      {"id": "EU-LANG", "level": "conditional", "title": "销售国语言的说明书与安全警示", "evidence": "多语种说明书", "owner": "翻译 + 母语审校", "lead": "1-3 周", "note": "缺目的国语言警示是常见下架原因"},
+      {"id": "EU-TRACE", "level": "info", "title": "可追溯性信息（批次/型号/联系渠道）", "evidence": "包装稿", "owner": "自行设计", "lead": "1 周", "note": "GPSR 要求可追溯"}
+    ],
+    "JP": [
+      {"id": "JP-IOR", "level": "blocking", "title": "日本进口商（IOR）与 JCT 税号", "evidence": "IOR 合同、JCT 号", "owner": "日本进口代理 / 税理士", "lead": "3-8 周", "note": "无 IOR 无法完成清关与合规标称"},
+      {"id": "JP-LABEL", "level": "blocking", "title": "日语标签与法定标示（品名、成分、制造/进口商、联系方式）", "evidence": "日文标签稿", "owner": "自行设计 + 日本审校", "lead": "2-4 周", "note": "家庭用品品质表示法覆盖多类日用品"},
+      {"id": "JP-JAN", "level": "info", "title": "JAN 条形码（GS1 Japan）", "evidence": "JAN 码", "owner": "GS1 Japan", "lead": "1-2 周", "note": ""}
+    ],
+    "KR": [
+      {"id": "KR-IOR", "level": "blocking", "title": "韩国进口商与通关（KC 认证持有人）", "evidence": "进口申报记录", "owner": "韩国进口代理", "lead": "3-6 周", "note": ""},
+      {"id": "KR-LABEL", "level": "blocking", "title": "韩文标签（品名、成分、进口商、使用注意事项）", "evidence": "韩文标签稿", "owner": "自行设计 + 韩语审校", "lead": "2-3 周", "note": ""},
+      {"id": "KR-KC", "level": "conditional", "title": "KC 安全认证（按品类触发）", "evidence": "KC 证书", "owner": "韩国认证机构", "lead": "4-10 周", "note": "电子、儿童、日用品等多类适用"}
+    ],
+    "AU": [
+      {"id": "AU-TAX", "level": "blocking", "title": "ABN 与 GST 登记（低价值进口商品亦适用）", "evidence": "ABN / GST 号", "owner": "澳洲税务代理", "lead": "1-3 周", "note": ""},
+      {"id": "AU-STD", "level": "conditional", "title": "强制标准与警示标签（ACCC 强制标准清单）", "evidence": "测试报告、警示标签稿", "owner": "检测机构", "lead": "视品类", "note": "儿童玩具、化妆品、太阳镜等有专门标准"},
+      {"id": "AU-RCM", "level": "conditional", "title": "RCM 标识（电气/无线产品）", "evidence": "符合性记录", "owner": "检测机构", "lead": "3-6 周", "note": ""}
+    ],
+    "SEA": [
+      {"id": "SEA-IOR", "level": "blocking", "title": "本地进口商与税号（按国别）", "evidence": "进口商资料、税号", "owner": "当地服务商", "lead": "2-6 周", "note": "新加坡 GST、马来 SST、泰国 VAT、印尼 VAT、越南 VAT、菲律宾 VAT"},
+      {"id": "SEA-LABEL", "level": "conditional", "title": "本地语言标签（马来语/泰语/越南语/印尼语等）", "evidence": "标签稿", "owner": "翻译 + 本地审校", "lead": "1-3 周", "note": "化妆品、食品接触、儿童品要求最严"},
+      {"id": "SEA-CERT", "level": "conditional", "title": "本地强制认证（按品类与国别）", "evidence": "证书", "owner": "当地认证机构", "lead": "4-12 周", "note": "如马来 SIRIM、泰国 TISI、印尼 SNI、菲律宾 FDA"}
+    ],
+    "LATAM": [
+      {"id": "LATAM-IMP", "level": "blocking", "title": "进口许可与税务登记（巴西/墨西哥）", "evidence": "税号、进口许可", "owner": "当地清关代理", "lead": "4-12 周", "note": "巴西流程周期长，需预留缓冲"},
+      {"id": "LATAM-CERT", "level": "conditional", "title": "本地认证（ANATEL/INMETRO、NOM）", "evidence": "证书", "owner": "当地认证机构", "lead": "6-16 周", "note": "电子与医疗类周期尤长"}
+    ],
+    "ME": [
+      {"id": "ME-REG", "level": "blocking", "title": "进口商注册与产品注册（SABER / ESMA）", "evidence": "注册证书", "owner": "当地代理", "lead": "3-8 周", "note": "沙特 SABER 需逐批出证"},
+      {"id": "ME-LABEL", "level": "conditional", "title": "阿拉伯语标签", "evidence": "阿语标签稿", "owner": "翻译 + 本地审校", "lead": "1-3 周", "note": ""}
+    ]
+  },
+  "categories": {
+    "electronics": {
+      "zh": "3C/电子电器",
+      "US": [
+        {"id": "US-FCC", "level": "blocking", "title": "FCC 认证（含射频的走 ID，其余走 SDoC）", "evidence": "FCC ID / 测试报告", "owner": "认可实验室", "lead": "3-8 周", "note": ""},
+        {"id": "US-UL", "level": "info", "title": "安全认证（UL/ETL，非联邦强制但渠道常要求）", "evidence": "证书", "owner": "NRTL", "lead": "4-10 周", "note": ""}
+      ],
+      "EU": [
+        {"id": "EU-CE-EMC", "level": "blocking", "title": "CE 标志（EMC + LVD 或 RED）", "evidence": "测试报告 + DoC", "owner": "实验室 / 公告机构", "lead": "4-8 周", "note": "无线产品走 RED，含公告机构可能"},
+        {"id": "EU-WEEE", "level": "blocking", "title": "WEEE 注册（电子电气废弃物）", "evidence": "WEEE 注册号", "owner": "各国 WEEE 机构/服务商", "lead": "2-6 周", "note": "按销售国逐一注册"},
+        {"id": "EU-BATT", "level": "conditional", "title": "电池法规合规（含电池产品）", "evidence": "电池注册/申报", "owner": "电池合规服务商", "lead": "2-8 周", "note": "含纽扣电池产品另有儿童安全要求"},
+        {"id": "EU-ROHS", "level": "conditional", "title": "RoHS / REACH 符合性", "evidence": "检测报告", "owner": "实验室", "lead": "2-4 周", "note": ""}
+      ],
+      "UK": [
+        {"id": "UK-FCC-EQ", "level": "conditional", "title": "UKCA 电气安全与 EMC 符合性", "evidence": "测试报告 + DoC", "owner": "实验室", "lead": "4-8 周", "note": ""}
+      ],
+      "JP": [
+        {"id": "JP-PSE", "level": "blocking", "title": "PSE 标志（电气用品安全法）", "evidence": "PSE 证书/自我声明", "owner": "日本认证机构", "lead": "4-10 周", "note": "特定电气用品需第三方认证"},
+        {"id": "JP-GITEKI", "level": "conditional", "title": "技适标志（无线产品）", "evidence": "技适认证", "owner": "日本认证机构", "lead": "4-8 周", "note": ""}
+      ],
+      "AU": [
+        {"id": "AU-EESS", "level": "conditional", "title": "EESS 电气安全与 RCM", "evidence": "符合性记录", "owner": "检测机构", "lead": "3-6 周", "note": ""}
+      ],
+      "SEA": [
+        {"id": "SEA-ELEC", "level": "conditional", "title": "本地电气认证（SIRIM/TISI/SNI 等）", "evidence": "证书", "owner": "当地认证机构", "lead": "4-12 周", "note": ""}
+      ]
+    },
+    "toy": {
+      "zh": "玩具/儿童用品",
+      "US": [
+        {"id": "US-CPC", "level": "blocking", "title": "CPC 儿童产品证书（CPSIA）", "evidence": "CPC + 第三方检测报告", "owner": "CPSC 认可实验室", "lead": "4-8 周", "note": "12 岁以下儿童产品必需"},
+        {"id": "US-PROP65", "level": "conditional", "title": "加州 65 号提案警示", "evidence": "警示标签稿", "owner": "法务/检测", "lead": "1-2 周", "note": ""}
+      ],
+      "EU": [
+        {"id": "EU-CE-TOY", "level": "blocking", "title": "玩具安全指令 CE（EN 71 系列）", "evidence": "测试报告 + DoC", "owner": "公告机构/实验室", "lead": "4-10 周", "note": ""},
+        {"id": "EU-AGE", "level": "conditional", "title": "年龄警示与小零件警示标识", "evidence": "包装稿", "owner": "自行设计 + 审校", "lead": "1-2 周", "note": ""}
+      ],
+      "UK": [
+        {"id": "UK-TOY", "level": "blocking", "title": "英国玩具安全法规符合性（UKCA）", "evidence": "测试报告 + DoC", "owner": "实验室", "lead": "4-10 周", "note": ""}
+      ],
+      "JP": [
+        {"id": "JP-ST", "level": "conditional", "title": "ST 标志（玩具安全标准）", "evidence": "ST 证书", "owner": "日本玩具协会", "lead": "4-8 周", "note": "非强制但渠道普遍要求"}
+      ],
+      "CA": [
+        {"id": "CA-TOY", "level": "blocking", "title": "加拿大玩具法规符合性（Health Canada）", "evidence": "检测报告", "owner": "实验室", "lead": "4-8 周", "note": ""}
+      ],
+      "AU": [
+        {"id": "AU-TOY", "level": "blocking", "title": "澳洲玩具强制标准（AS/NZS ISO 8124）", "evidence": "测试报告", "owner": "实验室", "lead": "4-8 周", "note": ""}
+      ]
+    },
+    "baby": {
+      "zh": "母婴用品",
+      "US": [
+        {"id": "US-BABY-CPC", "level": "blocking", "title": "CPC + 适用 ASTM 标准（如婴儿床、餐椅、背带）", "evidence": "CPC + 检测报告", "owner": "CPSC 认可实验室", "lead": "4-10 周", "note": "耐用婴幼儿产品还需产品注册卡"},
+        {"id": "US-FOOD-CONTACT", "level": "conditional", "title": "食品接触材料符合性（FDA 21 CFR）", "evidence": "符合性声明/检测", "owner": "实验室", "lead": "2-6 周", "note": "奶瓶、餐具、咬咬袋等适用"}
+      ],
+      "EU": [
+        {"id": "EU-BABY-CE", "level": "blocking", "title": "CE（玩具指令或 PPE/通用产品安全）", "evidence": "测试报告 + DoC", "owner": "实验室/公告机构", "lead": "4-10 周", "note": ""},
+        {"id": "EU-FCM", "level": "conditional", "title": "食品接触材料法规 (EC) 1935/2004 符合性", "evidence": "迁移测试报告 + DoC", "owner": "实验室", "lead": "3-6 周", "note": ""}
+      ],
+      "AU": [
+        {"id": "AU-BABY", "level": "blocking", "title": "澳洲婴幼儿产品强制标准（如婴儿床、助眠产品）", "evidence": "测试报告", "owner": "实验室", "lead": "6-10 周", "note": "部分品类有专门禁令，需逐项核对"}
+      ]
+    },
+    "beauty": {
+      "zh": "美妆个护",
+      "US": [
+        {"id": "US-FDA-COS", "level": "conditional", "title": "FDA 化妆品设施注册与产品列名（MoCRA）", "evidence": "注册记录、责任人信息", "owner": "美国代理人", "lead": "2-6 周", "note": "MoCRA 后要求强化，需核实当期执法口径"},
+        {"id": "US-CLAIM", "level": "blocking", "title": "功效宣称合规（药品 vs 化妆品界定）", "evidence": "宣称审校记录", "owner": "法规顾问", "lead": "1-3 周", "note": "宣称治疗/改变生理功能即按药品管"}
+      ],
+      "EU": [
+        {"id": "EU-CPNS", "level": "blocking", "title": "CPNP 通报 + 欧盟责任人", "evidence": "CPNP 通报号", "owner": "欧代/法规顾问", "lead": "2-4 周", "note": ""},
+        {"id": "EU-PIF", "level": "conditional", "title": "产品信息文件 PIF 与安全评估报告", "evidence": "PIF 档案", "owner": "安全评估师", "lead": "3-8 周", "note": ""},
+        {"id": "EU-CLAIM-EU", "level": "conditional", "title": "宣称合规（EU 常见宣称标准）", "evidence": "宣称证据包", "owner": "法规顾问", "lead": "2-4 周", "note": ""}
+      ],
+      "JP": [
+        {"id": "JP-YAKKI", "level": "blocking", "title": "药机法分类确认（化妆品/医药部外品）", "evidence": "分类结论、制造销售许可", "owner": "日本法规顾问", "lead": "6-12 周", "note": "医药部外品需许可，周期长"}
+      ],
+      "KR": [
+        {"id": "KR-COS", "level": "conditional", "title": "韩国化妆品责任销售业者与进口许可", "evidence": "许可记录", "owner": "韩国代理", "lead": "4-8 周", "note": ""}
+      ]
+    },
+    "food_contact": {
+      "zh": "食品接触材料/厨具",
+      "US": [
+        {"id": "US-FCN", "level": "conditional", "title": "FDA 食品接触符合性（21 CFR / FCN）", "evidence": "符合性声明、迁移测试", "owner": "实验室", "lead": "3-8 周", "note": ""}
+      ],
+      "EU": [
+        {"id": "EU-FCM-DOC", "level": "blocking", "title": "食品接触材料符合性声明（DoC）+ 迁移测试", "evidence": "DoC + 测试报告", "owner": "实验室", "lead": "3-8 周", "note": "塑料另有 EU 10/2011 要求"}
+      ],
+      "JP": [
+        {"id": "JP-FOOD-LAW", "level": "blocking", "title": "食品卫生法符合性（器具/容器包装）", "evidence": "符合性记录", "owner": "日本检测机构", "lead": "3-6 周", "note": ""}
+      ]
+    },
+    "textile": {
+      "zh": "纺织服装",
+      "US": [
+        {"id": "US-FTC-TEXT", "level": "blocking", "title": "纤维成分与护理标签（FTC 规则）", "evidence": "标签稿", "owner": "自行设计", "lead": "2-4 周", "note": "成分标注错误属高发处罚项"},
+        {"id": "US-FLAMM", "level": "conditional", "title": "易燃性测试（16 CFR 1610）", "evidence": "测试报告", "owner": "实验室", "lead": "2-4 周", "note": "服装类普遍适用"}
+      ],
+      "EU": [
+        {"id": "EU-TEXT-LABEL", "level": "blocking", "title": "纤维成分标识（EU 1007/2011）", "evidence": "标签稿", "owner": "自行设计", "lead": "2-4 周", "note": ""},
+        {"id": "EU-REACH-TEXT", "level": "conditional", "title": "REACH 限用物质（偶氮染料、APEO 等）", "evidence": "检测报告", "owner": "实验室", "lead": "2-4 周", "note": ""}
+      ]
+    },
+    "home": {
+      "zh": "家居日用",
+      "US": [
+        {"id": "US-HOME-PROP65", "level": "conditional", "title": "加州 65 号提案（含铅/邻苯等）", "evidence": "检测 + 警示稿", "owner": "实验室", "lead": "2-4 周", "note": ""}
+      ],
+      "EU": [
+        {"id": "EU-GPSR-HOME", "level": "conditional", "title": "GPSR 通用产品安全评估与警示", "evidence": "风险评估记录", "owner": "自行评估 + 审校", "lead": "1-3 周", "note": ""}
+      ]
+    },
+    "outdoor": {
+      "zh": "户外运动",
+      "US": [
+        {"id": "US-OUT-PROP65", "level": "conditional", "title": "加州 65 号提案（橡胶/涂层/焊料）", "evidence": "检测 + 警示稿", "owner": "实验室", "lead": "2-4 周", "note": ""}
+      ]
+    },
+    "pet": {
+      "zh": "宠物用品",
+      "US": [
+        {"id": "US-PET", "level": "info", "title": "宠物食品/零食需 FDA 设施注册；用品按通用产品安全", "evidence": "注册记录", "owner": "美国代理人", "lead": "2-6 周", "note": "区分食品与用品，口径不同"}
+      ],
+      "EU": [
+        {"id": "EU-PET", "level": "info", "title": "宠物食品按饲料法规 (EC) 767/2009；用品按 GPSR", "evidence": "标签与成分记录", "owner": "法规顾问", "lead": "2-6 周", "note": ""}
+      ]
+    },
+    "auto": {
+      "zh": "汽配",
+      "US": [
+        {"id": "US-AUTO-FMVSS", "level": "conditional", "title": "FMVSS 适用性判定（灯具、轮胎、头盔等）", "evidence": "符合性声明", "owner": "实验室", "lead": "4-8 周", "note": ""},
+        {"id": "US-AUTO-PATENT", "level": "info", "title": "外观/实用专利检索（规避侵权）", "evidence": "FTO 检索报告", "owner": "专利代理", "lead": "2-4 周", "note": "汽配是专利投诉高发类目"}
+      ],
+      "EU": [
+        {"id": "EU-AUTO-ECE", "level": "conditional", "title": "ECE 法规认证（灯具、后视镜、喇叭等）", "evidence": "E-mark 证书", "owner": "认证机构", "lead": "6-12 周", "note": ""}
+      ]
+    },
+    "medical": {
+      "zh": "医疗/健康器械",
+      "US": [
+        {"id": "US-FDA-510K", "level": "blocking", "title": "FDA 器械分类与上市前路径（510(k)/豁免）", "evidence": "分类结论、510(k) 或豁免依据", "owner": "法规顾问", "lead": "3-12 月", "note": "周期最长，须先判定再谈上架"},
+        {"id": "US-FDA-REG", "level": "blocking", "title": "设施注册与列名 + 美国代理人", "evidence": "注册号", "owner": "美国代理人", "lead": "2-4 周", "note": ""}
+      ],
+      "EU": [
+        {"id": "EU-MDR", "level": "blocking", "title": "MDR 分类、技术文档与公告机构（如适用）", "evidence": "CE 证书 / DoC + 技术文档", "owner": "公告机构", "lead": "6-18 月", "note": "周期与费用最高项，不可压缩"},
+        {"id": "EU-MDR-RP", "level": "blocking", "title": "欧盟授权代表与 Eudamed 注册", "evidence": "授权书、注册记录", "owner": "欧代", "lead": "2-6 周", "note": ""}
+      ]
+    },
+    "general": {
+      "zh": "通用（无特殊认证品类）",
+      "US": [],
+      "EU": []
+    }
+  },
+  "notes": [
+    "同一产品可能同时落进多个品类（如带电池的儿童玩具），必须按全部命中品类叠加要求。",
+    "认证周期为常见区间，不含排队与补测；排期前务必向服务商确认当期时效。",
+    "平台侧（如亚马逊）另有自己的合规文件上传要求，与国别法规不是一回事，两边都要过。"
+  ]
+}

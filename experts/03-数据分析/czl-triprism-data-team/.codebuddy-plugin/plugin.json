@@ -1,0 +1,157 @@
+{
+  "name": "czl-triprism-data-team",
+  "version": "1.0.2",
+  "description": "A gated, evidence-first data analysis team for spreadsheets. It grades the table before analysing it, freezes a metric contract so every lane divides by the same denominator, runs trend / composition / integrity analysis in parallel, recomputes every claim from the source file, and delivers an HTML report, a one-pager, a slide deck and an Excel workbook. Fully local, no third-party Python dependencies.",
+  "author": {
+    "name": "虫志龙",
+    "email": "47190078@qq.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "data-analysis",
+    "spreadsheet",
+    "business-review",
+    "trend-analysis",
+    "composition",
+    "data-quality",
+    "outlier-detection",
+    "evidence-chain",
+    "local-first",
+    "multi-agent"
+  ],
+  "expertType": "team",
+  "agentName": "czl-triprism-data-team",
+  "teamInfo": {
+    "leadAgent": "czl-triprism-data-team",
+    "memberAgents": [
+      "course-analyst",
+      "composition-analyst",
+      "integrity-analyst",
+      "evidence-verifier"
+    ]
+  },
+  "agents": [
+    "./agents/czl-triprism-data-team.md",
+    "./agents/course-analyst.md",
+    "./agents/composition-analyst.md",
+    "./agents/integrity-analyst.md",
+    "./agents/evidence-verifier.md"
+  ],
+  "skills": [
+    "./skills/czl-triprism-playbook"
+  ],
+  "displayName": {
+    "zh": "三棱镜·专业数据分析专家团",
+    "en": "TriPrism Pro Data Team"
+  },
+  "profession": {
+    "zh": "多视角并行数据分析",
+    "en": "Multi-Perspective Data Analysis"
+  },
+  "displayDescription": {
+    "zh": "一份表格进，三路并行会诊：先体检定可信度，再冻口径，走势/拆解/验伤同时分析，每条结论回原表复算，交付四件套。",
+    "en": "One spreadsheet in, three parallel reviews out: triage, frozen metrics, trend / composition / integrity lanes, every claim recomputed, four deliverables."
+  },
+  "avatar": "avatars/lead.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "帮我做一份经营会诊：这份销售表 trends.xlsx，走势、结构、异常都要，最后给我能直接开会用的报告",
+    "en": "Run a business review on trends.xlsx - trend, composition and anomalies - and give me a report I can take into a meeting."
+  },
+  "tags": [
+    {
+      "zh": "数据分析",
+      "en": "Data Analysis"
+    },
+    {
+      "zh": "数据体检",
+      "en": "Data Triage"
+    },
+    {
+      "zh": "结论可复算",
+      "en": "Recomputable Claims"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我做一份经营会诊：这份销售表 trends.xlsx，走势、结构、异常都要，最后给我能直接开会用的报告",
+      "en": "Run a business review on trends.xlsx - trend, composition and anomalies - and give me a report I can take into a meeting."
+    },
+    {
+      "zh": "先告诉我这张表能不能用，能支撑多强的结论：orders.csv",
+      "en": "First tell me whether orders.csv is usable and how strong a conclusion it can support."
+    },
+    {
+      "zh": "最近三个月成本涨得不对，帮我查是不是数据问题：cost_detail.xlsx",
+      "en": "Cost looks wrong for the last three months - check whether it is a data problem: cost_detail.xlsx"
+    }
+  ],
+  "members": [
+    {
+      "id": "czl-triprism-data-team",
+      "name": {
+        "zh": "主理人",
+        "en": "Lead"
+      },
+      "profession": {
+        "zh": "首席数据分析师",
+        "en": "Chief Data Analyst"
+      },
+      "avatar": "avatars/lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "course-analyst",
+      "name": {
+        "zh": "走势官",
+        "en": "Course Officer"
+      },
+      "profession": {
+        "zh": "时间序列与拐点判定",
+        "en": "Time-Series & Turning Points"
+      },
+      "avatar": "avatars/course-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "composition-analyst",
+      "name": {
+        "zh": "拆解官",
+        "en": "Composition Officer"
+      },
+      "profession": {
+        "zh": "构成拆解与集中度分析",
+        "en": "Composition & Concentration"
+      },
+      "avatar": "avatars/composition-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "integrity-analyst",
+      "name": {
+        "zh": "验伤官",
+        "en": "Integrity Officer"
+      },
+      "profession": {
+        "zh": "数据质量与离群点侦测",
+        "en": "Data Quality & Outliers"
+      },
+      "avatar": "avatars/integrity-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "evidence-verifier",
+      "name": {
+        "zh": "校验官",
+        "en": "Evidence Verifier"
+      },
+      "profession": {
+        "zh": "结论复算与交叉质证",
+        "en": "Claim Recheck & Cross-Exam"
+      },
+      "avatar": "avatars/evidence-verifier.png",
+      "role": "member"
+    }
+  ],
+  "plugin": "czl-triprism-data-team"
+}

@@ -1,0 +1,151 @@
+{
+  "kind": "flow",
+  "title": "费用报销审批流程",
+  "subtitle": "从提交到打款共 4 个环节，含 2 个判断分支",
+  "theme": "graphite",
+  "groups": [
+    {
+      "id": "submit",
+      "label": "员工端",
+      "members": [
+        "start",
+        "fill",
+        "upload"
+      ]
+    },
+    {
+      "id": "review",
+      "label": "审批端",
+      "members": [
+        "check",
+        "amount",
+        "mgr",
+        "fin"
+      ]
+    },
+    {
+      "id": "finance",
+      "label": "财务端",
+      "members": [
+        "pay",
+        "notify",
+        "reject"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "start",
+      "label": "发起报销",
+      "shape": "stadium",
+      "role": "primary"
+    },
+    {
+      "id": "fill",
+      "label": "填写报销单",
+      "shape": "rect"
+    },
+    {
+      "id": "upload",
+      "label": "上传发票影像",
+      "shape": "rect",
+      "role": "data"
+    },
+    {
+      "id": "check",
+      "label": "系统校验票据",
+      "shape": "rect",
+      "role": "data"
+    },
+    {
+      "id": "amount",
+      "label": "金额是否超 5000 元",
+      "shape": "diamond",
+      "role": "decision"
+    },
+    {
+      "id": "mgr",
+      "label": "直属主管审批",
+      "shape": "rect"
+    },
+    {
+      "id": "fin",
+      "label": "财务复核",
+      "shape": "rect"
+    },
+    {
+      "id": "pay",
+      "label": "生成付款单",
+      "shape": "rect",
+      "role": "success"
+    },
+    {
+      "id": "notify",
+      "label": "通知申请人",
+      "shape": "stadium",
+      "role": "success"
+    },
+    {
+      "id": "reject",
+      "label": "退回补充材料",
+      "shape": "rect",
+      "role": "danger"
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "fill"
+    },
+    {
+      "from": "fill",
+      "to": "upload"
+    },
+    {
+      "from": "upload",
+      "to": "check"
+    },
+    {
+      "from": "check",
+      "to": "amount"
+    },
+    {
+      "from": "amount",
+      "to": "mgr",
+      "label": "是"
+    },
+    {
+      "from": "amount",
+      "to": "fin",
+      "label": "否"
+    },
+    {
+      "from": "mgr",
+      "to": "fin",
+      "label": "通过"
+    },
+    {
+      "from": "fin",
+      "to": "pay",
+      "label": "复核通过"
+    },
+    {
+      "from": "pay",
+      "to": "notify"
+    },
+    {
+      "from": "fin",
+      "to": "reject",
+      "label": "材料不全",
+      "style": "dashed",
+      "arrow": "end"
+    },
+    {
+      "from": "reject",
+      "to": "upload",
+      "label": "重新提交",
+      "style": "dashed"
+    }
+  ],
+  "footnote": "金额阈值可按公司制度调整；虚线表示退回路径。"
+}

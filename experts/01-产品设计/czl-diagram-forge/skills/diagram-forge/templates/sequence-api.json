@@ -1,0 +1,31 @@
+{
+  "kind": "sequence",
+  "title": "下单接口时序",
+  "subtitle": "客户端 → 网关 → 订单服务 → 库存 / 支付",
+  "participants": [
+    { "id": "client", "label": "客户端", "kind": "actor" },
+    { "id": "gw", "label": "API 网关", "kind": "service" },
+    { "id": "order", "label": "订单服务", "kind": "service" },
+    { "id": "stock", "label": "库存服务", "kind": "service" },
+    { "id": "pay", "label": "支付服务", "kind": "external" },
+    { "id": "db", "label": "订单库", "kind": "db" }
+  ],
+  "steps": [
+    { "type": "message", "from": "client", "to": "gw", "text": "POST /orders" },
+    { "type": "message", "from": "gw", "to": "order", "text": "校验令牌后转发" },
+    { "type": "fragment", "frag": "opt", "label": "幂等命中" },
+    { "type": "message", "from": "order", "to": "db", "text": "按 requestId 查询" },
+    { "type": "message", "from": "order", "to": "gw", "text": "返回历史订单", "style": "return" },
+    { "type": "end" },
+    { "type": "message", "from": "order", "to": "stock", "text": "预占库存" },
+    { "type": "message", "from": "stock", "to": "order", "text": "预占成功", "style": "return" },
+    { "type": "fragment", "frag": "alt", "label": "支付成功 / 超时" },
+    { "type": "message", "from": "order", "to": "pay", "text": "创建支付单" },
+    { "type": "message", "from": "pay", "to": "order", "text": "支付回调", "style": "async" },
+    { "type": "end" },
+    { "type": "message", "from": "order", "to": "db", "text": "落库订单状态" },
+    { "type": "note", "over": ["order", "db"], "text": "同一事务内更新订单与流水" },
+    { "type": "message", "from": "order", "to": "gw", "text": "201 Created", "style": "return" },
+    { "type": "message", "from": "gw", "to": "client", "text": "返回订单号", "style": "return" }
+  ]
+}
